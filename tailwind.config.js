@@ -105,6 +105,27 @@ module.exports = {
 				oneTenth: '10vh',
 				oneTwentieth: '5vh'
 			},
+			width: {
+				whole: '100vw',
+				nineTenths: '90vw',
+				sevenEighths: '87.5vw',
+				fourFifths: '80vw',
+				threeFourths: '75vw',
+				sevenTenths: '70vw',
+				twoThirds: '66.67vw',
+				threeFifths: '60vw',
+				half: '50vw',
+				nineTwentieths: '45vw',
+				twoFifths: '40vw',
+				sevenTwentieths: '35vw',
+				oneThird: '33.33vw',
+				threeTenths: '30vw',
+				oneFourth: '25vw',
+				oneFifth: '20vw',
+				oneSixth: '16.67vw',
+				oneTenth: '10vw',
+				oneTwentieth: '5vw'
+			},
 			spacing: {
 				half: '0.125rem',
 				threeQuarters: '0.175rem',
