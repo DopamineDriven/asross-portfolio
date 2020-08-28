@@ -10,7 +10,7 @@ interface Props {
 	preview?: boolean;
 }
 
-const About = ({ preview, props }: Props) => {
+const Index = ({ preview, props }: Props) => {
 	return (
 		<>
 			<Header props={props} />
@@ -30,4 +30,4 @@ const About = ({ preview, props }: Props) => {
 	);
 };
 
-export default About;
+export default Index;
