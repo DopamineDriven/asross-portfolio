@@ -12,10 +12,10 @@ const Layout = ({ children, preview }: LayoutProps) => {
 	return (
 		<Fragment>
 			<Meta />
-			<div className='min-h-screen'>
+			<div className='min-h-screen bg-portfolio'>
 				<main>{children}</main>
 			</div>
-			<Alert preview={preview} />
+
 			<Footer />
 		</Fragment>
 	);

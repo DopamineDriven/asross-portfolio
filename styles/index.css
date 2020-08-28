@@ -6,6 +6,7 @@ html {
 	-webkit-text-size-adjust: none;
 	-webkit-font-smoothing: subpixel-antialiased;
 	-webkit-font-smoothing: antialiased;
+	background-color: #EBE8E0;
 }
 
 @tailwind base;
@@ -46,7 +47,7 @@ html {
 @font-face {
 	font-family: 'neue-haas-grotesk-text', sans-serif;
 	font-weight: 400;
-	src: url(https://use.typekit.net/cub6off.css) format('woff2');
+	src: url(https://use.typekit.net/lxd3fak.css) format('woff2');
 }
 
 @font-face {
@@ -72,9 +73,9 @@ html {
 	@apply font-header;
 	@apply font-body;
 	@apply font-polished;
-	@apply somaDisplay;
-	@apply somaRoman;
 	@apply font-subpolished;
+	@apply font-somaRoman;
+	@apply font-somaDisplay;
 }
 
 .has-text-align-left {

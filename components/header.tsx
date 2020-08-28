@@ -47,7 +47,7 @@ const Header = ({ props }: HeaderProps) => {
 	const heightOnOpen = navOpen ? ' h-twoFifths' : ' h-oneThird';
 	return (
 		<nav
-			className={`flex flex-row flex-wrap xl:h-half lg:h-nineTwentieths md:h-twoFifths sm:h-twoFifths ${heightOnOpen} pb-20 xl:mb-2 container overflow-y-hidden overflow-x-hidden -mx-5`}
+			className={`flex flex-row flex-wrap xl:h-half lg:h-nineTwentieths md:h-twoFifths sm:h-twoFifths ${heightOnOpen} container overflow-y-hidden overflow-x-hidden -mx-5`}
 		>
 			<Container>
 				<div
@@ -57,7 +57,7 @@ const Header = ({ props }: HeaderProps) => {
 							<div className='flex w-full relative sm:flex-row justify-between sm:w-auto sm:static sm:justify-start sm:block'>
 								<Link href='/'>
 									<a className='inline-block leading-relaxed mr-4 whitespace-no-wrap '>
-										{<FontAwesomeIcon icon={faCustomIconAR} />}
+										{<FontAwesomeIcon icon={faCustomIconAR} size='10x' />}
 									</a>
 								</Link>
 								<button

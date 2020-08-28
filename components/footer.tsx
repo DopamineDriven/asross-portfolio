@@ -4,12 +4,12 @@ import Link from 'next/link';
 
 const Footer = () => {
 	return (
-		<footer className='bg-portfolio font-somaRoman'>
-			<Container>
-				<div className='ml-1 mt-1 flex flex-row items-left text-left float-left overflow-hidden'>
-					<div className='flex flex-col w-1/2 mr-6'>
+		<footer className='bg-portfolio font-somaRoman w-full'>
+			<div className='w-full min-w-full bg-portfolio'>
+				<div className='bg-portfolio ml-1 mt-1 flex flex-row min-w-full w-full items-left text-left float-left overflow-hidden'>
+					<div className='inline-flex w-1/2 mr-6'>
 						<Link href='/'>
-							<a className='inline-block leading-relaxed mr-4 whitespace-no-wrap text-uppercase text-oneFiveBlack'>
+							<a className='inline-block leading-relaxed mr-4 whitespace-no-wrap uppercase text-oneFiveBlack'>
 								Back to top
 							</a>
 						</Link>
@@ -20,7 +20,7 @@ const Footer = () => {
 						</div>
 					</div>
 				</div>
-			</Container>
+			</div>
 		</footer>
 	);
 };
