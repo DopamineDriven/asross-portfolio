@@ -28,21 +28,24 @@ const MetaData = () => {
 				<link rel='mask-icon' href='/fav/safari-pinned-tab.svg' color='#000000' />
 				<link rel='shortcut icon' href='/fav/favicon.ico' />
 				<link rel='canonical' href='https://asross-portfolio.vercel.app/' />
-				<meta name='msapplication-TileColor' content='#ffffff' />
+				<meta name='robots' content='all' />
+				<meta
+					name='viewport'
+					content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=no'
+				/>
+				<meta name='format-detection' content='telephone=no' />
+				<title>Andrew Ross — Full-Stack Engineer</title>
+				<meta name='msapplication-TileColor' content='#000000' />
 				<meta name='msapplication-config' content='/fav/browserconfig.xml' />
-				<meta name='theme-color' content='#b8242c' />
+				<meta name='theme-color' content='#ffffff' />
 				<link rel='alternate' type='application/rss+xml' href='/feed.xml' />
 				<meta
 					name='description'
-					content={`${CMS_NAME} via Nextjs; the React framework for production.`}
+					content={`${CMS_NAME} via Nextjs; the React framework for production. Andrew Ross is a Chicago based full stack engineer who specializes in Next.js, TypeScript, React, Apollo, GraphQL, MongoDB, PostgreSQL Headless CMSs, JAMstack, MERN, Tailwind CSS, Static Site Generation, SEO, and Server Side Rendering`}
 				/>
 				<meta property='og:image' content={HOME_OG_IMAGE_URL} />
 				<meta charSet='utf-8' />
 				<meta httpEquiv='X-UA-Compatible' content='IE=edge' />
-				<meta
-					name='vieweport'
-					content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'
-				/>
 				<meta
 					name='keywords'
 					content='nextjs, typescript, react, react-markdown, static site generation, tailwindcss, vercel, figma'

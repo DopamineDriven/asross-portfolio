@@ -2,6 +2,11 @@
 	-webkit-text-size-adjust: auto;
 }
 
+html {
+	-webkit-font-smoothing: antialiased;
+}
+
+
 @tailwind base;
 /* Write custom base styles here */
 @font-face {
