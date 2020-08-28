@@ -13,29 +13,29 @@ module.exports = {
 			widest: '.15em'
 		},
 		rotate: {
-			'0': '0deg',
-			'45': '45deg',
-			'180': '180deg',
-			'855': '855deg'
+			0: '0deg',
+			45: '45deg',
+			180: '180deg',
+			855: '855deg'
 		},
 		opacity: {
-			'10': '10',
-			'25': '25',
-			'50': '50',
-			'75': '75',
-			'90': '90',
-			'100': '100'
+			10: '10',
+			25: '25',
+			50: '50',
+			75: '75',
+			90: '90',
+			100: '100'
 		},
 		extend: {
 			transitionDuration: {
-				'0': '0ms',
-				'200': '200ms',
-				'300': '300ms',
-				'500': '500ms',
-				'700': '700ms',
-				'1000': '1000ms',
-				'2000': '2000ms',
-				'3000': '3000ms'
+				0: '0ms',
+				200: '200ms',
+				300: '300ms',
+				500: '500ms',
+				700: '700ms',
+				1000: '1000ms',
+				2000: '2000ms',
+				3000: '3000ms'
 			},
 			keyframes: {
 				wiggle: {
@@ -52,6 +52,8 @@ module.exports = {
 				body: ['Barlow Condensed', 'sans-serif'],
 				display: ['Barlow Condensed', 'sans-serif'],
 				polished: ['brandon-grotesque', 'sans-serif'],
+				somaRoman: ['neue-haas-grotesk-text', 'sans-serif'],
+				somaDisplay: ['neue-haas-grotesk-display', 'sans-serif'],
 				subpolished: ['Montserrat', 'sans-serif']
 			},
 			colors: {
@@ -79,7 +81,8 @@ module.exports = {
 				lighterBlack: '#323232',
 				gatsbyPurple: '#663399',
 				oneFiveBlack: '#151515',
-				fiveOBlack: '#505050'
+				fiveOBlack: '#505050',
+				portfolioBg: '#EBE8E0'
 			},
 			height: {
 				whole: '100vh',
@@ -103,9 +106,9 @@ module.exports = {
 				oneTwentieth: '5vh'
 			},
 			spacing: {
-				'half': '0.125rem',
-				'threeQuarters': '0.175rem',
-				'threeHalves': '0.325rem',
+				half: '0.125rem',
+				threeQuarters: '0.175rem',
+				threeHalves: '0.325rem',
 				7: '1.75rem',
 				14: '3.5rem',
 				18: '4.5rem',
