@@ -73,3 +73,4 @@ npx patch-package @fortawesome/fontawesome-common-types
 ```
 "postinstall": "npx patch-package"
 ```
+- https://www.aristidebenoist.com/
