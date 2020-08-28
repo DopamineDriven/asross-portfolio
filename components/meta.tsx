@@ -43,13 +43,31 @@ const MetaData = () => {
 					name='description'
 					content={`${CMS_NAME} via Nextjs; the React framework for production. Andrew Ross is a Chicago based full stack engineer who specializes in Next.js, TypeScript, React, Apollo, GraphQL, MongoDB, PostgreSQL Headless CMSs, JAMstack, MERN, Tailwind CSS, Static Site Generation, SEO, and Server Side Rendering`}
 				/>
-				<meta property='og:image' content={HOME_OG_IMAGE_URL} />
 				<meta charSet='utf-8' />
 				<meta httpEquiv='X-UA-Compatible' content='IE=edge' />
 				<meta
 					name='keywords'
 					content='nextjs, typescript, react, react-markdown, static site generation, tailwindcss, vercel, figma'
 				/>
+				<meta name='twitter:card' content='summary_large_image' />
+				<meta name='twitter:site' content='@asross311' />
+				<meta name='twitter:title' content='Andrew Ross — Full-Stack Engineer' />
+				<meta
+					name='twitter:description'
+					content={`${CMS_NAME} via Nextjs; the React framework for production. Andrew Ross is a Chicago based full stack engineer who specializes in Next.js, TypeScript, React, Apollo, GraphQL, MongoDB, PostgreSQL Headless CMSs, JAMstack, MERN, Tailwind CSS, Static Site Generation, SEO, and Server Side Rendering`}
+				/>
+				<meta name='twitter:image' content={HOME_OG_IMAGE_URL} />
+				<meta name='twitter:creator' content='@asross311' />
+				<meta property='og:type' content='website' />
+				<meta property='og:url' content='https://asross-portfolio.vercel.app/' />
+				<meta property='og:title' content='Andrew Ross — Full-Stack Engineer' />
+				<meta
+					property='og:description'
+					content={`${CMS_NAME} via Nextjs; the React framework for production. Andrew Ross is a Chicago based full stack engineer who specializes in Next.js, TypeScript, React, Apollo, GraphQL, MongoDB, PostgreSQL Headless CMSs, JAMstack, MERN, Tailwind CSS, Static Site Generation, SEO, and Server Side Rendering`}
+				/>
+				<meta property='og:image' content={HOME_OG_IMAGE_URL} />
+				<meta property='og:image:width' content='2048' />
+				<meta property='og:image:height' content='1170' />
 			</Head>
 		</Fragment>
 	);
