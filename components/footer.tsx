@@ -1,27 +1,23 @@
 import Container from 'components/container';
 import { EXAMPLE_PATH } from 'lib/constants';
+import Link from 'next/link';
 
 const Footer = () => {
 	return (
-		<footer className='bg-black border-t border-chicagoRed'>
+		<footer className='bg-portfolio font-somaRoman'>
 			<Container>
-				<div className='py-16 flex flex-col lg:flex-row items-center'>
-					<h3 className='text-3xl lg:text-4xl font-bold tracking-tighter text-white hover:text-cimaRed transform transition-colors duration-500 font-polished leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2'>
-						Statically Generated with Next.js.
-					</h3>
-					<div className='flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-6/12'>
-						<a
-							href='https://nextjs.org/docs/basic-features/pages'
-							className='mx-3 bg-black hover:text-cimaRed border border-cimaRed text-white font-polished font-bold py-3 px-12 lg:px-8 transform duration-500 transition-colors mb-6 lg:mb-0'
-						>
-							Read Documentation
-						</a>
-						<a
-							href={`https://github.com/DopamineDriven/${EXAMPLE_PATH}`}
-							className='mx-3 bg-black hover:text-cimaRed border border-cimaRed text-white font-polished font-bold py-3 px-12 lg:px-8 transform duration-500 transition-colors mb-6 lg:mb-0'
-						>
-							View on GitHub
-						</a>
+				<div className='ml-1 mt-1 flex flex-row items-left text-left float-left overflow-hidden'>
+					<div className='flex flex-col w-1/2 mr-6'>
+						<Link href='/'>
+							<a className='inline-block leading-relaxed mr-4 whitespace-no-wrap text-uppercase text-oneFiveBlack'>
+								Back to top
+							</a>
+						</Link>
+					</div>{' '}
+					<div className='flex flex-col w-1/2 my-0 text-sm pt-1 pb-2 items-right align-top text-right float-right -mx-5'>
+						<div className='flex flex-row w-128 align-top font-somaRoman text-oneFiveBlack'>
+							<a className='flex w-full'>©2020 ALL RIGHTS RESERVED</a>
+						</div>
 					</div>
 				</div>
 			</Container>

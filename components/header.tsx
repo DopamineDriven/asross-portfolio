@@ -51,13 +51,7 @@ const Header = ({ props }: HeaderProps) => {
 		>
 			<Container>
 				<div
-					className={`xl:h-half lg:h-nineTwentieths md:h-twoFifths sm:h-twoFifths ${heightOnOpen} transform duration-1000 absolute flex flex-row w-full bg-contain antialiased`}
-					style={{
-						backgroundImage: `url(https://res.cloudinary.com/asross311/image/upload/v1597147257/ASR_Assets/headerhero_euqvup.jpg)`,
-						backgroundRepeat: 'no-repeat',
-						backgroundSize: '100% 100%'
-					}}
-				>
+					className={`xl:h-half bg-portfolio lg:h-nineTwentieths md:h-twoFifths sm:h-twoFifths ${heightOnOpen} transform duration-1000 absolute flex flex-row w-full bg-contain antialiased`}>
 					<Container>
 						<div className='container flex flex-wrap px-4 justify-between mx-auto'>
 							<div className='flex w-full relative sm:flex-row justify-between sm:w-auto sm:static sm:justify-start sm:block'>
