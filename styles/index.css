@@ -27,6 +27,12 @@
 		format('woff2');
 }
 
+@font-face {
+	font-family: 'goudy-bookletter-1911', serif;
+	font-weight: 400;
+	src: url(https://use.typekit.net/cub6off.css) format('woff2');
+}
+
 /* Start purging... */
 @tailwind components;
 /* Stop purging. */
@@ -40,6 +46,7 @@
 /* Write custom utilities here */
 
 .html {
+	@apply font-head;
 	@apply font-header;
 	@apply font-body;
 	@apply font-polished;
