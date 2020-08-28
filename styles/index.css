@@ -71,6 +71,8 @@ html {
 	@apply font-header;
 	@apply font-body;
 	@apply font-polished;
+	@apply somaDisplay;
+	@apply somaRoman;
 	@apply font-subpolished;
 }
 
