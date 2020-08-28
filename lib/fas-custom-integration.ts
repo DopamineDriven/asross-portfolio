@@ -270,6 +270,7 @@ library.add(
 	faAuth0Icon,
 	faCloudinaryIcon,
 	faCreateReactAppIcon,
+	faCustomIconAR,
 	faGatsbyIcon,
 	faGraphQLIcon,
 	faHerokuIcon,
