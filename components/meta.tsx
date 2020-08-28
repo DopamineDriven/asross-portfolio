@@ -28,18 +28,13 @@ const MetaData = () => {
 				<link rel='mask-icon' href='/fav/safari-pinned-tab.svg' color='#000000' />
 				<link rel='shortcut icon' href='/fav/favicon.ico' />
 				<link rel='canonical' href='https://asross-portfolio.vercel.app/' />
-				<link
-					href='https://fonts.googleapis.com/css2?family=Montserrat&display=swap'
-					rel='stylesheet'
-				/>
-				<link rel='stylesheet' href='https://use.typekit.net/hzg4mdi.css' />
 				<meta name='msapplication-TileColor' content='#ffffff' />
 				<meta name='msapplication-config' content='/fav/browserconfig.xml' />
 				<meta name='theme-color' content='#b8242c' />
 				<link rel='alternate' type='application/rss+xml' href='/feed.xml' />
 				<meta
 					name='description'
-					content={`Static Site Generation via Next.js and ${CMS_NAME}.`}
+					content={`${CMS_NAME} via Nextjs; the React framework for production.`}
 				/>
 				<meta property='og:image' content={HOME_OG_IMAGE_URL} />
 				<meta charSet='utf-8' />
@@ -50,7 +45,7 @@ const MetaData = () => {
 				/>
 				<meta
 					name='keywords'
-					content='nextjs, typescript, react, wordpress, tailwindcss, vercel'
+					content='nextjs, typescript, react, react-markdown, static site generation, tailwindcss, vercel, figma'
 				/>
 			</Head>
 		</Fragment>
