@@ -10,7 +10,7 @@ type Props = {
 const Alert = ({ preview }: Props) => {
 	return (
 		<div
-			className={cn('border-t bg-black', {
+			className={cn('bg-portfolio', {
 				'bg-accent-7 border-accent-7 text-white': preview,
 				'bg-portfolio w-full align-middle justify-center': !preview
 			})}
@@ -30,7 +30,7 @@ const Alert = ({ preview }: Props) => {
 						</>
 					) : (
 						<>
-							<a className='inline-flex mx-auto min-w-full w-full justify-center flex-grow'>
+							<a className='inline-flex mx-auto min-w-full w-full justify-center flex-grow text-black'>
 								<FontAwesomeIcon icon={faArIcon} size='10x' />
 							</a>
 						</>
