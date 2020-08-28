@@ -46,6 +46,7 @@
 /* Write custom utilities here */
 
 .html {
+	@apply font-head;
 	@apply font-header;
 	@apply font-body;
 	@apply font-polished;
