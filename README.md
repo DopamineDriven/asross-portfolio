@@ -12,6 +12,7 @@ nextjs portfolio
 -	1232 grid on a 1440
 - 77em (1232px &rarr; grid width, xl viewport)
 -	600x600 squares
+- will be a 6.5 em offset between col 1 and col 2 for projects
 
 ```xml
 <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
