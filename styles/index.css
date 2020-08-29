@@ -9,6 +9,10 @@ html {
 	background-color: #EBE8E0;
 }
 
+body {
+	overflow: hidden; /* Hide scrollbars */
+}
+
 @tailwind base;
 /* Write custom base styles here */
 @font-face {
