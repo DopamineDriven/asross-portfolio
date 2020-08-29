@@ -20,7 +20,7 @@ export const AndrewIcon: SvgIcon = ({
 			viewBox='0 0 1209 271'
 			fill={fillColor}
 			xmlns='http://www.w3.org/2000/svg'
-			className={`stroke-current ${strokeColor}`}
+			className={`stroke-current ${strokeColor} antialiased`}
 			transform={`rotate(${rotateCenter}, 1209, 271)`}
 		>
 			<path
@@ -67,7 +67,7 @@ export const ArIcon: SvgIcon = ({
 			viewBox='0 0 65 65'
 			fill={fillColor}
 			xmlns='http://www.w3.org/2000/svg'
-			className={`stroke-current ${strokeColor}`}
+			className={`stroke-current ${strokeColor} antialiased`}
 			transform={`rotate(${rotateCenter}, 65, 65)`}
 		>
 			<circle

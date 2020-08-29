@@ -45,19 +45,30 @@ const Header = ({ props }: HeaderProps) => {
 	));
 	// calculate vpw/vph - https://www.hawatel.com/blog/handle-window-resize-in-react/
 	// hamburger menu hidden when >=640px; visible when <640px
+	// https://res.cloudinary.com/asross311/image/upload/v1598726915/portfolio/Andrew_1_iudxbk.jpg
 	const heightOnOpen = navOpen ? ' h-twoFifths' : ' h-oneThird';
+	const heightOnOpenSm = navOpen ? ' h-whole' : ' h-fourFifths';
+	const pulseOnOpen = navOpen ? ' animate-none' : ' animate-pulse';
 	return (
 		<nav
 			className={`flex flex-row flex-wrap xl:h-half lg:h-nineTwentieths md:h-twoFifths sm:h-twoFifths ${heightOnOpen} container overflow-y-hidden overflow-x-hidden -mx-5`}
 		>
+			
 			<Container>
-				<div
-					className={`xl:h-half bg-portfolio lg:h-nineTwentieths md:h-twoFifths sm:h-twoFifths ${heightOnOpen} transform duration-1000 absolute flex flex-row w-full bg-contain antialiased`}
-				>
-          <div className='container flex flex-wrap px-5 justify-between mx-auto py-5'>
+			<div className='container flex flex-wrap px-5 justify-between mx-auto py-5'>
             <ArIcon />
 						{/* <FontAwesomeIcon icon={faCustomIconAR} size='10x' className='border border-black border-rounded rounded-full' /> */}
 					</div>
+			<div
+					className={`xl:h-threeFourths lg:h-fourFifths md:h-sevenEights sm:${heightOnOpenSm} ${heightOnOpen} transform duration-2000 absolute transition-all bg-opacity-10 ${!pulseOnOpen} bg-lighterBlack flex flex-row w-full bg-contain antialiased`}
+					style={{
+						backgroundImage: `url(https://res.cloudinary.com/asross311/image/upload/v1598726915/portfolio/Andrew_1_iudxbk.jpg)`,
+						backgroundRepeat: 'no-repeat',
+						backgroundSize: '100% 100%',
+						backgroundColor: 'black'
+					}}
+				>
+
 					<Container>
 						<div className='container flex flex-wrap px-4 justify-between mx-auto'>
 							<div className='flex w-full relative sm:flex-row justify-between sm:w-auto sm:static sm:justify-start sm:block'>
