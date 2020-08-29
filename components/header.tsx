@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCustomIconAR, faArIcon } from 'lib/fas-custom-integration';
 import Container from './container';
+import { AndrewIcon } from 'components/svg-icons';
 
 interface NavRef {
 	href: string;
@@ -49,15 +50,13 @@ const Header = ({ props }: HeaderProps) => {
 		<nav
 			className={`flex flex-row flex-wrap xl:h-half lg:h-nineTwentieths md:h-twoFifths sm:h-twoFifths ${heightOnOpen} container overflow-y-hidden overflow-x-hidden -mx-5`}
 		>
-			<Link href='/'>
-				<a className='inline-block leading-relaxed mr-4 whitespace-no-wrap '>
-					{<FontAwesomeIcon icon={faCustomIconAR} size='10x' />}
-				</a>
-			</Link>
 			<Container>
 				<div
 					className={`xl:h-half bg-portfolio lg:h-nineTwentieths md:h-twoFifths sm:h-twoFifths ${heightOnOpen} transform duration-1000 absolute flex flex-row w-full bg-contain antialiased`}
 				>
+					<div className='container flex flex-wrap px-4 justify-between mx-auto'>
+						<FontAwesomeIcon icon={faCustomIconAR} size='10x' className='border border-black border-rounded rounded-full' />
+					</div>
 					<Container>
 						<div className='container flex flex-wrap px-4 justify-between mx-auto'>
 							<div className='flex w-full relative sm:flex-row justify-between sm:w-auto sm:static sm:justify-start sm:block'>
@@ -132,6 +131,7 @@ import Link from 'next/link';
 import SvgLogo from './svg-logo-only';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { AndrewIcon } from './svg-icons';
 
 interface NavRef {
 	href: string;

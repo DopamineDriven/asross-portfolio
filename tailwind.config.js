@@ -127,6 +127,7 @@ module.exports = {
 				oneTwentieth: '5vw'
 			},
 			spacing: {
+				negative: '-0.1em',
 				half: '0.125rem',
 				threeQuarters: '0.175rem',
 				threeHalves: '0.325rem',
@@ -153,7 +154,8 @@ module.exports = {
 				'5xl': '2.5rem',
 				'6xl': '2.75rem',
 				'7xl': '4.5rem',
-				'8xl': '6.25rem'
+				'8xl': '6.25rem',
+				'10xl': '10rem'
 			},
 			boxShadow: {
 				small: '0 5px 10px rgba(0, 0, 0, 0.12)',
