@@ -5,6 +5,7 @@ import Layout from 'components/layout';
 import Container from 'components/container';
 import Alert from 'components/alert';
 import { CLIENT_NAME } from 'lib/constants';
+import Lead from 'components/lead';
 
 interface Props {
 	props: string | number;
@@ -14,7 +15,8 @@ interface Props {
 const Index = ({ preview, props }: Props) => {
 	return (
 		<>
-      <Header props={props} />
+			{/* <Header props={props} /> */}
+			<Lead />
       <Alert preview={preview} />
 			<Layout preview={preview}>
 				<Head>
