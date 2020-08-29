@@ -12,11 +12,11 @@ const Alert = ({ preview }: Props) => {
 		<div
 			className={cn('bg-portfolio', {
 				'bg-accent-7 border-accent-7 text-white': preview,
-				'bg-portfolio w-full align-middle justify-center': !preview
+				'bg-portfolio align-left justify-start min-w-nineTenths w-nineTenths': !preview
 			})}
 		>
 			<Container>
-				<div className='pb-1 text-center text-xl text-white align-middle items-center'>
+				<div className='pb-1  min-w-nineTenths w-nineTenths'>
 					{preview ? (
 						<>
 							This is page is a preview.{' '}
@@ -30,8 +30,8 @@ const Alert = ({ preview }: Props) => {
 						</>
 					) : (
 						<>
-							<a className='inline-flex mx-auto min-w-full w-full justify-center flex-grow text-black'>
-								<FontAwesomeIcon icon={faArIcon} size='10x' />
+							<a className='block min-w-nineTenths w-nineTenths prose mx-auto justify-start text-left flex-grow text-black font-somaRoman uppercase font-bold pt-1 -ml-40 text-6xl'>
+								<p className='float-left'>Andrew ross is a chicago based full-stack engineer who specializes in the JAMstack, MERN, TypeScript, React, Next.js, Tailwind CSS, Static Site Generation, DB Migration, Headless WordPress, and more.</p>
 							</a>
 						</>
 					)}
