@@ -7,7 +7,7 @@ module.exports = {
 		letterSpacing: {
 			tightest: '-.075em',
 			tighter: '-.05em',
-			tight: '-0.025em',
+			tight: '-0.01em',
 			wide: '.025em',
 			wider: '.05em',
 			widest: '.15em'
@@ -143,6 +143,7 @@ module.exports = {
 				half: '0.125rem',
 				threeQuarters: '0.175rem',
 				threeHalves: '0.325rem',
+				portfolio: '6.25vw',
 				7: '1.75rem',
 				14: '3.5rem',
 				18: '4.5rem',
@@ -157,7 +158,8 @@ module.exports = {
 				308: '77rem'
 			},
 			lineHeight: {
-				tight: 1.2
+				tight: 1.2,
+				portfolio: '11vw'
 			},
 			fontSize: {
 				smxmd: '0.9375rem',
@@ -168,7 +170,7 @@ module.exports = {
 				'7xl': '4.5rem',
 				'8xl': '6.25rem',
 				'10xl': '10rem',
-				custom: '25.41667vw'
+				custom: '18.41667vw'
 			},
 			boxShadow: {
 				small: '0 5px 10px rgba(0, 0, 0, 0.12)',

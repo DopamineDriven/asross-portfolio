@@ -16,8 +16,8 @@ const Index = ({ preview, props }: Props) => {
 	return (
 		<>
 			{/* <Header props={props} /> */}
-			<Lead />
 			<Layout preview={preview}>
+			<Lead />
 				<div className='block min-w-nineTenths w-nineTenths prose mx-auto justify-start text-left flex-grow text-black font-somaRoman uppercase font-bold pt-1 text-6xl'>
 					<p className='float-left md:text-left '>
 						Andrew ross is a chicago based full-stack engineer who specializes in the

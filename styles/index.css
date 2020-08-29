@@ -9,11 +9,21 @@ html {
 	-moz-osx-font-smoothing: auto;
 	-webkit-tap-highlight-color: transparent;
 	background-color: #ebe8e0;
+	margin: 0;
+	padding: 0;
+}
+
+#__next {
+	margin: 0;
+	padding: 0;
 }
 
 body {
 	-ms-overflow-style: none; /* IE and Edge */
 	scrollbar-width: none; /* Firefox */
+	margin: 0;
+	padding: 0;
+
 }
 
 body::-webkit-scrollbar {
