@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCustomIconAR } from 'lib/fas-custom-integration';
+import { faCustomIconAR, faArIcon } from 'lib/fas-custom-integration';
 import Container from './container';
+import { AndrewIcon, ArIcon } from 'components/svg-icons';
 
 interface NavRef {
 	href: string;
@@ -51,15 +52,15 @@ const Header = ({ props }: HeaderProps) => {
 		>
 			<Container>
 				<div
-					className={`xl:h-half bg-portfolio lg:h-nineTwentieths md:h-twoFifths sm:h-twoFifths ${heightOnOpen} transform duration-1000 absolute flex flex-row w-full bg-contain antialiased`}>
+					className={`xl:h-half bg-portfolio lg:h-nineTwentieths md:h-twoFifths sm:h-twoFifths ${heightOnOpen} transform duration-1000 absolute flex flex-row w-full bg-contain antialiased`}
+				>
+          <div className='container flex flex-wrap px-5 justify-between mx-auto py-5'>
+            <ArIcon />
+						{/* <FontAwesomeIcon icon={faCustomIconAR} size='10x' className='border border-black border-rounded rounded-full' /> */}
+					</div>
 					<Container>
 						<div className='container flex flex-wrap px-4 justify-between mx-auto'>
 							<div className='flex w-full relative sm:flex-row justify-between sm:w-auto sm:static sm:justify-start sm:block'>
-								<Link href='/'>
-									<a className='inline-block leading-relaxed mr-4 whitespace-no-wrap '>
-										{<FontAwesomeIcon icon={faCustomIconAR} size='10x' />}
-									</a>
-								</Link>
 								<button
 									className='text-white block cursor-pointer text-xl leading-none px-3 border border-solid border-transparent rounded bg-transparent sm:hidden outline-none focus:outline-none'
 									type='button'
@@ -131,6 +132,7 @@ import Link from 'next/link';
 import SvgLogo from './svg-logo-only';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { AndrewIcon } from './svg-icons';
 
 interface NavRef {
 	href: string;

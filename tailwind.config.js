@@ -105,7 +105,29 @@ module.exports = {
 				oneTenth: '10vh',
 				oneTwentieth: '5vh'
 			},
+			width: {
+				whole: '100vw',
+				nineTenths: '90vw',
+				sevenEighths: '87.5vw',
+				fourFifths: '80vw',
+				threeFourths: '75vw',
+				sevenTenths: '70vw',
+				twoThirds: '66.67vw',
+				threeFifths: '60vw',
+				half: '50vw',
+				nineTwentieths: '45vw',
+				twoFifths: '40vw',
+				sevenTwentieths: '35vw',
+				oneThird: '33.33vw',
+				threeTenths: '30vw',
+				oneFourth: '25vw',
+				oneFifth: '20vw',
+				oneSixth: '16.67vw',
+				oneTenth: '10vw',
+				oneTwentieth: '5vw'
+			},
 			spacing: {
+				negative: '-0.1em',
 				half: '0.125rem',
 				threeQuarters: '0.175rem',
 				threeHalves: '0.325rem',
@@ -132,7 +154,8 @@ module.exports = {
 				'5xl': '2.5rem',
 				'6xl': '2.75rem',
 				'7xl': '4.5rem',
-				'8xl': '6.25rem'
+				'8xl': '6.25rem',
+				'10xl': '10rem'
 			},
 			boxShadow: {
 				small: '0 5px 10px rgba(0, 0, 0, 0.12)',
