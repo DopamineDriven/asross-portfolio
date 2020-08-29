@@ -26,6 +26,14 @@ module.exports = {
 			90: '90',
 			100: '100'
 		},
+		zIndex: {
+			0: 0,
+			1: 1,
+			25: 25,
+			50: 50,
+			75: 75,
+			100: 100
+		},
 		extend: {
 			transitionDuration: {
 				0: '0ms',
@@ -41,10 +49,14 @@ module.exports = {
 				wiggle: {
 					'0%, 100%': { transform: 'rotate(-3deg)' },
 					'50%': { transform: 'rotate(3deg)' }
+				},
+				hero: {
+					transform: 'translate3d(0px, 0px, 0px)'
 				}
 			},
 			animation: {
-				wiggle: 'wiggle 1s ease-in-out infinite'
+				wiggle: 'wiggle 1s ease-in-out infinite',
+				hero: 'hero 1s ease-in-out infinite'
 			},
 			fontFamily: {
 				head: ['goudy-bookletter-1911', 'serif'],
@@ -155,7 +167,8 @@ module.exports = {
 				'6xl': '3rem',
 				'7xl': '4.5rem',
 				'8xl': '6.25rem',
-				'10xl': '10rem'
+				'10xl': '10rem',
+				custom: '25.41667vw'
 			},
 			boxShadow: {
 				small: '0 5px 10px rgba(0, 0, 0, 0.12)',

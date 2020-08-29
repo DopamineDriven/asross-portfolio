@@ -4,14 +4,17 @@ import Link from 'next/link';
 const Lead = () => {
 	return (
 		<>
-			<nav className='relative flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg mb-3 h-threeFifths w-full min-w-full container overflow-y-hidden overflow-x-hidden  '>
-				<div className='w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start w-full min-w-full'>
+			<header className='relative flex z-1 flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg mb-3 h-threeFifths w-full min-w-full container overflow-y-hidden overflow-x-hidden  '>
+				<div className='relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start w-full min-w-full'>
 					<Link href='/'>
-						<a className='leading-relaxed inline-block container flex flex-wrap px-5 justify-between mx-auto py-5 w-full min-w-full'>
+						<a className='leading-relaxed container flex flex-wrap px-5 justify-between mx-auto py-5 w-full min-w-full'>
 							<ArIcon />
 						</a>
 					</Link>
 				</div>
+				<h1 className='uppercase font-head text-custom'>
+					Andrew
+				</h1>
 				<div
 					className='container px-4 mx-auto flex flex-wrap items-center justify-between h-half w-full min-w-full'
 					style={{
@@ -22,7 +25,7 @@ const Lead = () => {
             backgroundPositionX: 'center'
 					}}
 				></div>
-			</nav>
+			</header>
 		</>
 	);
 };
