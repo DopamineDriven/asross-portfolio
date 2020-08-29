@@ -142,7 +142,7 @@ module.exports = {
 				250: '62.5rem',
 				275: '69.25rem',
 				300: '75rem',
-				309: '77.25rem'
+				308: '77rem'
 			},
 			lineHeight: {
 				tight: 1.2
