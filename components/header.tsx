@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCustomIconAR, faArIcon } from 'lib/fas-custom-integration';
 import Container from './container';
-import { AndrewIcon } from 'components/svg-icons';
+import { AndrewIcon, ArIcon } from 'components/svg-icons';
 
 interface NavRef {
 	href: string;
@@ -54,8 +54,9 @@ const Header = ({ props }: HeaderProps) => {
 				<div
 					className={`xl:h-half bg-portfolio lg:h-nineTwentieths md:h-twoFifths sm:h-twoFifths ${heightOnOpen} transform duration-1000 absolute flex flex-row w-full bg-contain antialiased`}
 				>
-					<div className='container flex flex-wrap px-4 justify-between mx-auto'>
-						<FontAwesomeIcon icon={faCustomIconAR} size='10x' className='border border-black border-rounded rounded-full' />
+          <div className='container flex flex-wrap px-5 justify-between mx-auto py-5'>
+            <ArIcon />
+						{/* <FontAwesomeIcon icon={faCustomIconAR} size='10x' className='border border-black border-rounded rounded-full' /> */}
 					</div>
 					<Container>
 						<div className='container flex flex-wrap px-4 justify-between mx-auto'>
