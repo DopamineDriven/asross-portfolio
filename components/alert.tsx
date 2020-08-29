@@ -30,9 +30,9 @@ const Alert = ({ preview }: Props) => {
 						</>
 					) : (
 						<>
-							<a className='block min-w-nineTenths w-nineTenths prose mx-auto justify-start text-left flex-grow text-black font-somaRoman uppercase font-bold pt-1 -ml-40 text-6xl'>
+							<div className='block min-w-nineTenths w-nineTenths prose mx-auto justify-start text-left flex-grow text-black font-somaRoman uppercase font-bold pt-1 text-6xl'>
 								<p className='float-left'>Andrew ross is a chicago based full-stack engineer who specializes in the JAMstack, MERN, TypeScript, React, Next.js, Tailwind CSS, Static Site Generation, DB Migration, Headless WordPress, and more.</p>
-							</a>
+							</div>
 						</>
 					)}
 				</div>

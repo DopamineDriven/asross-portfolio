@@ -1,17 +1,29 @@
-/* :root {
-	-webkit-text-size-adjust: auto;
-} */
+/*
+https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth#:~:text=WebKit%20implements%20a%20similar%20property,%2Dwebkit%2Dfont%2Dsmoothing%20.&text=antialiased%20%2D%20Smooth%20the%20font%20on,backgrounds%20makes%20it%20look%20lighter.
+*/
 
 html {
 	-webkit-text-size-adjust: none;
 	-webkit-font-smoothing: subpixel-antialiased;
 	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: auto;
+	-webkit-tap-highlight-color: transparent;
 	background-color: #ebe8e0;
+	margin: 0;
+	padding: 0;
+}
+
+#__next {
+	margin: 0;
+	padding: 0;
 }
 
 body {
 	-ms-overflow-style: none; /* IE and Edge */
 	scrollbar-width: none; /* Firefox */
+	margin: 0;
+	padding: 0;
+
 }
 
 body::-webkit-scrollbar {

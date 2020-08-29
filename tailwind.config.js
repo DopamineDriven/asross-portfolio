@@ -7,7 +7,7 @@ module.exports = {
 		letterSpacing: {
 			tightest: '-.075em',
 			tighter: '-.05em',
-			tight: '-0.025em',
+			tight: '-0.01em',
 			wide: '.025em',
 			wider: '.05em',
 			widest: '.15em'
@@ -26,6 +26,14 @@ module.exports = {
 			90: '90',
 			100: '100'
 		},
+		zIndex: {
+			0: 0,
+			1: 1,
+			25: 25,
+			50: 50,
+			75: 75,
+			100: 100
+		},
 		extend: {
 			transitionDuration: {
 				0: '0ms',
@@ -41,10 +49,14 @@ module.exports = {
 				wiggle: {
 					'0%, 100%': { transform: 'rotate(-3deg)' },
 					'50%': { transform: 'rotate(3deg)' }
+				},
+				hero: {
+					transform: 'translate3d(0px, 0px, 0px)'
 				}
 			},
 			animation: {
-				wiggle: 'wiggle 1s ease-in-out infinite'
+				wiggle: 'wiggle 1s ease-in-out infinite',
+				hero: 'hero 1s ease-in-out infinite'
 			},
 			fontFamily: {
 				head: ['goudy-bookletter-1911', 'serif'],
@@ -131,6 +143,7 @@ module.exports = {
 				half: '0.125rem',
 				threeQuarters: '0.175rem',
 				threeHalves: '0.325rem',
+				portfolio: '6.25vw',
 				7: '1.75rem',
 				14: '3.5rem',
 				18: '4.5rem',
@@ -142,10 +155,11 @@ module.exports = {
 				250: '62.5rem',
 				275: '69.25rem',
 				300: '75rem',
-				309: '77.25rem'
+				308: '77rem'
 			},
 			lineHeight: {
-				tight: 1.2
+				tight: 1.2,
+				portfolio: '11vw'
 			},
 			fontSize: {
 				smxmd: '0.9375rem',
@@ -155,7 +169,8 @@ module.exports = {
 				'6xl': '3rem',
 				'7xl': '4.5rem',
 				'8xl': '6.25rem',
-				'10xl': '10rem'
+				'10xl': '10rem',
+				custom: '18.41667vw'
 			},
 			boxShadow: {
 				small: '0 5px 10px rgba(0, 0, 0, 0.12)',

@@ -9,23 +9,31 @@ import Lead from 'components/lead';
 
 interface Props {
 	props: string | number;
-  preview?: boolean;
+	preview?: boolean;
 }
 
 const Index = ({ preview, props }: Props) => {
 	return (
 		<>
 			{/* <Header props={props} /> */}
-			<Lead />
-      <Alert preview={preview} />
 			<Layout preview={preview}>
+			<Lead />
+				<div className='block min-w-nineTenths w-nineTenths prose mx-auto justify-start text-left flex-grow text-black font-somaRoman uppercase font-bold pt-1 text-6xl'>
+					<p className='float-left md:text-left '>
+						Andrew ross is a chicago based full-stack engineer who specializes in the
+						JAMstack, MERN, TypeScript, React, Next.js, Tailwind CSS, Static Site
+						Generation, DB Migration, Headless WordPress, and more.
+					</p>
+				</div>
 				<Head>
 					<title>{`${CLIENT_NAME} index page`}</title>
 				</Head>
 				<Container>
 					<h2 className='text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mb-20 mt-8'>
 						<Link href='/'>
-							<a className='hover:underline text-black px-8 font-somaRoman'>Andrew Ross</a>
+							<a className='hover:underline text-black px-8 font-somaRoman'>
+								Andrew Ross
+							</a>
 						</Link>
 					</h2>
 				</Container>
