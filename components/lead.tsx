@@ -28,11 +28,11 @@ const spanSnippets: LeadInterface[] = [
 	},
 	{
 		id: 3,
-		span: 'Tailwind CSS, MongoDB, PostgreSQL, UX, '
+		span: 'Tailwind CSS, MongoDB, PostgreSQL, JWTs, '
 	},
 	{
 		id: 4,
-		span: 'Google Analytics, Static Site Generation, JWTs, '
+		span: 'Google Analytics, Static Site Generation, UX, '
 	},
 	{
 		id: 5,
