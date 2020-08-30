@@ -2,7 +2,7 @@ module.exports = {
 	future: {
 		removeDeprecatedGapUtilities: true
 	},
-	purge: ['./components/**/*.tsx', './pages/**/*.tsx', './utils/**/*.tsx'],
+	purge: ['./components/**/*.tsx', './pages/**/*.tsx'],
 	theme: {
 		letterSpacing: {
 			tightest: '-.075em',
