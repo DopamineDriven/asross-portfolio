@@ -83,8 +83,12 @@ const spanSnippets: LeadInterface[] = [
 const Lead = () => {
 	const spanMap = spanSnippets.map(constituent => {
 		return (
-			<span className='font-light font-somaRoman' key={constituent.id}>
+			<span
+				className='font-light font-somaRoman tracking-tighter last:pl-portfolioS'
+				key={constituent.id}
+			>
 				{constituent.span}
+				<br />
 			</span>
 		);
 	});
@@ -96,20 +100,25 @@ const Lead = () => {
 			>
 				<div className='relative block justify-between lg:w-auto lg:static lg:block lg:justify-start w-full min-w-full'>
 					<Link href='/'>
-						<a className='leading-relaxed container flex flex-wrap px-5 justify-between mx-auto w-full min-w-full'>
+						<a className='container block pl-portfolio justify-between mx-auto w-full min-w-full'>
 							<ArIcon />
 						</a>
 					</Link>
 				</div>
-				<h1
-					className='uppercase font-head text-custom relative flex-grow text-center justify-center tracking-tight leading-portfolio font-light cursor-default'
-					style={{ marginBlockStart: '0.67em', marginBlockEnd: '0.67em' }}
-				>
-					<a className='text-custom block'>Andrew</a>
-				</h1>
+				<div>
+					<h1
+						className='font-head text-custom relative flex-grow text-center justify-center tracking-tight leading-portfolio font-light cursor-default w-full min-w-full'
+						style={{ marginBlockStart: '0.67em', marginBlockEnd: '0.67em' }}
+					>
+						<a className='text-custom block'>Andrew</a>
+					</h1>
+				</div>
 				<p
-					className={'lead-p text-customP leading-headerP block font-somaRoman' + styles.p}
-					style={{ padding: '4.1844vw 0 0 3.19149vw' }}
+					className={
+						'text-customP pr-portfolioRS pl-portfolioLS leading-headerP block font-somaRoman tracking-tighter' +
+						styles.p
+					}
+					// style={{ padding: '4.1844vw 0 0 2.19149vw' }}
 				>
 					{spanMap}
 				</p>

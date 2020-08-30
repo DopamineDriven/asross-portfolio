@@ -16,8 +16,8 @@ const Index = ({ preview, props }: Props) => {
 	return (
 		<>
 			{/* <Header props={props} /> */}
-			<Layout preview={preview}>
 			<Lead />
+			<Layout preview={preview}>
 				<Head>
 					<title>{`${CLIENT_NAME} index page`}</title>
 				</Head>
