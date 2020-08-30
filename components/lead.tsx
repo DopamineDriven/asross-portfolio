@@ -28,7 +28,7 @@ const spanSnippets: LeadInterface[] = [
 	},
 	{
 		id: 3,
-		span: 'Tailwind CSS, MongoDB, PostgreSQL, UX, SEO, '
+		span: 'Tailwind CSS, MongoDB, PostgreSQL, UX, '
 	},
 	{
 		id: 4,
@@ -48,11 +48,11 @@ const spanSnippets: LeadInterface[] = [
 	},
 	{
 		id: 8,
-		span: 'tech lead on a project uniting Chicago Media. '
+		span: 'lead on a project uniting Chicago Media. '
 	},
 	{
 		id: 9,
-		span: 'He collaborates with techies around the globe. '
+		span: 'Collaborating with techies around the globe. '
 	},
 	{
 		id: 10,
