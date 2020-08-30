@@ -7100,14 +7100,6 @@ table@^5.4.6:
     slice-ansi "^2.1.0"
     string-width "^3.0.0"
 
-tailwindcss-children@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/tailwindcss-children/-/tailwindcss-children-2.1.0.tgz#364ef860f62bc7e31bc66548c4eae945fed1ac6f"
-  integrity sha512-ND+qLjco864/h85VUhF8LpNimZefcskGUdt9R94NXA+QWNqKVp5HmfILYgPioCZ+zUr7LmV+C6ijpaiwTSKZxA==
-  dependencies:
-    lodash "^4.17.15"
-    postcss-selector-parser "^6.0.2"
-
 tailwindcss-gradients@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/tailwindcss-gradients/-/tailwindcss-gradients-3.0.0.tgz#aabcff1ec9afd7d09ffc2af82e8e4113412bd088"

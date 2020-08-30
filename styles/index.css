@@ -187,3 +187,7 @@ body::-webkit-scrollbar {
 .wp-block-media-text {
 	@apply grid grid-cols-2 gap-4;
 }
+
+.p-lead:nth-child(n+7) {
+	@apply pl-portfolioLS
+}
