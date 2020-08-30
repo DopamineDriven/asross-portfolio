@@ -16,67 +16,51 @@ interface LeadInterface {
 const spanSnippets: LeadInterface[] = [
 	{
 		id: 0,
-		span: 'Andrew Ross is a '
-	},
-	{
-		id: 1,
-		span: 'Chicago Based Full-Stack '
+		span: 'Andrew Ross is a Chicago Based Full-Stack '
 	},
 	{
 		id: 2,
-		span: 'Engineer specializing in '
+		span: 'Engineer specializing in JAMstack, React, '
 	},
 	{
 		id: 3,
-		span: 'JAMstack, React, TypeScript, '
-	},
-	{
-		id: 4,
-		span: 'Next.js, Node, GraphQL, '
+		span: 'TypeScript, Next.js, Node, GraphQL, Apollo, '
 	},
 	{
 		id: 5,
-		span: 'Apollo, Tailwind CSS, MongoDB, '
-	},
-	{
-		id: 6,
-		span: 'PostgreSQL, UX, SEO, Google Analytics, '
+		span: 'Tailwind CSS, MongoDB, PostgreSQL, UX, SEO, '
 	},
 	{
 		id: 7,
-		span: 'Static Site Generation, Database Migrations, '
+		span: 'Google Analytics, Static Site Generation, JWTs, '
 	},
 	{
 		id: 8,
-		span: 'Headless WordPress, JWTs, '
-	},
-	{
-		id: 9,
-		span: 'Vercel, and more. '
+		span: 'Headless WordPress, DB Migration, and Vercel. '
 	},
 	{
 		id: 10,
-		span: 'Cofounder of Windy City Devs LLC and '
-	},
-	{
-		id: 11,
-		span: 'Vanderbilt Full-Stack TA, '
+		span: 'Cofounder of Windy City Devs LLC, '
 	},
 	{
 		id: 12,
-		span: 'he collaborates with companies '
+		span: 'a full-stack TA at Vanderbilt University, '
 	},
 	{
 		id: 13,
-		span: 'and freelance developers '
+		span: 'tech lead on a project uniting Chicago Media. '
 	},
 	{
 		id: 14,
-		span: 'from around the world. '
+		span: 'He collaborates with techies around the globe. '
 	},
 	{
 		id: 15,
-		span: 'Available for freelance, contract, and full-time work.'
+		span: `What drives this? A desire to build.`
+	},
+	{
+		id: 16,
+		span: 'Available for freelance, contract, and FT work.'
 	}
 ];
 
@@ -84,7 +68,7 @@ const Lead = () => {
 	const spanMap = spanSnippets.map(constituent => {
 		return (
 			<span
-				className='font-light font-somaRoman tracking-tighter last:pl-portfolioS'
+				className='font-light font-somaRoman tracking-tighter last:pl-portfolioS p-lead'
 				key={constituent.id}
 			>
 				{constituent.span}

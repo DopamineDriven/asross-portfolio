@@ -176,7 +176,7 @@ module.exports = {
 				'8xl': '6.25rem',
 				'10xl': '10rem',
 				custom: '20.41667vw',
-				customP: '3.44681vw'
+				customP: '4.44681vw'
 			},
 			boxShadow: {
 				small: '0 5px 10px rgba(0, 0, 0, 0.12)',
