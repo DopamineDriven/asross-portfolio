@@ -168,8 +168,8 @@ module.exports = {
 				tight: 1.2,
 				portfolio: '11vw',
 				headerP: '4.38298vw',
-				customSLH: '2.33333vw',
-				customSLM: '5.33333vw'
+				customSLH: '3.33333vw',
+				customSLM: '4.33333vw'
 			},
 			fontSize: {
 				smxmd: '0.9375rem',
@@ -182,7 +182,8 @@ module.exports = {
 				'10xl': '10rem',
 				custom: '20.41667vw',
 				customP: '4.44681vw',
-				customS: '1.66667vw'
+				customS: '2.06667vw',
+				customSM: '2.36667vw'
 			},
 			boxShadow: {
 				small: '0 5px 10px rgba(0, 0, 0, 0.12)',

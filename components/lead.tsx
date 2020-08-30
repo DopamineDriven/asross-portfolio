@@ -23,33 +23,27 @@ interface SocialContact {
 const socialSnippets: SocialContact[] = [
 	{
 		id: 0,
-		label: 'email',
+		label: 'Email',
 		target: '__blank',
 		href: 'mailto:andrew@windycitydevs.io'
 	},
 	{
 		id: 1,
-		label: 'linkedin',
+		label: 'LinkedIn',
 		target: '__blank',
 		href: 'https://www.linkedin.com/in/asross/'
 	},
 	{
 		id: 2,
-		label: 'twitter',
+		label: 'Twitter',
 		target: '__blank',
 		href: 'https://twitter.com/Dopamine_Driven'
 	},
 	{
 		id: 3,
-		label: 'github',
+		label: 'GitHub',
 		target: '__blank',
 		href: 'https://github.com/DopamineDriven'
-	},
-	{
-		id: 4,
-		label: 'dev',
-		target: '__blank',
-		href: 'https://dev.to/asross311'
 	}
 ];
 
@@ -84,7 +78,7 @@ const spanSnippets: LeadInterface[] = [
 	},
 	{
 		id: 7,
-		span: 'Full-stack TA at Vanderbilt University, '
+		span: 'Full-Stack TA at Vanderbilt University, '
 	},
 	{
 		id: 8,
@@ -123,9 +117,9 @@ const Lead = () => {
 
 	const socialMap = socialSnippets.map(constituent => {
 		return (
-			<div className='mt-socialMargin overflow-hidden block' key={constituent.id}>
+			<div className='mt-socialMargin overflow-x-hidden overflow-y-visible block' key={constituent.id}>
 				<a
-					className='block uppercase transform animate-hero hover:text-fiveOBlack'
+					className='block transform animate-hero hover:text-fiveOBlack'
 					target={constituent.target}
 					aria-label={constituent.label}
 					href={constituent.href}
@@ -178,8 +172,8 @@ const Lead = () => {
 					</span> */}
 				</p>
 				<div
-					className='text-customS font-somaRoman uppercase sm:leading-customSLH leading-customSLM tracking-wide block'
-					style={{ position: 'absolute', top: '91.28333vw', left: '3.33333vw' }}
+					className='sm:text-customSM text-customSM font-somaRoman sm:leading-customSLH leading-customSLM tracking-wide block'
+					style={{ position: 'absolute', top: '88.78333vw', left: '3.33333vw' }}
 				>
 					{socialMap}
 				</div>
