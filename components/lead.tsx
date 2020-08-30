@@ -44,15 +44,15 @@ const spanSnippets: LeadInterface[] = [
 	},
 	{
 		id: 7,
-		span: 'a full-stack TA at Vanderbilt University, '
+		span: 'Full-stack TA at Vanderbilt University, '
 	},
 	{
 		id: 8,
-		span: 'lead on a project uniting Chicago Media. '
+		span: 'Project lead uniting Chicago Media. '
 	},
 	{
 		id: 9,
-		span: 'Collaborating with techies around the globe. '
+		span: 'Working with techies around the globe. '
 	},
 	{
 		id: 10,
@@ -60,7 +60,11 @@ const spanSnippets: LeadInterface[] = [
 	},
 	{
 		id: 11,
-		span: 'Available for freelance, contract, and FT work.'
+		span: 'Available for freelance, contract, and '
+	},
+	{
+		id: 12,
+		span: 'full-time work.'
 	}
 ];
 
@@ -68,7 +72,7 @@ const Lead = () => {
 	const spanMap = spanSnippets.map(constituent => {
 		return (
 			<span
-				className='font-light font-somaRoman tracking-tighter last:pl-portfolioS p-lead'
+				className='font-thin font-somaRoman tracking-tighter last:pl-portfolioS p-lead'
 				key={constituent.id}
 			>
 				{constituent.span}
@@ -99,7 +103,7 @@ const Lead = () => {
 				</div>
 				<p
 					className={
-						'text-customP pr-portfolioRS pl-portfolioLS leading-headerP block font-somaRoman tracking-tighter' +
+						'text-customP pr-portfolioRS pl-portfolioLS leading-headerP block font-somaRoman tracking-tighter font-thin' +
 						styles.p
 					}
 					// style={{ padding: '4.1844vw 0 0 2.19149vw' }}

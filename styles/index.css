@@ -189,5 +189,5 @@ body::-webkit-scrollbar {
 }
 
 .p-lead:nth-child(n+7) {
-	@apply pl-portfolioLS
+	@apply pl-portfolioS
 }
