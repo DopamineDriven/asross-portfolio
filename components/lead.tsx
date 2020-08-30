@@ -28,11 +28,11 @@ const spanSnippets: LeadInterface[] = [
 	},
 	{
 		id: 3,
-		span: 'Tailwind CSS, MongoDB, PostgreSQL, UX, '
+		span: 'Tailwind CSS, MongoDB, PostgreSQL, JWTs, '
 	},
 	{
 		id: 4,
-		span: 'Google Analytics, Static Site Generation, JWTs, '
+		span: 'Google Analytics, Static Site Generation, UX, '
 	},
 	{
 		id: 5,
@@ -72,7 +72,7 @@ const Lead = () => {
 	const spanMap = spanSnippets.map(constituent => {
 		return (
 			<span
-				className='font-thin font-somaRoman tracking-tighter last:pl-portfolioS p-lead'
+				className='font-thin font-somaRoman tracking-tighter last:pl-portfolioS p-lead cursor-default'
 				key={constituent.id}
 			>
 				{constituent.span}
