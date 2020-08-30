@@ -1,7 +1,8 @@
 # asross-portfolio
 nextjs portfolio
 
-
+## Tailwind Templates
+- https://www.codeinwp.com/blog/tailwind-css-templates/
 
 ## Notes
 - Drop me a line

@@ -77,6 +77,12 @@ body::-webkit-scrollbar {
 	src: url(https://use.typekit.net/cub6off.css) format('woff2');
 }
 
+@font-face {
+	font-family: 'neue-haas-grotesk-display', sans-serif;
+	font-weight: 300;
+	src: url(https://use.typekit.net/sbg1kws.css) format('woff2');
+}
+
 /* Start purging... */
 @tailwind components;
 /* Stop purging. */
@@ -97,6 +103,7 @@ body::-webkit-scrollbar {
 	@apply font-subpolished;
 	@apply font-somaRoman;
 	@apply font-somaDisplay;
+	@apply font-somaDisplayLight;
 }
 
 .has-text-align-left {
@@ -188,6 +195,6 @@ body::-webkit-scrollbar {
 	@apply grid grid-cols-2 gap-4;
 }
 
-.p-lead:nth-child(n+7) {
-	@apply pl-portfolioS
+.p-lead:nth-child(n + 7) {
+	@apply pl-portfolioS;
 }

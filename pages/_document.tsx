@@ -9,10 +9,11 @@ export default class MyDocument extends Document {
 		return (
 			<Html lang='en'>
 				<Head>
-          <meta charSet='utf-8' />
-          <link rel="stylesheet" href="https://use.typekit.net/cub6off.css" />
-          <link rel='stylesheet' href='https://use.typekit.net/hzg4mdi.css' />
-          <link rel="stylesheet" href="https://use.typekit.net/lxd3fak.css" />
+					<meta charSet='utf-8' />
+					<link rel='stylesheet' href='https://use.typekit.net/sbg1kws.css' />
+					<link rel='stylesheet' href='https://use.typekit.net/cub6off.css' />
+					<link rel='stylesheet' href='https://use.typekit.net/hzg4mdi.css' />
+					<link rel='stylesheet' href='https://use.typekit.net/lxd3fak.css' />
 					<link
 						href='https://fonts.googleapis.com/css2?family=Montserrat&display=swap'
 						rel='stylesheet'
