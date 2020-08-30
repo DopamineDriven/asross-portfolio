@@ -166,7 +166,7 @@ module.exports = {
 			},
 			lineHeight: {
 				tight: 1.2,
-				portfolio: '11vw',
+				portfolio: '5vw',
 				headerP: '4.38298vw',
 				customSLH: '3.33333vw',
 				customSLM: '4.33333vw'
@@ -180,7 +180,7 @@ module.exports = {
 				'7xl': '4.5rem',
 				'8xl': '6.25rem',
 				'10xl': '10rem',
-				custom: '20.41667vw',
+				custom: '25.41667vw',
 				customP: '4.44681vw',
 				customS: '2.06667vw',
 				customSM: '2.36667vw'
