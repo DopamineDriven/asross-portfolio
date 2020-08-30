@@ -72,7 +72,7 @@ const Lead = () => {
 	const spanMap = spanSnippets.map(constituent => {
 		return (
 			<span
-				className='font-thin font-somaRoman tracking-tighter last:pl-portfolioS p-lead'
+				className='font-thin font-somaRoman tracking-tighter last:pl-portfolioS p-lead cursor-default'
 				key={constituent.id}
 			>
 				{constituent.span}
