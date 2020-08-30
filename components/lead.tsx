@@ -52,7 +52,7 @@ const spanSnippets: LeadInterface[] = [
 	},
 	{
 		id: 9,
-		span: 'Working with techies around the globe. '
+		span: 'Working with techies around the 🌎. '
 	},
 	{
 		id: 10,
