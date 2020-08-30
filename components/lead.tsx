@@ -178,7 +178,7 @@ const Lead = () => {
 					</span> */}
 				</p>
 				<div
-					className='text-customS font-somaRoman uppercase leading-customSLH tracking-wide block'
+					className='text-customS font-somaRoman uppercase sm:leading-customSLH leading-customSLM tracking-wide block'
 					style={{ position: 'absolute', top: '91.28333vw', left: '3.33333vw' }}
 				>
 					{socialMap}

@@ -168,7 +168,8 @@ module.exports = {
 				tight: 1.2,
 				portfolio: '11vw',
 				headerP: '4.38298vw',
-				customSLH: '2.33333vw'
+				customSLH: '2.33333vw',
+				customSLM: '5.33333vw'
 			},
 			fontSize: {
 				smxmd: '0.9375rem',
