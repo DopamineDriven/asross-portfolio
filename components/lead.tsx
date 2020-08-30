@@ -19,47 +19,47 @@ const spanSnippets: LeadInterface[] = [
 		span: 'Andrew Ross is a Chicago Based Full-Stack '
 	},
 	{
-		id: 2,
+		id: 1,
 		span: 'Engineer specializing in JAMstack, React, '
 	},
 	{
-		id: 3,
+		id: 2,
 		span: 'TypeScript, Next.js, Node, GraphQL, Apollo, '
 	},
 	{
-		id: 5,
+		id: 3,
 		span: 'Tailwind CSS, MongoDB, PostgreSQL, UX, SEO, '
 	},
 	{
-		id: 7,
+		id: 4,
 		span: 'Google Analytics, Static Site Generation, JWTs, '
 	},
 	{
-		id: 8,
+		id: 5,
 		span: 'Headless WordPress, DB Migration, and Vercel. '
 	},
 	{
-		id: 10,
+		id: 6,
 		span: 'Cofounder of Windy City Devs LLC, '
 	},
 	{
-		id: 12,
+		id: 7,
 		span: 'a full-stack TA at Vanderbilt University, '
 	},
 	{
-		id: 13,
+		id: 8,
 		span: 'tech lead on a project uniting Chicago Media. '
 	},
 	{
-		id: 14,
+		id: 9,
 		span: 'He collaborates with techies around the globe. '
 	},
 	{
-		id: 15,
+		id: 10,
 		span: `What drives this? A desire to build.`
 	},
 	{
-		id: 16,
+		id: 11,
 		span: 'Available for freelance, contract, and FT work.'
 	}
 ];
