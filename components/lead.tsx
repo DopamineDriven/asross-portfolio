@@ -26,8 +26,32 @@ const socialSnippets: SocialContact[] = [
 		label: 'email',
 		target: '__blank',
 		href: 'mailto:andrew@windycitydevs.io'
+	},
+	{
+		id: 1,
+		label: 'linkedin',
+		target: '__blank',
+		href: 'https://www.linkedin.com/in/asross/'
+	},
+	{
+		id: 2,
+		label: 'twitter',
+		target: '__blank',
+		href: 'https://twitter.com/Dopamine_Driven'
+	},
+	{
+		id: 3,
+		label: 'github',
+		target: '__blank',
+		href: 'https://github.com/DopamineDriven'
+	},
+	{
+		id: 4,
+		label: 'dev',
+		target: '__blank',
+		href: 'https://dev.to/asross311'
 	}
-]
+];
 
 const spanSnippets: LeadInterface[] = [
 	{
@@ -96,6 +120,21 @@ const Lead = () => {
 			</span>
 		);
 	});
+
+	const socialMap = socialSnippets.map(constituent => {
+		return (
+			<div className='mt-socialMargin overflow-hidden block' key={constituent.id}>
+				<a
+					className='block uppercase transform animate-hero hover:text-fiveOBlack'
+					target={constituent.target}
+					aria-label={constituent.label}
+					href={constituent.href}
+				>
+					{constituent.label}
+				</a>
+			</div>
+		);
+	});
 	return (
 		<>
 			<header
@@ -125,7 +164,7 @@ const Lead = () => {
 					// style={{ padding: '4.1844vw 0 0 2.19149vw' }}
 				>
 					{spanMap}
-					<span className='font-thin font-somaRoman tracking-tighter last:pl-portfolioS p-lead cursor-default'>
+					{/* <span className='font-thin font-somaRoman tracking-tighter last:pl-portfolioS p-lead cursor-default'>
 						<span>
 							<a
 								className='hover:text-fiveOBlack'
@@ -136,20 +175,13 @@ const Lead = () => {
 								Contact
 							</a>
 						</span>
-					</span>
+					</span> */}
 				</p>
-				<div className="text-customS font-somaRoman uppercase leading-customSLH tracking-wide block"
-					style={{ position: 'absolute', top: '74.58333vw', left: '3.33333vw' }}
+				<div
+					className='text-customS font-somaRoman uppercase leading-customSLH tracking-wide block'
+					style={{ position: 'absolute', top: '81.28333vw', left: '3.33333vw' }}
 				>
-					<div className="mt-socialMargin overflow-hidden block">
-						<a className="block transform animate-hero hover:text-fiveOBlack"
-							target='__blank'
-							aria-label='email'
-							href='mailto:andrew@windycitydevs.io'
-						>
-							EMAIL
-						</a>
-					</div>
+					{socialMap}
 				</div>
 
 				{/* <div
