@@ -13,6 +13,22 @@ interface LeadInterface {
 						Generation, DB Migration, Headless WordPress, and more.
 */
 
+interface SocialContact {
+	id: number;
+	label: string;
+	target: string;
+	href: string;
+}
+
+const socialSnippets: SocialContact[] = [
+	{
+		id: 0,
+		label: 'email',
+		target: '__blank',
+		href: 'mailto:andrew@windycitydevs.io'
+	}
+]
+
 const spanSnippets: LeadInterface[] = [
 	{
 		id: 0,
@@ -109,7 +125,33 @@ const Lead = () => {
 					// style={{ padding: '4.1844vw 0 0 2.19149vw' }}
 				>
 					{spanMap}
+					<span className='font-thin font-somaRoman tracking-tighter last:pl-portfolioS p-lead cursor-default'>
+						<span>
+							<a
+								className='hover:text-fiveOBlack'
+								href='mailto:andrew@windycitydevs.io'
+								aria-label='contact'
+								target='__blank'
+							>
+								Contact
+							</a>
+						</span>
+					</span>
 				</p>
+				<div className="text-customS font-somaRoman uppercase leading-customSLH tracking-wide block"
+					style={{ position: 'absolute', top: '74.58333vw', left: '3.33333vw' }}
+				>
+					<div className="mt-socialMargin overflow-hidden block">
+						<a className="block transform animate-hero hover:text-fiveOBlack"
+							target='__blank'
+							aria-label='email'
+							href='mailto:andrew@windycitydevs.io'
+						>
+							EMAIL
+						</a>
+					</div>
+				</div>
+
 				{/* <div
 					className='container px-4 mx-auto flex flex-wrap items-center justify-between h-half w-full min-w-full'
 					style={{

@@ -66,6 +66,7 @@ module.exports = {
 				polished: ['brandon-grotesque', 'sans-serif'],
 				somaRoman: ['neue-haas-grotesk-text', 'sans-serif'],
 				somaDisplay: ['neue-haas-grotesk-display', 'sans-serif'],
+				somaDisplayLight: ['neue-haas-grotesk-display', 'sans-serif'],
 				subpolished: ['Montserrat', 'sans-serif']
 			},
 			colors: {
@@ -147,7 +148,9 @@ module.exports = {
 				portfolioLS: '3.33vw',
 				portfolioRS: '1.33vw',
 				portfolioMTP: '-0.83333vw',
+				socialMargin: '-0.5vw',
 				portfolioS: '18.60284vw',
+				socialT: '74.58333vw',
 				7: '1.75rem',
 				14: '3.5rem',
 				18: '4.5rem',
@@ -164,7 +167,8 @@ module.exports = {
 			lineHeight: {
 				tight: 1.2,
 				portfolio: '11vw',
-				headerP: '4.38298vw'
+				headerP: '4.38298vw',
+				customSLH: '1.83333vw'
 			},
 			fontSize: {
 				smxmd: '0.9375rem',
@@ -176,7 +180,8 @@ module.exports = {
 				'8xl': '6.25rem',
 				'10xl': '10rem',
 				custom: '20.41667vw',
-				customP: '4.44681vw'
+				customP: '4.44681vw',
+				customS: '1.66667vw'
 			},
 			boxShadow: {
 				small: '0 5px 10px rgba(0, 0, 0, 0.12)',
