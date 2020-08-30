@@ -179,7 +179,7 @@ const Lead = () => {
 				</p>
 				<div
 					className='text-customS font-somaRoman uppercase leading-customSLH tracking-wide block'
-					style={{ position: 'absolute', top: '81.28333vw', left: '3.33333vw' }}
+					style={{ position: 'absolute', top: '91.28333vw', left: '3.33333vw' }}
 				>
 					{socialMap}
 				</div>
