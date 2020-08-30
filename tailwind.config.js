@@ -147,7 +147,7 @@ module.exports = {
 				portfolioLS: '3.33vw',
 				portfolioRS: '1.33vw',
 				portfolioMTP: '-0.83333vw',
-				portfolioS: '10.60284vw',
+				portfolioS: '18.60284vw',
 				7: '1.75rem',
 				14: '3.5rem',
 				18: '4.5rem',
