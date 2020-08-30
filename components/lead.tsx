@@ -117,7 +117,7 @@ const Lead = () => {
 
 	const socialMap = socialSnippets.map(constituent => {
 		return (
-			<div className='mt-socialMargin overflow-x-hidden overflow-y-visible block' key={constituent.id}>
+			<div className='mt-socialMargin overflow-hidden block' key={constituent.id}>
 				<a
 					className='block transform animate-hero hover:text-fiveOBlack'
 					target={constituent.target}
@@ -158,7 +158,7 @@ const Lead = () => {
 					// style={{ padding: '4.1844vw 0 0 2.19149vw' }}
 				>
 					{spanMap}
-					{/* <span className='font-thin font-somaRoman tracking-tighter last:pl-portfolioS p-lead cursor-default'>
+					<span className='font-thin font-somaRoman tracking-tighter last:pl-portfolioS p-lead cursor-default'>
 						<span>
 							<a
 								className='hover:text-fiveOBlack'
@@ -169,11 +169,11 @@ const Lead = () => {
 								Contact
 							</a>
 						</span>
-					</span> */}
+					</span>
 				</p>
 				<div
 					className='sm:text-customSM text-customSM font-somaRoman sm:leading-customSLH leading-customSLM tracking-wide block'
-					style={{ position: 'absolute', top: '88.78333vw', left: '3.33333vw' }}
+					style={{ position: 'absolute', top: '92.78333vw', left: '3.33333vw' }}
 				>
 					{socialMap}
 				</div>
