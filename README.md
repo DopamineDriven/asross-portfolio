@@ -5,6 +5,7 @@ nextjs portfolio
 
 ## Notes
 - Drop me a line
+	- a tag -- href="mailto:andrew@windycitydevs.io" style="transform: translate3d(0px, 0%, 0px)"
 -	Opens email so they can email right away
 -	Call out what specialize in
 -	Helvetica New
