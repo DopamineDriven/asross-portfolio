@@ -143,8 +143,11 @@ module.exports = {
 				half: '0.125rem',
 				threeQuarters: '0.175rem',
 				threeHalves: '0.325rem',
-				portfolio: '6.25vw',
-				portfolioS: '15.60284vw',
+				portfolio: '2.25vw',
+				portfolioLS: '3.33vw',
+				portfolioRS: '1.33vw',
+				portfolioMTP: '-0.83333vw',
+				portfolioS: '10.60284vw',
 				7: '1.75rem',
 				14: '3.5rem',
 				18: '4.5rem',
@@ -161,7 +164,7 @@ module.exports = {
 			lineHeight: {
 				tight: 1.2,
 				portfolio: '11vw',
-				headerP: '7.38298vw'
+				headerP: '4.38298vw'
 			},
 			fontSize: {
 				smxmd: '0.9375rem',
@@ -172,14 +175,17 @@ module.exports = {
 				'7xl': '4.5rem',
 				'8xl': '6.25rem',
 				'10xl': '10rem',
-				custom: '18.41667vw',
-				customP: '5.44681vw'
+				custom: '20.41667vw',
+				customP: '3.44681vw'
 			},
 			boxShadow: {
 				small: '0 5px 10px rgba(0, 0, 0, 0.12)',
 				medium: '0 8px 30px rgba(0, 0, 0, 0.12)'
 			}
 		}
+	},
+	variants: {
+		padding: ['responsive', 'last', 'hover', 'focus']
 	},
 	plugins: [require('@tailwindcss/typography')]
 };
