@@ -74,11 +74,11 @@ const spanSnippets: LeadInterface[] = [
 	},
 	{
 		id: 6,
-		span: 'Cofounder of Windy City Devs LLC, '
+		span: 'Cofounder of Windy City Devs LLC. '
 	},
 	{
 		id: 7,
-		span: 'Full-Stack TA at Vanderbilt University, '
+		span: 'Full-Stack TA at Vanderbilt University. '
 	},
 	{
 		id: 8,
@@ -86,7 +86,7 @@ const spanSnippets: LeadInterface[] = [
 	},
 	{
 		id: 9,
-		span: 'Working with techies around the 🌎. '
+		span: 'Works with techies around the globe. '
 	},
 	{
 		id: 10,
