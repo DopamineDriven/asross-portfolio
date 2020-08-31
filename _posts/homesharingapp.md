@@ -3,7 +3,7 @@ title: 'Mock Airbnb App'
 excerpt: 'Development, UX'
 coverImage: 'https://res.cloudinary.com/asross311/image/upload/v1598839549/portfolio/Rectangle_6037_1_xih1z0.jpg'
 articleImage: 'https://res.cloudinary.com/asross311/image/upload/v1598374915/portfolio/mock-airbnb-home_vh5rhx.jpg'
-date: "2020-05-25T09:35:07.322Z"
+date: "2020-07-25T09:35:07.322Z"
 author:
   name: Andrew Ross
   avatar: 'https://res.cloudinary.com/asross311/image/upload/v1597678722/portfolio/doge_ropqvx.jpg'

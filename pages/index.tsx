@@ -2,6 +2,8 @@ import Head from 'next/head';
 import Layout from 'components/layout';
 import Lead from 'components/lead';
 import Cards from 'components/cards';
+import Footer from 'components/footer';
+import Meta from 'components/meta';
 import Post from 'types/post';
 import { CLIENT_NAME } from 'lib/constants';
 import { getAllPosts } from 'lib/api';
@@ -16,16 +18,16 @@ const Index = ({ allPosts, preview }: IndexProps) => {
 	const morePosts = allPosts.slice(0);
 	return (
 		<>
-			{/* <Header props={props} /> */}
-			<Lead />
-			<div className='max-w-cardGrid my-portfolio grid mx-auto content-center justify-center items-center text-center'>
-				{morePosts.length > 0 && <Cards posts={morePosts} />}
-			</div>
-			<Layout preview={preview}>
-				<Head>
+			<Meta />
+			<Head>
 					<title>{`${CLIENT_NAME} index page`}</title>
 				</Head>
-			</Layout>
+			{/* <Header props={props} /> */}
+			<Lead />
+			<div className='max-w-cardGridMobile md:max-w-cardGrid my-portfolioH2F grid mx-auto content-center justify-center items-center text-center'>
+				{morePosts.length > 0 && <Cards posts={morePosts} />}
+			</div>
+			<Footer />
 		</>
 	);
 };
