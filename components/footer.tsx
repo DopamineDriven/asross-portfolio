@@ -38,13 +38,16 @@ const Footer = () => {
 					</div>{' '} */}
 					<div className='grid grid-cols-3 w-full tracking-wide'>
 						<div className='block align-top font-somaRoman text-black text-center'>
-							<Link href='/'>
-								<a className='block whitespace-no-wrap uppercase text-oneFiveBlack items-left justify-start float-left'>
+							<Link href='/' passHref>
+								<a
+									className='block whitespace-no-wrap uppercase hover:text-fiveOBlack items-left justify-start float-left'
+									aria-label='back to top'
+								>
 									Back to top
 								</a>
 							</Link>
 						</div>
-						<div className='block align-top font-somaRoman text-black text-center'>
+						<div className='block align-top font-somaRoman text-black text-center hover:text-fiveOBlack'>
 							{/* <a
 								className='flex flex-row-reverse w-full uppercase justify-center hover:text-fiveOBlack'
 								href='http://duncanross.design/'
@@ -56,12 +59,16 @@ const Footer = () => {
 								className='flex flex-row-reverse w-full uppercase text-center justify-center'
 								target='__blank'
 								href='https://github.com/DopamineDriven/asross-portfolio'
+								aria-label='all rights reserved, 2020'
 							>
 								©2020 ALL RIGHTS RESERVED
 							</a>
 						</div>
 						<div className='block align-top font-somaRoman text-black text-right hover:text-tailwindBlue transition-colors duration-300 cursor-pointer'>
-							<a className='block w-full uppercase text-right justify-end items-end float-right'>
+							<a
+								className='block w-full uppercase text-right justify-end items-end float-right'
+								aria-label='everything is blue'
+							>
 								Everything is blue
 							</a>
 						</div>
@@ -77,11 +84,12 @@ const Footer = () => {
 						</div> */}
 						<div className='block align-top font-somaRoman text-black text-center'>
 							<a
-								className='flex flex-row-reverse w-full uppercase justify-center hover:text-fiveOBlack'
+								className='flex flex-row-reverse w-auto uppercase justify-center hover:text-fiveOBlack'
 								href='http://duncanross.design/'
 								target='__blank'
+								aria-label='design by duncan ross'
 							>
-								Design, Duncan Ross
+								<ul>Design, Duncan Ross</ul>
 							</a>
 						</div>
 					</div>
