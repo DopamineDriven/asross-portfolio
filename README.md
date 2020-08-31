@@ -1,6 +1,20 @@
 # asross-portfolio
 nextjs portfolio
 
+## odd/even offset columns
+- 100px in height
+- 32px gap-x (2.2284 vw)
+- 1232px frame
+- 328px mobile frame
+- one card per row (mobile)
+- 40px gap-y
+- coverphoto height 37.5em
+
+### VW conversions for cards (md or larger viewport)
+- 2.2284vw gap-x
+- 600 px in a 1436px viewport -> 41.7827vw
+- px -> 7.1031vw 
+
 ## Tailwind Templates
 - https://www.codeinwp.com/blog/tailwind-css-templates/
 

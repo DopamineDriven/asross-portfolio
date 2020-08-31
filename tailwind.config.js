@@ -2,7 +2,7 @@ module.exports = {
 	future: {
 		removeDeprecatedGapUtilities: true
 	},
-	purge: ['./components/**/*.tsx', './pages/**/*.tsx', './utils/**/*.tsx'],
+	purge: ['./components/**/*.tsx', './pages/**/*.tsx'],
 	theme: {
 		letterSpacing: {
 			tightest: '-.075em',
@@ -137,7 +137,34 @@ module.exports = {
 				oneFifth: '20vw',
 				oneSixth: '16.67vw',
 				oneTenth: '10vw',
-				oneTwentieth: '5vw'
+				oneTwentieth: '5vw',
+				82: '20.5rem',
+				100: '25rem',
+				150: '37.5rem'
+			},
+			maxWidth: {
+				whole: '100vw',
+				nineTenths: '90vw',
+				sevenEighths: '87.5vw',
+				fourFifths: '80vw',
+				threeFourths: '75vw',
+				sevenTenths: '70vw',
+				twoThirds: '66.67vw',
+				threeFifths: '60vw',
+				half: '50vw',
+				nineTwentieths: '45vw',
+				twoFifths: '40vw',
+				sevenTwentieths: '35vw',
+				oneThird: '33.33vw',
+				threeTenths: '30vw',
+				oneFourth: '25vw',
+				oneFifth: '20vw',
+				oneSixth: '16.67vw',
+				oneTenth: '10vw',
+				oneTwentieth: '5vw',
+				82: '20.5rem',
+				100: '25rem',
+				150: '37.5rem'
 			},
 			spacing: {
 				negative: '-0.1em',
@@ -156,6 +183,7 @@ module.exports = {
 				18: '4.5rem',
 				28: '7rem',
 				44: '11rem',
+				82: '20.5rem',
 				100: '25rem',
 				150: '37.5rem',
 				200: '50rem',
