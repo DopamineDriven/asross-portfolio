@@ -19,8 +19,23 @@ const PostHeader = ({ author, date, src, title }: PostHeaderProps) => {
 					<CoverImage title={title} src={src} />
 				</div>
 				<PostTitle>{title}</PostTitle>
-      </div>
-      <div className=" max-w-cardGridMobile block mx-auto align-middle justify-center "></div>
+			</div>
+			<div className=' max-w-cardGridMobile block mx-auto align-middle justify-center'>
+				<div className='text-customExcerpt text-oneFiveBlack font-somaRoman block'>
+					<Date dateString={date} />
+				</div>
+				<PostIcons
+					antdesign={author.antdesign}
+					apollo={author.apollo}
+					auth0={author.auth0}
+					graphql={author.graphql}
+					next={author.next}
+					react={author.react}
+					tailwindcss={author.tailwindcss}
+					typescript={author.typescript}
+					wordpress={author.wordpress}
+				/>
+			</div>
 		</>
 	);
 };
