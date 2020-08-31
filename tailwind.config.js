@@ -176,7 +176,8 @@ module.exports = {
 				portfolioS: '18.60284vw',
 				svgIcon: '18.0556vw',
 				socialT: '74.58333vw',
-				cardGrid: '85.7939vw'
+				cardGrid: '85.7939vw',
+				cardGridMobile: '91.1111vw'
 			},
 			maxWidth: {
 				whole: '100vw',
@@ -217,7 +218,8 @@ module.exports = {
 				portfolioS: '18.60284vw',
 				svgIcon: '18.0556vw',
 				socialT: '74.58333vw',
-				cardGrid: '85.7939vw'
+				cardGrid: '85.7939vw',
+				cardGridMobile: '91.1111vw'
 			},
 			spacing: {
 				negative: '-0.1em',
@@ -225,13 +227,16 @@ module.exports = {
 				threeQuarters: '0.175rem',
 				threeHalves: '0.325rem',
 				portfolio: '2.25vw',
+				portfolioH2F: '3.25vw',
 				portfolioLS: '3.33vw',
 				portfolioRS: '1.33vw',
+				portfolioDivider: '0.875vw',
 				gapX: '2.2284vw',
 				offsetY: '6.9638vw',
 				mobileGapY: '13.3333vw',
 				imagePortfolio: '41.7827vw',
 				portfolioPadding: '7.1031vw',
+				portfolioFooter: '3.33vw',
 				portfolioMTP: '-0.83333vw',
 				socialMargin: '-0.5vw',
 				portfolioS: '18.60284vw',
@@ -271,6 +276,7 @@ module.exports = {
 				custom: '25.41667vw',
 				customP: '4.44681vw',
 				customS: '2.06667vw',
+				customF: '1.16667vw',
 				customSM: '2.36667vw',
 				customTitle: '2.22341vw',
 				customExcerpt: '1.66755vw'
