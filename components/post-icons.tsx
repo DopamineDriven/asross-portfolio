@@ -96,7 +96,7 @@ type CardIconProps = {
 // 	)
 // 	}
 
-const CardIcons = ({
+const PostIcons = ({
 	antdesign,
 	apollo,
 	auth0,
@@ -295,7 +295,7 @@ const CardIcons = ({
 	);
 };
 
-export default CardIcons;
+export default PostIcons;
 
 // CUSTOM ICONS https://medium.com/@nsisodiya/hacking-font-awesome-for-custom-svg-icons-ea762118fa7b
 
