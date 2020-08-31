@@ -169,10 +169,12 @@ module.exports = {
 				portfolioRS: '1.33vw',
 				gapX: '2.2284vw',
 				imagePortfolio: '41.7827vw',
+				imagePortfolioMobile: '91.1111vw',
 				portfolioPadding: '7.1031vw',
 				portfolioMTP: '-0.83333vw',
 				socialMargin: '-0.5vw',
 				portfolioS: '18.60284vw',
+				svgIcon: '18.0556vw',
 				socialT: '74.58333vw',
 				cardGrid: '85.7939vw'
 			},
@@ -213,6 +215,7 @@ module.exports = {
 				portfolioMTP: '-0.83333vw',
 				socialMargin: '-0.5vw',
 				portfolioS: '18.60284vw',
+				svgIcon: '18.0556vw',
 				socialT: '74.58333vw',
 				cardGrid: '85.7939vw'
 			},
@@ -226,6 +229,7 @@ module.exports = {
 				portfolioRS: '1.33vw',
 				gapX: '2.2284vw',
 				offsetY: '6.9638vw',
+				mobileGapY: '13.3333vw',
 				imagePortfolio: '41.7827vw',
 				portfolioPadding: '7.1031vw',
 				portfolioMTP: '-0.83333vw',

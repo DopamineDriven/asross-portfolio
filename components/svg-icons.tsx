@@ -52,8 +52,8 @@ export const AndrewIcon: SvgIcon = ({
 };
 
 export const ArIcon: SvgIcon = ({
-	width = '65',
-	height = '65',
+	width = '8.0556vw',
+	height = '8.0556vw',
 	strokeColor = '#151515',
 	strokeWidth = '2',
 	fillColor = 'none',
@@ -67,7 +67,7 @@ export const ArIcon: SvgIcon = ({
 			viewBox='0 0 65 65'
 			fill={fillColor}
 			xmlns='http://www.w3.org/2000/svg'
-			className={`stroke-current ${strokeColor} antialiased`}
+			className={`stroke-current ${strokeColor} antialiased w-svgIcon max-w-svgIcon `}
 			transform={`rotate(${rotateCenter}, 65, 65)`}
 		>
 			<circle
