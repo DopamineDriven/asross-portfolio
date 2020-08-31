@@ -14,8 +14,8 @@ interface PostHeaderProps {
 const PostHeader = ({ author, date, src, title }: PostHeaderProps) => {
 	return (
 		<>
-			<div className='max-w-screen font-head text-customTitleMobile'>
-				<div className='block mx-auto max-w-imagePortfolioMobile md:max-w-imagePortfolio rounded-lg overflow-y-hidden bg-portfolio'>
+			<div className='font-head text-customTitleMobile'>
+				<div className='block mx-auto max-w-imagePortfolioMobile rounded-lg bg-portfolio'>
 					<CoverImage title={title} src={src} />
 				</div>
 				<PostTitle>{title}</PostTitle>
