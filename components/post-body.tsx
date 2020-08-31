@@ -19,7 +19,7 @@ interface ContentProps {
 
 const PostBodyBlog = ({ content }: ContentProps) => {
 	return (
-		<div className='max-w-2xl prose prose-lg mx-auto content-center text-left md:text-justify items-center justify-center align-middle sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl'>
+		<div className=' max-w-cardGrid prose mx-auto content-center text-left md:text-justify items-center justify-center align-middle'>
 			<ReactMarkdown
 				className={markdownStyles['markdown']}
 				escapeHtml={false}
