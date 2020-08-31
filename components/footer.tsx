@@ -45,20 +45,20 @@ const Footer = () => {
 							</Link>
 						</div>
 						<div className='block align-top font-somaRoman text-black text-center'>
-							<a
+							{/* <a
 								className='flex flex-row-reverse w-full uppercase justify-center hover:text-fiveOBlack'
 								href='http://duncanross.design/'
 								target='__blank'
 							>
 								Design, Duncan Ross
-							</a>
-							{/* <a
+							</a> */}
+							<a
 								className='flex flex-row-reverse w-full uppercase text-center justify-center'
 								target='__blank'
 								href='https://github.com/DopamineDriven/asross-portfolio'
 							>
 								©2020 ALL RIGHTS RESERVED
-							</a> */}
+							</a>
 						</div>
 						<div className='block align-top font-somaRoman text-black text-right hover:text-tailwindBlue transition-colors duration-300 cursor-pointer'>
 							<a className='block w-full uppercase text-right justify-end items-end float-right'>
@@ -67,21 +67,21 @@ const Footer = () => {
 						</div>
 					</div>
 					<hr className='border-fiveOBlack w-full' />
-					<div className='grid grid-cols-3 w-full tracking-wide'>
-						<div className='block align-top font-somaRoman text-black text-center'>
+					<div className='grid grid-cols-1 w-full tracking-wide'>
+						{/* <div className='block align-top font-somaRoman text-black text-center'>
 							<Link href='/'>
 								<a className='block whitespace-no-wrap uppercase text-oneFiveBlack items-left align-top justify-start float-left'>
 									Andrew Ross
 								</a>
 							</Link>
-						</div>
+						</div> */}
 						<div className='block align-top font-somaRoman text-black text-center'>
 							<a
-								className='flex flex-row-reverse w-full uppercase text-center justify-center'
+								className='flex flex-row-reverse w-full uppercase justify-center hover:text-fiveOBlack'
+								href='http://duncanross.design/'
 								target='__blank'
-								href='https://github.com/DopamineDriven/asross-portfolio'
 							>
-								©2020 ALL RIGHTS RESERVED
+								Design, Duncan Ross
 							</a>
 						</div>
 					</div>
