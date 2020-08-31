@@ -12,7 +12,7 @@ interface CardProps {
 
 const Card = ({ date, excerpt, slug, src, title }: CardProps) => {
 	return (
-		<div className='font-somaRoman block md:odd:pt-offsetY'>
+		<div className='block md:odd:pt-offsetY'>
 			<div className='max-w-imagePortfolioMobile md:max-w-imagePortfolio rounded-lg overflow-y-hidden bg-portfolio block'>
 				<CoverImageCard slug={slug} src={src} title={title} />
 				<div className='flex flex-col text-center justify-center bg-portfolio'>
@@ -25,7 +25,7 @@ const Card = ({ date, excerpt, slug, src, title }: CardProps) => {
 								<ReactMarkdown
 									escapeHtml={false}
 									source={title}
-									className='text-center hover:text-fiveOBlack uppercase text-customTitle'
+									className='text-center hover:text-fiveOBlack uppercase md:text-customTitle'
 								/>
 							</a>
 						</Link>
@@ -34,7 +34,7 @@ const Card = ({ date, excerpt, slug, src, title }: CardProps) => {
 						<ReactMarkdown
 							escapeHtml={false}
 							source={excerpt}
-							className='text-center text-customExcerpt'
+							className='text-center md:text-customExcerpt'
 						/>
 					</div>
 					<div className='hidden'>{date}</div>

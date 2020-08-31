@@ -1,5 +1,3 @@
-import Container from 'components/container';
-import { EXAMPLE_PATH } from 'lib/constants';
 import Link from 'next/link';
 
 interface FooterProps {
@@ -26,7 +24,7 @@ const footerConstitutents: FooterProps[] = [
 
 const Footer = () => {
 	return (
-		<footer className='bg-portfolio font-somaRoman w-full max-w-full px-portfolioFooter text-customF pt-portfolioH2F pb-mobileGapY'>
+		<footer className='bg-portfolio font-somaRoman w-full max-w-full px-portfolioFooter text-customFooterMobile md:text-customFooter pt-portfolioH2F pb-mobileGapY'>
 			<div className='w-full min-w-full'>
 				<div className='block min-w-full w-full items-left overflow-hidden'>
 					{/* <div className='block'>
@@ -38,9 +36,9 @@ const Footer = () => {
 					</div>{' '} */}
 					<div className='grid grid-cols-3 w-full tracking-wide'>
 						<div className='block align-top font-somaRoman text-black text-center'>
-							<Link href='/' passHref>
+							<Link href='/#top' passHref>
 								<a
-									className='block whitespace-no-wrap uppercase hover:text-fiveOBlack items-left justify-start float-left'
+									className='block whitespace-no-wrap uppercase duration-1000 transition-all ease-in-out hover:text-fiveOBlack items-left justify-start float-left'
 									aria-label='back to top'
 								>
 									Back to top
@@ -61,7 +59,7 @@ const Footer = () => {
 								href='https://github.com/DopamineDriven/asross-portfolio'
 								aria-label='all rights reserved, 2020'
 							>
-								©2020 ALL RIGHTS RESERVED
+								UI, Duncan Ross
 							</a>
 						</div>
 						<div className='block align-top font-somaRoman text-black text-right hover:text-everythingIsBlue transition-colors duration-300 cursor-pointer'>
@@ -89,7 +87,7 @@ const Footer = () => {
 								target='__blank'
 								aria-label='design by duncan ross'
 							>
-								<ul>Design, Duncan Ross</ul>
+								©2020 ALL RIGHTS RESERVED
 							</a>
 						</div>
 					</div>

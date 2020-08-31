@@ -137,8 +137,12 @@ const Lead = () => {
 			>
 				<div className='relative block justify-between lg:w-auto lg:static lg:block lg:justify-start w-full min-w-full'>
 					<Link href='/'>
-						<a className='container block pl-portfolio justify-between mx-auto w-full min-w-full'>
-							<ArIcon width='svg-Icon' />
+						<a
+							className='container block pl-portfolio justify-between mx-auto w-full min-w-full'
+							id='top'
+							aria-label='top'
+						>
+							<ArIcon />
 						</a>
 					</Link>
 				</div>
@@ -155,10 +159,9 @@ const Lead = () => {
 						'text-customP pr-portfolioRS pl-portfolioLS leading-headerP block font-somaRoman tracking-tighter font-thin' +
 						styles.p
 					}
-					// style={{ padding: '4.1844vw 0 0 2.19149vw' }}
 				>
 					{spanMap}
-					<span className='font-thin font-somaRoman tracking-tighter last:pl-portfolioS p-lead cursor-default'>
+					{/* <span className='font-thin font-somaRoman tracking-tighter last:pl-portfolioS p-lead cursor-default'>
 						<span>
 							<a
 								className='hover:text-fiveOBlack'
@@ -169,25 +172,14 @@ const Lead = () => {
 								Contact
 							</a>
 						</span>
-					</span>
+					</span> */}
 				</p>
 				<div
-					className='sm:text-customSM text-customSM font-somaRoman sm:leading-customSLH leading-customSLM tracking-wide block'
-					style={{ position: 'absolute', top: '92.78333vw', left: '3.33333vw' }}
+					className='md:text-customSM text-customSM font-somaRoman md:leading-customSLH leading-customSLM tracking-wide block'
+					style={{ position: 'absolute', top: '80.78333vw', left: '3.33333vw' }}
 				>
 					{socialMap}
 				</div>
-
-				{/* <div
-					className='container px-4 mx-auto flex flex-wrap items-center justify-between h-half w-full min-w-full'
-					style={{
-						backgroundImage: `url(https://res.cloudinary.com/asross311/image/upload/v1598726915/portfolio/Andrew_1_iudxbk.jpg)`,
-						backgroundRepeat: 'no-repeat',
-						backgroundSize: '90% 100%',
-						backgroundColor: '#EBE8E0',
-						backgroundPositionX: 'center'
-					}}
-				></div> */}
 			</header>
 		</>
 	);
