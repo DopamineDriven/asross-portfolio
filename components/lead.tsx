@@ -9,12 +9,6 @@ interface LeadInterface {
 	span: string;
 }
 
-/*
-						Andrew ross is a Chicago based full-stack engineer who specializes in the
-						JAMstack, MERN, TypeScript, React, Next.js, Tailwind CSS, Static Site
-						Generation, DB Migration, Headless WordPress, and more.
-*/
-
 interface SocialContact {
 	id: number;
 	label: string;

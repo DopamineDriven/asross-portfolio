@@ -10,16 +10,17 @@ import markdownToHtml from 'lib/markdownToHtml';
 import Container from 'components/container';
 import PostBody from 'components/post-body';
 import PostTitle from 'components/post-title';
+import LeadPost from 'components/lead';
 
 const Post = () => {
 	return (
 		<Fragment>
+			<LeadPost />
 			<Head>
 				<title>{`${CLIENT_NAME} sub-page`}</title>
 			</Head>
 		</Fragment>
 	);
 };
-
 
 export default Post;
