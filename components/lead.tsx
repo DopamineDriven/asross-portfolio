@@ -1,6 +1,5 @@
 import { ArIcon } from 'components/svg-icons';
 import Link from 'next/link';
-import styles from 'components/lead-styles.module.css';
 import { Fragment } from 'react';
 import Meta from 'components/meta';
 
@@ -153,8 +152,7 @@ const Lead = () => {
 				</div>
 				<p
 					className={
-						'text-customP pr-portfolioRS pl-portfolioLS leading-headerP block font-somaRoman tracking-tighter font-thin' +
-						styles.p
+						'text-customP pr-portfolioRS pl-portfolioLS leading-headerP block font-somaRoman tracking-tighter font-thin'
 					}
 				>
 					{spanMap}
