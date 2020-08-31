@@ -138,7 +138,7 @@ const Lead = () => {
 				<div className='relative block justify-between lg:w-auto lg:static lg:block lg:justify-start w-full min-w-full'>
 					<Link href='/'>
 						<a className='container block pl-portfolio justify-between mx-auto w-full min-w-full'>
-							<ArIcon width='svg-Icon' />
+							<ArIcon />
 						</a>
 					</Link>
 				</div>
