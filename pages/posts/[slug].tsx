@@ -12,6 +12,11 @@ import PostBody from 'components/post-body';
 import PostTitle from 'components/post-title';
 import LeadPost from 'components/lead';
 
+interface PostSlugProps {
+  post: PostType;
+  posts: PostType[];
+}
+
 const Post = () => {
 	return (
 		<Fragment>
