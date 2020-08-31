@@ -19,12 +19,23 @@ const Card = ({ date, excerpt, slug, src, title }: CardProps) => {
 					<div className='font-bold font-somaRoman leading-tight'>
 						<Link as={`/posts/${slug}`} href='/posts/[slug]' passHref>
 							<a
-								className='hover:underline text-center'
+								className='hover:underline font-somaRoman'
 								aria-label={`date-published ${date}`}
 							>
-								<ReactMarkdown escapeHtml={false} source={title} />
+								<ReactMarkdown
+									escapeHtml={false}
+									source={title}
+									className='text-center hover:underline uppercase'
+								/>
 							</a>
 						</Link>
+					</div>
+					<div className='font-somaRoman'>
+						<ReactMarkdown
+							escapeHtml={false}
+							source={excerpt}
+							className='text-center'
+						/>
 					</div>
 				</div>
 			</div>
