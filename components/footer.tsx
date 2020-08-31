@@ -64,7 +64,7 @@ const Footer = () => {
 								©2020 ALL RIGHTS RESERVED
 							</a>
 						</div>
-						<div className='block align-top font-somaRoman text-black text-right hover:text-tailwindBlue transition-colors duration-300 cursor-pointer'>
+						<div className='block align-top font-somaRoman text-black text-right hover:text-everythingIsBlue transition-colors duration-300 cursor-pointer'>
 							<a
 								className='block w-full uppercase text-right justify-end items-end float-right'
 								aria-label='everything is blue'

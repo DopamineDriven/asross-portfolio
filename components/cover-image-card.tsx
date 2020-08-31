@@ -13,7 +13,7 @@ const CoverImageCard = ({ title, src, slug }: CoverImageProps) => {
 			src={src}
 			alt={title}
 			className={cn(
-				'w-imagePortfolio max-w-imagePortfolio h-82 max-h-full md:h-auto rounded-lg',
+				'w-imagePortfolioMobile max-w-imagePortfolioMobile md:w-imagePortfolio md:max-w-imagePortfolio  h-82 max-h-full md:h-auto rounded-lg',
 				{
 					'hover:shadow-lg transition-shadow duration-400': slug
 				}

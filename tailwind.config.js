@@ -95,7 +95,8 @@ module.exports = {
 				gatsbyPurple: '#663399',
 				oneFiveBlack: '#151515',
 				fiveOBlack: '#505050',
-				portfolio: '#EBE8E0'
+				portfolio: '#EBE8E0',
+				everythingIsBlue: '#007acc'
 			},
 			height: {
 				whole: '100vh',
@@ -169,7 +170,7 @@ module.exports = {
 				portfolioRS: '1.33vw',
 				gapX: '2.2284vw',
 				imagePortfolio: '41.7827vw',
-				imagePortfolioMobile: '91.1111vw',
+				imagePortfolioMobile: '83.5654vw',
 				portfolioPadding: '7.1031vw',
 				portfolioMTP: '-0.83333vw',
 				socialMargin: '-0.5vw',
@@ -212,6 +213,7 @@ module.exports = {
 				portfolioRS: '1.33vw',
 				gapX: '2.2284vw',
 				imagePortfolio: '41.7827vw',
+				imagePortfolioMobile: '83.5654vw',
 				portfolioPadding: '7.1031vw',
 				portfolioMTP: '-0.83333vw',
 				socialMargin: '-0.5vw',
@@ -233,7 +235,7 @@ module.exports = {
 				portfolioDivider: '0.875vw',
 				gapX: '2.2284vw',
 				offsetY: '6.9638vw',
-				mobileGapY: '13.3333vw',
+				mobileGapY: '7.3333vw',
 				imagePortfolio: '41.7827vw',
 				portfolioPadding: '7.1031vw',
 				portfolioFooter: '3.33vw',
