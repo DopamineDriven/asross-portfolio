@@ -12,8 +12,8 @@ interface CardProps {
 
 const Card = ({ date, excerpt, slug, src, title }: CardProps) => {
 	return (
-		<div className='font-somaRoman block'>
-			<div className='max-w-82 md:max-w-150 rounded-lg overflow-x-hidden overflow-y-hidden bg-portfolio shadow-lg block'>
+		<div className='font-somaRoman block md:even:pt-25'>
+			<div className='max-w-82 md:max-w-imagePortfolio rounded-lg overflow-y-hidden bg-portfolio block'>
 				<CoverImageCard slug={slug} src={src} title={title} />
 				<div className='flex flex-col text-center justify-center bg-portfolio'>
 					<div className='font-bold font-somaRoman leading-tight'>
@@ -30,16 +30,14 @@ const Card = ({ date, excerpt, slug, src, title }: CardProps) => {
 							</a>
 						</Link>
 					</div>
-					<div className='font-somaRoman'>
+					<div className='font-somaRoman text-fiveOBlack uppercase'>
 						<ReactMarkdown
 							escapeHtml={false}
 							source={excerpt}
 							className='text-center'
 						/>
-          </div>
-          <div className="hidden">
-            {date}
-          </div>
+					</div>
+					<div className='hidden'>{date}</div>
 				</div>
 			</div>
 		</div>

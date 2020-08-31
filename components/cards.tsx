@@ -8,7 +8,7 @@ interface CardsProps {
 const Cards = ({ posts }: CardsProps) => {
 	return (
 		<section>
-			<div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12 md:gap-y-26 align-middle text-center md:even:pt-25'>
+			<div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12 md:gap-y-26 md:gap-x-gapX align-middle text-center'>
 				{posts.map(post => (
 					<Card
 						key={post.slug}

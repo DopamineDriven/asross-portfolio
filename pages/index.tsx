@@ -18,7 +18,7 @@ const Index = ({ allPosts, preview }: IndexProps) => {
 		<>
 			{/* <Header props={props} /> */}
 			<Lead />
-			<div className='max-w-308 my-portfolio grid mx-auto content-center justify-center items-center text-center'>
+			<div className='max-w-cardGrid my-portfolio grid mx-auto content-center justify-center items-center text-center'>
 				{morePosts.length > 0 && <Cards posts={morePosts} />}
 			</div>
 			<Layout preview={preview}>
