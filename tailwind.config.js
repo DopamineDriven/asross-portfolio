@@ -164,7 +164,12 @@ module.exports = {
 				oneTwentieth: '5vw',
 				82: '20.5rem',
 				100: '25rem',
-				150: '37.5rem'
+				150: '37.5rem',
+				200: '50rem',
+				250: '62.5rem',
+				275: '69.25rem',
+				300: '75rem',
+				308: '77rem'
 			},
 			spacing: {
 				negative: '-0.1em',
