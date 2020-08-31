@@ -5,7 +5,7 @@ import Cards from 'components/cards';
 import Footer from 'components/footer';
 import Meta from 'components/meta';
 import Post from 'types/post';
-import getWindowDimensions from 'lib/window-dimension';
+// import getWindowDimensions from 'lib/window-dimension';
 import { CLIENT_NAME } from 'lib/constants';
 import { getAllPosts } from 'lib/api';
 import { GetStaticProps } from 'next';
@@ -13,10 +13,12 @@ import { GetStaticProps } from 'next';
 interface IndexProps {
 	allPosts: Post[];
 	preview?: boolean;
+	width: number;
+	height: number;
 }
 
-const Index = ({ allPosts, preview }: IndexProps) => {
-	console.log(getWindowDimensions.toString());
+const Index = ({ allPosts }: IndexProps) => {
+	// console.log(getWindowDimensions);
 	const morePosts = allPosts.slice(0);
 	return (
 		<>
