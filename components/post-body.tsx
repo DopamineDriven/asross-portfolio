@@ -13,11 +13,11 @@ const CodeBlock = ({ language, value }: SyntaxHighlighterProps) => {
 	);
 };
 
-type Props = {
+interface ContentProps {
 	content: string;
-};
+}
 
-const PostBodyBlog = ({ content }: Props) => {
+const PostBodyBlog = ({ content }: ContentProps) => {
 	return (
 		<div className='max-w-2xl prose prose-lg mx-auto content-center text-left md:text-justify items-center justify-center align-middle sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl'>
 			<ReactMarkdown
