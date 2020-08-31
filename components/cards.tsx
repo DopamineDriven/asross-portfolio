@@ -2,11 +2,26 @@ import Card from 'components/card';
 import Post from 'types/post';
 
 interface CardsProps {
-  posts: Post[];
+	posts: Post[];
 }
 
 const Cards = ({ posts }: CardsProps) => {
-  
-}
+	return (
+		<section>
+			<div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12 md:gap-y-26 align-middle text-center md:even:pt-25'>
+				{posts.map(post => (
+					<Card
+						key={post.slug}
+						title={post.title}
+						src={post.coverImage}
+						date={post.date}
+						slug={post.slug}
+						excerpt={post.excerpt}
+					/>
+				))}
+			</div>
+		</section>
+	);
+};
 
 export default Cards;

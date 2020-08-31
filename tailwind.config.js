@@ -181,6 +181,8 @@ module.exports = {
 				7: '1.75rem',
 				14: '3.5rem',
 				18: '4.5rem',
+				25: '6.25rem',
+				26: '6.5rem',
 				28: '7rem',
 				44: '11rem',
 				82: '20.5rem',
@@ -220,7 +222,7 @@ module.exports = {
 		}
 	},
 	variants: {
-		padding: ['responsive', 'last', 'hover', 'focus']
+		padding: ['responsive', 'last', 'hover', 'focus', 'even']
 	},
 	plugins: [require('@tailwindcss/typography')]
 };
