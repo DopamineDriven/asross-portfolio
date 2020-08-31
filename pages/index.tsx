@@ -1,9 +1,11 @@
 import Head from 'next/head';
 import Layout from 'components/layout';
-import { CLIENT_NAME } from 'lib/constants';
 import Lead from 'components/lead';
 import Cards from 'components/cards';
 import Post from 'types/post';
+import { CLIENT_NAME } from 'lib/constants';
+import { getAllPosts } from 'lib/api';
+import { GetStaticProps } from 'next';
 
 interface IndexProps {
 	allPosts: Post[];
@@ -29,3 +31,17 @@ const Index = ({ allPosts, preview }: IndexProps) => {
 };
 
 export default Index;
+
+export const getStaticProps: GetStaticProps = async () => {
+	const allPosts = getAllPosts([
+		'title',
+		'date',
+		'slug',
+		'coverImage',
+		'excerpt'
+	]);
+
+	return {
+		props: { allPosts }
+	};
+};

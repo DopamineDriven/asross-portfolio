@@ -36,7 +36,10 @@ const Card = ({ date, excerpt, slug, src, title }: CardProps) => {
 							source={excerpt}
 							className='text-center'
 						/>
-					</div>
+          </div>
+          <div className="hidden">
+            {date}
+          </div>
 				</div>
 			</div>
 		</div>
