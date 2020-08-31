@@ -1,17 +1,13 @@
 import { ArIcon } from 'components/svg-icons';
 import Link from 'next/link';
 import styles from 'components/lead-styles.module.css';
+import { Fragment } from 'react';
+import Meta from 'components/meta';
 
 interface LeadInterface {
 	id: number;
 	span: string;
 }
-
-/*
-						Andrew ross is a Chicago based full-stack engineer who specializes in the
-						JAMstack, MERN, TypeScript, React, Next.js, Tailwind CSS, Static Site
-						Generation, DB Migration, Headless WordPress, and more.
-*/
 
 interface SocialContact {
 	id: number;
@@ -130,7 +126,8 @@ const Lead = () => {
 		);
 	});
 	return (
-		<>
+		<Fragment>
+			<Meta />
 			<header
 				className='relative z-1 justify-between pt-portfolio navbar-expand-lg flex flex-col min-w-full w-full container overflow-y-hidden overflow-x-hidden transform duration-300'
 				style={{ transform: 'translate3d(0px, 0px, 0px)' }}
@@ -181,7 +178,7 @@ const Lead = () => {
 					{socialMap}
 				</div>
 			</header>
-		</>
+		</Fragment>
 	);
 };
 
