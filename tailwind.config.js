@@ -60,14 +60,14 @@ module.exports = {
 			},
 			fontFamily: {
 				head: ['goudy-bookletter-1911', 'serif'],
-				header: ['Playfair Display', 'serif'],
-				body: ['Barlow Condensed', 'sans-serif'],
-				display: ['Barlow Condensed', 'sans-serif'],
-				polished: ['brandon-grotesque', 'sans-serif'],
+				// header: ['Playfair Display', 'serif'],
+				// body: ['Barlow Condensed', 'sans-serif'],
+				// display: ['Barlow Condensed', 'sans-serif'],
+				// polished: ['brandon-grotesque', 'sans-serif'],
 				somaRoman: ['neue-haas-grotesk-text', 'sans-serif'],
 				somaDisplay: ['neue-haas-grotesk-display', 'sans-serif'],
-				somaDisplayLight: ['neue-haas-grotesk-display', 'sans-serif'],
-				subpolished: ['Montserrat', 'sans-serif']
+				somaDisplayLight: ['neue-haas-grotesk-display', 'sans-serif']
+				// subpolished: ['Montserrat', 'sans-serif']
 			},
 			colors: {
 				'accent-1': '#FAFAFA',
@@ -263,8 +263,8 @@ module.exports = {
 				tight: 1.2,
 				portfolio: '5vw',
 				headerP: '4.38298vw',
-				customSLH: '3.33333vw',
-				customSLM: '4.33333vw'
+				customSLH: '5.33333vw',
+				customSLM: '6.33333vw'
 			},
 			fontSize: {
 				smxmd: '0.9375rem',
@@ -279,9 +279,11 @@ module.exports = {
 				customP: '4.44681vw',
 				customS: '2.06667vw',
 				customF: '1.16667vw',
-				customSM: '2.36667vw',
+				customSM: '3.36667vw',
 				customTitle: '2.22341vw',
-				customExcerpt: '1.66755vw'
+				customExcerpt: '1.66755vw',
+				customTitleMobile: '4.44682vw',
+				customExcerptMobile: '3.3351vw'
 			},
 			boxShadow: {
 				small: '0 5px 10px rgba(0, 0, 0, 0.12)',

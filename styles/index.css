@@ -32,7 +32,7 @@ body::-webkit-scrollbar {
 
 @tailwind base;
 /* Write custom base styles here */
-@font-face {
+/* @font-face {
 	font-family: 'Barlow Condensed', sans-serif;
 	font-weight: 400;
 	src: url(https://fonts.googleapis.com/css2?family=Barlow%20Condensed&family=Barlow%20Semi%20Condensed&display=swap)
@@ -57,7 +57,7 @@ body::-webkit-scrollbar {
 	font-weight: 500;
 	src: url(https://fonts.googleapis.com/css2?family=Playfair%20Display:wght@500&display=swap)
 		format('woff2');
-}
+} */
 
 @font-face {
 	font-family: 'goudy-bookletter-1911', serif;
@@ -97,10 +97,6 @@ body::-webkit-scrollbar {
 
 .html {
 	@apply font-head;
-	@apply font-header;
-	@apply font-body;
-	@apply font-polished;
-	@apply font-subpolished;
 	@apply font-somaRoman;
 	@apply font-somaDisplay;
 	@apply font-somaDisplayLight;

@@ -14,14 +14,6 @@ export default class MyDocument extends Document {
 					<link rel='stylesheet' href='https://use.typekit.net/cub6off.css' />
 					<link rel='stylesheet' href='https://use.typekit.net/hzg4mdi.css' />
 					<link rel='stylesheet' href='https://use.typekit.net/lxd3fak.css' />
-					<link
-						href='https://fonts.googleapis.com/css2?family=Montserrat&display=swap'
-						rel='stylesheet'
-					/>
-					<link
-						href='https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap'
-						rel='stylesheet'
-					/>
 				</Head>
 				<body className='block'>
 					<Main />
