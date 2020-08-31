@@ -95,7 +95,8 @@ module.exports = {
 				gatsbyPurple: '#663399',
 				oneFiveBlack: '#151515',
 				fiveOBlack: '#505050',
-				portfolio: '#EBE8E0'
+				portfolio: '#EBE8E0',
+				everythingIsBlue: '#007acc'
 			},
 			height: {
 				whole: '100vh',
