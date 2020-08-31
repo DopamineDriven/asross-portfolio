@@ -9,6 +9,7 @@ import Post from 'types/post';
 import { CLIENT_NAME } from 'lib/constants';
 import { getAllPosts } from 'lib/api';
 import { GetStaticProps } from 'next';
+import { Fragment } from 'react';
 
 interface IndexProps {
 	allPosts: Post[];
@@ -21,8 +22,7 @@ const Index = ({ allPosts }: IndexProps) => {
 	// console.log(getWindowDimensions);
 	const morePosts = allPosts.slice(0);
 	return (
-		<>
-			<Meta />
+		<Fragment>
 			<Head>
 				<title>{`${CLIENT_NAME} index page`}</title>
 			</Head>
@@ -32,7 +32,7 @@ const Index = ({ allPosts }: IndexProps) => {
 				{morePosts.length > 0 && <Cards posts={morePosts} />}
 			</div>
 			<Footer />
-		</>
+		</Fragment>
 	);
 };
 
