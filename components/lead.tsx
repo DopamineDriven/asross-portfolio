@@ -126,7 +126,6 @@ const Lead = () => {
 				>
 					{constituent.label}
 				</a>
-				
 			</div>
 		);
 	});
@@ -138,7 +137,11 @@ const Lead = () => {
 			>
 				<div className='relative block justify-between lg:w-auto lg:static lg:block lg:justify-start w-full min-w-full'>
 					<Link href='/'>
-						<a className='container block pl-portfolio justify-between mx-auto w-full min-w-full'>
+						<a
+							className='container block pl-portfolio justify-between mx-auto w-full min-w-full'
+							id='top'
+							aria-label='top'
+						>
 							<ArIcon />
 						</a>
 					</Link>
@@ -158,7 +161,7 @@ const Lead = () => {
 					}
 				>
 					{spanMap}
-					<span className='font-thin font-somaRoman tracking-tighter last:pl-portfolioS p-lead cursor-default'>
+					{/* <span className='font-thin font-somaRoman tracking-tighter last:pl-portfolioS p-lead cursor-default'>
 						<span>
 							<a
 								className='hover:text-fiveOBlack'
@@ -169,7 +172,7 @@ const Lead = () => {
 								Contact
 							</a>
 						</span>
-					</span>
+					</span> */}
 				</p>
 				<div
 					className='md:text-customSM text-customSM font-somaRoman md:leading-customSLH leading-customSLM tracking-wide block'
