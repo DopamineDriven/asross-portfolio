@@ -5,15 +5,24 @@ import PostTitle from 'components/post-title';
 import Author from 'types/author';
 
 interface PostHeaderProps {
-  title: string;
-	coverImage: string;
+	title: string;
+	src: string;
 	author: Author;
 	date: string;
 }
 
-const PostHeader = ({ author, coverImage, date, title }: PostHeaderProps) => {
-
-}
-
+const PostHeader = ({ author, date, src, title }: PostHeaderProps) => {
+	return (
+		<>
+			<div className='max-w-screen font-head text-customTitleMobile'>
+				<div className='block mx-auto'>
+					<CoverImage title={title} src={src} />
+				</div>
+				<PostTitle>{title}</PostTitle>
+      </div>
+      <div className=" max-w-cardGridMobile block mx-auto align-middle justify-center "></div>
+		</>
+	);
+};
 
 export default PostHeader;
