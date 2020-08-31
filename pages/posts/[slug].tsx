@@ -9,3 +9,4 @@ import { CMS_NAME } from 'lib/constants';
 import markdownToHtml from 'lib/markdownToHtml';
 import Container from 'components/container';
 import PostBody from 'components/post-body';
+import PostTitle from 'components/post-title';
