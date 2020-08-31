@@ -267,7 +267,9 @@ module.exports = {
 				custom: '25.41667vw',
 				customP: '4.44681vw',
 				customS: '2.06667vw',
-				customSM: '2.36667vw'
+				customSM: '2.36667vw',
+				customTitle: '2.22341vw',
+				customExcerpt: '1.66755vw'
 			},
 			boxShadow: {
 				small: '0 5px 10px rgba(0, 0, 0, 0.12)',
@@ -276,7 +278,7 @@ module.exports = {
 		}
 	},
 	variants: {
-		padding: ['responsive', 'last', 'hover', 'focus', 'even']
+		padding: ['responsive', 'last', 'hover', 'focus', 'even', 'odd']
 	},
 	plugins: [require('@tailwindcss/typography')]
 };
