@@ -10,6 +10,15 @@ author:
   github: 'https://github.com/DopamineDriven/windycitydevs'
   vercel: 'https://windycitydevs.vercel.app/'
   heroku: ''
+  antdesign: ''
+  apollo: 'apollo'
+  auth0: ''
+  graphql: 'graphql'
+  next: 'next'
+  react: 'react'
+  tailwindcss: 'tailwindcss'
+  typescript: 'typescript'
+  wordpress: 'wordpress'
 ogImage:
   url: 'https://res.cloudinary.com/asross311/image/upload/v1598385330/portfolio/Group_25_1_mkabg7.jpg'
 ---

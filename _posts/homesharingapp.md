@@ -10,6 +10,15 @@ author:
   github: 'https://github.com/DopamineDriven/home-sharing-app'
   vercel: ''
   heroku: 'https://gql-homesharing.herokuapp.com/'
+  antdesign: 'antdesign'
+  apollo: 'apollo'
+  auth0: ''
+  graphql: 'graphql'
+  next: ''
+  react: 'react'
+  tailwindcss: ''
+  typescript: 'typescript'
+  wordpress: ''
 ogImage:
   url: 'https://res.cloudinary.com/asross311/image/upload/v1598385330/portfolio/Group_25_1_mkabg7.jpg'
 ---
