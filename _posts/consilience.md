@@ -10,6 +10,15 @@ author:
   github: 'https://github.com/DopamineDriven/Consilience'
   vercel: ''
   heroku: 'https://classroom-consilience.herokuapp.com/'
+  antdesign: ''
+  apollo: ''
+  auth0: ''
+  graphql: ''
+  next: ''
+  react: 'react'
+  tailwindcss: ''
+  typescript: ''
+  wordpress: ''
 ogImage:
   url: 'https://res.cloudinary.com/asross311/image/upload/v1598385330/portfolio/Group_25_1_mkabg7.jpg'
 ---
