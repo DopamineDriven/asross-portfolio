@@ -116,7 +116,30 @@ module.exports = {
 				oneFifth: '20vh',
 				oneSixth: '16.67vh',
 				oneTenth: '10vh',
-				oneTwentieth: '5vh'
+				oneTwentieth: '5vh',
+				imagePortfolio: '31.25vh'
+			},
+			maxHeight: {
+				whole: '100vh',
+				nineTenths: '90vh',
+				sevenEighths: '87.5vh',
+				fourFifths: '80vh',
+				threeFourths: '75vh',
+				sevenTenths: '70vh',
+				twoThirds: '66.67vh',
+				threeFifths: '60vh',
+				half: '50vh',
+				nineTwentieths: '45vh',
+				twoFifths: '40vh',
+				sevenTwentieths: '35vh',
+				oneThird: '33.33vh',
+				threeTenths: '30vh',
+				oneFourth: '25vh',
+				oneFifth: '20vh',
+				oneSixth: '16.67vh',
+				oneTenth: '10vh',
+				oneTwentieth: '5vh',
+				imagePortfolio: '61.25vh'
 			},
 			width: {
 				whole: '100vw',
@@ -140,7 +163,18 @@ module.exports = {
 				oneTwentieth: '5vw',
 				82: '20.5rem',
 				100: '25rem',
-				150: '37.5rem'
+				150: '37.5rem',
+				portfolio: '2.25vw',
+				portfolioLS: '3.33vw',
+				portfolioRS: '1.33vw',
+				gapX: '2.2284vw',
+				imagePortfolio: '41.7827vw',
+				portfolioPadding: '7.1031vw',
+				portfolioMTP: '-0.83333vw',
+				socialMargin: '-0.5vw',
+				portfolioS: '18.60284vw',
+				socialT: '74.58333vw',
+				cardGrid: '85.7939vw'
 			},
 			maxWidth: {
 				whole: '100vw',
@@ -164,7 +198,23 @@ module.exports = {
 				oneTwentieth: '5vw',
 				82: '20.5rem',
 				100: '25rem',
-				150: '37.5rem'
+				150: '37.5rem',
+				200: '50rem',
+				250: '62.5rem',
+				275: '69.25rem',
+				300: '75rem',
+				308: '77rem',
+				portfolio: '2.25vw',
+				portfolioLS: '3.33vw',
+				portfolioRS: '1.33vw',
+				gapX: '2.2284vw',
+				imagePortfolio: '41.7827vw',
+				portfolioPadding: '7.1031vw',
+				portfolioMTP: '-0.83333vw',
+				socialMargin: '-0.5vw',
+				portfolioS: '18.60284vw',
+				socialT: '74.58333vw',
+				cardGrid: '85.7939vw'
 			},
 			spacing: {
 				negative: '-0.1em',
@@ -174,6 +224,10 @@ module.exports = {
 				portfolio: '2.25vw',
 				portfolioLS: '3.33vw',
 				portfolioRS: '1.33vw',
+				gapX: '2.2284vw',
+				offsetY: '6.9638vw',
+				imagePortfolio: '41.7827vw',
+				portfolioPadding: '7.1031vw',
 				portfolioMTP: '-0.83333vw',
 				socialMargin: '-0.5vw',
 				portfolioS: '18.60284vw',
@@ -181,6 +235,8 @@ module.exports = {
 				7: '1.75rem',
 				14: '3.5rem',
 				18: '4.5rem',
+				25: '6.25rem',
+				26: '6.5rem',
 				28: '7rem',
 				44: '11rem',
 				82: '20.5rem',
@@ -220,7 +276,7 @@ module.exports = {
 		}
 	},
 	variants: {
-		padding: ['responsive', 'last', 'hover', 'focus']
+		padding: ['responsive', 'last', 'hover', 'focus', 'even']
 	},
 	plugins: [require('@tailwindcss/typography')]
 };
