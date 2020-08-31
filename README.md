@@ -8,6 +8,8 @@ nextjs portfolio
 - 328px mobile frame
 - one card per row (mobile)
 - 40px gap-y
+- coverphoto height 37.5em
+- 
 
 ## Tailwind Templates
 - https://www.codeinwp.com/blog/tailwind-css-templates/
