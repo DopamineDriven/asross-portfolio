@@ -15,7 +15,7 @@ interface BlogPostBodyProps {
 }
 
 const CodeBlock = ({
-	language = `tsx, ${tsx}, typescript, ${typescript}, xml, ${xml}, git, ${git}`,
+	language = `${tsx}, ${typescript}, ${xml}, ${git}`,
 	children
 }: SyntaxHighlighterProps) => {
 	return (
@@ -27,7 +27,8 @@ const CodeBlock = ({
 			startingLineNumber={0}
 			lineNumberStyle={{ color: '#ddd' }}
 		>
-			{children.replace(/^\s+|\s+$/g, '')}
+			{children}
+			{/* {children.replace(/^\s+|\s+$/g, '')} */}
 		</SyntaxHighlighter>
 	);
 };
