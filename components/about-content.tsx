@@ -93,7 +93,7 @@ const aboutSnippets: AboutInterface[] = [
 	},
 	{
 		id: 10,
-		span: `Devs LLC was conceived, and I have been acting `
+		span: `Devs LLC was conceived, & I have been acting `
 	},
 	{
 		id: 11,
