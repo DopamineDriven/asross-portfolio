@@ -79,18 +79,18 @@ const AboutContent = ({ src, title }: AboutProps) => {
 	});
 	return (
 		<div
-			className='relative justify-between pt-portfolio navbar-expand-lg flex flex-col min-w-full w-full container overflow-y-hidden font-left overflow-x-hidden transform duration-300'
+			className='relative justify-between pt-portfolio navbar-expand-lg flex flex-col min-w-full w-full container overflow-y-hidden overflow-x-hidden transform duration-300'
 			style={{ transform: 'translate3d(0px, 0px, 0px)' }}
 		>
 			<h1
-				className='font-head z-1 text-customAbout relative flex-grow text-center justify-center tracking-tight leading-portfolio font-light cursor-default w-full min-w-full'
+				className='font-head z-1 text-customAbout relative flex-grow text-center justify-center tracking-tight leading-headerP font-light cursor-default w-full min-w-full'
 				style={{ marginBlockStart: '0.67em', marginBlockEnd: '0.67em' }}
 			>
-				<a className='text-customAbout text-left block'>About</a>
+				<a className='text-customAbout text-center block'>ABOUT</a>
 			</h1>
 			<div
-					className='md:text-customSM text-customSM font-somaRoman md:leading-customSLH leading-customSLM tracking-wide block z-2 rounded-full'
-					style={{ position: 'absolute', top: '18.78333vw', right: '3.33333vw' }}
+					className='md:text-customSM text-customSM font-somaRoman md:leading-customSLH leading-customSLM tracking-wide block z-0 rounded-full'
+					style={{ position: 'absolute', top: '37.48333vw', right: '5.33333vw' }}
 				>
 					<AboutImage src={src} title={title} />
 				</div>

@@ -4,7 +4,7 @@ interface AboutImageProps {
 }
 
 const AboutImage = ({
-	src = 'https://res.cloudinary.com/asross311/image/upload/v1598934085/portfolio/IMG_3824_1_2_dehodw.jpg',
+	src = 'https://res.cloudinary.com/asross311/image/upload/v1598947180/portfolio/IMG_3824_1_8_egnkfs.jpg',
 	title = 'Andrew Ross'
 }: AboutImageProps) => {
 	return (
@@ -13,7 +13,7 @@ const AboutImage = ({
 				<img
 					src={src}
 					alt={title}
-					className='w-aboutImage400 max-w-aboutImage500 h-auto max-h-full rounded-full z-2 px-portfolioDivider'
+					className=' w-aboutImage500 max-w-aboutImage500 h-full max-h-full rounded-full z-2 '
 				/>
 			</a>
 		</div>
