@@ -3,8 +3,8 @@ import Lead from 'components/lead';
 import Cards from 'components/cards';
 import Footer from 'components/footer';
 import Post from 'types/post';
-import Blog from 'types/blog';
-import BlogTitle from 'components/blog-title';
+// import Blog from 'types/blog';
+// import BlogTitle from 'components/blog-title';
 // import useWindowSize from 'lib/window-dimension';
 import { CLIENT_NAME } from 'lib/constants';
 import { getAllPosts } from 'lib/api';
@@ -15,11 +15,12 @@ import { getAllBlogs } from '../lib/blog-api';
 interface IndexProps {
 	allPosts: Post[];
 	preview?: boolean;
-	blog: Blog;
+	// blogs: Blog;
 }
 
-const Index = ({ allPosts, blog }: IndexProps) => {
+const Index = ({ allPosts }: IndexProps) => {
 	const morePosts = allPosts.slice(0);
+	// const faBlog = blogs;
 	return (
 		<Fragment>
 			<Lead />
@@ -28,6 +29,7 @@ const Index = ({ allPosts, blog }: IndexProps) => {
 			</Head>
 			<div className='max-w-cardGridMobile md:max-w-cardGrid my-portfolioH2F grid mx-auto content-center justify-center items-center text-center'>
 				{morePosts.length > 0 && <Cards posts={morePosts} />}
+				{/* {<BlogTitle title={faBlog.title} slug={faBlog.slug} />} */}
 			</div>
 			<Footer />
 		</Fragment>
@@ -44,9 +46,16 @@ export const getStaticProps: GetStaticProps = async () => {
 		'coverImage',
 		'excerpt'
 	]);
-	const blogTitle = getAllBlogs(['title', 'slug']);
+	// const blogTitle = getAllBlogs([
+	// 	'title',
+	// 	'date',
+	// 	'slug',
+	// 	'author',
+	// 	'coverImage',
+	// 	'excerpt'
+	// ]);
 
 	return {
-		props: { allPosts, blogTitle }
+		props: { allPosts }
 	};
 };
