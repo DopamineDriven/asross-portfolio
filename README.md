@@ -15,6 +15,9 @@ nextjs portfolio
 - 600 px in a 1436px viewport -> 41.7827vw
 - px -> 7.1031vw 
 
+## Tips of nextjsv9 with typescript
+- https://www.kohei.dev/posts/7-tips-of-next-js-9-with-typescript?hl=en-US
+
 ## Tailwind Templates
 - https://www.codeinwp.com/blog/tailwind-css-templates/
 
