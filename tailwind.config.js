@@ -29,7 +29,7 @@ module.exports = {
 		zIndex: {
 			0: 0,
 			1: 1,
-			25: 25,
+			2: 2,
 			50: 50,
 			75: 75,
 			100: 100
@@ -252,7 +252,7 @@ module.exports = {
 				portfolioS: '18.60284vw',
 				socialT: '74.58333vw',
 				aboutGapX: '8.9136vw',
-				aboutOffsetY: '17.79944vw',
+				aboutOffsetY: '27.79944vw',
 				aboutHackingFontAwesomePT: '6.6852vw',
 				7: '1.75rem',
 				14: '3.5rem',
@@ -298,7 +298,7 @@ module.exports = {
 				customExcerptMobile: '3.0351vw',
 				customAboutTitle: '13.9276vw',
 				customAboutText: '3.3426vw',
-				customAbout: '18.41667vw',
+				customAbout: '28.41667vw',
 			},
 			boxShadow: {
 				small: '0 5px 10px rgba(0, 0, 0, 0.12)',
