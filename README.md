@@ -22,10 +22,16 @@ nextjs portfolio
 - 600 px in a 1436px viewport -> 41.7827vw
 - px -> 7.1031vw 
 
-## odd/even offset
+## About section
 - aboutOffsetY - 7.7994vw
 - aboutGapX - 8.9136vw
 - HFA column-left pt - 6.6852vw
+- description text (48pt) - 3.3426vw
+- header text (200pt) - 13.9276vw;
+- image
+	- 300px width - 20.8914vw
+	- 400px width - 27.8552vw
+	- 600px width - 41.7827vw
 
 ## Z-index tailwind
 - https://tailwindcss.com/docs/z-index#negative-values
