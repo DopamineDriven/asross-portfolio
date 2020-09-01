@@ -5,3 +5,18 @@ import { Fragment } from 'react';
 import { getBlogBySlug, getAllBlogs } from 'lib/blog-api';
 import { CMS_NAME } from 'lib/constants';
 import markdownToHtml from 'lib/markdownToHtml';
+import BlogPostBody from 'components/blog-post-body';
+import LeadBlog from 'components/lead-post';
+import Footer from 'components/footer';
+import BlogType from 'types/blog';
+
+interface BlogProps {
+  blog: BlogType;
+  blogs: BlogType[];
+}
+
+const Blog = ({ blog, blogs }: BlogProps) => {
+
+}
+
+export default Blog;

@@ -12,6 +12,7 @@ import PostTitle from 'components/post-title';
 import PostHeader from 'components/post-header';
 import LeadPost from 'components/lead-post';
 import Cards from 'components/cards';
+import Footer from 'components/footer';
 
 interface PostSlugProps {
 	post: PostType;
@@ -51,6 +52,7 @@ const Post = ({ post, posts }: PostSlugProps) => {
 					</div>
 				</>
 			)}
+			<Footer />
 		</Fragment>
 	);
 };

@@ -15,12 +15,19 @@ interface BlogPostBodyProps {
 }
 
 const CodeBlock = ({
-	language = `tsx, typescript, xml, git, ${tsx}, ${typescript}, ${xml}, ${git}`,
-	content
-}: SyntaxHighlighterProps & BlogPostBodyProps) => {
+	language = `tsx, ${tsx}, typescript, ${typescript}, xml, ${xml}, git, ${git}`,
+	children
+}: SyntaxHighlighterProps) => {
 	return (
-		<SyntaxHighlighter useInlineStyles={true} language={language} style={dark}>
-			{content}
+		<SyntaxHighlighter
+			useInlineStyles={true}
+			language={language}
+			style={dark}
+			showLineNumbers={true}
+			startingLineNumber={0}
+			lineNumberStyle={{ color: '#ddd' }}
+		>
+			{children.replace(/^\s+|\s+$/g, '')}
 		</SyntaxHighlighter>
 	);
 };
@@ -39,5 +46,9 @@ const PostBodyBlog = ({ content }: BlogPostBodyProps) => {
 };
 
 export default PostBodyBlog;
+
+// https://dimitr.im/adding-syntax-highlighting-wordpress-gatsby
 // https://www.npmjs.com/package/react-syntax-highlighter
 // https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/react-syntax-highlighter/index.d.ts
+// regex replacement
+// https://www.programmersought.com/article/74221527788/
