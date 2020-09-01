@@ -17,15 +17,15 @@ const aboutSnippets: AboutInterface[] = [
 	},
 	{
 		id: 1,
-		span: 'projects for small-to-medium '
+		span: 'projects for small/medium '
 	},
 	{
 		id: 2,
-		span: 'sized businesses & start-ups '
+		span: 'sized businesses & start- '
 	},
 	{
 		id: 3,
-		span: 'in the greater Chicagoland '
+		span: 'ups in the greater Chicago '
 	},
 	{
 		id: 4,
@@ -36,23 +36,23 @@ const aboutSnippets: AboutInterface[] = [
 		span: 'a project aiming to unite '
 	},
 	{
-		id: 5,
-		span: '60-130 local independent'
+		id: 6,
+		span: '60-130 independent local '
 	},
 	{
-		id: 5,
-		span: 'media companies. The scope  '
+		id: 7,
+		span: 'media companies. Scope  '
 	},
 	{
-		id: 5,
-		span: 'includes building out a future-'
+		id: 8,
+		span: 'includes building a future-'
 	},
 	{
-		id: 5,
-		span: `proof directory using React\'s `
+		id: 9,
+		span: `proof directory via React\'s `
 	},
 	{
-		id: 5,
+		id: 10,
 		span: `Nextjs framework, WP Engine as the Headless `
 	},
 	{
@@ -61,7 +61,7 @@ const aboutSnippets: AboutInterface[] = [
 	},
 	{
 		id: 59,
-		span: 'WP-GraphQL plugins couple brilliantly with HWP.'
+		span: 'WP-GQL plugins couple brilliantly with HWP.'
 	},
 	{
 		id: 59,
@@ -77,7 +77,7 @@ const aboutSnippets: AboutInterface[] = [
 	},
 	{
 		id: 7,
-		span: '& Bio Anthropology, respectively. Go Hawks! 🏴󠁵󠁳󠁩󠁡󠁿 '
+		span: '& Bio Anthropology, respectively. Go Hawks! 🏴󠁵 '
 	},
 	{
 		id: 7,
@@ -141,11 +141,11 @@ const aboutSnippets: AboutInterface[] = [
 	},
 	{
 		id: 12,
-		span: 'This journey\'s just getting started, so drop me a '
+		span: 'This journey\'s just getting started so drop me a '
 	},
 	{
 		id: 12,
-		span: 'line — let\'s build something beautiful together.'
+		span: 'line; let\'s build something remarkable together.'
 	}
 ];
 
