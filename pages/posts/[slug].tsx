@@ -10,9 +10,9 @@ import markdownToHtml from 'lib/markdownToHtml';
 import PostBody from 'components/post-body';
 import PostTitle from 'components/post-title';
 import PostHeader from 'components/post-header';
-import LeadPost from 'components/lead-post';
+import LeadPost from 'components/lead-sub';
 import Cards from 'components/cards';
-import Footer from 'components/footer';
+import Footer from 'components/footer-sub';
 
 interface PostSlugProps {
 	post: PostType;
@@ -52,7 +52,7 @@ const Post = ({ post, posts }: PostSlugProps) => {
 					</div>
 				</>
 			)}
-			<Footer />
+			<Footer title={post.title} />
 		</Fragment>
 	);
 };
