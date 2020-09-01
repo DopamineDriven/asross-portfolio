@@ -23,7 +23,7 @@ nextjs portfolio
 - px -> 7.1031vw 
 
 ## odd/even offset
-- aboutOffsetY - 7.7994vw
+- aboutOffsetY - 7.7994vwf
 - aboutGapX - 8.9136vw
 - HFA column-left pt - 6.6852vw
 
