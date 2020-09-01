@@ -181,6 +181,7 @@ module.exports = {
 				cardGridMobile: '91.1111vw',
 				aboutImage300: '20.8914vw',
 				aboutImage400: '27.8552vw',
+				aboutImage500: '34.8181vw',
 				aboutImage600: '41.7827vw'
 			},
 			maxWidth: {
@@ -227,6 +228,7 @@ module.exports = {
 				cardGridMobile: '91.1111vw',
 				aboutImage300: '20.8914vw',
 				aboutImage400: '27.8552vw',
+				aboutImage500: '34.8181vw',
 				aboutImage600: '41.7827vw'
 			},
 			spacing: {
@@ -296,7 +298,7 @@ module.exports = {
 				customExcerptMobile: '3.0351vw',
 				customAboutTitle: '13.9276vw',
 				customAboutText: '3.3426vw',
-				customAbout: '20.41667vw',
+				customAbout: '18.41667vw',
 			},
 			boxShadow: {
 				small: '0 5px 10px rgba(0, 0, 0, 0.12)',

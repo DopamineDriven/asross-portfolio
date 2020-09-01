@@ -79,22 +79,22 @@ const AboutContent = ({ src, title }: AboutProps) => {
 	});
 	return (
 		<div
-			className='relative justify-between pt-portfolio navbar-expand-lg flex flex-col min-w-full w-full container overflow-y-hidden font-left overflow-x-hidden transform duration-300'
+			className='relative justify-between pt-portfolio navbar-expand-lg flex flex-col min-w-full w-full container overflow-y-hidden font-left overflow-x-visible transform duration-300'
 			style={{ transform: 'translate3d(0px, 0px, 0px)' }}
 		>
 			<h1
 				className='font-head z-1 text-customAbout relative flex-grow text-center justify-center tracking-tight leading-portfolio font-light cursor-default w-full min-w-full'
 				style={{ marginBlockStart: '0.67em', marginBlockEnd: '0.67em' }}
 			>
-				<a className='text-customAbout block'>About</a>
+				<a className='text-customAbout text-left block'>About</a>
 			</h1>
 			<div
 					className='md:text-customSM text-customSM font-somaRoman md:leading-customSLH leading-customSLM tracking-wide block z-0'
-					style={{ position: 'absolute', top: '15.78333vw', right: '3.33333vw' }}
+					style={{ position: 'absolute', top: '18.78333vw', right: '3.33333vw' }}
 				>
 					<AboutImage src={src} title={title} />
 				</div>
-			<p className='text-customP leading-headerP block font-somaRoman tracking-tighter font-thin pr-aboutOffsetY'>
+			<p className='text-customP leading-headerP block font-somaRoman tracking-tighter font-thin pr-aboutOffsetY z-1'>
 				{aboutMap}
 			</p>
 		</div>
