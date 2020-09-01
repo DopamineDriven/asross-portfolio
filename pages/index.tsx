@@ -11,14 +11,17 @@ import { getAllPosts } from 'lib/api';
 import { GetStaticProps } from 'next';
 import { Fragment } from 'react';
 import { getAllBlogs } from '../lib/blog-api';
+import About from 'components/about-content';
 
 interface IndexProps {
 	allPosts: Post[];
 	preview?: boolean;
+	title: string;
+	src: string;
 	// blogs: Blog;
 }
 
-const Index = ({ allPosts }: IndexProps) => {
+const Index = ({ allPosts, title, src }: IndexProps) => {
 	const morePosts = allPosts.slice(0);
 	// const faBlog = blogs;
 	return (
@@ -30,6 +33,9 @@ const Index = ({ allPosts }: IndexProps) => {
 			<div className='max-w-cardGridMobile md:max-w-cardGrid my-portfolioH2F grid mx-auto content-center justify-center items-center text-center'>
 				{morePosts.length > 0 && <Cards posts={morePosts} />}
 				{/* {<BlogTitle title={faBlog.title} slug={faBlog.slug} />} */}
+			</div>
+			<div className='max-w-full my-portfolioH2F block mx-auto content-center justify-center items-center text-left'>
+				<About title={title} src={src} />
 			</div>
 			<Footer />
 		</Fragment>
