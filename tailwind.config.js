@@ -178,7 +178,10 @@ module.exports = {
 				svgIcon: '18.0556vw',
 				socialT: '74.58333vw',
 				cardGrid: '85.7939vw',
-				cardGridMobile: '91.1111vw'
+				cardGridMobile: '91.1111vw',
+				aboutImage300: '20.8914vw',
+				aboutImage400: '27.8552vw',
+				aboutImage600: '41.7827vw'
 			},
 			maxWidth: {
 				whole: '100vw',
@@ -221,7 +224,10 @@ module.exports = {
 				svgIcon: '18.0556vw',
 				socialT: '74.58333vw',
 				cardGrid: '85.7939vw',
-				cardGridMobile: '91.1111vw'
+				cardGridMobile: '91.1111vw',
+				aboutImage300: '20.8914vw',
+				aboutImage400: '27.8552vw',
+				aboutImage600: '41.7827vw'
 			},
 			spacing: {
 				negative: '-0.1em',
@@ -235,8 +241,6 @@ module.exports = {
 				portfolioDivider: '0.875vw',
 				gapX: '2.2284vw',
 				offsetY: '7.5209vw',
-				aboutGapX: '8.9136vw',
-				aboutOffsetY: '7.79944vw',
 				mobileGapY: '7.3333vw',
 				imagePortfolio: '41.7827vw',
 				portfolioPadding: '7.1031vw',
@@ -245,6 +249,9 @@ module.exports = {
 				socialMargin: '-0.5vw',
 				portfolioS: '18.60284vw',
 				socialT: '74.58333vw',
+				aboutGapX: '8.9136vw',
+				aboutOffsetY: '7.79944vw',
+				aboutHackingFontAwesomePT: '6.6852vw',
 				7: '1.75rem',
 				14: '3.5rem',
 				18: '4.5rem',
@@ -286,7 +293,9 @@ module.exports = {
 				customTitle: '2.22341vw',
 				customExcerpt: '1.66755vw',
 				customTitleMobile: '4.44682vw',
-				customExcerptMobile: '3.0351vw'
+				customExcerptMobile: '3.0351vw',
+				customAboutTitle: '13.9276vw',
+				customAboutText: '3.3426vw'
 			},
 			boxShadow: {
 				small: '0 5px 10px rgba(0, 0, 0, 0.12)',
