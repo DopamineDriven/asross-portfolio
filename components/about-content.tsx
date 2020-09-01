@@ -69,15 +69,15 @@ const aboutSnippets: AboutInterface[] = [
 	},
 	{
 		id: 59,
-		span: 'Prior to entering tech, I earned BS & BA degrees '
+		span: 'Prior to entering tech, I earned BA & BS '
 	},
 	{
 		id: 6,
-		span: 'in Bio Anthropology & Biochemistry from the '
+		span: 'degrees from the University of Iowa in Biochem '
 	},
 	{
 		id: 7,
-		span: 'University of Iowa. Go Hawks! 🏴󠁵󠁳󠁩󠁡󠁿 '
+		span: '& Bio Anthropology, respectively. Go Hawks! 🏴󠁵󠁳󠁩󠁡󠁿 '
 	},
 	{
 		id: 7,
@@ -105,11 +105,15 @@ const aboutSnippets: AboutInterface[] = [
 	},
 	{
 		id: 12,
-		span: 'Outside of tech, I love snowboarding by Winter'
+		span: ''
 	},
 	{
 		id: 12,
-		span: 'and wakeboarding by Summer. Real-time '
+		span: 'Outside of tech, I love snowboarding by '
+	},
+	{
+		id: 12,
+		span: 'Winter & wakeboarding by Summer. Real-time '
 	},
 	{
 		id: 12,
@@ -141,7 +145,7 @@ const aboutSnippets: AboutInterface[] = [
 	},
 	{
 		id: 12,
-		span: 'line and let\'s build something beautiful together.'
+		span: 'line — let\'s build something beautiful together.'
 	}
 ];
 
@@ -149,7 +153,7 @@ const AboutContent = ({ src, title }: AboutProps) => {
 	const aboutMap = aboutSnippets.map(constituent => {
 		return (
 			<span
-				className='font-thin font-somaRoman tracking-tighter p-last z-0'
+				className='font-thin font-somaRoman tracking-tighter p-last p-indent p-indents z-0'
 				key={constituent.id}
 				style={{}}
 			>

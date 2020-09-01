@@ -247,6 +247,7 @@ module.exports = {
 				mobileGapY: '7.3333vw',
 				imagePortfolio: '41.7827vw',
 				portfolioPadding: '7.1031vw',
+				aboutIndentation: '9.1031vw',
 				portfolioFooter: '3.33vw',
 				portfolioMTP: '-0.83333vw',
 				socialMargin: '-0.5vw',

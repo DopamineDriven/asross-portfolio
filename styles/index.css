@@ -204,5 +204,9 @@ body::-webkit-scrollbar {
 }
 
 .p-indent:nth-child(15) {
-	@apply pl-portfolioPadding;
+	@apply pl-aboutIndentation;
+}
+
+.p-indents:nth-child(25) {
+	@apply pl-aboutIndentation;
 }
