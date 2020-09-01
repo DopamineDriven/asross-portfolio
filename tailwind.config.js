@@ -1,4 +1,5 @@
 module.exports = {
+	important: true,
 	future: {
 		removeDeprecatedGapUtilities: true
 	},
@@ -252,7 +253,8 @@ module.exports = {
 				portfolioS: '18.60284vw',
 				socialT: '74.58333vw',
 				aboutGapX: '8.9136vw',
-				aboutOffsetY: '37.79944vw',
+				aboutOffsetPR: '37.79944vw',
+				aboutoffOffsetPR: '-35.79944vw',
 				aboutHackingFontAwesomePT: '6.6852vw',
 				7: '1.75rem',
 				14: '3.5rem',
@@ -273,6 +275,7 @@ module.exports = {
 			lineHeight: {
 				tight: 1.2,
 				portfolio: '5vw',
+				headerAbout: '2.38298vw',
 				headerP: '4.38298vw',
 				customSLH: '5.33333vw',
 				customSLM: '6.33333vw'
@@ -298,7 +301,7 @@ module.exports = {
 				customExcerptMobile: '3.0351vw',
 				customAboutTitle: '13.9276vw',
 				customAboutText: '3.3426vw',
-				customAbout: '18.41667vw',
+				customAbout: '23.41667vw'
 			},
 			boxShadow: {
 				small: '0 5px 10px rgba(0, 0, 0, 0.12)',
@@ -307,7 +310,7 @@ module.exports = {
 		}
 	},
 	variants: {
-		padding: ['responsive', 'last', 'hover', 'focus', 'even', 'odd']
+		padding: ['responsive', 'last', 'first', 'hover', 'focus', 'even', 'odd']
 	},
 	plugins: [require('@tailwindcss/typography')]
 };

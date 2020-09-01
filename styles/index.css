@@ -194,3 +194,15 @@ body::-webkit-scrollbar {
 .p-lead:nth-child(n + 7) {
 	@apply pl-portfolioS;
 }
+
+.p-leads:nth-child(n + 6) {
+	@apply pl-aboutOffsetPR;
+}
+
+.p-last:nth-child(n + 1):nth-child(-n + 10) {
+	@apply pl-aboutOffsetPR;
+}
+
+.p-indent:nth-child(15) {
+	@apply pl-portfolioPadding;
+}

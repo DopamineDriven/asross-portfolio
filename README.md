@@ -1,7 +1,9 @@
 # asross-portfolio
+
 nextjs portfolio
 
 ## To-do
+
 - About section beneath portfolio items
 - Sub-routing for blog
 - everything is blue toggle for global theme shift
@@ -9,6 +11,7 @@ nextjs portfolio
 - ship!
 
 ## odd/even offset columns
+
 - 108px in height
 - 32px gap-x (2.2284 vw)
 - 1232px frame
@@ -18,47 +21,55 @@ nextjs portfolio
 - coverphoto height 37.5em
 
 ### VW conversions for cards (md or larger viewport)
+
 - 2.2284vw gap-x
 - 600 px in a 1436px viewport -> 41.7827vw
-- px -> 7.1031vw 
+- px -> 7.1031vw
 
 ## About section
-- aboutOffsetY - 7.7994vw
+
+- aboutOffsetPR - 7.7994vw
 - aboutGapX - 8.9136vw
 - HFA column-right pt - 6.6852vw
 - description text (48pt) - 3.3426vw
 - header text (200pt) - 13.9276vw;
 - image
-	- 300x300px width - 20.8914vw
-	- 400x536px width - 27.8552vw
-	- 600x600px width - 41.7827vw
+  - 300x300px width - 20.8914vw
+  - 400x536px width - 27.8552vw
+  - 600x600px width - 41.7827vw
 
 ## Z-index tailwind
+
 - https://tailwindcss.com/docs/z-index#negative-values
 
 ## Window Size
+
 - https://usehooks.com/useWindowSize/
 - https://stackoverflow.com/questions/63406435/how-to-detect-window-size-in-next-js-ssr-using-react-hook
 
 ## Sitemaps in nextjs
+
 - https://github.com/axross/kohei.dev/blob/9a396055f59a8ef8428b80b3682a38afb33c351d/pages/sitemap.xml.ts
 
 ## Tips of nextjsv9 with typescript
+
 - https://www.kohei.dev/posts/7-tips-of-next-js-9-with-typescript?hl=en-US
 
 ## Tailwind Templates
+
 - https://www.codeinwp.com/blog/tailwind-css-templates/
 
 ## Notes
+
 - Drop me a line
-	- a tag -- href="mailto:andrew@windycitydevs.io" style="transform: translate3d(0px, 0%, 0px)"
--	Opens email so they can email right away
--	Call out what specialize in
--	Helvetica New
--	Goudy Bookletter 1911
--	1232 grid on a 1440
+  - a tag -- href="mailto:andrew@windycitydevs.io" style="transform: translate3d(0px, 0%, 0px)"
+- Opens email so they can email right away
+- Call out what specialize in
+- Helvetica New
+- Goudy Bookletter 1911
+- 1232 grid on a 1440
 - 77em (1232px &rarr; grid width, xl viewport)
--	600x600 squares
+- 600x600 squares
 - will be a 6.5 em offset between col 1 and col 2 for projects
 
 ```xml
@@ -68,16 +79,15 @@ nextjs portfolio
 </svg>
 ```
 
-
 ## Typography themes for utils
 
 - https://kyleamathews.github.io/typography.js/
 - - https://tailwindcss.com/docs/typography-plugin
-- Jose Felix 
-	- https://dev.to/joserfelix/using-react-spring-to-animate-svg-icons-dark-mode-toggle-2c86
-	- https://dev.to/joserfelix/kick-start-your-newsletter-mailchimp-custom-form-with-react-og5
-	- https://dev.to/joserfelix/dynamic-theme-switching-in-ant-design-how-to-change-between-light-and-dark-themes-5b8p
-	- https://dev.to/joserfelix/how-to-make-text-match-any-background-color-1n0f
+- Jose Felix
+  - https://dev.to/joserfelix/using-react-spring-to-animate-svg-icons-dark-mode-toggle-2c86
+  - https://dev.to/joserfelix/kick-start-your-newsletter-mailchimp-custom-form-with-react-og5
+  - https://dev.to/joserfelix/dynamic-theme-switching-in-ant-design-how-to-change-between-light-and-dark-themes-5b8p
+  - https://dev.to/joserfelix/how-to-make-text-match-any-background-color-1n0f
 
 ```git
 yarn add typography-theme-sutro typeface-merriweather typeface-open-sans
@@ -121,4 +131,5 @@ npx patch-package @fortawesome/fontawesome-common-types
 ```
 "postinstall": "npx patch-package"
 ```
+
 - https://www.aristidebenoist.com/

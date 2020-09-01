@@ -34,7 +34,7 @@ const Index = ({ allPosts, title, src }: IndexProps) => {
 				{morePosts.length > 0 && <Cards posts={morePosts} />}
 				{/* {<BlogTitle title={faBlog.title} slug={faBlog.slug} />} */}
 			</div>
-			<div className='max-w-cardGridMobile my-portfolioH2F block mx-auto content-center justify-center items-center text-left'>
+			<div className='max-w-full my-portfolioH2F block mx-auto content-center justify-center items-center text-left'>
 				<About title={title} src={src} />
 			</div>
 			<Footer />
