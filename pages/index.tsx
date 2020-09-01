@@ -15,7 +15,6 @@ interface IndexProps {
 }
 
 const Index = ({ allPosts }: IndexProps) => {
-	
 	const morePosts = allPosts.slice(0);
 	return (
 		<Fragment>

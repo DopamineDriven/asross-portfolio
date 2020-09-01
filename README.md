@@ -1,6 +1,13 @@
 # asross-portfolio
 nextjs portfolio
 
+## To-do
+- About section beneath portfolio items
+- Sub-routing for blog
+- everything is blue toggle for global theme shift
+- style it out
+- ship!
+
 ## odd/even offset columns
 - 100px in height
 - 32px gap-x (2.2284 vw)
