@@ -25,6 +25,7 @@ nextjs portfolio
 ## odd/even offset
 - aboutOffsetY - 7.7994vw
 - aboutGapX - 8.9136vw
+- HFA column-left pt - 6.6852vw
 
 ## Z-index tailwind
 - https://tailwindcss.com/docs/z-index#negative-values
