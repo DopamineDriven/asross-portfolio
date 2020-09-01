@@ -8,23 +8,24 @@ import tsx from 'react-syntax-highlighter/dist/esm/languages/prism/tsx';
 import typescript from 'react-syntax-highlighter/dist/esm/languages/prism/typescript';
 import xml from 'react-syntax-highlighter/dist/cjs/languages/hljs/xml';
 import git from 'react-syntax-highlighter/dist/cjs/languages/prism/git';
+import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+
+interface BlogPostBodyProps {
+	content: string;
+}
 
 const CodeBlock = ({
-	language = 'tsx, typescript, svg, html, xml, git',
-	value
-}: SyntaxHighlighterProps) => {
+	language = `tsx, typescript, xml, git, ${tsx}, ${typescript}, ${xml}, ${git}`,
+	content
+}: SyntaxHighlighterProps & BlogPostBodyProps) => {
 	return (
-		<SyntaxHighlighter useInlineStyles={true} language={language}>
-			{value}
+		<SyntaxHighlighter useInlineStyles={true} language={language} style={dark}>
+			{content}
 		</SyntaxHighlighter>
 	);
 };
 
-type Props = {
-	content: string;
-};
-
-const PostBodyBlog = ({ content }: Props) => {
+const PostBodyBlog = ({ content }: BlogPostBodyProps) => {
 	return (
 		<div className='max-w-2xl prose prose-lg mx-auto content-center text-left md:text-justify items-center justify-center align-middle sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl'>
 			<ReactMarkdown
