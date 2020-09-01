@@ -3,18 +3,22 @@ import Lead from 'components/lead';
 import Cards from 'components/cards';
 import Footer from 'components/footer';
 import Post from 'types/post';
+import Blog from 'types/blog';
+import BlogTitle from 'components/blog-title';
 // import useWindowSize from 'lib/window-dimension';
 import { CLIENT_NAME } from 'lib/constants';
 import { getAllPosts } from 'lib/api';
 import { GetStaticProps } from 'next';
 import { Fragment } from 'react';
+import { getAllBlogs } from '../lib/blog-api';
 
 interface IndexProps {
 	allPosts: Post[];
 	preview?: boolean;
+	blog: Blog;
 }
 
-const Index = ({ allPosts }: IndexProps) => {
+const Index = ({ allPosts, blog }: IndexProps) => {
 	const morePosts = allPosts.slice(0);
 	return (
 		<Fragment>
@@ -40,8 +44,9 @@ export const getStaticProps: GetStaticProps = async () => {
 		'coverImage',
 		'excerpt'
 	]);
+	const blogTitle = getAllBlogs(['title', 'slug']);
 
 	return {
-		props: { allPosts }
+		props: { allPosts, blogTitle }
 	};
 };
