@@ -145,7 +145,7 @@ const aboutSnippets: AboutInterface[] = [
 	},
 	{
 		id: 12,
-		span: 'line — let\'s build something beautiful together.'
+		span: 'line — let\'s build something remarkable together.'
 	}
 ];
 
