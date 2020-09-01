@@ -1,18 +1,42 @@
-const getWindowDimensions = () => {
-	const width =
-		window.innerWidth ||
-		document.documentElement.clientWidth ||
-		document.body.clientWidth;
+import { useState, useEffect } from 'react';
 
-	const height =
-		window.innerHeight ||
-		document.documentElement.clientHeight ||
-		document.body.clientHeight;
+interface WindowSizing {
+	width: undefined | number;
+	height: undefined | number;
+}
 
-	return { width, height };
+const useWindowSize = ({ width, height }: WindowSizing) => {
+	// Initialize state with undefined width/height so server and client renders match
+	// Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
+	const [windowSize, setWindowSize] = useState({
+		width,
+		height
+	});
+
+	useEffect(() => {
+		// Handler to call on window resize
+		function handleResize() {
+			// Set window width/height to state
+			setWindowSize({
+				width: window.innerWidth,
+				height: window.innerHeight
+			});
+		}
+
+		// Add event listener
+		window.addEventListener('resize', handleResize);
+
+		// Call handler right away so state gets updated with initial window size
+		handleResize();
+
+		// Remove event listener on cleanup
+		return () => window.removeEventListener('resize', handleResize);
+	}, []); // Empty array ensures that effect is only run on mount
+
+	return windowSize;
 };
 
-export default getWindowDimensions;
+export default useWindowSize;
 
 // https://github.com/applike/responsive-react
 // https://www.npmjs.com/package/typed-responsive-react

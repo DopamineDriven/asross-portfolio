@@ -194,7 +194,3 @@ body::-webkit-scrollbar {
 .p-lead:nth-child(n + 7) {
 	@apply pl-portfolioS;
 }
-
-/* .cards-custom:nth-child(2n) {
-	
-} */
