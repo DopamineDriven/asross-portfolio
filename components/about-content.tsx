@@ -1,6 +1,8 @@
+import AboutImage from 'components/about-image';
+
 interface AboutProps {
 	title: string;
-	content: string;
+	src: string;
 }
 
 interface AboutInterface {
@@ -27,7 +29,7 @@ const aboutSnippets: AboutInterface[] = [
 	},
 	{
 		id: 4,
-		span: 'businesses. Here is some more blah blah '
+		span: 'businesses... '
 	},
 	{
 		id: 5,
@@ -63,7 +65,7 @@ const aboutSnippets: AboutInterface[] = [
 	}
 ];
 
-const AboutContent = ({ title, content }: AboutProps) => {
+const AboutContent = ({ src, title }: AboutProps) => {
 	const aboutMap = aboutSnippets.map(constituent => {
 		return (
 			<span
@@ -77,16 +79,22 @@ const AboutContent = ({ title, content }: AboutProps) => {
 	});
 	return (
 		<div
-			className='relative z-1 justify-between pt-portfolio navbar-expand-lg flex flex-col min-w-full w-full container overflow-y-hidden overflow-x-hidden transform duration-300'
+			className='relative justify-between pt-portfolio navbar-expand-lg flex flex-col min-w-full w-full container overflow-y-hidden font-left overflow-x-hidden transform duration-300'
 			style={{ transform: 'translate3d(0px, 0px, 0px)' }}
 		>
 			<h1
-				className='font-head text-customAboutTitle relative flex-grow text-center justify-center tracking-tight leading-portfolio font-light cursor-default w-full min-w-full'
+				className='font-head z-1 text-customAbout relative flex-grow text-center justify-center tracking-tight leading-portfolio font-light cursor-default w-full min-w-full'
 				style={{ marginBlockStart: '0.67em', marginBlockEnd: '0.67em' }}
 			>
-				<a className='text-customAboutTitle block'>About</a>
+				<a className='text-customAbout block'>About</a>
 			</h1>
-			<p className='text-customP pr-portfolioRS leading-headerP block font-somaRoman tracking-tighter font-thin'>
+			<div
+					className='md:text-customSM text-customSM font-somaRoman md:leading-customSLH leading-customSLM tracking-wide block z-0'
+					style={{ position: 'absolute', top: '15.78333vw', right: '3.33333vw' }}
+				>
+					<AboutImage src={src} title={title} />
+				</div>
+			<p className='text-customP leading-headerP block font-somaRoman tracking-tighter font-thin pr-aboutOffsetY'>
 				{aboutMap}
 			</p>
 		</div>

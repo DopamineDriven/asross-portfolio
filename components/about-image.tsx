@@ -8,12 +8,12 @@ const AboutImage = ({
 	title = 'Andrew Ross'
 }: AboutImageProps) => {
 	return (
-		<div className='max-w-imagePortfolioMobile md:max-w-aboutImage600 rounded-lg overflow-y-hidden bg-portfolio block'>
+		<div className=' pt-aboutOffsetY mx-auto max-w-imagePortfolioMobile md:max-w-aboutImage600 rounded-lg overflow-y-hidden bg-portfolio block'>
 			<a aria-label={title}>
 				<img
 					src={src}
 					alt={title}
-					className='w-imagePortfolioMobile max-w-imagePortfolioMobile md:w-aboutImage600 md:max-w-aboutImage600 h-auto max-h-full md:h-auto rounded-lg'
+					className='w-imagePortfolioMobile max-w-imagePortfolioMobile md:w-aboutImage600 md:max-w-aboutImage:600 h-auto max-h-full md:h-auto rounded-full'
 				/>
 			</a>
 		</div>

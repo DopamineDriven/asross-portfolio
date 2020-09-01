@@ -250,7 +250,7 @@ module.exports = {
 				portfolioS: '18.60284vw',
 				socialT: '74.58333vw',
 				aboutGapX: '8.9136vw',
-				aboutOffsetY: '7.79944vw',
+				aboutOffsetY: '17.79944vw',
 				aboutHackingFontAwesomePT: '6.6852vw',
 				7: '1.75rem',
 				14: '3.5rem',
@@ -295,7 +295,8 @@ module.exports = {
 				customTitleMobile: '4.44682vw',
 				customExcerptMobile: '3.0351vw',
 				customAboutTitle: '13.9276vw',
-				customAboutText: '3.3426vw'
+				customAboutText: '3.3426vw',
+				customAbout: '20.41667vw',
 			},
 			boxShadow: {
 				small: '0 5px 10px rgba(0, 0, 0, 0.12)',
