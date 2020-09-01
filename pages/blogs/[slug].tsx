@@ -11,12 +11,15 @@ import Footer from 'components/footer';
 import BlogType from 'types/blog';
 
 interface BlogProps {
-  blog: BlogType;
-  blogs: BlogType[];
+	blog: BlogType;
+	blogs: BlogType[];
 }
 
 const Blog = ({ blog, blogs }: BlogProps) => {
-
-}
+	const router = useRouter();
+	if (!router.isFallback && !blog?.slug) {
+		return <ErrorPage statusCode={404} />;
+	}
+};
 
 export default Blog;
