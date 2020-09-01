@@ -133,11 +133,11 @@ const aboutSnippets: AboutInterface[] = [
 	},
 	{
 		id: 12,
-		span: 'internationally. I\'m so glad you decided to stop by '
+		span: 'internationally. I\'m so glad you decided to stop '
 	},
 	{
 		id: 12,
-		span: 'and endure the tech-talk to arrive at this point! '
+		span: 'by & endure the tech-talk to arrive at this point! '
 	},
 	{
 		id: 12,
