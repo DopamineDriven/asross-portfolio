@@ -15,6 +15,13 @@ nextjs portfolio
 - 600 px in a 1436px viewport -> 41.7827vw
 - px -> 7.1031vw 
 
+## Z-index tailwind
+- https://tailwindcss.com/docs/z-index#negative-values
+
+## Window Size
+- https://usehooks.com/useWindowSize/
+- https://stackoverflow.com/questions/63406435/how-to-detect-window-size-in-next-js-ssr-using-react-hook
+
 ## Sitemaps in nextjs
 - https://github.com/axross/kohei.dev/blob/9a396055f59a8ef8428b80b3682a38afb33c351d/pages/sitemap.xml.ts
 
