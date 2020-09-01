@@ -12,7 +12,7 @@ interface CardProps {
 
 const Card = ({ date, excerpt, slug, src, title }: CardProps) => {
 	return (
-		<div className='block md:odd:pt-offsetY' id='#'>
+		<div className='block md:odd:pt-offsetY'>
 			<div className='max-w-imagePortfolioMobile md:max-w-imagePortfolio rounded-lg overflow-y-hidden bg-portfolio block'>
 				<CoverImageCard slug={slug} src={src} title={title} />
 				<div className='flex flex-col text-center justify-center bg-portfolio'>
