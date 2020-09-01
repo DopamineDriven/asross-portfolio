@@ -9,7 +9,7 @@ nextjs portfolio
 - ship!
 
 ## odd/even offset columns
-- 100px in height
+- 108px in height
 - 32px gap-x (2.2284 vw)
 - 1232px frame
 - 328px mobile frame
@@ -21,6 +21,10 @@ nextjs portfolio
 - 2.2284vw gap-x
 - 600 px in a 1436px viewport -> 41.7827vw
 - px -> 7.1031vw 
+
+## odd/even offset
+- aboutOffsetY - 7.7994vw
+- aboutGapX - 8.9136vw
 
 ## Z-index tailwind
 - https://tailwindcss.com/docs/z-index#negative-values
