@@ -31,7 +31,7 @@ const MetaData = () => {
 				<meta name='robots' content='all' />
 				<meta
 					name='viewport'
-					content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'
+					content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=yes'
 				/>
 				<meta name='format-detection' content='telephone=no' />
 				<title>Andrew Ross — Full-Stack Engineer</title>
