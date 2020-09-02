@@ -22,6 +22,8 @@ interface IndexProps {
 }
 
 const Index = ({ allPosts, title, src }: IndexProps) => {
+	const value: number = parseFloat('3.14.55');
+	console.log(value);
 	const morePosts = allPosts.slice(0);
 	// const faBlog = blogs;
 	return (
