@@ -1,5 +1,13 @@
 # asross-portfolio
 
+### TS interfaces vs Types
+- https://stackoverflow.com/questions/37233735/typescript-interfaces-vs-types
+- 
+### TS Classes vs interfaces
+- https://passionfordev.com/typescript-classes-vs-interfaces/
+- https://stackoverflow.com/questions/40973074/difference-between-interfaces-and-classes-in-typescript
+- https://stackoverflow.com/questions/12764247/typescript-interface-vs-class-vs-modules-vs-program-vs-function
+
 nextjs portfolio
 
 ## To-do
