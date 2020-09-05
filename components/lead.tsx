@@ -152,7 +152,7 @@ const Lead = () => {
 				</div>
 				<p
 					className={
-						'text-customP pr-portfolioRS pl-portfolioLS leading-headerP block font-somaRoman tracking-tighter font-thin'
+						'text-customPMobile md:text-customP pr-portfolioRS pl-portfolioLS leading-headerP block font-somaRoman tracking-tighter font-thin'
 					}
 				>
 					{spanMap}
