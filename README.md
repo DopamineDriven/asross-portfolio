@@ -1,5 +1,19 @@
 # asross-portfolio
 
+## Conditionally render by device type
+- https://medium.com/applike/https-medium-com-applike-react-responsive-conditional-rendering-of-component-c97ab247097d
+- https://github.com/applike/react-responsive
+- https://www.npmjs.com/package/responsive-react
+- https://www.npmjs.com/package/typed-responsive-react
+
+### TS interfaces vs Types
+- https://stackoverflow.com/questions/37233735/typescript-interfaces-vs-types
+- 
+### TS Classes vs interfaces
+- https://passionfordev.com/typescript-classes-vs-interfaces/
+- https://stackoverflow.com/questions/40973074/difference-between-interfaces-and-classes-in-typescript
+- https://stackoverflow.com/questions/12764247/typescript-interface-vs-class-vs-modules-vs-program-vs-function
+
 nextjs portfolio
 
 ## To-do
@@ -133,3 +147,53 @@ npx patch-package @fortawesome/fontawesome-common-types
 ```
 
 - https://www.aristidebenoist.com/
+
+- 09/05/20
+- https://github.com/vercel/next.js/discussions/14810
+```tsx
+import { useState, useCallback, useEffect } from 'react';
+
+const useMediaQuery = (width) => {
+  const [targetReached, setTargetReached] = useState(false);
+
+  const updateTarget = useCallback((e) => {
+    if (e.matches) {
+      setTargetReached(true);
+    } else {
+      setTargetReached(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    const media = window.matchMedia(`(max-width: ${width}px)`);
+    media.addListener(updateTarget);
+
+    // Check on mount (callback is not called until a change occurs)
+    if (media.matches) {
+      setTargetReached(true);
+    }
+
+    return () => media.removeListener(updateTarget);
+  }, []);
+
+  return targetReached;
+};
+
+
+const Navbar = () => {
+   const isBreakpoint = useMediaQuery(768)
+   return (
+    <div>
+      { isBreakpoint ? (
+        <div>
+          <HamburgerMenu />
+        </div>
+      ) : (
+        <div>
+           <FullMenu />
+        </div>
+   )
+)}
+
+export default Navbar;
+```

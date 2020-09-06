@@ -11,6 +11,7 @@ html {
 	background-color: #ebe8e0;
 	margin: 0;
 	padding: 0;
+	scroll-behavior: smooth;
 }
 
 #__next {
