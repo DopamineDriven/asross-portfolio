@@ -7,21 +7,14 @@ interface AboutImageProps {
 	slug?: string;
 }
 
-const AboutImage = ({
-	src,
-	title,
-	slug
-}: AboutImageProps) => {
+const AboutImage = ({ src, title, slug }: AboutImageProps) => {
 	const image = (
 		<img
 			src={src}
 			alt={title}
-			className={cn(
-				'w-aboutImage500 max-w-aboutImage500 h-full max-h-full z-2',
-				{
-					'hover:shadow-medium transition-shadow duration-300': slug
-				}
-			)}
+			className={cn('w-aboutImage500 max-w-aboutImage500 h-full max-h-full z-2', {
+				'hover:shadow-medium transition-shadow duration-300': slug
+			})}
 		/>
 	);
 	return (
@@ -31,15 +24,8 @@ const AboutImage = ({
 					<a aria-label={title}>{image}</a>
 				</Link>
 			) : (
-					image
+				image
 			)}
-			{/* <a aria-label={title}>
-				<img
-					src={src}
-					alt={title}
-					className=' w-aboutImage500 max-w-aboutImage500 h-full max-h-full z-2 '
-				/>
-			</a> */}
 		</div>
 	);
 };
