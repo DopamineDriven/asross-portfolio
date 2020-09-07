@@ -9,13 +9,19 @@ interface AboutImageProps {
 
 const AboutImage = ({
 	src = 'https://res.cloudinary.com/asross311/image/upload/v1598947180/portfolio/IMG_3824_1_8_egnkfs.jpg',
-	title = 'Andrew Ross'
+	title = 'Andrew Ross',
+	slug
 }: AboutImageProps) => {
 	const image = (
 		<img
 			src={src}
 			alt={title}
-			className=' w-aboutImage500 max-w-aboutImage500 h-full max-h-full z-2 '
+			className={cn(
+				'w-aboutImage500 max-w-aboutImage500 h-full max-h-full z-2',
+				{
+					'hover:shadow-medium transition-shadow duration-300': slug
+				}
+			)}
 		/>
 	);
 	return (
