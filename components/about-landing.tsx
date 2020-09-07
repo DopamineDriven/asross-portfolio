@@ -23,11 +23,11 @@ const aboutSnippets: AboutInterface[] = [
 	},
 	{
 		id: 1,
-		span: 'small/medium sized businesses & '
+		span: 'small/medium sized businesses and '
 	},
 	{
 		id: 2,
-		span: 'start-ups in the greater Chicago area '
+		span: 'start-ups in the greater Chicago area. '
 	},
 	{
 		id: 3,
