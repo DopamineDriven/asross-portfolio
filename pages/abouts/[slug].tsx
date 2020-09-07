@@ -20,7 +20,15 @@ interface AboutSlugProps {
 
 const About = ({ about, abouts }: AboutSlugProps) => {
 	const moreAbouts = abouts?.slice(1);
-	const router = useRouter();
+  const router = useRouter();
+  if (!router.isFallback && !about?.slug) {
+    return <ErrorPage statusCode={404} />
+  }
+  return (
+    <Fragment>
+      <AboutHeader />
+    </Fragment>
+  )
 };
 
 export default About;
