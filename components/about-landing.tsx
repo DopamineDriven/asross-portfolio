@@ -1,6 +1,7 @@
 import AboutImage from 'components/about-image';
 import AboutExcerpt from 'components/about-excerpt';
 import AboutTitle from 'components/about-title';
+import { Fragment } from 'react';
 
 interface AboutProps {
 	title: string;
@@ -18,147 +19,143 @@ interface AboutInterface {
 const aboutSnippets: AboutInterface[] = [
 	{
 		id: 0,
-		span: 'Experience spearheading '
+		span: 'Experience spearheading projects for '
 	},
 	{
 		id: 1,
-		span: 'projects for small/medium '
+		span: 'small/medium sized businesses & '
 	},
 	{
 		id: 2,
-		span: 'sized businesses & start- '
+		span: 'start-ups in the greater Chicago area '
 	},
 	{
 		id: 3,
-		span: 'ups in the greater Chicago '
+		span: 'Currently wrapping up a project aiming '
 	},
 	{
 		id: 4,
-		span: 'area. Currently wrapping up  '
+		span: 'to unite 60-130 Independent local'
 	},
 	{
 		id: 5,
-		span: 'a project aiming to unite '
+		span: 'media companies. Scope includes '
 	},
 	{
 		id: 6,
-		span: '60-130 independent local '
+		span: 'building a future-proof directory via '
 	},
 	{
 		id: 7,
-		span: 'media companies. Scope  '
+		span: "React's Nextjs framework, WordPress "
 	},
 	{
 		id: 8,
-		span: 'includes building a future-'
+		span: 'Engine as the Headless CMS, and '
 	},
 	{
 		id: 9,
-		span: `proof directory via React\'s `
+		span: `Vercel\'s edge network to host the `
 	},
 	{
 		id: 10,
-		span: `Nextjs framework, WP Engine as the Headless `
+		span: `client. WP-GQL plugins couple `
 	},
 	{
 		id: 11,
-		span: "CMS, & Vercel's edge network to host the client. "
-	},
-	{
-		id: 12,
-		span: 'WP-GQL plugins couple brilliantly with HWP.'
-	},
-	{
-		id: 13,
-		span: ''
-	},
-	{
-		id: 14,
-		span: 'Prior to entering tech, I earned BA & BS '
-	},
-	{
-		id: 15,
-		span: 'degrees from the University of Iowa in Biochem '
-	},
-	{
-		id: 16,
-		span: '& Bio Anthropology, respectively. Go Hawks! 🏴󠁵 '
-	},
-	{
-		id: 17,
-		span: 'After working as an industrial engineer at UPS, '
-	},
-	{
-		id: 18,
-		span: "I decided to enroll in Northwestern's full-stack "
-	},
-	{
-		id: 19,
-		span: 'bootcamp. Shortly after graduation, Windy City '
-	},
-	{
-		id: 20,
-		span: `Devs LLC was conceived, & I have been acting `
-	},
-	{
-		id: 21,
-		span: 'CTO since. In addition to freelance, I am also a '
-	},
-	{
-		id: 22,
-		span: 'remote TA for a full-stack cohort at Vanderbilt.'
-	},
-	{
-		id: 23,
-		span: ''
-	},
-	{
-		id: 24,
-		span: 'Outside of tech, I love snowboarding by '
-	},
-	{
-		id: 25,
-		span: 'Winter & wakeboarding by Summer. Real-time '
-	},
-	{
-		id: 26,
-		span: 'strategy games have been a favorite since 14  '
-	},
-	{
-		id: 27,
-		span: 'with my poison of preference being Age of '
-	},
-	{
-		id: 28,
-		span: 'Empires III. I am eager to explore more of the '
-	},
-	{
-		id: 29,
-		span: 'world and am open to relocation, be it intra- or'
-	},
-	{
-		id: 30,
-		span: "internationally. I'm so glad you decided to stop "
-	},
-	{
-		id: 31,
-		span: 'by & endure the tech-talk to arrive at this point! '
-	},
-	{
-		id: 32,
-		span: "This journey's just getting started so drop me a "
-	},
-	{
-		id: 33,
-		span: "line; let's build something remarkable together."
+		span: 'brilliantly with HWP. '
 	}
+	// {
+	// 	id: 13,
+	// 	span: ''
+	// },
+	// {
+	// 	id: 14,
+	// 	span: 'Prior to entering tech, I earned BA & BS '
+	// },
+	// {
+	// 	id: 15,
+	// 	span: 'degrees from the University of Iowa in Biochem '
+	// },
+	// {
+	// 	id: 16,
+	// 	span: '& Bio Anthropology, respectively. Go Hawks! 🏴󠁵 '
+	// },
+	// {
+	// 	id: 17,
+	// 	span: 'After working as an industrial engineer at UPS, '
+	// },
+	// {
+	// 	id: 18,
+	// 	span: "I decided to enroll in Northwestern's full-stack "
+	// },
+	// {
+	// 	id: 19,
+	// 	span: 'bootcamp. Shortly after graduation, Windy City '
+	// },
+	// {
+	// 	id: 20,
+	// 	span: `Devs LLC was conceived, & I have been acting `
+	// },
+	// {
+	// 	id: 21,
+	// 	span: 'CTO since. In addition to freelance, I am also a '
+	// },
+	// {
+	// 	id: 22,
+	// 	span: 'remote TA for a full-stack cohort at Vanderbilt.'
+	// },
+	// {
+	// 	id: 23,
+	// 	span: ''
+	// },
+	// {
+	// 	id: 24,
+	// 	span: 'Outside of tech, I love snowboarding by '
+	// },
+	// {
+	// 	id: 25,
+	// 	span: 'Winter & wakeboarding by Summer. Real-time '
+	// },
+	// {
+	// 	id: 26,
+	// 	span: 'strategy games have been a favorite since 14  '
+	// },
+	// {
+	// 	id: 27,
+	// 	span: 'with my poison of preference being Age of '
+	// },
+	// {
+	// 	id: 28,
+	// 	span: 'Empires III. I am eager to explore more of the '
+	// },
+	// {
+	// 	id: 29,
+	// 	span: 'world and am open to relocation, be it intra- or'
+	// },
+	// {
+	// 	id: 30,
+	// 	span: "internationally. I'm so glad you decided to stop "
+	// },
+	// {
+	// 	id: 31,
+	// 	span: 'by & endure the tech-talk to arrive at this point! '
+	// },
+	// {
+	// 	id: 32,
+	// 	span: "This journey's just getting started so drop me a "
+	// },
+	// {
+	// 	id: 33,
+	// 	span: "line; let's build something remarkable together."
+	// }
 ];
 
 const AboutContent = ({ slug, src, title, date, excerpt }: AboutProps) => {
 	const aboutMap = aboutSnippets.map(constituent => {
 		return (
 			<span
-				className='font-thin font-somaRoman tracking-tighter p-last p-indent p-indents z-0 text-customSMobile'
+				className='font-thin font-somaRoman tracking-tighter p-last p-indent p-indents z-0 text-customSM md:text-customSM'
 				key={constituent.id}
 				style={{}}
 			>
@@ -168,31 +165,33 @@ const AboutContent = ({ slug, src, title, date, excerpt }: AboutProps) => {
 		);
 	});
 	return (
-		<div
-			className='relative justify-between pt-portfolio navbar-expand-lg flex flex-col min-w-full w-full container overflow-y-hidden overflow-x-hidden transform duration-300 cursor-default select-none'
-			style={{ transform: 'translate3d(0px, 0px, 0px)' }}
-		>
-			<AboutTitle title={title} slug={slug} />
+		<Fragment>
 			<div
-				className='md:text-customSM text-customSM font-somaRoman md:leading-customSLH leading-customSLM tracking-wide block z-1 '
-				style={{ position: 'absolute', top: '42.98333vw', left: '3.23333vw' }}
+				className='relative justify-between pt-portfolio navbar-expand-lg flex flex-col min-w-full w-full container overflow-y-hidden overflow-x-hidden transform duration-300 cursor-default select-none'
+				style={{ transform: 'translate3d(0px, 0px, 0px)' }}
 			>
-				<AboutImage src={src} title={title} slug={slug} />
-			</div>
-			<p className='text-customP leading-headerP pr-portfolioDivider pl-portfolioLS block font-somaRoman tracking-tighter font-thin z-0'>
-				<div className='mx-auto block'>
-					{aboutMap}
-					<span className='font-thin font-somaRoman tracking-tighter cursor-default'>
-						<span className='text-portfolio hover:text-fiveOBlack text-customTitle font-thin font-somaRoman tracking-tighter z-0 pl-portfolioDivider text-center juftify-center block'>
-							"The mechanic that would perfect his work must first sharpen his tools."
-							<em>- Confucius</em>
-						</span>
-					</span>
+				<AboutTitle title={title} slug={slug} />
+				<div
+					className='md:text-customSMobile text-customSM font-somaRoman md:leading-customSLH leading-customSLM tracking-wide block z-1 '
+					style={{ position: 'absolute', top: '47.98333vw', left: '3.23333vw' }}
+				>
+					<AboutImage src={src} title={title} slug={slug} />
 					<AboutExcerpt excerpt={excerpt} slug={slug} />
-					<div className='hidden'>{date}</div>
 				</div>
-			</p>
-		</div>
+				<p className='text-customP leading-headerP pr-portfolioDivider pl-portfolioLS block font-somaRoman tracking-tighter font-thin z-0'>
+					<div className='mx-auto block'>
+						{aboutMap}
+						<span className='font-thin font-somaRoman tracking-tighter cursor-default'>
+							<span className='text-portfolio hover:text-fiveOBlack text-customTitle font-thin font-somaRoman tracking-tighter z-0 pl-portfolioDivider text-center juftify-center block'>
+								"The mechanic that would perfect his work must first sharpen his tools."
+								<em>- Confucius</em>
+							</span>
+						</span>
+						<div className='hidden'>{date}</div>
+					</div>
+				</p>
+			</div>
+		</Fragment>
 	);
 };
 

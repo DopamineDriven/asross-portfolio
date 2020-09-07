@@ -4,23 +4,6 @@ excerpt: 'Hacking the Font Awesome Library with React, Nextjs, and TypeScript to
 coverImage: 'https://res.cloudinary.com/asross311/image/upload/v1598874059/portfolio/Rectangle_6036_gmc1ej.jpg'
 articleImage: 'https://dev-to-uploads.s3.amazonaws.com/i/51fagc1ri8auwsxfpkzj.png'
 date: '2020-08-19T08:35:07.322Z'
-author:
- name: Andrew Ross
- avatar: 'https://res.cloudinary.com/asross311/image/upload/v1597678722/portfolio/doge_ropqvx.jpg'
- github: 'https://github.com/DopamineDriven'
- twitter: 'https://twitter.com/Dopamine_Driven'
- linkedin: 'https://www.linkedin.com/in/asross/'
- vercel: 'https://next-jamstack-portfolio.vercel.app/'
- heroku: 'https://heroku.com'
-	antdesign: 'a'
-	apollo: 'apollo'
-	auth0: 'a'
-	graphql: 'graphql'
-	next: 'next'
-	react: 'react'
-	tailwindcss: 'tailwindcss'
-	typescript: 'typescript'
-	wordpress: 'wordpress'
 ogImage:
  url: '/assets/next-jamstack.jpg'
 ---

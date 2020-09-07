@@ -215,7 +215,7 @@ body::-webkit-scrollbar {
 	@apply pl-aboutOffsetPR;
 }
 
-.p-last:nth-child(n + 1):nth-child(-n + 10) {
+.p-last:nth-child(n + 1):nth-child(-n + 12) {
 	@apply pl-aboutOffsetPR;
 }
 
