@@ -1,5 +1,8 @@
 # asross-portfolio
 
+## Dark Mode React App Aug 5, 2020
+- https://www.carlrippon.com/implementing-dark-mode-in-a-react-app-with-css-properties/
+
 ## Smooth Scrolling React Library (alternative to global html css call scroll-behavior: smooth)
 - https://www.digitalocean.com/community/tutorials/how-to-implement-smooth-scrolling-in-react
 

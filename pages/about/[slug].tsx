@@ -12,6 +12,7 @@ import AboutPostHeader from 'components/about-post-header';
 import AboutPostBody from 'components/about-post-body';
 import AboutPostTitle from 'components/about-post-title';
 import AboutFooter from 'components/about-post-footer';
+import ReactMarkdown from 'react-markdown/with-html';
 
 interface AboutSlugProps {
 	about: AboutType;
@@ -20,7 +21,7 @@ interface AboutSlugProps {
 
 const About = ({ about, abouts }: AboutSlugProps) => {
 	const moreAbouts = abouts?.slice(1);
-	console.log(moreAbouts.toLocaleString);
+	// console.log(moreAbouts.toLocaleString);
 	const router = useRouter();
 	if (!router.isFallback && !about?.slug) {
 		return <ErrorPage statusCode={404} />;
@@ -72,14 +73,12 @@ export const getStaticProps = async ({
 		'ogImage',
 		'coverImage'
 	]);
-	const content = await markdownToHtml(about.content || '');
-	console.log(content);
 
 	return {
 		props: {
 			about: {
 				...about,
-				content
+
 			}
 		}
 	};
