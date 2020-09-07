@@ -3,6 +3,7 @@ export default interface About {
 	title: string;
 	coverImage: string;
 	excerpt: string;
+	date: string;
 	ogImage: {
 		url: string;
 	};

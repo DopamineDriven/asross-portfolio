@@ -1,8 +1,12 @@
 import AboutImage from 'components/about-image';
+import ReactMarkdown from 'react-markdown/with-html';
 
 interface AboutProps {
 	title: string;
 	src: string;
+	slug: string;
+	excerpt: string;
+	date: string;
 }
 
 interface AboutInterface {
@@ -149,7 +153,7 @@ const aboutSnippets: AboutInterface[] = [
 	}
 ];
 
-const AboutContent = ({ src, title }: AboutProps) => {
+const AboutContent = ({ slug, src, title }: AboutProps) => {
 	const aboutMap = aboutSnippets.map(constituent => {
 		return (
 			<span
@@ -177,7 +181,7 @@ const AboutContent = ({ src, title }: AboutProps) => {
 				className='md:text-customSM text-customSM font-somaRoman md:leading-customSLH leading-customSLM tracking-wide block z-1 rounded-full'
 				style={{ position: 'absolute', top: '42.98333vw', left: '3.23333vw' }}
 			>
-				<AboutImage src={src} title={title} />
+				<AboutImage src={src} title={title} slug={slug} />
 			</div>
 			<p className='text-customP leading-headerP pr-portfolioDivider pl-portfolioLS block font-somaRoman tracking-tighter font-thin z-0'>
 				<div className='mx-auto block'>

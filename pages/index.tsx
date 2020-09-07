@@ -8,22 +8,20 @@ import Post from 'types/post';
 // import useWindowSize from 'lib/window-dimension';
 import { CLIENT_NAME } from 'lib/constants';
 import { getAllPosts } from 'lib/api';
+import { getAllAbouts } from 'lib/about-api';
 import { GetStaticProps } from 'next';
 import { Fragment } from 'react';
-import { getAllBlogs } from '../lib/blog-api';
 import About from 'components/about-content';
+import AboutType from 'types/about';
 
 interface IndexProps {
 	allPosts: Post[];
 	preview?: boolean;
-	title: string;
-	src: string;
+	about: AboutType;
 	// blogs: Blog;
 }
 
-const Index = ({ allPosts, title, src }: IndexProps) => {
-	const value: number = parseFloat('3.14.55');
-	console.log(value);
+const Index = ({ allPosts, about }: IndexProps) => {
 	const morePosts = allPosts.slice(0);
 	// const faBlog = blogs;
 	return (
@@ -37,7 +35,13 @@ const Index = ({ allPosts, title, src }: IndexProps) => {
 				{/* {<BlogTitle title={faBlog.title} slug={faBlog.slug} />} */}
 			</div>
 			<div className='max-w-full my-portfolioH2F block mx-auto content-center justify-center items-center text-left'>
-				<About title={title} src={src} />
+				<About
+					title={about.title}
+					src={about.coverImage}
+					slug={about.slug}
+					excerpt={about.excerpt}
+					date={about.date}
+				/>
 			</div>
 			<Footer />
 		</Fragment>
@@ -54,6 +58,14 @@ export const getStaticProps: GetStaticProps = async () => {
 		'coverImage',
 		'excerpt'
 	]);
+
+	const allAbout = getAllAbouts([
+		'title',
+		'date',
+		'slug',
+		'coverImage',
+		'excerpt'
+	]);
 	// const blogTitle = getAllBlogs([
 	// 	'title',
 	// 	'date',
@@ -64,6 +76,6 @@ export const getStaticProps: GetStaticProps = async () => {
 	// ]);
 
 	return {
-		props: { allPosts }
+		props: { allPosts, allAbout }
 	};
 };

@@ -8,8 +8,8 @@ interface AboutImageProps {
 }
 
 const AboutImage = ({
-	src = 'https://res.cloudinary.com/asross311/image/upload/v1598947180/portfolio/IMG_3824_1_8_egnkfs.jpg',
-	title = 'Andrew Ross',
+	src,
+	title,
 	slug
 }: AboutImageProps) => {
 	const image = (
@@ -26,13 +26,20 @@ const AboutImage = ({
 	);
 	return (
 		<div className='mx-auto max-w-aboutImage500 overflow-y-hidden overflow-x-hidden bg-portfolio block'>
-			<a aria-label={title}>
+			{slug ? (
+				<Link as={`/about/${slug}`} href='/about/[slug]' passHref>
+					<a aria-label={title}>{image}</a>
+				</Link>
+			) : (
+					image
+			)}
+			{/* <a aria-label={title}>
 				<img
 					src={src}
 					alt={title}
 					className=' w-aboutImage500 max-w-aboutImage500 h-full max-h-full z-2 '
 				/>
-			</a>
+			</a> */}
 		</div>
 	);
 };
