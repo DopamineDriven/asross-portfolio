@@ -4,20 +4,17 @@ import {
 	Prism as SyntaxHighlighter,
 	SyntaxHighlighterProps
 } from 'react-syntax-highlighter';
-import tsx from 'react-syntax-highlighter/dist/esm/languages/prism/tsx';
-import typescript from 'react-syntax-highlighter/dist/esm/languages/prism/typescript';
-import xml from 'react-syntax-highlighter/dist/cjs/languages/hljs/xml';
-import git from 'react-syntax-highlighter/dist/cjs/languages/prism/git';
+// import tsx from 'react-syntax-highlighter/dist/esm/languages/prism/tsx';
+// import typescript from 'react-syntax-highlighter/dist/esm/languages/prism/typescript';
+// import xml from 'react-syntax-highlighter/dist/cjs/languages/hljs/xml';
+// import git from 'react-syntax-highlighter/dist/cjs/languages/prism/git';
 import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 interface BlogPostBodyProps {
 	content: string;
 }
 
-const CodeBlock = ({
-	language = `${tsx}, ${typescript}, ${xml}, ${git}`,
-	children
-}: SyntaxHighlighterProps) => {
+const CodeBlock = ({ language, children }: SyntaxHighlighterProps) => {
 	return (
 		<SyntaxHighlighter
 			useInlineStyles={true}
