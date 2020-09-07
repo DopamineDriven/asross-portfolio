@@ -7,7 +7,7 @@ import {
 // import dark from 'react-syntax-highlighter/dist/esm/styles/prism/dark';
 
 
-interface BlogPostBodyProps {
+interface AboutPostBodyProps {
 	content: string;
 }
 // customStyle={{ 'backgroundColor': 'black', 'textShadow': 'black', 'textDecoration': 'none' }}
@@ -20,7 +20,7 @@ const CodeBlock = ({ language, value }: SyntaxHighlighterProps) => {
 	);
 };
 
-const AboutPostBody = ({ content }: BlogPostBodyProps) => {
+const AboutPostBody = ({ content }: AboutPostBodyProps) => {
 	return (
 		<div className='text-shadow-none shadow-none  mx-auto content-center text-left md:text-left md:text-customP items-center justify-center align-middle '>
 			<ReactMarkdown
