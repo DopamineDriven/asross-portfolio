@@ -2,15 +2,19 @@ import ReactMarkdown from 'react-markdown/with-html';
 import Link from 'next/link';
 
 interface AboutExcerptProps {
-  excerpt: string;
-  slug: string;
+	excerpt: string;
+	slug: string;
 }
 
 const AboutExcerpt = ({ excerpt, slug }: AboutExcerptProps) => {
 	return (
 		<div className='text-oneFiveBlack cursor-default hover:text-fiveOBlack'>
-			<Link as={`/about/${slug}`} href='/about/[slug]' passHref>
-				<a className='font-somaRoman' aria-label={`${excerpt}`} id={`home-${excerpt}`}>
+			<Link as={`/about/${slug}`} href='/about/[slug]' passHref scroll={false}>
+				<a
+					className='font-somaRoman'
+					aria-label={`${excerpt}`}
+					id={`home-${excerpt}`}
+				>
 					<ReactMarkdown
 						escapeHtml={false}
 						source={excerpt}

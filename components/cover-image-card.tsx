@@ -23,7 +23,7 @@ const CoverImageCard = ({ title, src, slug }: CoverImageProps) => {
 	return (
 		<div className='-mx-5 sm:mx-0'>
 			{slug ? (
-				<Link as={`/posts/${slug}`} href='/posts/[slug]'>
+				<Link as={`/posts/${slug}`} href='/posts/[slug]' passHref scroll={false}>
 					<a aria-label={title}>{image}</a>
 				</Link>
 			) : (
