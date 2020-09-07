@@ -1,4 +1,5 @@
 import AboutImage from 'components/about-image';
+import AboutExcerpt from 'components/about-excerpt';
 import ReactMarkdown from 'react-markdown/with-html';
 
 interface AboutProps {
@@ -192,6 +193,8 @@ const AboutContent = ({ slug, src, title, date, excerpt }: AboutProps) => {
 							<em>- Confucius</em>
 						</span>
 					</span>
+					<AboutExcerpt excerpt={excerpt} />
+					<div className='hidden'>{date}</div>
 				</div>
 			</p>
 		</div>
