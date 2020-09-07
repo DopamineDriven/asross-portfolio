@@ -28,7 +28,7 @@ interface SubFooterProps {
 
 const FooterSub = ({ title }: SubFooterProps) => {
 	return (
-		<footer className='bg-portfolio font-somaRoman w-full max-w-full px-portfolioFooter text-customFooterMobile md:text-customFooter pt-portfolioH2F pb-mobileGapY'>
+		<footer className='select-none bg-portfolio font-somaRoman w-full max-w-full px-portfolioFooter text-customFooterMobile md:text-customFooter pt-portfolioH2F pb-mobileGapY'>
 			<div className='w-full min-w-full'>
 				<div className='block min-w-full w-full items-left overflow-hidden'>
 					{/* <div className='block'>
