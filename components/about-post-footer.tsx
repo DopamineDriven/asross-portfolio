@@ -40,7 +40,7 @@ const FooterSub = ({ title }: SubFooterProps) => {
 					</div>{' '} */}
 					<div className='grid grid-cols-3 w-full tracking-wide'>
 						<div className='block align-top font-somaRoman text-black text-center'>
-							<Link href={`/#home-${title}`} passHref>
+							<Link href={`/#about-${title}`} passHref>
 								<a
 									className='block whitespace-no-wrap uppercase duration-1000 transition-all ease-in-out hover:text-fiveOBlack items-left justify-start float-left'
 									aria-label='back to top'

@@ -9,7 +9,7 @@ interface AboutExcerptProps {
 const AboutExcerpt = ({ excerpt, slug }: AboutExcerptProps) => {
 	return (
 		<div className='text-oneFiveBlack cursor-default hover:text-fiveOBlack'>
-			<Link as={`/about/${slug}`} href='/about/[slug]' passHref scroll={false}>
+			<Link as={`/about/${slug}`} href='/about/[slug]' passHref scroll={true}>
 				<a
 					className='font-somaRoman'
 					aria-label={`${excerpt}`}

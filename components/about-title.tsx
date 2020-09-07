@@ -12,11 +12,11 @@ const AboutTitle = ({ title, slug }: AboutTitleProps) => {
 			className='z-1 text-customAbout relative flex-grow text-center justify-center tracking-tight leading-portfolio font-light cursor-default w-full min-w-full'
 			style={{ marginBlockStart: '0.67em', marginBlockEnd: '0.67em' }}
 		>
-			<Link as={`/about/${slug}`} href='/about/[slug]' passHref scroll={false}>
+			<Link as={`/about/${slug}`} href='/about/[slug]' passHref scroll={true}>
 				<a
 					className='font-head hover:text-fiveOBlack'
 					aria-label={`${title}`}
-					id={`home-${title}`}
+					id={`#about-${title}`}
 				>
 					<ReactMarkdown
 						escapeHtml={false}
