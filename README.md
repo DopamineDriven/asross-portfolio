@@ -1,5 +1,8 @@
 # asross-portfolio
 
+## Smooth Scrolling React Library (alternative to global html css call scroll-behavior: smooth)
+- https://www.digitalocean.com/community/tutorials/how-to-implement-smooth-scrolling-in-react
+
 ## Mobile-Detect and React-Sizes
 - https://stackoverflow.com/questions/55394365/conditional-rendering-on-server-side
 - https://www.npmjs.com/package/mobile-detect
