@@ -19,8 +19,8 @@ interface AboutSlugProps {
 }
 
 const About = ({ about, abouts }: AboutSlugProps) => {
-  const moreAbouts = abouts?.slice(1);
-  console.log(moreAbouts.toLocaleString)
+	const moreAbouts = abouts?.slice(1);
+	console.log(moreAbouts.toLocaleString);
 	const router = useRouter();
 	if (!router.isFallback && !about?.slug) {
 		return <ErrorPage statusCode={404} />;
@@ -85,3 +85,18 @@ export const getStaticProps = async ({
 	};
 };
 
+export const getStaticPaths: GetStaticPaths = async () => {
+	const abouts = getAllAbouts(['slug']);
+
+	return {
+		paths: abouts.map(abouts => {
+			return {
+				params: {
+					slug: abouts.slug
+					// key: abouts.slug
+				}
+			};
+		}),
+		fallback: false
+	};
+};
