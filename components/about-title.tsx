@@ -13,7 +13,7 @@ const AboutTitle = ({ title, slug }: AboutTitleProps) => {
 			style={{ marginBlockStart: '0.67em', marginBlockEnd: '0.67em' }}
 		>
 			<Link as={`/about/${slug}`} href='/about/[slug]' passHref>
-				<a className='font-head' aria-label={`${title}`} id={`home-${title}`}>
+				<a className='font-head hover:text-fiveOBlack' aria-label={`${title}`} id={`home-${title}`}>
 					<ReactMarkdown
 						escapeHtml={false}
 						source={title}
