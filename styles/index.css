@@ -101,6 +101,9 @@ body::-webkit-scrollbar {
 /* Stop purging. */
 
 /* Write custom component styles here */
+/* @ {
+	text-shadow: 'none';
+} */
 
 /* Start purging... */
 @tailwind utilities;
@@ -222,4 +225,9 @@ body::-webkit-scrollbar {
 
 .p-indents:nth-child(25) {
 	@apply pl-aboutIndentation;
+}
+
+
+.prose-no-shadow {
+	text-shadow: 0 -.1em .2em black !important;
 }

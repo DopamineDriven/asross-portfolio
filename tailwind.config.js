@@ -315,5 +315,8 @@ module.exports = {
 	variants: {
 		padding: ['responsive', 'last', 'first', 'hover', 'focus', 'even', 'odd']
 	},
-	plugins: [require('@tailwindcss/typography')]
+	plugins: [
+		require('@tailwindcss/typography'),
+		require('tailwindcss-textshadow')
+	]
 };
