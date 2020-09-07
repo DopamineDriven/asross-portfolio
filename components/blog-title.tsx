@@ -9,7 +9,7 @@ interface BlogTitleProps {
 const BlogTitle = ({ title, slug }: BlogTitleProps) => {
 	return (
 		<div className='font-somaRoman uppercase black hover:text-fiveOBlack md:text-customTitle customTitleMobile'>
-			<Link as={`/blogs/${slug}`} href='/blogs/[slug]' passHref scroll={true}>
+			<Link as={`/blog/${slug}`} href='/blog/[slug]' passHref scroll={true}>
 				<a
 					className='font-head hover:text-fiveOBlack'
 					aria-label={`${title}`}

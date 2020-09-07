@@ -22,7 +22,7 @@ const CodeBlock = ({ language, value }: SyntaxHighlighterProps) => {
 
 const AboutPostBody = ({ content }: BlogPostBodyProps) => {
 	return (
-		<div className='max-w-4xl text-shadow-none shadow-none prose prose-lg mx-auto content-center text-left md:text-justify items-center justify-center align-middle sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl'>
+		<div className='text-shadow-none shadow-none  mx-auto content-center text-left md:text-left md:text-customP items-center justify-center align-middle '>
 			<ReactMarkdown
 				className={markdownStyles['markdown'] + ' text-shadow-none'}
 				escapeHtml={false}

@@ -183,7 +183,8 @@ module.exports = {
 				aboutImage300: '20.8914vw',
 				aboutImage400: '27.8552vw',
 				aboutImage500: '34.8181vw',
-				aboutImage600: '41.7827vw'
+				aboutImage600: '41.7827vw',
+				portfolioDividerWidth: '93.333vw'
 			},
 			maxWidth: {
 				whole: '100vw',
@@ -304,7 +305,8 @@ module.exports = {
 				customExcerptMobile: '3.0351vw',
 				customAboutTitle: '13.9276vw',
 				customAboutText: '3.3426vw',
-				customAbout: '23.41667vw'
+				customAbout: '23.41667vw',
+				customPostAbout: '7.5666vw'
 			},
 			boxShadow: {
 				small: '0 5px 10px rgba(0, 0, 0, 0.12)',

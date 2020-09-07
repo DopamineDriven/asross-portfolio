@@ -16,7 +16,7 @@ const AboutTitle = ({ title, slug }: AboutTitleProps) => {
 				<a
 					className='font-head hover:text-fiveOBlack'
 					aria-label={`${title}`}
-					id={`#about-${title}`}
+					id={`home-${title}`}
 				>
 					<ReactMarkdown
 						escapeHtml={false}
