@@ -8,8 +8,8 @@ interface AboutImageProps {
 }
 
 const AboutImage = ({
-	src = 'https://res.cloudinary.com/asross311/image/upload/v1598947180/portfolio/IMG_3824_1_8_egnkfs.jpg',
-	title = 'Andrew Ross',
+	src,
+	title,
 	slug
 }: AboutImageProps) => {
 	const image = (
