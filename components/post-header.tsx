@@ -2,6 +2,7 @@ import PostIcons from 'components/post-icons';
 import Date from 'components/date-formatter';
 import CoverImage from 'components/cover-image-sub-page';
 import PostTitle from 'components/post-title';
+import { Fragment } from 'react';
 import Author from 'types/author';
 
 interface PostHeaderProps {
@@ -13,7 +14,7 @@ interface PostHeaderProps {
 
 const PostHeader = ({ author, date, src, title }: PostHeaderProps) => {
 	return (
-		<>
+		<Fragment>
 			<div className='font-head text-customTitleMobile'>
 				<div className='block mx-auto max-w-imagePortfolioMobile rounded-lg bg-portfolio'>
 					<CoverImage title={title} src={src} />
@@ -36,7 +37,7 @@ const PostHeader = ({ author, date, src, title }: PostHeaderProps) => {
 					wordpress={author.wordpress}
 				/>
 			</div>
-		</>
+		</Fragment>
 	);
 };
 
