@@ -23,7 +23,7 @@ const AboutImage = ({ src, title, slug }: AboutImageProps) => {
 	return (
 		<div className='mx-auto max-w-aboutImage500 overflow-y-hidden overflow-x-hidden hover:overflow-y-visible hover:overflow-x-visible bg-portfolio block transition-all delay-500 duration-3000 ease-in-out transform hover:-translate-y-1 hover:scale-110'>
 			{slug ? (
-				<Link as={`/about/${slug}`} href='/about/[slug]' passHref scroll={false}>
+				<Link as={`/about/${slug}`} href='/about/[slug]' passHref scroll={true}>
 					<a
 						aria-label={title}
 						className='hover:overflow-y-visible hover:overflow-x-visible bg-portfolio block transition-all delay-500 duration-3000 ease-in-out transform hover:-translate-y-1 hover:scale-110'

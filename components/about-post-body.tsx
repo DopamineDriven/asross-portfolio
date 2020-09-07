@@ -4,27 +4,17 @@ import {
 	Prism as SyntaxHighlighter,
 	SyntaxHighlighterProps
 } from 'react-syntax-highlighter';
-// import tsx from 'react-syntax-highlighter/dist/esm/languages/prism/tsx';
-// import typescript from 'react-syntax-highlighter/dist/esm/languages/prism/typescript';
-// import xml from 'react-syntax-highlighter/dist/cjs/languages/hljs/xml';
-// import git from 'react-syntax-highlighter/dist/cjs/languages/prism/git';
-import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+// import dark from 'react-syntax-highlighter/dist/esm/styles/prism/dark';
+
 
 interface BlogPostBodyProps {
 	content: string;
 }
-
-const CodeBlock = ({ language, children }: SyntaxHighlighterProps) => {
-	return (
-		<SyntaxHighlighter
-			useInlineStyles={true}
-			language={language}
-			style={dark}
-			showLineNumbers={true}
-			startingLineNumber={0}
-			lineNumberStyle={{ color: '#ddd' }}
-		>
-			{children}
+// customStyle={{ 'backgroundColor': 'black', 'textShadow': 'black', 'textDecoration': 'none' }}
+const CodeBlock = ({ language, value }: SyntaxHighlighterProps) => {
+  return (
+    <SyntaxHighlighter language={language} useInlineStyles={true} className=' text-shadow-none bg-tinyHouseWhite'>
+			{value}
 			{/* {children.replace(/^\s+|\s+$/g, '')} */}
 		</SyntaxHighlighter>
 	);
@@ -32,9 +22,9 @@ const CodeBlock = ({ language, children }: SyntaxHighlighterProps) => {
 
 const AboutPostBody = ({ content }: BlogPostBodyProps) => {
 	return (
-		<div className='max-w-2xl prose prose-lg mx-auto content-center text-left md:text-justify items-center justify-center align-middle sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl'>
+		<div className='max-w-4xl text-shadow-none shadow-none prose prose-lg mx-auto content-center text-left md:text-justify items-center justify-center align-middle sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl'>
 			<ReactMarkdown
-				className={markdownStyles['markdown']}
+				className={markdownStyles['markdown'] + ' text-shadow-none'}
 				escapeHtml={false}
 				source={content}
 				renderers={{ code: CodeBlock }}
