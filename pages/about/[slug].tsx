@@ -42,7 +42,7 @@ const About = ({ about, abouts }: AboutSlugProps) => {
 						</Head>
 						<AboutPostHeader
 							title={about.title}
-							src={about.coverImage}
+							src={about.articleImage}
 							date={about.date}
 						/>
 						<AboutPostBody content={about.content} />
@@ -71,7 +71,8 @@ export const getStaticProps = async ({
 		'slug',
 		'content',
 		'ogImage',
-		'coverImage'
+		'coverImage',
+		'articleImage'
 	]);
 
 	return {

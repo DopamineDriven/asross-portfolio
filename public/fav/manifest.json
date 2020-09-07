@@ -1,7 +1,7 @@
 {
 	"name": "Next Portfolio",
 	"short_name": "Portfolio",
-	"start_url": "https://asross-portfolio.app/",
+	"start_url": "https://asross-portfolio.vercel.app/",
 	"icons": [
 		{
 			"src": "/fav/android-chrome-192x192.png",
