@@ -1,5 +1,5 @@
 .markdown {
-	@apply text-customSM leading-relaxed;
+	@apply text-customSM leading-relaxed px-portfolioPadding;
 }
 
 .markdown p,

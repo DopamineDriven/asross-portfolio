@@ -11,7 +11,7 @@ interface AboutPostHeaderProps {
 const AboutPostHeader = ({ title, src, date }: AboutPostHeaderProps) => {
 	return (
 		<Fragment>
-			<div className='font-head text-customTitleMobile bg-portfolio'>
+			<div className='font-head text-customAboutTitle bg-portfolio'>
 				<div className='block mx-auto max-w-aboutImage600 w-aboutImage600'>
 					<AboutPostCoverImage title={title} src={src} />
 				</div>
