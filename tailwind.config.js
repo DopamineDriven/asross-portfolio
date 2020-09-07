@@ -297,6 +297,7 @@ module.exports = {
 				customFooter: '1.16667vw',
 				customFooterMobile: '2.43333vw',
 				customSM: '3.36667vw',
+				customSMobile: '4.36667vw',
 				customTitle: '2.22341vw',
 				customExcerpt: '1.66755vw',
 				customTitleMobile: '4.44682vw',

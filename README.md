@@ -1,6 +1,12 @@
 # asross-portfolio
 
+## Mobile-Detect and React-Sizes
+- https://stackoverflow.com/questions/55394365/conditional-rendering-on-server-side
+- https://www.npmjs.com/package/mobile-detect
+- https://www.npmjs.com/package/react-sizes
+
 ## Conditionally render by device type
+- https://stackoverflow.com/questions/55394365/conditional-rendering-on-server-side
 - https://medium.com/applike/https-medium-com-applike-react-responsive-conditional-rendering-of-component-c97ab247097d
 - https://github.com/applike/react-responsive
 - https://www.npmjs.com/package/responsive-react
