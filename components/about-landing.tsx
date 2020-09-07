@@ -174,7 +174,7 @@ const AboutContent = ({ slug, src, title, date, excerpt }: AboutProps) => {
 		>
 			<AboutTitle title={title} slug={slug} />
 			<div
-				className='md:text-customSM text-customSM font-somaRoman md:leading-customSLH leading-customSLM tracking-wide block z-1 rounded-full'
+				className='md:text-customSM text-customSM font-somaRoman md:leading-customSLH leading-customSLM tracking-wide block z-1 '
 				style={{ position: 'absolute', top: '42.98333vw', left: '3.23333vw' }}
 			>
 				<AboutImage src={src} title={title} slug={slug} />
@@ -188,7 +188,7 @@ const AboutContent = ({ slug, src, title, date, excerpt }: AboutProps) => {
 							<em>- Confucius</em>
 						</span>
 					</span>
-					<AboutExcerpt excerpt={excerpt} />
+					<AboutExcerpt excerpt={excerpt} slug={slug} />
 					<div className='hidden'>{date}</div>
 				</div>
 			</p>

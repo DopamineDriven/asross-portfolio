@@ -1,6 +1,6 @@
 ---
 title: 'About'
-excerpt: 'The mechanic that would perfect his work must first sharpen his tools. - Confucius'
+excerpt: '"The mechanic that would perfect his work must first sharpen his tools" - Confucius'
 coverImage: 'https://res.cloudinary.com/asross311/image/upload/v1598947180/portfolio/IMG_3824_1_8_egnkfs.jpg'
 date: "2020-09-05T08:35:07.322Z"
 ogImage:
