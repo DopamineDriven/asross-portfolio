@@ -25,6 +25,7 @@ nextjs portfolio
 ## To-do
 
 - About section beneath portfolio items
+  - Sub routed About
 - Sub-routing for blog
 - everything is blue toggle for global theme shift
 - style it out
