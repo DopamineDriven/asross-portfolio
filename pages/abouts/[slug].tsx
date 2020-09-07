@@ -20,15 +20,83 @@ interface AboutSlugProps {
 
 const About = ({ about, abouts }: AboutSlugProps) => {
 	const moreAbouts = abouts?.slice(1);
-  const router = useRouter();
-  if (!router.isFallback && !about?.slug) {
-    return <ErrorPage statusCode={404} />
-  }
-  return (
-    <Fragment>
-      <AboutHeader />
-    </Fragment>
-  )
+	console.log(moreAbouts.toLocaleString);
+	const router = useRouter();
+	if (!router.isFallback && !about?.slug) {
+		return <ErrorPage statusCode={404} />;
+	}
+	return (
+		<Fragment>
+			<AboutHeader />
+			{router.isFallback ? (
+				<AboutPostTitle>Loading...</AboutPostTitle>
+			) : (
+				<>
+					<article>
+						<Head>
+							<title>
+								{about.title} | Next.js About, {CLIENT_NAME}
+							</title>
+							<meta property='og:image' content={about.ogImage.url} />
+						</Head>
+						<AboutPostHeader
+							title={about.title}
+							src={about.coverImage}
+							date={about.date}
+						/>
+						<AboutPostBody content={about.content} />
+					</article>
+				</>
+			)}
+			<AboutFooter title={about.title} />
+		</Fragment>
+	);
 };
 
 export default About;
+
+type AboutParams = {
+	params: {
+		slug: string;
+	};
+};
+
+export const getStaticProps = async ({
+	params
+}: AboutParams & GetStaticProps) => {
+	const about = getAboutBySlug(params.slug, [
+		'title',
+		'date',
+		'slug',
+		'content',
+		'ogImage',
+		'coverImage'
+	]);
+	const content = await markdownToHtml(about.content || '');
+	console.log(content);
+
+	return {
+		props: {
+			about: {
+				...about,
+				content
+			}
+		}
+	};
+};
+
+export const getStaticPaths: GetStaticPaths = async () => {
+	const abouts = getAllAbouts(['slug']);
+
+	return {
+		paths: abouts.map(abouts => {
+			return {
+				params: {
+					slug: abouts.slug
+					// key: abouts.slug
+				}
+			};
+		}),
+		fallback: false
+	};
+};
