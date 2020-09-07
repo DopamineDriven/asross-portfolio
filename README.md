@@ -29,6 +29,7 @@ nextjs portfolio
 - Sub-routing for blog
 - everything is blue toggle for global theme shift
 - style it out
+  - screen size dependent refactoring for xs:sm:md:lg:xl/portrait vs landscape etc etc
 - ship!
 
 ## odd/even offset columns
