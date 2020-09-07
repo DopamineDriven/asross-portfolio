@@ -1,6 +1,10 @@
+import cn from 'classnames';
+import Link from 'next/link';
+
 interface AboutImageProps {
-	src: string;
 	title: string;
+	src: string;
+	slug?: string;
 }
 
 const AboutImage = ({
