@@ -153,7 +153,7 @@ const aboutSnippets: AboutInterface[] = [
 	}
 ];
 
-const AboutContent = ({ slug, src, title }: AboutProps) => {
+const AboutContent = ({ slug, src, title, date, excerpt }: AboutProps) => {
 	const aboutMap = aboutSnippets.map(constituent => {
 		return (
 			<span
