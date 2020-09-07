@@ -153,7 +153,7 @@ const AboutContent = ({ src, title }: AboutProps) => {
 	const aboutMap = aboutSnippets.map(constituent => {
 		return (
 			<span
-				className='font-thin font-somaRoman tracking-tighter p-last p-indent p-indents z-0'
+				className='font-thin font-somaRoman tracking-tighter p-last p-indent p-indents z-0 text-customSMobile'
 				key={constituent.id}
 				style={{}}
 			>
@@ -164,7 +164,7 @@ const AboutContent = ({ src, title }: AboutProps) => {
 	});
 	return (
 		<div
-			className='relative justify-between pt-portfolio navbar-expand-lg flex flex-col min-w-full w-full container overflow-y-hidden overflow-x-hidden transform duration-300'
+			className='relative justify-between pt-portfolio navbar-expand-lg flex flex-col min-w-full w-full container overflow-y-hidden overflow-x-hidden transform duration-300 cursor-default'
 			style={{ transform: 'translate3d(0px, 0px, 0px)' }}
 		>
 			<h1
