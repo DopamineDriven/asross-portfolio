@@ -11,18 +11,19 @@ import { getAllPosts } from 'lib/api';
 import { getAllAbouts } from 'lib/about-api';
 import { GetStaticProps } from 'next';
 import { Fragment } from 'react';
-import About from 'components/about-content';
+import AboutCoalesced from 'components/about-coalesced';
 import AboutType from 'types/about';
 
 interface IndexProps {
 	allPosts: Post[];
 	preview?: boolean;
-	about: AboutType;
+	allAbout: AboutType[];
 	// blogs: Blog;
 }
 
-const Index = ({ allPosts, about }: IndexProps) => {
+const Index = ({ allPosts, allAbout }: IndexProps) => {
 	const morePosts = allPosts.slice(0);
+	const moreAbout = allAbout.slice(0);
 	// const faBlog = blogs;
 	return (
 		<Fragment>
@@ -35,13 +36,7 @@ const Index = ({ allPosts, about }: IndexProps) => {
 				{/* {<BlogTitle title={faBlog.title} slug={faBlog.slug} />} */}
 			</div>
 			<div className='max-w-full my-portfolioH2F block mx-auto content-center justify-center items-center text-left'>
-				<About
-					title={about.title}
-					src={about.coverImage}
-					slug={about.slug}
-					excerpt={about.excerpt}
-					date={about.date}
-				/>
+				{moreAbout.length > 0 && <AboutCoalesced abouts={allAbout} />}
 			</div>
 			<Footer />
 		</Fragment>

@@ -1,4 +1,5 @@
 import AboutImage from 'components/about-image';
+import AboutExcerpt from 'components/about-excerpt';
 import ReactMarkdown from 'react-markdown/with-html';
 
 interface AboutProps {
@@ -153,7 +154,7 @@ const aboutSnippets: AboutInterface[] = [
 	}
 ];
 
-const AboutContent = ({ slug, src, title }: AboutProps) => {
+const AboutContent = ({ slug, src, title, date, excerpt }: AboutProps) => {
 	const aboutMap = aboutSnippets.map(constituent => {
 		return (
 			<span
@@ -192,6 +193,8 @@ const AboutContent = ({ slug, src, title }: AboutProps) => {
 							<em>- Confucius</em>
 						</span>
 					</span>
+					<AboutExcerpt excerpt={excerpt} />
+					<div className='hidden'>{date}</div>
 				</div>
 			</p>
 		</div>
