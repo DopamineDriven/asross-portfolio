@@ -1,6 +1,6 @@
 import AboutImage from 'components/about-image';
 import AboutExcerpt from 'components/about-excerpt';
-import ReactMarkdown from 'react-markdown/with-html';
+import AboutTitle from 'components/about-title';
 
 interface AboutProps {
 	title: string;
@@ -172,14 +172,9 @@ const AboutContent = ({ slug, src, title, date, excerpt }: AboutProps) => {
 			className='relative justify-between pt-portfolio navbar-expand-lg flex flex-col min-w-full w-full container overflow-y-hidden overflow-x-hidden transform duration-300 cursor-default select-none'
 			style={{ transform: 'translate3d(0px, 0px, 0px)' }}
 		>
-			<h1
-				className='font-head z-1 text-customAbout relative flex-grow text-center justify-center tracking-tight leading-portfolio font-light cursor-default w-full min-w-full'
-				style={{ marginBlockStart: '0.67em', marginBlockEnd: '0.67em' }}
-			>
-				<a className='text-customAbout text-center block'>About</a>
-			</h1>
+			<AboutTitle title={title} slug={slug} />
 			<div
-				className='md:text-customSM text-customSM font-somaRoman md:leading-customSLH leading-customSLM tracking-wide block z-1 rounded-full'
+				className='md:text-customSM text-customSM font-somaRoman md:leading-customSLH leading-customSLM tracking-wide block z-1 '
 				style={{ position: 'absolute', top: '42.98333vw', left: '3.23333vw' }}
 			>
 				<AboutImage src={src} title={title} slug={slug} />
@@ -193,7 +188,7 @@ const AboutContent = ({ slug, src, title, date, excerpt }: AboutProps) => {
 							<em>- Confucius</em>
 						</span>
 					</span>
-					<AboutExcerpt excerpt={excerpt} />
+					<AboutExcerpt excerpt={excerpt} slug={slug} />
 					<div className='hidden'>{date}</div>
 				</div>
 			</p>

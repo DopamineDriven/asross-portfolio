@@ -17,7 +17,7 @@ const Card = ({ date, excerpt, slug, src, title }: CardProps) => {
 				<CoverImageCard slug={slug} src={src} title={title} />
 				<div className='flex flex-col text-center justify-center bg-portfolio'>
 					<div className='font-bold font-somaRoman leading-tight pt-portfolio'>
-						<Link as={`/posts/${slug}`} href='/posts/[slug]' passHref>
+						<Link as={`/posts/${slug}`} href='/posts/[slug]' passHref scroll={false}>
 							<a
 								className='font-somaRoman'
 								aria-label={`date-published ${date}`}

@@ -12,7 +12,7 @@ import PostTitle from 'components/post-title';
 import PostHeader from 'components/post-header';
 import LeadPost from 'components/lead-sub';
 import Cards from 'components/cards';
-import Footer from 'components/footer-sub';
+import Footer from 'components/post-sub-page-footer';
 
 interface PostSlugProps {
 	post: PostType;
@@ -47,6 +47,7 @@ const Post = ({ post, posts }: PostSlugProps) => {
 						/>
 						<PostBody content={post.content} />
 					</article>
+					<hr className='border-fiveOBlack w-full pb-portfolioDivider' />
 					<div className=' max-w-cardGrid grid mx-auto content-center justify-center items-center text-center'>
 						{morePosts?.length > 0 && <Cards posts={morePosts} />}
 					</div>

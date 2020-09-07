@@ -1,5 +1,5 @@
 import About from 'types/about';
-import AboutContent from 'components/about-content';
+import AboutContent from 'components/about-landing';
 
 interface AboutCoalescedProps {
 	abouts: About[];
