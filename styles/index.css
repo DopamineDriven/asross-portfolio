@@ -12,7 +12,19 @@ html {
 	margin: 0;
 	padding: 0;
 	scroll-behavior: smooth;
+	text-shadow: none;
 }
+
+/* ::-moz-selection {
+	text-shadow: none;
+	background: #333;
+	color: #fff;
+}
+::selection {
+	text-shadow: none;
+	background: #333;
+	color: #fff;
+} */
 
 #__next {
 	margin: 0;
