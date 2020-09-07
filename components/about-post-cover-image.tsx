@@ -12,13 +12,13 @@ const AboutSubCoverImage = ({ title, src, slug }: CoverImageSubPageProps) => {
 		<img
 			src={src}
 			alt={`Cover Image for ${title}`}
-			className={cn('max-w-aboutImage600 w-aboutImage600 h-auto', {
+			className={cn('md:max-w-aboutImage600 md:w-aboutImage600 max-w-imagePortfolioMobile w-imagePortfolioMobile h-auto', {
 				'hover:shadow-medium transition-shadow duration-200': slug
 			})}
 		/>
 	);
 	return (
-		<div className='-mx-5 sm:mx-0'>
+		<div className=''>
 			{slug ? (
 				<Link as={`/posts/${slug}`} href='/posts/[slug]'>
 					<a aria-label={title}>{image}</a>

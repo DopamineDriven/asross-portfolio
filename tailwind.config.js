@@ -305,7 +305,8 @@ module.exports = {
 				customExcerptMobile: '3.0351vw',
 				customAboutTitle: '13.9276vw',
 				customAboutText: '3.3426vw',
-				customAbout: '23.41667vw'
+				customAbout: '23.41667vw',
+				customPostAbout: '7.5666vw'
 			},
 			boxShadow: {
 				small: '0 5px 10px rgba(0, 0, 0, 0.12)',

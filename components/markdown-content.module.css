@@ -1,5 +1,6 @@
+
 .markdown {
-	@apply text-customSM leading-relaxed px-portfolioPadding;
+	@apply text-customSM px-portfolioPadding;
 }
 
 .markdown p,
@@ -11,7 +12,7 @@
 }
 
 .markdown h1 {
-	@apply font-head text-customSMobile;
+	@apply font-head text-customPostAbout;
 }
 
 .markdown h2 {
@@ -23,7 +24,7 @@
 }
 
 .content {
-	@apply text-customSM leading-relaxed;
+	@apply text-customSM;
 	@apply font-somaRoman;
 	@apply leading-tight;
 }
@@ -62,24 +63,23 @@
 }
 
 .markdown ul > li > ul {
-	list-style: circle;
+	list-style: none;
 }
 
 .content h2 {
-	@apply text-3xl mt-12 mb-4 leading-snug;
+	@apply mt-12 mb-4 leading-snug;
 }
 
 .content h3 {
-	@apply text-2xl mt-8 mb-4 leading-snug;
+	@apply mt-8 mb-4 leading-snug;
 }
 
 .content h4 {
-	@apply text-xl mt-6 mb-4 leading-snug;
+	@apply mt-6 mb-4 leading-snug;
 }
 
 .markdown pre {
-	@apply whitespace-pre overflow-x-auto p-4 text-sm leading-tight border border-gray-400 bg-gray-100 outline-none;
-	text-shadow: 0 -.1em .2em black !important;
+	@apply whitespace-pre overflow-x-auto p-4 text-sm leading-tight border border-gray-400 bg-gray-100 outline-none text-shadow-none;
 }
 
 .markdown code {
