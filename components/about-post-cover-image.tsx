@@ -12,7 +12,7 @@ const AboutSubCoverImage = ({ title, src, slug }: CoverImageSubPageProps) => {
 		<img
 			src={src}
 			alt={`Cover Image for ${title}`}
-			className={cn('max-w-aboutImage300 w-aboutImage300 h-auto', {
+			className={cn('max-w-aboutImage600 w-aboutImage600 h-auto', {
 				'hover:shadow-medium transition-shadow duration-200': slug
 			})}
 		/>

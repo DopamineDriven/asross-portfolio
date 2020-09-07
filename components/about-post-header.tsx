@@ -12,7 +12,7 @@ const AboutPostHeader = ({ title, src, date }: AboutPostHeaderProps) => {
 	return (
 		<Fragment>
 			<div className='font-head text-customTitleMobile bg-portfolio'>
-				<div className='block mx-auto max-w-aboutImage300 w-aboutImage300'>
+				<div className='block mx-auto max-w-aboutImage600 w-aboutImage600'>
 					<AboutPostCoverImage title={title} src={src} />
 				</div>
 				<AboutPostTitle>{title}</AboutPostTitle>
@@ -22,7 +22,7 @@ const AboutPostHeader = ({ title, src, date }: AboutPostHeaderProps) => {
 					<Date dateString={date} />
 				</div>
 			</div>
-			<hr className='border-fiveOBlack w-imagePortfolioMobile mt-portfolioDivider pb-portfolioDivider mx-auto' />
+			<hr className='border-fiveOBlack w-portfolioDividerWidth my-portfolioDivider pb-portfolioDivider mx-auto' />
 		</Fragment>
 	);
 };

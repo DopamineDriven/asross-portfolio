@@ -1,5 +1,5 @@
 .markdown {
-	@apply text-lg leading-relaxed;
+	@apply text-customSM leading-relaxed;
 }
 
 .markdown p,
@@ -10,16 +10,20 @@
 	@apply font-somaRoman;
 }
 
+.markdown h1 {
+	@apply font-head text-customSMobile;
+}
+
 .markdown h2 {
-	@apply text-3xl mt-12 mb-4 leading-snug;
+	@apply text-customSM mt-12 mb-4 leading-snug font-head;
 }
 
 .markdown h3 {
-	@apply text-2xl mt-8 mb-4 leading-snug;
+	@apply text-customSM mt-8 mb-4 leading-snug;
 }
 
 .content {
-	@apply text-lg leading-relaxed;
+	@apply text-customSM leading-relaxed;
 	@apply font-somaRoman;
 	@apply leading-tight;
 }
