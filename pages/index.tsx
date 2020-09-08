@@ -3,28 +3,28 @@ import Lead from 'components/lead';
 import Cards from 'components/cards';
 import Footer from 'components/footer';
 import Post from 'types/post';
-// import Blog from 'types/blog';
-// import BlogTitle from 'components/blog-title';
-// import useWindowSize from 'lib/window-dimension';
 import { CLIENT_NAME } from 'lib/constants';
 import { getAllPosts } from 'lib/api';
 import { getAllAbouts } from 'lib/about-api';
+import { getAllBlogs } from 'lib/blog-api';
 import { GetStaticProps } from 'next';
 import { Fragment } from 'react';
 import AboutCoalesced from 'components/about-coalesced';
+import BlogCoalesced from 'components/blog-coalesced';
 import AboutType from 'types/about';
+import BlogType from 'types/blog';
 
 interface IndexProps {
 	allPosts: Post[];
 	preview?: boolean;
 	allAbout: AboutType[];
-	// blogs: Blog;
+	allBlog: BlogType[];
 }
 
-const Index = ({ allPosts, allAbout }: IndexProps) => {
+const Index = ({ allPosts, allAbout, allBlog }: IndexProps) => {
 	const morePosts = allPosts.slice(0);
 	const moreAbout = allAbout.slice(0);
-	// const faBlog = blogs;
+	const moreBlog = allBlog.slice(0);
 	return (
 		<Fragment>
 			<Lead />
@@ -37,6 +37,9 @@ const Index = ({ allPosts, allAbout }: IndexProps) => {
 			</div>
 			<div className='max-w-full my-portfolioH2F block mx-auto content-center justify-center items-center text-left'>
 				{moreAbout.length > 0 && <AboutCoalesced abouts={allAbout} />}
+			</div>
+			<div className='max-w-full my-portfolioH2F block mx-auto content-center justify-center items-center text-left'>
+				{moreBlog.length > 0 && <BlogCoalesced blogs={allBlog} />}
 			</div>
 			<Footer />
 		</Fragment>
@@ -61,6 +64,9 @@ export const getStaticProps: GetStaticProps = async () => {
 		'coverImage',
 		'excerpt'
 	]);
+
+	const allBlog = getAllBlogs(['title', 'slug', 'date']);
+
 	// const blogTitle = getAllBlogs([
 	// 	'title',
 	// 	'date',
@@ -71,6 +77,6 @@ export const getStaticProps: GetStaticProps = async () => {
 	// ]);
 
 	return {
-		props: { allPosts, allAbout }
+		props: { allPosts, allAbout, allBlog }
 	};
 };
