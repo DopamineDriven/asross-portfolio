@@ -1,5 +1,5 @@
 ---
-title: 'Google Maps Migration'
+title: '→ Google Maps Migration'
 excerpt: 'Migrating from deprecated @google/maps to the latest and greatest'
 coverImage: 'https://dev-to-uploads.s3.amazonaws.com/i/23i9acwg697ztp3gt48a.gif'
 articleImage: 'https://dev-to-uploads.s3.amazonaws.com/i/23i9acwg697ztp3gt48a.gif'

@@ -1,9 +1,9 @@
 ---
-title: 'Hacking Font Awesome'
+title: '→ Hacking Font Awesome'
 excerpt: 'Hacking the Font Awesome Library with React, Nextjs, and TypeScript to support custom SVG incorporation locally and in production.'
-coverImage: 'https://dev-to-uploads.s3.amazonaws.com/i/9c7qdhn25b07am8dl66n.png'
+coverImage: 'https://res.cloudinary.com/asross311/image/upload/v1598874059/portfolio/Rectangle_6036_gmc1ej.jpg'
 articleImage: 'https://dev-to-uploads.s3.amazonaws.com/i/51fagc1ri8auwsxfpkzj.png'
-date: '2020-08-19T08:35:07.322Z'
+date: '2020-09-05T08:35:07.322Z'
 ogImage:
  url: '/assets/next-jamstack.jpg'
 ---

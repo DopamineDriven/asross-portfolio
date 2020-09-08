@@ -14,14 +14,14 @@ const BlogTitle = ({ title, slug, date }: BlogTitleProps) => {
 			<div className='font-somaRoman uppercase black hover:text-fiveOBlack md:text-customTitle text-customTitleMobile'>
 				<Link as={`/blog/${slug}`} href='/blog/[slug]' passHref scroll={true}>
 					<a
-						className='font-head hover:text-fiveOBlack'
+						className='font-somaRoman hover:text-fiveOBlack'
 						aria-label={`${title}`}
 						id={`home-${title}`}
 					>
 						<ReactMarkdown
 							escapeHtml={false}
 							source={title}
-							className='text-customTitleMobile text-center block'
+							className='text-customTitleMobile md:text-customTitle text-left block'
 						/>
 					</a>
 				</Link>
