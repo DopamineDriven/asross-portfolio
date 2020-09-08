@@ -23,7 +23,7 @@ const BlogPostCoverImage = ({ title, src, slug }: BlogPostCoverImageProps) => {
 	return (
 		<div className=''>
 			{slug ? (
-				<Link as={`/post/${slug}`} href='/post/[slug]'>
+				<Link as={`/blog/${slug}`} href='/blog/[slug]'>
 					<a aria-label={title}>{image}</a>
 				</Link>
 			) : (
