@@ -10,7 +10,6 @@ const BlogCoalesced = ({ blogs }: BlogCoalescedProps) => {
 		<section>
 			<div
 				className='select-none grid grid-cols-1'
-				style={{ position: 'absolute', top: '47.98333vw', left: '3.23333vw' }}
 			>
 				{blogs.map(blog => (
 					<BlogTitle key={blog.slug} title={blog.title} date={blog.date} />

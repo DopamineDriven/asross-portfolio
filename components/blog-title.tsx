@@ -21,7 +21,7 @@ const BlogTitle = ({ title, slug, date }: BlogTitleProps) => {
 						<ReactMarkdown
 							escapeHtml={false}
 							source={title}
-							className='text-customAbout text-center block'
+							className='text-customTitleMobile text-center block'
 						/>
 					</a>
 				</Link>
