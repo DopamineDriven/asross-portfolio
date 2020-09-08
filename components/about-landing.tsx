@@ -182,7 +182,7 @@ const AboutContent = ({ slug, src, title, date, excerpt }: AboutProps) => {
 					<div className='mx-auto block'>
 						{aboutMap}
 						<span className='font-thin font-somaRoman tracking-tighter cursor-default'>
-							<span className='text-oneFiveBlack hover:text-fiveOBlack text-customTitle font-thin font-somaRoman tracking-tighter z-0 pt-portfolioLS text-center juftify-center block'>
+							<span className='text-portfolio transition-all duration-2000 delay-300 hover:text-fiveOBlack text-customTitle font-thin font-somaRoman tracking-tighter z-0 pt-portfolioLS text-center juftify-center block'>
 								"The mechanic that would perfect his work must first sharpen his tools."
 								<em>- Confucius</em>
 							</span>
