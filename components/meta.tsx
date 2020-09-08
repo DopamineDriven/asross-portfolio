@@ -50,14 +50,14 @@ const MetaData = () => {
 					content='nextjs, typescript, react, react-markdown, static site generation, tailwindcss, vercel, figma'
 				/>
 				<meta name='twitter:card' content='summary_large_image' />
-				<meta name='twitter:site' content='@asross311' />
+				<meta name='twitter:site' content='@Dopamine_Driven' />
 				<meta name='twitter:title' content='Andrew Ross — Full-Stack Engineer' />
 				<meta
 					name='twitter:description'
 					content={`${CMS_NAME} via Nextjs; the React framework for production. Andrew Ross is a Chicago based full stack engineer who specializes in Next.js, TypeScript, React, Apollo, GraphQL, MongoDB, PostgreSQL Headless CMSs, JAMstack, MERN, Tailwind CSS, Static Site Generation, SEO, and Server Side Rendering`}
 				/>
 				<meta name='twitter:image' content={HOME_OG_IMAGE_URL} />
-				<meta name='twitter:creator' content='@asross311' />
+				<meta name='twitter:creator' content='@Dopamine_Driven' />
 				<meta property='og:type' content='website' />
 				<meta property='og:url' content='https://asross-portfolio.vercel.app/' />
 				<meta property='og:title' content='Andrew Ross — Full-Stack Engineer' />
