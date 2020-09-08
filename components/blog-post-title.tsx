@@ -1,10 +1,10 @@
 import { ReactNode } from 'react';
 
-interface AboutPostTitleProps {
+interface BlogPostTitleProps {
 	children?: ReactNode;
 }
 
-const AboutPostTitle = ({ children }: AboutPostTitleProps) => {
+const BlogPostTitle = ({ children }: BlogPostTitleProps) => {
 	return (
 		<div className=' md:my-portfolioPadding'>
 			{' '}
@@ -15,4 +15,4 @@ const AboutPostTitle = ({ children }: AboutPostTitleProps) => {
 	);
 };
 
-export default AboutPostTitle;
+export default BlogPostTitle;

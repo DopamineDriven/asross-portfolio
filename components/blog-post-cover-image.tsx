@@ -1,13 +1,13 @@
 import cn from 'classnames';
 import Link from 'next/link';
 
-interface CoverImageSubPageProps {
+interface BlogPostCoverImageProps {
 	title: string;
 	src: string;
 	slug?: string;
 }
 
-const AboutSubCoverImage = ({ title, src, slug }: CoverImageSubPageProps) => {
+const BlogPostCoverImage = ({ title, src, slug }: BlogPostCoverImageProps) => {
 	const image = (
 		<img
 			src={src}
@@ -23,7 +23,7 @@ const AboutSubCoverImage = ({ title, src, slug }: CoverImageSubPageProps) => {
 	return (
 		<div className=''>
 			{slug ? (
-				<Link as={`/about/${slug}`} href='/about/[slug]'>
+				<Link as={`/blog/${slug}`} href='/blog/[slug]'>
 					<a aria-label={title}>{image}</a>
 				</Link>
 			) : (
@@ -33,4 +33,4 @@ const AboutSubCoverImage = ({ title, src, slug }: CoverImageSubPageProps) => {
 	);
 };
 
-export default AboutSubCoverImage;
+export default BlogPostCoverImage;
