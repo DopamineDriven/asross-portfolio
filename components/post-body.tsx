@@ -23,7 +23,7 @@ const CodeBlock = ({ language, value }: SyntaxHighlighterProps) => {
 	);
 };
 
-const AboutPostBody = ({ content }: PostBodyProps) => {
+const PostBody = ({ content }: PostBodyProps) => {
 	return (
 		<div className='text-shadow-none shadow-none  mx-auto content-center text-left md:text-left md:text-customP items-center justify-center align-middle '>
 			<ReactMarkdown
@@ -36,4 +36,4 @@ const AboutPostBody = ({ content }: PostBodyProps) => {
 	);
 };
 
-export default AboutPostBody;
+export default PostBody;
