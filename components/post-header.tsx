@@ -15,13 +15,13 @@ interface PostHeaderProps {
 const PostHeader = ({ author, date, src, title }: PostHeaderProps) => {
 	return (
 		<Fragment>
-			<div className='font-head text-customAboutTitle bg-portfolio'>
+			<div className='font-head text-customAboutTitle bg-portfolio select-none'>
 				<div className='block mx-auto md:max-w-aboutImage600 md:w-aboutImage600 max-w-imagePortfolioMobile w-imagePortfolioMobile pt-mobileGapY'>
 					<CoverImage title={title} src={src} />
 				</div>
 				<PostTitle>{title}</PostTitle>
 			</div>
-			<div className=' max-w-cardGridMobile block mx-auto align-middle justify-center'>
+			<div className=' max-w-cardGridMobile block mx-auto align-middle justify-center select-none'>
 				<div className='text-customExcerpt text-oneFiveBlack font-somaRoman block'>
 					<Date dateString={date} />
 				</div>
