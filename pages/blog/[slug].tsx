@@ -58,3 +58,28 @@ type BlogParams = {
 		slug: string;
 	};
 };
+
+export const getStaticProps = async ({
+	params
+}: BlogParams & GetStaticProps) => {
+	const blog = getBlogBySlug(params.slug, [
+		'title',
+		'date',
+		'slug',
+		'content',
+		'ogImage',
+		'coverImage',
+		'articleImage',
+		'excerpt'
+	]);
+
+	return {
+		props: {
+			blog: {
+				...blog
+			}
+		}
+	};
+};
+
+
