@@ -15,7 +15,7 @@ const CodeBlock = ({ language, value }: SyntaxHighlighterProps) => {
 		<SyntaxHighlighter
 			language={language}
 			useInlineStyles={true}
-			className=' text-shadow-none bg-tinyHouseWhite'
+			className=' text-shadow-none bg-tinyHouseWhite text-customExcerpt'
 		>
 			{value}
 			{/* {children.replace(/^\s+|\s+$/g, '')} */}

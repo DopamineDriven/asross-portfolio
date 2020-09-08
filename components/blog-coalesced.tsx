@@ -8,12 +8,9 @@ interface BlogCoalescedProps {
 const BlogCoalesced = ({ blogs }: BlogCoalescedProps) => {
 	return (
 		<section>
-			<div
-				className='select-none grid grid-cols-1'
-				style={{ position: 'absolute' }}
-			>
+			<div className='select-none grid grid-cols-1 float-right pr-portfolioS pb-portfolioLS pl-paddingBlog'>
 				{blogs.map(blog => (
-					<BlogTitle key={blog.slug} title={blog.title} />
+					<BlogTitle key={blog.slug} title={blog.title} date={blog.date} slug={blog.slug} />
 				))}
 			</div>
 		</section>
