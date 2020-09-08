@@ -4,15 +4,15 @@ import matter from 'gray-matter';
 
 // --- Blog ---
 
-const blogsDirectory = join(process.cwd(), '_blogs');
+const blogDirectory = join(process.cwd(), '_blog');
 
 export function getBlogSlugs() {
-	return fs.readdirSync(blogsDirectory);
+	return fs.readdirSync(blogDirectory);
 }
 
 export function getBlogBySlug(slug: string, fields: string[] = []) {
 	const realSlug = slug.replace(/\.md$/, '');
-	const fullPath = join(blogsDirectory, `${realSlug}.md`);
+	const fullPath = join(blogDirectory, `${realSlug}.md`);
 	const fileContents = fs.readFileSync(fullPath, 'utf8');
 	const { data, content } = matter(fileContents);
 
@@ -41,9 +41,9 @@ export function getBlogBySlug(slug: string, fields: string[] = []) {
 
 export function getAllBlogs(fields: string[] = []) {
 	const slugs = getBlogSlugs();
-	const blogs = slugs
+	const blog = slugs
 		.map(slug => getBlogBySlug(slug, fields))
 		// sort posts by date in descending order
 		.sort((blog1, blog2) => (blog1.date > blog2.date ? -1 : 1));
-	return blogs;
+	return blog;
 }

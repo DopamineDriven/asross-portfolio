@@ -307,7 +307,8 @@ module.exports = {
 				customAboutTitle: '13.9276vw',
 				customAboutText: '3.3426vw',
 				customAbout: '23.41667vw',
-				customPostAbout: '7.5666vw'
+				customPostAbout: '7.5666vw',
+				customPostBlog: '7.7666vw'
 			},
 			boxShadow: {
 				small: '0 5px 10px rgba(0, 0, 0, 0.12)',
