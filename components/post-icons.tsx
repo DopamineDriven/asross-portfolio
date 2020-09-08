@@ -1,14 +1,16 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
-import { faReact, faWordpress } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faReact, faWordpress } from '@fortawesome/free-brands-svg-icons';
 import {
 	faAntDesignIcon,
 	faApolloIcon,
 	faAuth0Icon,
 	faGraphQLIcon,
+	faHerokuIcon,
 	faNextIcon,
 	faTailwindIcon,
-	faTypeScriptIcon
+	faTypeScriptIcon,
+	faVercelIcon
 } from 'lib/fas-custom-integration';
 interface MappingProps {
 	href: string;

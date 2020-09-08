@@ -4,24 +4,30 @@ import {
 	Prism as SyntaxHighlighter,
 	SyntaxHighlighterProps
 } from 'react-syntax-highlighter';
+// import dark from 'react-syntax-highlighter/dist/esm/styles/prism/dark';
 
+interface PostBodyProps {
+	content: string;
+}
+// customStyle={{ 'backgroundColor': 'black', 'textShadow': 'black', 'textDecoration': 'none' }}
 const CodeBlock = ({ language, value }: SyntaxHighlighterProps) => {
 	return (
-		<SyntaxHighlighter useInlineStyles={true} language={language}>
+		<SyntaxHighlighter
+			language={language}
+			useInlineStyles={true}
+			className=' text-shadow-none bg-tinyHouseWhite'
+		>
 			{value}
+			{/* {children.replace(/^\s+|\s+$/g, '')} */}
 		</SyntaxHighlighter>
 	);
 };
 
-interface ContentProps {
-	content: string;
-}
-
-const PostBodyBlog = ({ content }: ContentProps) => {
+const AboutPostBody = ({ content }: PostBodyProps) => {
 	return (
-		<div className=' max-w-cardGrid prose mx-auto content-center text-left md:text-justify items-center justify-center align-middle'>
+		<div className='text-shadow-none shadow-none  mx-auto content-center text-left md:text-left md:text-customP items-center justify-center align-middle '>
 			<ReactMarkdown
-				className={markdownStyles['markdown']}
+				className={markdownStyles['markdown'] + ' text-shadow-none'}
 				escapeHtml={false}
 				source={content}
 				renderers={{ code: CodeBlock }}
@@ -30,6 +36,4 @@ const PostBodyBlog = ({ content }: ContentProps) => {
 	);
 };
 
-export default PostBodyBlog;
-
-// https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/react-syntax-highlighter/index.d.ts
+export default AboutPostBody;
