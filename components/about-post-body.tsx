@@ -25,7 +25,7 @@ const CodeBlock = ({ language, value }: SyntaxHighlighterProps) => {
 
 const AboutPostBody = ({ content }: AboutPostBodyProps) => {
 	return (
-		<div className='text-shadow-none shadow-none  mx-auto content-center text-left md:text-left md:text-customP items-center justify-center align-middle '>
+		<div className='text-shadow-none shadow-none select-none mx-auto content-center text-left md:text-left md:text-customP items-center justify-center align-middle '>
 			<ReactMarkdown
 				className={markdownStyles['markdown'] + ' text-shadow-none'}
 				escapeHtml={false}

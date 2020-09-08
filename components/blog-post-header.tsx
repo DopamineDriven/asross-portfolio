@@ -12,13 +12,13 @@ interface BlogPostHeaderProps {
 const BlogPostHeader = ({ title, src, date }: BlogPostHeaderProps) => {
 	return (
 		<Fragment>
-			<div className='font-head text-customPostBlog bg-portfolio'>
+			<div className='font-head text-customPostBlog bg-portfolio select-none'>
 				<div className='block mx-auto md:max-w-aboutImage600 md:w-aboutImage600 max-w-imagePortfolioMobile w-imagePortfolioMobile pt-mobileGapY'>
 					<BlogPostCoverImage title={title} src={src} />
 				</div>
 				<BlogPostTitle>{title}</BlogPostTitle>
 			</div>
-			<div className=' max-w-cardGridMobile block mx-auto align-middle justify-center'>
+			<div className=' max-w-cardGridMobile block mx-auto align-middle justify-center select-none'>
 				<div className=' text-customExcerptMobile text-oneFiveBlack font-somaRoman flex mx-auto align-middle justify-center'>
 					<Date dateString={date} />
 				</div>
