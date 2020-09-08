@@ -226,8 +226,3 @@ body::-webkit-scrollbar {
 .p-indents:nth-child(25) {
 	@apply pl-aboutIndentation;
 }
-
-
-.prose-no-shadow {
-	text-shadow: 0 -.1em .2em black !important;
-}
