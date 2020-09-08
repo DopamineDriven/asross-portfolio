@@ -1,10 +1,10 @@
 import { ReactNode } from 'react';
 
-type Props = {
+interface AboutPostTitleProps {
 	children?: ReactNode;
-};
+}
 
-const AboutPostTitle = ({ children }: Props) => {
+const AboutPostTitle = ({ children }: AboutPostTitleProps) => {
 	return (
 		<div className=' md:my-portfolioPadding'>
 			{' '}
