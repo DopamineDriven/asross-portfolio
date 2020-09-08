@@ -1,14 +1,17 @@
 import { ReactNode } from 'react';
 
-type Props = {
+interface PostTitleProps {
 	children?: ReactNode;
 };
 
-const PostTitle = ({ children }: Props) => {
+const PostTitle = ({ children }: PostTitleProps) => {
 	return (
-		<h1 className='text-customSM font-bold tracking-tighter font-head md:leading-none mb-2 text-center justify-center'>
-			{children}
-		</h1>
+		<div className=' md:my-portfolioPadding'>
+			{' '}
+			<h1 className='pt-portfolioDivider font-bold tracking-wide font-head md:leading-headerAbout text-center justify-center'>
+				{children}
+			</h1>
+		</div>
 	);
 };
 
