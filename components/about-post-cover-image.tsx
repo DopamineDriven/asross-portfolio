@@ -20,7 +20,7 @@ const AboutSubCoverImage = ({ title, src, slug }: CoverImageSubPageProps) => {
 	return (
 		<div className=''>
 			{slug ? (
-				<Link as={`/posts/${slug}`} href='/posts/[slug]'>
+				<Link as={`/about/${slug}`} href='/about/[slug]'>
 					<a aria-label={title}>{image}</a>
 				</Link>
 			) : (
