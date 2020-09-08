@@ -6,14 +6,17 @@ import {
 } from 'react-syntax-highlighter';
 // import dark from 'react-syntax-highlighter/dist/esm/styles/prism/dark';
 
-
 interface BlogPostBodyProps {
 	content: string;
 }
 // customStyle={{ 'backgroundColor': 'black', 'textShadow': 'black', 'textDecoration': 'none' }}
 const CodeBlock = ({ language, value }: SyntaxHighlighterProps) => {
-  return (
-    <SyntaxHighlighter language={language} useInlineStyles={true} className=' text-shadow-none bg-tinyHouseWhite'>
+	return (
+		<SyntaxHighlighter
+			language={language}
+			useInlineStyles={true}
+			className=' text-shadow-none bg-tinyHouseWhite'
+		>
 			{value}
 			{/* {children.replace(/^\s+|\s+$/g, '')} */}
 		</SyntaxHighlighter>
