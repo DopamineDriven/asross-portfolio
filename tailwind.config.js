@@ -231,7 +231,8 @@ module.exports = {
 				aboutImage300: '20.8914vw',
 				aboutImage400: '27.8552vw',
 				aboutImage500: '34.8181vw',
-				aboutImage600: '41.7827vw'
+				aboutImage600: '41.7827vw',
+				portfolioDividerWidth: '93.333vw'
 			},
 			spacing: {
 				negative: '-0.1em',

@@ -5,8 +5,10 @@ interface PostType {
 	title: string;
 	date: string;
 	coverImage: string;
+	articleImage: string;
 	author: Author;
 	excerpt: string;
+	articleExcerpt: string;
 	ogImage: {
 		url: string;
 	};

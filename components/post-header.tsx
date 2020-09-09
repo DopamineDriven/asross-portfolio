@@ -39,6 +39,7 @@ const PostHeader = ({ author, date, src, title }: PostHeaderProps) => {
 					/>
 				</div>
 			</div>
+			<hr className='border-fiveOBlack w-portfolioDividerWidth max-w-portfolioDividerWidth my-portfolioDivider pb-portfolioDivider mx-auto' />
 		</Fragment>
 	);
 };

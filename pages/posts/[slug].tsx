@@ -47,7 +47,7 @@ const Post = ({ post, posts }: PostSlugProps) => {
 						/>
 						<PostBody content={post.content} />
 					</article>
-					<hr className='border-fiveOBlack w-full pb-portfolioDivider' />
+					<hr className='border-fiveOBlack w-portfolioDividerWidth mx-auto mt-portfolio pb-portfolioDivider' />
 					<div className=' max-w-cardGrid grid mx-auto content-center justify-center items-center text-center'>
 						{morePosts?.length > 0 && <Cards posts={morePosts} />}
 					</div>
