@@ -22,20 +22,22 @@ const PostHeader = ({ author, date, src, title }: PostHeaderProps) => {
 				<PostTitle>{title}</PostTitle>
 			</div>
 			<div className=' max-w-cardGridMobile block mx-auto align-middle justify-center select-none'>
-				<div className='text-customExcerpt text-oneFiveBlack font-somaRoman block'>
+				<div className='text-customExcerptMobile text-oneFiveBlack font-somaRoman flex mx-auto align-middle justify-center'>
 					<Date dateString={date} />
 				</div>
-				<PostIcons
-					antdesign={author.antdesign}
-					apollo={author.apollo}
-					auth0={author.auth0}
-					graphql={author.graphql}
-					next={author.next}
-					react={author.react}
-					tailwindcss={author.tailwindcss}
-					typescript={author.typescript}
-					wordpress={author.wordpress}
-				/>
+				<div className='text-customExcerptMobile text-oneFiveBlack font-somaRoman flex mx-auto align-middle justify-center'>
+					<PostIcons
+						antdesign={author.antdesign}
+						apollo={author.apollo}
+						auth0={author.auth0}
+						graphql={author.graphql}
+						next={author.next}
+						react={author.react}
+						tailwindcss={author.tailwindcss}
+						typescript={author.typescript}
+						wordpress={author.wordpress}
+					/>
+				</div>
 			</div>
 		</Fragment>
 	);
