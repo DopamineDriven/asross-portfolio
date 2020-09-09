@@ -95,7 +95,7 @@ const PostSourceIcons = ({ github, heroku, vercel }: PostSourceIconProps) => {
 							) : (
 								<FontAwesomeIcon
 									icon={faGithub}
-									className='flex align-middle text-center font-extrabold hover:text-fiveOBlack pr-half'
+									className='flex align-middle text-center font-extrabold hover:text-fiveOBlack pr-half  transition-all transform delay-300 duration-1000 ease-in-out '
 									size='2x'
 								/>
 							)}
@@ -115,7 +115,7 @@ const PostSourceIcons = ({ github, heroku, vercel }: PostSourceIconProps) => {
 							) : (
 								<FontAwesomeIcon
 									icon={faHerokuIcon}
-									className='flex align-middle text-center font-extrabold hover:text-fiveOBlack pr-half'
+									className='flex align-middle text-center font-extrabold hover:text-fiveOBlack pr-half  transition-all transform delay-300 duration-1000 ease-in-out '
 									size='2x'
 								/>
 							)}
@@ -135,7 +135,7 @@ const PostSourceIcons = ({ github, heroku, vercel }: PostSourceIconProps) => {
 							) : (
 								<FontAwesomeIcon
 									icon={faVercelIcon}
-									className='flex align-middle text-center font-extrabold hover:text-fiveOBlack pr-half'
+									className='flex align-middle text-center font-extrabold hover:text-fiveOBlack pr-half  transition-all transform delay-300 duration-1000 ease-in-out '
 									size='2x'
 								/>
 							)}
