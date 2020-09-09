@@ -11,6 +11,7 @@ interface AboutPostHeaderProps {
 const AboutPostHeader = ({ title, src, date }: AboutPostHeaderProps) => {
 	return (
 		<Fragment>
+			<div className=''></div>
 			<div className='font-head text-customAboutTitle bg-portfolio select-none'>
 				<div className='block mx-auto md:max-w-aboutImage600 md:w-aboutImage600 max-w-imagePortfolioMobile w-imagePortfolioMobile pt-mobileGapY'>
 					<AboutPostCoverImage title={title} src={src} />
@@ -22,7 +23,7 @@ const AboutPostHeader = ({ title, src, date }: AboutPostHeaderProps) => {
 					<Date dateString={date} />
 				</div>
 			</div>
-			<hr className='border-fiveOBlack w-portfolioDividerWidth my-portfolioDivider pb-portfolioDivider mx-auto' />
+			<hr className='border-fiveOBlack w-portfolioDividerWidth max-w-portfolioDividerWidth my-portfolioDivider pb-portfolioDivider mx-auto' />
 		</Fragment>
 	);
 };

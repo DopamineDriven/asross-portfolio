@@ -41,13 +41,14 @@ const Post = ({ post, posts }: PostSlugProps) => {
 						</Head>
 						<PostHeader
 							title={post.title}
-							src={post.coverImage}
+							articleExcerpt={post.articleExcerpt}
+							src={post.articleImage}
 							date={post.date}
 							author={post.author}
 						/>
 						<PostBody content={post.content} />
 					</article>
-					<hr className='border-fiveOBlack w-full pb-portfolioDivider' />
+					<hr className='border-fiveOBlack w-portfolioDividerWidth mx-auto mt-portfolio pb-portfolioDivider' />
 					<div className=' max-w-cardGrid grid mx-auto content-center justify-center items-center text-center'>
 						{morePosts?.length > 0 && <Cards posts={morePosts} />}
 					</div>
@@ -74,7 +75,9 @@ export const getStaticProps = async ({ params }: Params & GetStaticProps) => {
 		'author',
 		'content',
 		'ogImage',
-		'coverImage'
+		'coverImage',
+		'articleImage',
+		'articleExcerpt'
 	]);
 	const content = await markdownToHtml(post.content || '');
 
