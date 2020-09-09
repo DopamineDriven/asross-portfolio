@@ -6,9 +6,9 @@ interface PostTitleProps {
 
 const PostTitle = ({ children }: PostTitleProps) => {
 	return (
-		<div className=' md:my-portfolioPadding'>
+		<div className=' md:mt-paddingPostTitleTop md:mb-paddingPostTitleBottom'>
 			{' '}
-			<h1 className='pt-portfolioDivider font-bold tracking-wide font-head md:leading-headerAbout text-center justify-center'>
+			<h1 className='mt-portfolioDivider font-bold font-head md:leading-headerAbout text-center justify-center'>
 				{children}
 			</h1>
 		</div>

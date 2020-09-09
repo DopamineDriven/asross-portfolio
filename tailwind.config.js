@@ -260,6 +260,8 @@ module.exports = {
 				aboutoffOffsetPR: '-35.79944vw',
 				aboutHackingFontAwesomePT: '6.6852vw',
 				paddingBlog: '30vw',
+				paddingPostTitleTop: '5.5vw',
+				paddingPostTitleBottom: '3.75vw',
 				7: '1.75rem',
 				14: '3.5rem',
 				18: '4.5rem',
@@ -309,7 +311,8 @@ module.exports = {
 				customAboutText: '3.3426vw',
 				customAbout: '23.41667vw',
 				customPostAbout: '7.5666vw',
-				customPostBlog: '7.7666vw'
+				customPostBlog: '7.7666vw',
+				customSubPostTitle: '11.9276vw'
 			},
 			boxShadow: {
 				small: '0 5px 10px rgba(0, 0, 0, 0.12)',

@@ -25,7 +25,7 @@ const Blog = ({ blog, blogs }: BlogProps) => {
 	}
 	return (
 		<Fragment>
-			<BlogHeader />
+			<BlogHeader title={blog.title} />
 			{router.isFallback ? (
 				<BlogPostTitle>Loading...</BlogPostTitle>
 			) : (
