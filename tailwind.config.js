@@ -260,6 +260,8 @@ module.exports = {
 				aboutoffOffsetPR: '-35.79944vw',
 				aboutHackingFontAwesomePT: '6.6852vw',
 				paddingBlog: '30vw',
+				paddingPostTitleTop: '5.5vw',
+				paddingPostTitleBottom: '3.75vw',
 				7: '1.75rem',
 				14: '3.5rem',
 				18: '4.5rem',

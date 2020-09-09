@@ -44,6 +44,9 @@ const Post = ({ post, posts }: PostSlugProps) => {
 							articleExcerpt={post.articleExcerpt}
 							src={post.articleImage}
 							date={post.date}
+							github={post.github}
+							heroku={post.heroku}
+							vercel={post.vercel}
 							author={post.author}
 						/>
 						<PostBody content={post.content} />
@@ -77,7 +80,10 @@ export const getStaticProps = async ({ params }: Params & GetStaticProps) => {
 		'ogImage',
 		'coverImage',
 		'articleImage',
-		'articleExcerpt'
+		'articleExcerpt',
+		'github',
+		'heroku',
+		'vercel'
 	]);
 	const content = await markdownToHtml(post.content || '');
 
