@@ -26,7 +26,7 @@ const About = ({ about, abouts }: AboutSlugProps) => {
 	}
 	return (
 		<Fragment>
-			<AboutHeader />
+			<AboutHeader title={about.title} />
 			{router.isFallback ? (
 				<AboutPostTitle>Loading...</AboutPostTitle>
 			) : (
