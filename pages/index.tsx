@@ -16,7 +16,6 @@ import BlogType from 'types/blog';
 
 interface IndexProps {
 	allPosts: Post[];
-	preview?: boolean;
 	allAbout: AboutType[];
 	allBlog: BlogType[];
 }
@@ -29,7 +28,7 @@ const Index = ({ allPosts, allAbout, allBlog }: IndexProps) => {
 		<Fragment>
 			<Lead />
 			<Head>
-				<title>{`${CLIENT_NAME} index page`}</title>
+				<title>{`${CLIENT_NAME} landing page`}</title>
 			</Head>
 			<div className='max-w-cardGridMobile md:max-w-cardGrid my-portfolioH2F grid mx-auto content-center justify-center items-center text-center'>
 				{morePosts.length > 0 && <Cards posts={morePosts} />}
@@ -66,15 +65,6 @@ export const getStaticProps: GetStaticProps = async () => {
 	]);
 
 	const allBlog = getAllBlogs(['title', 'slug', 'date']);
-
-	// const blogTitle = getAllBlogs([
-	// 	'title',
-	// 	'date',
-	// 	'slug',
-	// 	'author',
-	// 	'coverImage',
-	// 	'excerpt'
-	// ]);
 
 	return {
 		props: { allPosts, allAbout, allBlog }
