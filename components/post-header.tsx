@@ -2,17 +2,19 @@ import PostIcons from 'components/post-icons';
 import Date from 'components/date-formatter';
 import CoverImage from 'components/cover-image-sub-page';
 import PostTitle from 'components/post-title';
+import PostArticleExcerpt from 'components/post-article-excerpt';
 import { Fragment } from 'react';
 import Author from 'types/author';
 
 interface PostHeaderProps {
 	title: string;
+	articleExcerpt: string;
 	src: string;
 	author: Author;
 	date: string;
 }
 
-const PostHeader = ({ author, date, src, title }: PostHeaderProps) => {
+const PostHeader = ({ author, date, src, title, articleExcerpt }: PostHeaderProps) => {
 	return (
 		<Fragment>
 			<div className='font-head text-customAboutTitle bg-portfolio select-none'>
@@ -22,6 +24,9 @@ const PostHeader = ({ author, date, src, title }: PostHeaderProps) => {
 				<PostTitle>{title}</PostTitle>
 			</div>
 			<div className=' max-w-cardGridMobile block mx-auto align-middle justify-center select-none'>
+			<div className='text-customExcerpt text-oneFiveBlack font-somaRoman flex mx-auto align-middle justify-center'>
+					<PostArticleExcerpt articleExcerpt={articleExcerpt} />
+				</div>
 				<div className='text-customExcerptMobile text-oneFiveBlack font-somaRoman flex mx-auto align-middle justify-center'>
 					<Date dateString={date} />
 				</div>

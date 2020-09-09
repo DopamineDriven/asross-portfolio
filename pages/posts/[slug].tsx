@@ -41,7 +41,8 @@ const Post = ({ post, posts }: PostSlugProps) => {
 						</Head>
 						<PostHeader
 							title={post.title}
-							src={post.coverImage}
+							articleExcerpt={post.articleExcerpt}
+							src={post.articleImage}
 							date={post.date}
 							author={post.author}
 						/>
@@ -74,7 +75,9 @@ export const getStaticProps = async ({ params }: Params & GetStaticProps) => {
 		'author',
 		'content',
 		'ogImage',
-		'coverImage'
+		'coverImage',
+		'articleImage',
+		'articleExcerpt'
 	]);
 	const content = await markdownToHtml(post.content || '');
 
