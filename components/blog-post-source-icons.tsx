@@ -1,11 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-	faGithub,
-	faDev,
-	faMedium,
-	faYoutube
-} from '@fortawesome/free-brands-svg-icons';
-import { faHerokuIcon, faVercelIcon } from 'lib/fas-custom-integration';
+import { faDev, faMedium, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 interface BlogPostSourceIconMeta {
@@ -32,17 +26,7 @@ const IconMapping: BlogPostSourceIconMeta[] = [
 	}
 ];
 
-interface PostSourceIconProps {
-	github: string;
-	heroku: string;
-	vercel: string;
-}
-
-const BlogPostSourceIcons = ({
-	github,
-	heroku,
-	vercel
-}: PostSourceIconProps) => {
+const BlogPostSourceIcons = () => {
 	const iconsMapped = IconMapping.map(constituent => {
 		return (
 			<li className='align-middle' key={constituent.social}>
