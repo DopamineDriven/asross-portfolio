@@ -1,5 +1,3 @@
-import Author from 'types/author';
-
 interface Blog {
 	slug: string;
 	title: string;

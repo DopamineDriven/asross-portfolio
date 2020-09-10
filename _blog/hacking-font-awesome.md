@@ -1,5 +1,5 @@
 ---
-title: 'Hacking-Font-Awesome'
+title: 'hacking-font-awesome'
 postTitle: 'Hacking Font Awesome'
 excerpt: 'Hacking the Font Awesome Library with React, Nextjs, and TypeScript to support custom SVG incorporation locally and in production.'
 coverImage: 'https://res.cloudinary.com/asross311/image/upload/v1598874059/portfolio/Rectangle_6036_gmc1ej.jpg'
