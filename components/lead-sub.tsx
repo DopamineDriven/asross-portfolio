@@ -25,7 +25,7 @@ const LeadPost = ({ title }: SubLeadProps) => {
 						</a>
 					</Link>
 				</div>
-				<div className='block justify-between lg:justify-start w-full min-w-full z-2 text-customExcerpt tracking-tighter'>
+				<div className='block justify-between lg:justify-start w-full min-w-full z-2 md:text-customExcerpt text-customExcerptMobile tracking-tighter'>
 					<Link href={`/#home-${title}`} passHref scroll={true}>
 						<a
 							className='block align-middle justify-between mx-auto text-center mt-portfolio ml-portfolioPadding font-somaRoman text-black hover:text-fiveOBlack transition-all duration-1000 transform ease-in-out'

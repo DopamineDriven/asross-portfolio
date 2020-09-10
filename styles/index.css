@@ -218,6 +218,10 @@ body::-webkit-scrollbar {
 	@apply pl-aboutOffsetPR;
 }
 
+.p-lastmobile:nth-child(n + 1):nth-child(-n + 12) {
+	@apply pl-aboutOffsetPRMobile;
+}
+
 .p-indent:nth-child(15) {
 	@apply pl-aboutIndentation;
 }

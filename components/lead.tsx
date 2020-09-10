@@ -102,7 +102,7 @@ const Lead = () => {
 	const spanMap = spanSnippets.map(constituent => {
 		return (
 			<span
-				className='font-thin font-somaRoman tracking-tighter last:pl-portfolioS p-lead cursor-default md:hidden'
+				className='font-thin font-somaRoman tracking-tighter last:pl-portfolioS p-lead cursor-default '
 				key={constituent.id}
 			>
 				{constituent.span}
@@ -182,3 +182,63 @@ const Lead = () => {
 };
 
 export default Lead;
+
+
+
+/*
+const spanSnippets: LeadInterface[] = [
+	{
+		id: 0,
+		span: 'Andrew Ross is a Chicago Based Full-Stack '
+	},
+	{
+		id: 1,
+		span: 'Engineer specializing in JAMstack, React, '
+	},
+	{
+		id: 2,
+		span: 'TypeScript, Next.js, Node, GraphQL, Apollo, '
+	},
+	{
+		id: 3,
+		span: 'Tailwind CSS, MongoDB, PostgreSQL, JWTs, '
+	},
+	{
+		id: 4,
+		span: 'Google Analytics, Static Site Generation, UX, '
+	},
+	{
+		id: 5,
+		span: 'Headless WordPress, DB Migration, and Vercel. '
+	},
+	{
+		id: 6,
+		span: 'Cofounder of Windy City Devs LLC. '
+	},
+	{
+		id: 7,
+		span: 'Full-Stack TA at Vanderbilt University. '
+	},
+	{
+		id: 8,
+		span: 'Project lead uniting Chicago Media. '
+	},
+	{
+		id: 9,
+		span: 'Works with techies around the globe. '
+	},
+	{
+		id: 10,
+		span: `What drives this? A desire to build.`
+	},
+	{
+		id: 11,
+		span: 'Available for freelance, contract, and '
+	},
+	{
+		id: 12,
+		span: 'full-time work.'
+	}
+];
+
+*/

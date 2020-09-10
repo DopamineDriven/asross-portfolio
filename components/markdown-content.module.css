@@ -23,19 +23,6 @@
 	@apply text-customSM mt-8 mb-4 leading-snug;
 }
 
-.content {
-	@apply text-customSM;
-	@apply font-somaRoman;
-	@apply leading-tight;
-}
-
-.content p,
-.content ul,
-.content ol,
-.content blockquote {
-	@apply my-6;
-}
-
 .markdown a {
 	@apply font-somaRoman;
 }
@@ -64,18 +51,6 @@
 
 .markdown ul > li > ul {
 	list-style: none;
-}
-
-.content h2 {
-	@apply mt-12 mb-4 leading-snug;
-}
-
-.content h3 {
-	@apply mt-8 mb-4 leading-snug;
-}
-
-.content h4 {
-	@apply mt-6 mb-4 leading-snug;
 }
 
 .markdown pre {
@@ -112,4 +87,20 @@
 
 .markdown img {
 	@apply block mx-auto;
+}
+
+@media (max-width: 639px)  {
+	.markdown p,
+	.markdown ul,
+	.markdown ol,
+	.markdown blockquote {
+		@apply my-6 text-customExcerptMobile;
+		@apply font-somaRoman;
+	}
+	.markdown h2 {
+		@apply text-customSM mb-4 leading-snug font-head;
+	}
+	.markdown h1 {
+		@apply font-head text-customPostAbout;
+	}
 }

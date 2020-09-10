@@ -257,7 +257,7 @@ module.exports = {
 				socialT: '74.58333vw',
 				aboutGapX: '8.9136vw',
 				aboutOffsetPR: '43.79944vw',
-				aboutoffOffsetPR: '-35.79944vw',
+				aboutOffsetPRMobile: '37.79944vw',
 				aboutHackingFontAwesomePT: '6.6852vw',
 				paddingBlog: '30vw',
 				paddingPostTitleTop: '5.5vw',
@@ -313,7 +313,8 @@ module.exports = {
 				customAbout: '23.41667vw',
 				customPostAbout: '7.5666vw',
 				customPostBlog: '7.7666vw',
-				customSubPostTitle: '11.9276vw'
+				customSubPostTitle: '11.9276vw',
+				customAboutSubMobile: '2.63333vw',
 			},
 			boxShadow: {
 				small: '0 5px 10px rgba(0, 0, 0, 0.12)',
