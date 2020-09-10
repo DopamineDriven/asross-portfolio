@@ -1,7 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faHerokuIcon, faVercelIcon } from 'lib/fas-custom-integration';
+
+interface BlogPostSourceIconMeta {
+  
+}
 
 interface PostSourceIconProps {
 	github: string;
@@ -9,7 +12,7 @@ interface PostSourceIconProps {
 	vercel: string;
 }
 
-const PostSourceIcons = ({ github, heroku, vercel }: PostSourceIconProps) => {
+const BlogPostSourceIcons = ({ github, heroku, vercel }: PostSourceIconProps) => {
 	return (
 		<div className='align-middle justify-right text-right inline-block'>
 			<ul className='align-middle'>
@@ -81,4 +84,4 @@ const PostSourceIcons = ({ github, heroku, vercel }: PostSourceIconProps) => {
 	);
 };
 
-export default PostSourceIcons;
+export default BlogPostSourceIcons;
