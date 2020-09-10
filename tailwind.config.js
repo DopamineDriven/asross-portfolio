@@ -67,7 +67,7 @@ module.exports = {
 				// polished: ['brandon-grotesque', 'sans-serif'],
 				somaRoman: ['neue-haas-grotesk-text', 'sans-serif'],
 				somaDisplay: ['neue-haas-grotesk-display', 'sans-serif'],
-				somaDisplayLight: ['neue-haas-grotesk-display', 'sans-serif']
+				// somaDisplayLight: ['neue-haas-grotesk-display', 'sans-serif']
 				// subpolished: ['Montserrat', 'sans-serif']
 			},
 			colors: {
