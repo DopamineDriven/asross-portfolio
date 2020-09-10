@@ -1,6 +1,7 @@
 import CoverImageCard from 'components/cover-image-card';
 import Link from 'next/link';
 import ReactMarkdown from 'react-markdown/with-html';
+import CardTitle from 'components/card-title';
 
 interface CardProps {
 	date: string;
@@ -16,21 +17,7 @@ const Card = ({ date, excerpt, slug, src, title }: CardProps) => {
 			<div className='max-w-imagePortfolioMobile md:max-w-imagePortfolio overflow-y-hidden overflow-x-hidden bg-portfolio block'>
 				<CoverImageCard slug={slug} src={src} title={title} />
 				<div className='flex flex-col text-center justify-center bg-portfolio'>
-					<div className='font-bold font-somaRoman leading-tight pt-portfolio'>
-						<Link as={`/posts/${slug}`} href='/posts/[slug]' passHref scroll={true}>
-							<a
-								className='font-somaRoman'
-								aria-label={`date-published ${date}`}
-								id={`home-${title}`}
-							>
-								<ReactMarkdown
-									escapeHtml={false}
-									source={title}
-									className='text-center hover:text-fiveOBlack uppercase md:text-customTitle'
-								/>
-							</a>
-						</Link>
-					</div>
+					<CardTitle slug={slug} title={title} />
 					<div className='font-somaRoman text-fiveOBlack uppercase cursor-default'>
 						<ReactMarkdown
 							escapeHtml={false}
