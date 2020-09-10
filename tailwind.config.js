@@ -285,7 +285,8 @@ module.exports = {
 				headerAbout: '3.38298vw',
 				headerP: '4.38298vw',
 				customSLH: '5.33333vw',
-				customSLM: '6.33333vw'
+				customSLM: '6.33333vw',
+				leadingAboutMobile: '3.58298vw'
 			},
 			fontSize: {
 				smxmd: '0.9375rem',
@@ -314,7 +315,7 @@ module.exports = {
 				customPostAbout: '7.5666vw',
 				customPostBlog: '7.7666vw',
 				customSubPostTitle: '11.9276vw',
-				customAboutSubMobile: '2.63333vw',
+				customAboutSubMobile: '2.63333vw'
 			},
 			boxShadow: {
 				small: '0 5px 10px rgba(0, 0, 0, 0.12)',

@@ -89,7 +89,7 @@ const AboutContent = ({ slug, src, title, date, excerpt }: AboutProps) => {
 		<Fragment>
 			<AboutSurpriseQuote />
 			<div
-				className='relative justify-between pt-portfolio flex flex-col min-w-full w-full container overflow-y-hidden overflow-x-hidden transform duration-300 cursor-default select-none'
+				className='relative justify-between leading-leadingAboutMobile pt-portfolio flex flex-col min-w-full w-full container overflow-y-hidden overflow-x-hidden transform duration-300 cursor-default select-none'
 				style={{ transform: 'translate3d(0px, 0px, 0px)' }}
 			>
 				<AboutTitle title={title} slug={slug} />
