@@ -155,7 +155,7 @@ const AboutContent = ({ slug, src, title, date, excerpt }: AboutProps) => {
 	const aboutMap = aboutSnippets.map(constituent => {
 		return (
 			<span
-				className='font-thin font-somaRoman tracking-tighter p-last p-indent p-indents z-0 text-customSM md:text-customSM'
+				className='font-thin font-somaRoman tracking-tighter p-last p-indent p-indents z-0 text-customSM md:text-customTitle'
 				key={constituent.id}
 				style={{}}
 			>
@@ -166,27 +166,27 @@ const AboutContent = ({ slug, src, title, date, excerpt }: AboutProps) => {
 	});
 	return (
 		<Fragment>
+			<span className='font-thin font-somaRoman tracking-tighter cursor-default'>
+				<span className='text-portfolio transition-all duration-3000 delay-300 hover:text-fiveOBlack text-customTitle font-thin font-somaRoman tracking-tighter z-0 pt-portfolioLS text-center juftify-center block'>
+					"The mechanic that would perfect his work must first sharpen his tools."
+					<em>- Confucius</em>
+				</span>
+			</span>
 			<div
 				className='relative justify-between pt-portfolio navbar-expand-lg flex flex-col min-w-full w-full container overflow-y-hidden overflow-x-hidden transform duration-300 cursor-default select-none'
 				style={{ transform: 'translate3d(0px, 0px, 0px)' }}
 			>
 				<AboutTitle title={title} slug={slug} />
 				<div
-					className='md:text-customSMobile text-customSM font-somaRoman md:leading-customSLH leading-customSLM tracking-wide block z-1 '
-					style={{ position: 'absolute', top: '47.98333vw', left: '3.23333vw' }}
+					className='md:text-customExerptMobile text-customSM font-somaRoman md:leading-customSLH leading-customSLM tracking-wide block z-1 '
+					style={{ position: 'absolute', top: '29.98333vw', left: '3.23333vw' }}
 				>
 					<AboutImage src={src} title={title} slug={slug} />
 					<AboutExcerpt excerpt={excerpt} slug={slug} />
 				</div>
-				<p className='text-customP leading-headerP pr-portfolioDivider pl-portfolioLS block font-somaRoman tracking-tighter font-thin z-0'>
+				<p className='md:text-customTitle text-customP leading-headerP pr-portfolioDivider pl-portfolioLS block font-somaRoman tracking-tighter font-thin z-0'>
 					<div className='mx-auto block'>
 						{aboutMap}
-						<span className='font-thin font-somaRoman tracking-tighter cursor-default'>
-							<span className='text-portfolio transition-all duration-3000 delay-300 hover:text-fiveOBlack text-customTitle font-thin font-somaRoman tracking-tighter z-0 pt-portfolioLS text-center juftify-center block'>
-								"The mechanic that would perfect his work must first sharpen his tools."
-								<em>- Confucius</em>
-							</span>
-						</span>
 						<div className='hidden'>{date}</div>
 					</div>
 				</p>
