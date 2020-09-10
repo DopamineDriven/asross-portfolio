@@ -75,7 +75,7 @@ const AboutContent = ({ slug, src, title, date, excerpt }: AboutProps) => {
 	const aboutMap = aboutSnippets.map(constituent => {
 		return (
 			<span
-				className='font-thin font-somaRoman tracking-tighter p-last p-indent p-indents z-0 text-customSM md:text-customTitle'
+				className='font-thin font-somaRoman tracking-tighter md:p-last p-lastmobile p-indent p-indents z-0 text-customAboutSubMobile md:text-customTitle'
 				key={constituent.id}
 				style={{}}
 			>
@@ -99,7 +99,7 @@ const AboutContent = ({ slug, src, title, date, excerpt }: AboutProps) => {
 				<AboutTitle title={title} slug={slug} />
 				<div
 					className='md:leading-customSLH leading-customSLM block z-1'
-					style={{ position: 'absolute', top: '8.48333vw', left: '5.33333vw' }}
+					style={{ position: 'absolute', top: '8.48333vw', left: '3.33333vw' }}
 				>
 					<AboutImage src={src} title={title} slug={slug} />
 					<AboutExcerpt excerpt={excerpt} slug={slug} />
