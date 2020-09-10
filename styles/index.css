@@ -210,6 +210,10 @@ body::-webkit-scrollbar {
 	@apply pl-portfolioS;
 }
 
+.p-blogs:nth-child(1) {
+	@apply pr-paddingAboutTitleRight;
+}
+
 .p-leads:nth-child(n + 6) {
 	@apply pl-aboutOffsetPR;
 }

@@ -1,73 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
-import {
-	faGithub,
-	faReact,
-	faWordpress
-} from '@fortawesome/free-brands-svg-icons';
-import {
-	faAntDesignIcon,
-	faApolloIcon,
-	faAuth0Icon,
-	faGraphQLIcon,
-	faHerokuIcon,
-	faNextIcon,
-	faTailwindIcon,
-	faTypeScriptIcon,
-	faVercelIcon
-} from 'lib/fas-custom-integration';
-interface MappingProps {
-	href: string;
-	name: string;
-	icon: IconProp;
-}
-
-const iconLinks: MappingProps[] = [
-	{
-		href: '',
-		name: 'vercel',
-		icon: faAntDesignIcon
-	},
-	{
-		href: 'https://www.apollographql.com/docs/',
-		name: 'apollo',
-		icon: faApolloIcon
-	},
-	{
-		href: 'https://auth0.com/',
-		name: 'auth0',
-		icon: faAuth0Icon
-	},
-	{
-		href: 'https://www.graphql.com/',
-		name: 'graphql',
-		icon: faGraphQLIcon
-	},
-	{
-		href: 'https://nextjs.org/',
-		name: 'next',
-		icon: faNextIcon
-	},
-	{
-		href: 'https://tailwindcss.com/',
-		name: 'tailwind',
-		icon: faTailwindIcon
-	},
-	{
-		href: 'https://www.typescriptlang.org/',
-		name: 'typescript',
-		icon: faTypeScriptIcon
-	},
-	{
-		href: 'https://wpengine.com/resources/headless-cms-and-wordpress/',
-		name: 'wordpress',
-		icon: faWordpress
-	}
-];
-
-interface PostSourceIconFAProps {
-	icon: IconProp;
-}
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faHerokuIcon, faVercelIcon } from 'lib/fas-custom-integration';
 
 interface PostSourceIconProps {
 	github: string;

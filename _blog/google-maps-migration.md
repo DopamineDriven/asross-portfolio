@@ -5,6 +5,10 @@ excerpt: 'Migrating from deprecated @google/maps to the latest and greatest'
 coverImage: 'https://dev-to-uploads.s3.amazonaws.com/i/23i9acwg697ztp3gt48a.gif'
 articleImage: 'https://dev-to-uploads.s3.amazonaws.com/i/23i9acwg697ztp3gt48a.gif'
 date: '2020-09-04T08:35:07.322Z'
+social:
+ dev: 'https://dev.to/asross311/hacking-the-fontawesome-library-for-custom-icon-integration-with-nextjs-and-typescript-1em8'
+ medium: 'https://medium.com/@andrew.simpson.ross/hacking-the-fontawesome-library-with-nextjs-typescript-for-custom-icon-support-a9ceac76fb70'
+ youtube: ''
 ogImage:
  url: '/assets/next-jamstack.jpg'
 ---

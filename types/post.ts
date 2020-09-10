@@ -1,6 +1,7 @@
 import Author from 'types/author';
+import Social from 'types/social/posts-social';
 
-interface PostType {
+interface PostType extends Social {
 	slug: string;
 	title: string;
 	postTitle: string;
@@ -10,9 +11,6 @@ interface PostType {
 	author: Author;
 	excerpt: string;
 	articleExcerpt: string;
-	github: string;
-	heroku: string;
-	vercel: string;
 	ogImage: {
 		url: string;
 	};
