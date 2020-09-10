@@ -1,7 +1,7 @@
 import PostIcons from 'components/post-icons';
 import PostSourceIcons from 'components/post-source-icons';
 import Date from 'components/date-formatter';
-import CoverImage from 'components/cover-image-sub-page';
+import CoverImage from 'components/post-cover-image';
 import PostTitle from 'components/post-title';
 import PostArticleExcerpt from 'components/post-article-excerpt';
 import { Fragment } from 'react';

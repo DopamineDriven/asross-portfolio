@@ -1,5 +1,6 @@
 ---
-title: 'CIMA'
+title: 'chicago-independent-media-alliance'
+postTitle: 'CIMA'
 excerpt: 'Development, UX'
 coverImage: 'https://res.cloudinary.com/asross311/image/upload/v1598839549/portfolio/Rectangle_6040_i6zz7q.jpg'
 articleImage: 'https://res.cloudinary.com/asross311/image/upload/v1598374421/portfolio/headless-wp-directory_ydouen.jpg'

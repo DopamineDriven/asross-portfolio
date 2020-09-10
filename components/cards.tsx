@@ -17,6 +17,7 @@ const Cards = ({ posts }: CardsProps) => {
 						date={post.date}
 						slug={post.slug}
 						excerpt={post.excerpt}
+						postTitle={post.postTitle}
 					/>
 				))}
 			</div>

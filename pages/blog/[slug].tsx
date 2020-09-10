@@ -38,7 +38,7 @@ const Blog = ({ blog, blogs }: BlogProps) => {
 							<meta property='og:image' content={blog.ogImage.url} />
 						</Head>
 						<BlogPostHeader
-							title={blog.title}
+							title={blog.postTitle}
 							src={blog.articleImage}
 							date={blog.date}
 						/>
@@ -64,6 +64,7 @@ export const getStaticProps = async ({
 }: BlogParams & GetStaticProps) => {
 	const blog = getBlogBySlug(params.slug, [
 		'title',
+		'postTitle',
 		'date',
 		'slug',
 		'content',

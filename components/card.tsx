@@ -1,6 +1,6 @@
-import CoverImageCard from 'components/cover-image-card';
-import Link from 'next/link';
-import ReactMarkdown from 'react-markdown/with-html';
+import CoverImageCard from 'components/card-cover-image';
+import CardTitle from 'components/card-title';
+import CardExcerpt from 'components/card-excerpt';
 
 interface CardProps {
 	date: string;
@@ -8,36 +8,17 @@ interface CardProps {
 	slug: string;
 	src: string;
 	title: string;
+	postTitle: string;
 }
 
-const Card = ({ date, excerpt, slug, src, title }: CardProps) => {
+const Card = ({ date, excerpt, slug, src, title, postTitle }: CardProps) => {
 	return (
 		<div className='block md:odd:pt-offsetY'>
 			<div className='max-w-imagePortfolioMobile md:max-w-imagePortfolio overflow-y-hidden overflow-x-hidden bg-portfolio block'>
 				<CoverImageCard slug={slug} src={src} title={title} />
 				<div className='flex flex-col text-center justify-center bg-portfolio'>
-					<div className='font-bold font-somaRoman leading-tight pt-portfolio'>
-						<Link as={`/posts/${slug}`} href='/posts/[slug]' passHref scroll={true}>
-							<a
-								className='font-somaRoman'
-								aria-label={`date-published ${date}`}
-								id={`home-${title}`}
-							>
-								<ReactMarkdown
-									escapeHtml={false}
-									source={title}
-									className='text-center hover:text-fiveOBlack uppercase md:text-customTitle'
-								/>
-							</a>
-						</Link>
-					</div>
-					<div className='font-somaRoman text-fiveOBlack uppercase cursor-default'>
-						<ReactMarkdown
-							escapeHtml={false}
-							source={excerpt}
-							className='text-center md:text-customExcerpt'
-						/>
-					</div>
+					<CardTitle slug={slug} title={title} postTitle={postTitle} />
+					<CardExcerpt excerpt={excerpt} />
 					<div className='hidden'>{date}</div>
 				</div>
 			</div>

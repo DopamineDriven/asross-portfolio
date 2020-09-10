@@ -1,5 +1,6 @@
 ---
-title: 'Google Books Search'
+title: 'google-books-search'
+postTitle: 'Google Books Search'
 excerpt: 'Development, UX'
 coverImage: 'https://res.cloudinary.com/asross311/image/upload/v1598839550/portfolio/Rectangle_6037_2_y9xmog.jpg'
 articleImage: 'https://res.cloudinary.com/asross311/image/upload/v1598376790/portfolio/wcd-logo_1_iuuuob.jpg'

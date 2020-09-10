@@ -3,6 +3,7 @@ import Author from 'types/author';
 interface Blog {
 	slug: string;
 	title: string;
+	postTitle: string;
 	date: string;
 	coverImage: string;
 	articleImage: string;

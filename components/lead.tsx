@@ -2,7 +2,8 @@ import { ArIcon } from 'components/svg-icons';
 import Link from 'next/link';
 import { Fragment } from 'react';
 import Meta from 'components/meta';
-
+// USE
+// https://fossheim.io/writing/posts/react-text-splitting-animations/
 interface LeadInterface {
 	id: number;
 	span: string;
