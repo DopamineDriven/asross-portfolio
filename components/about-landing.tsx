@@ -178,13 +178,13 @@ const AboutContent = ({ slug, src, title, date, excerpt }: AboutProps) => {
 			>
 				<AboutTitle title={title} slug={slug} />
 				<div
-					className='md:text-customExerptMobile text-customSM font-somaRoman md:leading-customSLH leading-customSLM tracking-wide block z-1 '
-					style={{ position: 'absolute', top: '29.98333vw', left: '3.23333vw' }}
+					className='md:text-customTitle text-customSM font-somaRoman md:leading-customSLH leading-customSLM tracking-tight block z-1'
+					style={{ position: 'absolute', top: '8.98333vw', left: '3.23333vw' }}
 				>
 					<AboutImage src={src} title={title} slug={slug} />
 					<AboutExcerpt excerpt={excerpt} slug={slug} />
 				</div>
-				<p className='md:text-customTitle text-customP leading-headerP pr-portfolioDivider pl-portfolioLS block font-somaRoman tracking-tighter font-thin z-0'>
+				<p className='md:text-customTitle text-customP leading-headerAbout pr-portfolioDivider pl-portfolioLS block font-somaRoman tracking-tighter font-thin z-0'>
 					<div className='mx-auto block'>
 						{aboutMap}
 						<div className='hidden'>{date}</div>

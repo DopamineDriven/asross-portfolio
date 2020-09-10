@@ -256,7 +256,7 @@ module.exports = {
 				portfolioS: '18.60284vw',
 				socialT: '74.58333vw',
 				aboutGapX: '8.9136vw',
-				aboutOffsetPR: '37.79944vw',
+				aboutOffsetPR: '43.79944vw',
 				aboutoffOffsetPR: '-35.79944vw',
 				aboutHackingFontAwesomePT: '6.6852vw',
 				paddingBlog: '30vw',
@@ -282,7 +282,7 @@ module.exports = {
 			lineHeight: {
 				tight: 1.2,
 				portfolio: '5vw',
-				headerAbout: '2.38298vw',
+				headerAbout: '3.38298vw',
 				headerP: '4.38298vw',
 				customSLH: '5.33333vw',
 				customSLM: '6.33333vw'

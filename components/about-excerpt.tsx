@@ -18,7 +18,7 @@ const AboutExcerpt = ({ excerpt, slug }: AboutExcerptProps) => {
 					<ReactMarkdown
 						escapeHtml={false}
 						source={excerpt}
-						className='text-center block'
+						className='text-left block'
 					/>
 				</a>
 			</Link>
