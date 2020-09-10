@@ -11,6 +11,7 @@ export default class MyDocument extends Document {
 				<Head>
 					<meta charSet='utf-8' />
 					<link rel='preconnect' href='https://use.typekit.net/cub6off.css' />
+					<link rel='stylesheet' href='https://use.typekit.net/cub6off.css' />
 				</Head>
 				<body className='block'>
 					<Main />
@@ -26,3 +27,5 @@ export default class MyDocument extends Document {
 // <link rel='stylesheet' href='https://use.typekit.net/sbg1kws.css' />
 // <link rel='stylesheet' href='https://use.typekit.net/hzg4mdi.css' />
 // <link rel='stylesheet' href='https://use.typekit.net/lxd3fak.css' />
+// https://web.dev/uses-rel-preconnect/?utm_source=lighthouse&utm_medium=devtools
+//preconnect, preload, dns-prefetch --> rel="x"
