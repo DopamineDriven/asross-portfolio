@@ -10,7 +10,7 @@ export default class MyDocument extends Document {
 			<Html lang='en-US'>
 				<Head>
 					<meta charSet='utf-8' />
-					<link rel='stylesheet' href='https://use.typekit.net/cub6off.css' />
+					<link rel='preconnect' href='https://use.typekit.net/cub6off.css' />
 				</Head>
 				<body className='block'>
 					<Main />
