@@ -1,4 +1,6 @@
-export default interface About {
+import AboutSocial from 'types/social/about-social';
+
+export default interface About extends AboutSocial {
 	slug: string;
 	title: string;
   coverImage: string;

@@ -1,5 +1,8 @@
 # asross-portfolio
 
+## Social Extended Types Mapping 
+- https://stackoverflow.com/questions/60284442/react-ts-how-to-map-through-fontawesome-icons-and-display-them
+
 ## React Animations
 - https://dev.to/joserfelix/getting-started-with-react-animations-308a
 
