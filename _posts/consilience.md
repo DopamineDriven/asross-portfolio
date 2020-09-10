@@ -1,5 +1,5 @@
 ---
-title: 'Consilience'
+title: 'consilience'
 postTitle: 'Consilience'
 excerpt: 'Development, UX'
 coverImage: 'https://res.cloudinary.com/asross311/image/upload/v1598839549/portfolio/Rectangle_6037_yckfs9.jpg'
