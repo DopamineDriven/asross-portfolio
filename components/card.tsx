@@ -1,4 +1,4 @@
-import CoverImageCard from 'components/cover-image-card';
+import CoverImageCard from 'components/card-cover-image';
 import CardTitle from 'components/card-title';
 import CardExcerpt from 'components/card-excerpt';
 
