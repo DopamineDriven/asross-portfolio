@@ -43,7 +43,7 @@ const FooterSub = ({ title }: SubFooterProps) => {
 							<Link href={`/#home-${title}`} passHref scroll={false}>
 								<a
 									className='block whitespace-no-wrap uppercase duration-1000 transition-all ease-in-out hover:text-fiveOBlack items-left justify-start float-left'
-									aria-label='back to top'
+									aria-label='Return home'
 								>
 									Return home
 								</a>

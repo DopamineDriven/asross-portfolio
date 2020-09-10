@@ -26,7 +26,7 @@ const LeadPost = ({ title }: SubLeadProps) => {
 					</Link>
 				</div>
 				<div className='block justify-between lg:justify-start w-full min-w-full z-2 text-customExcerpt tracking-tighter'>
-					<Link href={`/#home-${title}`}>
+					<Link href={`/#home-${title}`} scroll={true}>
 						<a
 							className='block align-middle justify-between mx-auto text-center mt-portfolio ml-portfolioPadding font-somaRoman text-black hover:text-fiveOBlack transition-all duration-1000 transform ease-in-out'
 							aria-label='return home'

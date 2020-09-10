@@ -13,7 +13,6 @@ const BlogExcerpt = ({ excerpt, slug }: BlogExcerptProps) => {
 				<a
 					className='font-somaRoman'
 					aria-label={`${excerpt}`}
-					id={`home-${excerpt}`}
 				>
 					<ReactMarkdown
 						escapeHtml={false}
