@@ -3,10 +3,11 @@ import ReactMarkdown from 'react-markdown/with-html';
 
 interface CardTitleProps {
 	title: string;
-	slug?: string;
+  slug?: string;
+  postTitle: string;
 }
 
-const CardTitle = ({ title, slug }: CardTitleProps) => {
+const CardTitle = ({ title, slug, postTitle }: CardTitleProps) => {
 	return (
 		<div className='font-bold font-somaRoman leading-tight pt-portfolio'>
 			<Link as={`/posts/${slug}`} href='/posts/[slug]' passHref scroll={true}>
@@ -17,7 +18,7 @@ const CardTitle = ({ title, slug }: CardTitleProps) => {
 				>
 					<ReactMarkdown
 						escapeHtml={false}
-						source={title}
+						source={postTitle}
 						className='text-center hover:text-fiveOBlack uppercase md:text-customTitle'
 					/>
 				</a>
