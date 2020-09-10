@@ -68,86 +68,6 @@ const aboutSnippets: AboutInterface[] = [
 	// {
 	// 	id: 13,
 	// 	span: ''
-	// },
-	// {
-	// 	id: 14,
-	// 	span: 'Prior to entering tech, I earned BA & BS '
-	// },
-	// {
-	// 	id: 15,
-	// 	span: 'degrees from the University of Iowa in Biochem '
-	// },
-	// {
-	// 	id: 16,
-	// 	span: '& Bio Anthropology, respectively. Go Hawks! 🏴󠁵 '
-	// },
-	// {
-	// 	id: 17,
-	// 	span: 'After working as an industrial engineer at UPS, '
-	// },
-	// {
-	// 	id: 18,
-	// 	span: "I decided to enroll in Northwestern's full-stack "
-	// },
-	// {
-	// 	id: 19,
-	// 	span: 'bootcamp. Shortly after graduation, Windy City '
-	// },
-	// {
-	// 	id: 20,
-	// 	span: `Devs LLC was conceived, & I have been acting `
-	// },
-	// {
-	// 	id: 21,
-	// 	span: 'CTO since. In addition to freelance, I am also a '
-	// },
-	// {
-	// 	id: 22,
-	// 	span: 'remote TA for a full-stack cohort at Vanderbilt.'
-	// },
-	// {
-	// 	id: 23,
-	// 	span: ''
-	// },
-	// {
-	// 	id: 24,
-	// 	span: 'Outside of tech, I love snowboarding by '
-	// },
-	// {
-	// 	id: 25,
-	// 	span: 'Winter & wakeboarding by Summer. Real-time '
-	// },
-	// {
-	// 	id: 26,
-	// 	span: 'strategy games have been a favorite since 14  '
-	// },
-	// {
-	// 	id: 27,
-	// 	span: 'with my poison of preference being Age of '
-	// },
-	// {
-	// 	id: 28,
-	// 	span: 'Empires III. I am eager to explore more of the '
-	// },
-	// {
-	// 	id: 29,
-	// 	span: 'world and am open to relocation, be it intra- or'
-	// },
-	// {
-	// 	id: 30,
-	// 	span: "internationally. I'm so glad you decided to stop "
-	// },
-	// {
-	// 	id: 31,
-	// 	span: 'by & endure the tech-talk to arrive at this point! '
-	// },
-	// {
-	// 	id: 32,
-	// 	span: "This journey's just getting started so drop me a "
-	// },
-	// {
-	// 	id: 33,
-	// 	span: "line; let's build something remarkable together."
 	// }
 ];
 
@@ -179,7 +99,7 @@ const AboutContent = ({ slug, src, title, date, excerpt }: AboutProps) => {
 				<AboutTitle title={title} slug={slug} />
 				<div
 					className='md:leading-customSLH leading-customSLM block z-1'
-					style={{ position: 'absolute', top: '7.48333vw', left: '5.33333vw' }}
+					style={{ position: 'absolute', top: '8.48333vw', left: '5.33333vw' }}
 				>
 					<AboutImage src={src} title={title} slug={slug} />
 					<AboutExcerpt excerpt={excerpt} slug={slug} />
@@ -212,4 +132,6 @@ WP Engine as the headless CMS, and Vercel edge network to host the client.
 The objective of the project being to unite independent Chicago-based media companies and increase their digital presence.
 
 Looking forward to beginning a new role as a full-stack development TA with Vanderbilt University this Autumn.
+
+600x600 cloudinary https://res.cloudinary.com/asross311/image/upload/v1598947180/portfolio/IMG_3824_1_8_egnkfs.jpg
 */

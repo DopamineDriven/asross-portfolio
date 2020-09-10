@@ -1,7 +1,7 @@
 ---
 title: 'About'
 excerpt: 'Read More >>>'
-coverImage: 'https://res.cloudinary.com/asross311/image/upload/v1598947180/portfolio/IMG_3824_1_8_egnkfs.jpg'
+coverImage: 'https://res.cloudinary.com/asross311/image/upload/v1599720164/portfolio/IMG_3824_1_8_1_gzj5gf.jpg'
 articleImage: 'https://dev-to-uploads.s3.amazonaws.com/i/23i9acwg697ztp3gt48a.gif'
 date: "2020-09-05T08:35:07.322Z"
 ogImage:

@@ -21,7 +21,7 @@ const AboutTitle = ({ title, slug }: AboutTitleProps) => {
 					<ReactMarkdown
 						escapeHtml={false}
 						source={title}
-						className='text-customAboutTitle text-right block pr-portfolioS'
+						className='text-customAboutTitle text-right block pr-paddingAboutTitleRight'
 					/>
 				</a>
 			</Link>
