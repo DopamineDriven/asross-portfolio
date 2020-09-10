@@ -1,6 +1,7 @@
 import AboutImage from 'components/about-image';
 import AboutExcerpt from 'components/about-excerpt';
 import AboutTitle from 'components/about-title';
+import AboutSurpriseQuote from 'components/about-stealth-quote';
 import { Fragment } from 'react';
 
 interface AboutProps {
@@ -39,7 +40,7 @@ const aboutSnippets: AboutInterface[] = [
 	},
 	{
 		id: 5,
-		span: 'building a future-proof directory via React\'s '
+		span: "building a future-proof directory via React's "
 	},
 	{
 		id: 6,
@@ -47,7 +48,7 @@ const aboutSnippets: AboutInterface[] = [
 	},
 	{
 		id: 7,
-		span: "headless CMS, and Vercel\'s edge network to "
+		span: "headless CMS, and Vercel's edge network to "
 	},
 	{
 		id: 8,
@@ -75,7 +76,7 @@ const AboutContent = ({ slug, src, title, date, excerpt }: AboutProps) => {
 	const aboutMap = aboutSnippets.map(constituent => {
 		return (
 			<span
-				className='font-thin font-somaRoman tracking-tighter md:p-last p-lastmobile p-indent p-indents z-0 text-customAboutSubMobile md:text-customTitle'
+				className='font-thin font-somaRoman tracking-tighter p-last p-indent p-indents z-0 text-customAboutSubMobile md:text-customTitle'
 				key={constituent.id}
 				style={{}}
 			>
@@ -86,12 +87,7 @@ const AboutContent = ({ slug, src, title, date, excerpt }: AboutProps) => {
 	});
 	return (
 		<Fragment>
-			<span className='font-thin font-somaRoman tracking-tighter cursor-default'>
-				<span className='text-portfolio transition-all duration-3000 delay-300 hover:text-fiveOBlack text-customTitle font-thin font-somaRoman tracking-tighter z-0 pt-portfolioLS text-center juftify-center block'>
-					"The mechanic that would perfect his work must first sharpen his tools."
-					<em>- Confucius</em>
-				</span>
-			</span>
+			<AboutSurpriseQuote />
 			<div
 				className='relative justify-between pt-portfolio flex flex-col min-w-full w-full container overflow-y-hidden overflow-x-hidden transform duration-300 cursor-default select-none'
 				style={{ transform: 'translate3d(0px, 0px, 0px)' }}
