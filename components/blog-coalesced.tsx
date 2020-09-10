@@ -10,7 +10,7 @@ const BlogCoalesced = ({ blogs }: BlogCoalescedProps) => {
 	return (
 		<section>
 			<BlogSupraTitle />
-			<div className='select-none grid grid-cols-1 gap-y-portfolio float-right pr-portfolioS pb-portfolioPadding pt-paddingPostTitleTop'>
+			<div className='select-none grid grid-cols-1 gap-y-portfolio float-left pl-paddingBlog pb-portfolioPadding pt-paddingPostTitleTop'>
 				{blogs.map(blog => (
 					<BlogLanding
 						key={blog.slug}
