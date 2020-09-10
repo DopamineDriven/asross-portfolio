@@ -12,7 +12,7 @@
 }
 
 .markdown h1 {
-	@apply font-head text-customPostAbout;
+	@apply font-somaRoman text-customPostAbout;
 }
 
 .markdown h2 {
