@@ -19,52 +19,52 @@ interface AboutInterface {
 const aboutSnippets: AboutInterface[] = [
 	{
 		id: 0,
-		span: 'Experience spearheading projects for '
+		span: 'Experience spearheading projects for small to'
 	},
 	{
 		id: 1,
-		span: 'small/medium sized businesses and '
+		span: 'medium sized businesses and start-ups in the '
 	},
 	{
 		id: 2,
-		span: 'start-ups in the greater Chicago area. '
+		span: 'greater Chicago area. Currently wrapping up a '
 	},
 	{
 		id: 3,
-		span: 'Currently wrapping up a project aiming '
+		span: 'project aiming to unite 60 to 130 independent '
 	},
 	{
 		id: 4,
-		span: 'to unite 60-130 Independent local'
+		span: 'local media companies. Project scope includes'
 	},
 	{
 		id: 5,
-		span: 'media companies. Scope includes '
+		span: 'building a future-proof directory via React\'s '
 	},
 	{
 		id: 6,
-		span: 'building a future-proof directory via '
+		span: 'Next.js framework, WordPress Engine as the '
 	},
 	{
 		id: 7,
-		span: "React's Nextjs framework, WordPress "
+		span: "headless CMS, and Vercel\'s edge network to "
 	},
 	{
 		id: 8,
-		span: 'Engine as the Headless CMS, and '
+		span: 'host the client. WordPress-GraphQL plugins '
 	},
 	{
 		id: 9,
-		span: `Vercel\'s edge network to host the `
-	},
-	{
-		id: 10,
-		span: `client. WP-GQL plugins couple `
-	},
-	{
-		id: 11,
-		span: 'brilliantly with HWP. '
+		span: `couple brilliantly with Headless WordPress. `
 	}
+	// {
+	// 	id: 10,
+	// 	span: `client. WP-GQL plugins couple `
+	// },
+	// {
+	// 	id: 11,
+	// 	span: 'brilliantly with HWP. '
+	// }
 	// {
 	// 	id: 13,
 	// 	span: ''
@@ -173,18 +173,18 @@ const AboutContent = ({ slug, src, title, date, excerpt }: AboutProps) => {
 				</span>
 			</span>
 			<div
-				className='relative justify-between pt-portfolio navbar-expand-lg flex flex-col min-w-full w-full container overflow-y-hidden overflow-x-hidden transform duration-300 cursor-default select-none'
+				className='relative justify-between pt-portfolio flex flex-col min-w-full w-full container overflow-y-hidden overflow-x-hidden transform duration-300 cursor-default select-none'
 				style={{ transform: 'translate3d(0px, 0px, 0px)' }}
 			>
 				<AboutTitle title={title} slug={slug} />
 				<div
-					className='md:text-customTitle text-customSM font-somaRoman md:leading-customSLH leading-customSLM tracking-tight block z-1'
-					style={{ position: 'absolute', top: '8.98333vw', left: '3.23333vw' }}
+					className='md:leading-customSLH leading-customSLM block z-1'
+					style={{ position: 'absolute', top: '7.48333vw', left: '5.33333vw' }}
 				>
 					<AboutImage src={src} title={title} slug={slug} />
 					<AboutExcerpt excerpt={excerpt} slug={slug} />
 				</div>
-				<p className='md:text-customTitle text-customP leading-headerAbout pr-portfolioDivider pl-portfolioLS block font-somaRoman tracking-tighter font-thin z-0'>
+				<p className='md:text-customTitle text-customP  pr-portfolioDivider pl-portfolioLS block font-somaRoman tracking-tighter font-thin z-0'>
 					<div className='mx-auto block'>
 						{aboutMap}
 						<div className='hidden'>{date}</div>

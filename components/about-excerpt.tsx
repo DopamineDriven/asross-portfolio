@@ -11,7 +11,7 @@ const AboutExcerpt = ({ excerpt, slug }: AboutExcerptProps) => {
 		<div className='text-oneFiveBlack cursor-default hover:text-fiveOBlack'>
 			<Link as={`/about/${slug}`} href='/about/[slug]' passHref scroll={true}>
 				<a
-					className='font-somaRoman'
+					className='font-somaRoman md:text-customTitle text-customSM tracking-tight'
 					aria-label={`${excerpt}`}
 					id={`home-${excerpt}`}
 				>
