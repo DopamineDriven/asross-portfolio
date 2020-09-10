@@ -1,5 +1,6 @@
 ---
-title: 'Homesharing Hub'
+title: 'homesharing-hub'
+postTitle: 'Homesharing Hub'
 excerpt: 'Development, UX'
 coverImage: 'https://res.cloudinary.com/asross311/image/upload/v1598839549/portfolio/Rectangle_6037_1_xih1z0.jpg'
 articleImage: 'https://res.cloudinary.com/asross311/image/upload/v1598374915/portfolio/mock-airbnb-home_vh5rhx.jpg'
