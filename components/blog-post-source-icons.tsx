@@ -1,9 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faHerokuIcon, faVercelIcon } from 'lib/fas-custom-integration';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 interface BlogPostSourceIconMeta {
-  
+  social: string;
 }
 
 interface PostSourceIconProps {
