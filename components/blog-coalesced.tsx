@@ -1,4 +1,4 @@
-import BlogTitle from 'components/blog-title';
+import BlogLanding from 'components/blog-landing';
 import Blog from 'types/blog';
 
 interface BlogCoalescedProps {
@@ -10,7 +10,12 @@ const BlogCoalesced = ({ blogs }: BlogCoalescedProps) => {
 		<section>
 			<div className='select-none grid grid-cols-1 float-right pr-portfolioS pb-portfolioLS pl-paddingBlog'>
 				{blogs.map(blog => (
-					<BlogTitle key={blog.slug} title={blog.title} date={blog.date} slug={blog.slug} />
+					<BlogLanding
+						key={blog.slug}
+						title={blog.title}
+						date={blog.date}
+						slug={blog.slug}
+					/>
 				))}
 			</div>
 		</section>
