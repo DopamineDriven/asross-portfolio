@@ -3,15 +3,16 @@ import BlogTitle from 'components/blog-title';
 import { Fragment } from 'react';
 
 interface BlogLandingProps {
-	title: string;
+  title: string;
+  postTitle: string;
 	slug: string;
 	date: string;
 }
 
-const BlogLanding = ({ title, slug, date }: BlogLandingProps) => {
+const BlogLanding = ({ postTitle, title, slug, date }: BlogLandingProps) => {
 	return (
 		<Fragment>
-			<BlogTitle title={title} slug={slug} />
+			<BlogTitle title={title} slug={slug} postTitle={postTitle} />
 			<BlogDate date={date} />
 		</Fragment>
 	);

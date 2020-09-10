@@ -13,6 +13,7 @@ const BlogCoalesced = ({ blogs }: BlogCoalescedProps) => {
 					<BlogLanding
 						key={blog.slug}
 						title={blog.title}
+						postTitle={blog.postTitle}
 						date={blog.date}
 						slug={blog.slug}
 					/>
