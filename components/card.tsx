@@ -1,7 +1,6 @@
 import CoverImageCard from 'components/cover-image-card';
-import Link from 'next/link';
-import ReactMarkdown from 'react-markdown/with-html';
 import CardTitle from 'components/card-title';
+import CardExcerpt from 'components/card-excerpt';
 
 interface CardProps {
 	date: string;
@@ -18,13 +17,7 @@ const Card = ({ date, excerpt, slug, src, title }: CardProps) => {
 				<CoverImageCard slug={slug} src={src} title={title} />
 				<div className='flex flex-col text-center justify-center bg-portfolio'>
 					<CardTitle slug={slug} title={title} />
-					<div className='font-somaRoman text-fiveOBlack uppercase cursor-default'>
-						<ReactMarkdown
-							escapeHtml={false}
-							source={excerpt}
-							className='text-center md:text-customExcerpt'
-						/>
-					</div>
+					<CardExcerpt excerpt={excerpt} />
 					<div className='hidden'>{date}</div>
 				</div>
 			</div>
