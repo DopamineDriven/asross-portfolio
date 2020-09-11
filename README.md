@@ -1,5 +1,8 @@
 # asross-portfolio
 
+## GA Events + TS 
+- https://kellenfujimoto.com/posts/strongly-typed-google-analytics-events/
+
 ## Social Extended Types Mapping 
 - https://stackoverflow.com/questions/60284442/react-ts-how-to-map-through-fontawesome-icons-and-display-them
 

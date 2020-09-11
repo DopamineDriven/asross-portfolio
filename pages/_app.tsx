@@ -3,11 +3,25 @@ import '@tailwindcss/typography';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { AppProps, NextWebVitalsMetric } from 'next/app';
-import { ReactElement } from 'react';
+import { ReactElement, useEffect } from 'react';
+import { useRouter } from 'next/router';
+import * as gtag from 'lib/google-analytics';
 
 config.autoAddCss = false;
 
 function App({ Component, pageProps }: AppProps): ReactElement {
+	const router = useRouter();
+	const { pageview } = gtag;
+	useEffect(() => {
+		const handleRouteChange = (url: string) => {
+			pageview(url);
+		};
+		router.events.on('routeChangeComplete', handleRouteChange);
+		return () => {
+			router.events.off('routeChangeComplete', handleRouteChange);
+		};
+	}, [router.events]);
+	
 	return <Component {...pageProps} />;
 }
 
