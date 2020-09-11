@@ -1,4 +1,4 @@
-import ReactGA from 'react-ga';
+import ReactGA, { EventArgs } from 'react-ga';
 
 export const gaInit = () => {
 	ReactGA.initialize(`${process.env.GA_TRACKING_ID}`);
@@ -12,5 +12,13 @@ interface PageViewProps {
 export const pageview = ({ url }: PageViewProps) => {
 	ReactGA.ga('config', process.env.GA_TRACKING_ID, {
 		page_path: url
+	});
+};
+
+export const event = ({ action, category, label, value }: EventArgs) => {
+	ReactGA.ga('event', action, {
+		event_category: category,
+		event_label: label,
+		value
 	});
 };
