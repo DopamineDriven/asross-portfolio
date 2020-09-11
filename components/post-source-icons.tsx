@@ -22,7 +22,7 @@ const PostSourceIcons = ({ github, heroku, vercel }: PostSourceIconProps) => {
 							aria-label={`source code - ${github}`}
 							target='__blank'
 							href={github}
-							className='bg-portfolio text-black leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mr-portfolio my-2 pt-threeHalves rounded-full focus:outline-none'
+							className='bg-portfolio text-oneFiveBlack leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mr-portfolio my-2 pt-threeHalves rounded-full focus:outline-none'
 						>
 							<FontAwesomeIcon
 								icon={faGithub}
@@ -38,7 +38,7 @@ const PostSourceIcons = ({ github, heroku, vercel }: PostSourceIconProps) => {
 							aria-label={`deployed site - ${heroku}`}
 							target='__blank'
 							href={heroku}
-							className='bg-portfolio text-black leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-threeHalves rounded-full focus:outline-none'
+							className='bg-portfolio text-oneFiveBlack leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-threeHalves rounded-full focus:outline-none'
 						>
 							<FontAwesomeIcon
 								icon={faHerokuIcon}
@@ -54,7 +54,7 @@ const PostSourceIcons = ({ github, heroku, vercel }: PostSourceIconProps) => {
 							aria-label={`deployed site - ${vercel}`}
 							target='__blank'
 							href={vercel}
-							className='bg-portfolio text-black leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-threeHalves rounded-full focus:outline-none'
+							className='bg-portfolio text-oneFiveBlack leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-threeHalves rounded-full focus:outline-none'
 						>
 							<FontAwesomeIcon
 								icon={faVercelIcon}
