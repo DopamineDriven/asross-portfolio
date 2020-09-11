@@ -18,9 +18,12 @@ const BlogPostHeader = ({ title, src, date }: BlogPostHeaderProps) => {
 				</div>
 				<BlogPostTitle>{title}</BlogPostTitle>
 			</div>
-			<div className=' max-w-cardGridMobile block mx-auto align-middle justify-center select-none'>
-				<div className=' text-customExcerptMobile text-oneFiveBlack font-somaRoman flex mx-auto align-middle justify-center'>
+			<div className='pt-portfolioDivider max-w-cardGridMobile block mx-auto align-middle justify-center select-none'>
+				<div className='text-customExcerptMobile text-oneFiveBlack font-somaRoman flex mx-auto align-middle justify-center'>
 					<Date dateString={date} />
+				</div>
+				<div className=' text-black font-somaRoman flex mx-auto align-middle justify-center'>
+						
 				</div>
 			</div>
 			<hr className='border-fiveOBlack w-portfolioDividerWidth my-portfolioDivider pb-portfolioDivider mx-auto' />
