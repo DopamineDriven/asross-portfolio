@@ -30,7 +30,7 @@ const AboutPostSourceIcons = ({
 							aria-label={`github landing page - ${github}`}
 							target='__blank'
 							href={github}
-							className='bg-portfolio text-black leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-mxSocial pt-threeHalves rounded-full focus:outline-none'
+							className='bg-portfolio text-oneFiveBlack leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-mxSocial pt-threeHalves rounded-full focus:outline-none'
 						>
 							<FontAwesomeIcon
 								icon={faGithub}
@@ -46,7 +46,7 @@ const AboutPostSourceIcons = ({
 							aria-label={`twitter @Dopamine_Driven - ${twitter}`}
 							target='__blank'
 							href={twitter}
-							className='bg-portfolio text-black leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-mxSocial md:mr-mxSocial md:ml-0 pt-threeHalves rounded-full focus:outline-none'
+							className='bg-portfolio text-oneFiveBlack leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-mxSocial md:mr-mxSocial md:ml-0 pt-threeHalves rounded-full focus:outline-none'
 						>
 							<FontAwesomeIcon
 								icon={faTwitter}
@@ -62,7 +62,7 @@ const AboutPostSourceIcons = ({
 							aria-label={`linkedin - ${linkedin}`}
 							target='__blank'
 							href={linkedin}
-							className='bg-portfolio text-black leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 pt-threeHalves mx-mxSocial md:mr-mxSocial md:ml-0 rounded-full focus:outline-none'
+							className='bg-portfolio text-oneFiveBlack leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 pt-threeHalves mx-mxSocial md:mr-mxSocial md:ml-0 rounded-full focus:outline-none'
 						>
 							<FontAwesomeIcon
 								icon={faLinkedin}
@@ -78,7 +78,7 @@ const AboutPostSourceIcons = ({
 							aria-label={`twitter @Dopamine_Driven - ${email}`}
 							target='__blank'
 							href={email}
-							className='bg-portfolio text-black leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-mxSocial md:mx-0 pt-threeHalves rounded-full focus:outline-none'
+							className='bg-portfolio text-oneFiveBlack leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-mxSocial md:mx-0 pt-threeHalves rounded-full focus:outline-none'
 						>
 							<FontAwesomeIcon
 								icon={faEnvelope}
