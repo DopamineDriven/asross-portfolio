@@ -1,25 +1,34 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { IconProp } from '@fortawesome/fontawesome-svg-core';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faHerokuIcon, faVercelIcon } from 'lib/fas-custom-integration';
+import {
+	faGithub,
+	faLinkedin,
+	faTwitter
+} from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
-interface PostSourceIconProps {
+interface AboutPostSourceIconProps {
+	email: string;
 	github: string;
-	heroku: string;
-	vercel: string;
+	linkedin: string;
+	twitter: string;
 }
 
-const PostSourceIcons = ({ github, heroku, vercel }: PostSourceIconProps) => {
+const AboutPostSourceIcons = ({
+	email,
+	github,
+	linkedin,
+	twitter
+}: AboutPostSourceIconProps) => {
 	return (
 		<div className='align-middle justify-right text-right inline-block'>
 			<ul className='align-middle'>
 				<li className='align-middle'>
 					{' '}
-					{github === '' ? (
+					{github === 'empty' ? (
 						<div className='hidden'></div>
 					) : (
 						<a
-							aria-label={`source code - ${github}`}
+							aria-label={`github landing page - ${github}`}
 							target='__blank'
 							href={github}
 							className='bg-portfolio text-black leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mr-portfolio my-2 pt-threeHalves rounded-full focus:outline-none'
@@ -31,42 +40,58 @@ const PostSourceIcons = ({ github, heroku, vercel }: PostSourceIconProps) => {
 							/>
 						</a>
 					)}{' '}
-					{heroku === 'empty' ? (
+					{linkedin === 'empty' ? (
 						<div className='hidden'></div>
 					) : (
 						<a
-							aria-label={`deployed site - ${heroku}`}
+							aria-label={`linkedin - ${linkedin}`}
 							target='__blank'
-							href={heroku}
+							href={linkedin}
 							className='bg-portfolio text-black leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-threeHalves rounded-full focus:outline-none'
 						>
 							<FontAwesomeIcon
-								icon={faHerokuIcon}
+								icon={faLinkedin}
 								className='flex align-middle text-center font-extrabold hover:text-fiveOBlack pr-half  transition-all transform delay-300 duration-1000 ease-in-out '
 								size='2x'
 							/>
 						</a>
 					)}{' '}
-					{vercel === 'empty' ? (
+					{twitter === 'empty' ? (
 						<></>
 					) : (
 						<a
-							aria-label={`deployed site - ${vercel}`}
+							aria-label={`twitter @Dopamine_Driven - ${twitter}`}
 							target='__blank'
-							href={vercel}
+							href={twitter}
 							className='bg-portfolio text-black leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-threeHalves rounded-full focus:outline-none'
 						>
 							<FontAwesomeIcon
-								icon={faVercelIcon}
+								icon={faTwitter}
 								className='flex align-middle text-center font-extrabold hover:text-fiveOBlack pr-half  transition-all transform delay-300 duration-1000 ease-in-out '
 								size='2x'
 							/>
 						</a>
 					)}{' '}
+					{email === 'empty' ? (
+						<></>
+					) : (
+						<a
+							aria-label={`twitter @Dopamine_Driven - ${email}`}
+							target='__blank'
+							href={email}
+							className='bg-portfolio text-black leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-threeHalves rounded-full focus:outline-none'
+						>
+							<FontAwesomeIcon
+								icon={faEnvelope}
+								className='flex align-middle text-center font-extrabold hover:text-fiveOBlack pr-half  transition-all transform delay-300 duration-1000 ease-in-out '
+								size='2x'
+							/>
+						</a>
+					)}
 				</li>
 			</ul>
 		</div>
 	);
 };
 
-export default PostSourceIcons;
+export default AboutPostSourceIcons;

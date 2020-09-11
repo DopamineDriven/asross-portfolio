@@ -1,14 +1,28 @@
 import AboutPostCoverImage from 'components/about-post-cover-image';
 import AboutPostTitle from 'components/about-post-title';
 import Date from 'components/date-formatter';
+import PortfolioDivider from 'components/portfolio-divider';
+import AboutPostSourceIcons from 'components/about-post-source-icons';
 import { Fragment } from 'react';
 interface AboutPostHeaderProps {
 	title: string;
 	src: string;
 	date: string;
+	email: string;
+	github: string;
+	linkedin: string;
+	twitter: string;
 }
 
-const AboutPostHeader = ({ title, src, date }: AboutPostHeaderProps) => {
+const AboutPostHeader = ({
+	title,
+	src,
+	date,
+	email,
+	github,
+	linkedin,
+	twitter
+}: AboutPostHeaderProps) => {
 	return (
 		<Fragment>
 			<div className=''></div>
@@ -22,8 +36,16 @@ const AboutPostHeader = ({ title, src, date }: AboutPostHeaderProps) => {
 				<div className=' text-customExcerptMobile text-oneFiveBlack font-somaRoman flex mx-auto align-middle justify-center'>
 					<Date dateString={date} />
 				</div>
+				<div className=' text-black font-somaRoman flex mx-auto align-middle justify-center'>
+					<AboutPostSourceIcons
+						github={github}
+						email={email}
+						linkedin={linkedin}
+						twitter={twitter}
+					/>
+				</div>
 			</div>
-			<hr className='border-fiveOBlack w-portfolioDividerWidth max-w-portfolioDividerWidth my-portfolioDivider pb-portfolioDivider mx-auto' />
+			<PortfolioDivider />
 		</Fragment>
 	);
 };

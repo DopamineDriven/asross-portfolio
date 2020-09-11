@@ -6,6 +6,9 @@ coverImage: 'https://res.cloudinary.com/asross311/image/upload/v1598839549/portf
 articleImage: 'https://res.cloudinary.com/asross311/image/upload/v1598374915/portfolio/mock-airbnb-home_vh5rhx.jpg'
 date: "2020-07-25T09:35:07.322Z"
 articleExcerpt: ''
+github: 'https://github.com/DopamineDriven/Consilience'
+heroku: 'https://classroom-consilience.herokuapp.com/'
+vercel: 'empty'
 author:
   name: Andrew Ross
   avatar: 'https://res.cloudinary.com/asross311/image/upload/v1597678722/portfolio/doge_ropqvx.jpg'

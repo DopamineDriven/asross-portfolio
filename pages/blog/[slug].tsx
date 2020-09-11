@@ -41,6 +41,9 @@ const Blog = ({ blog, blogs }: BlogProps) => {
 							title={blog.postTitle}
 							src={blog.articleImage}
 							date={blog.date}
+							dev={blog.dev}
+							medium={blog.medium}
+							youtube={blog.youtube}
 						/>
 						<BlogPostBody content={blog.content} />
 					</article>
@@ -71,7 +74,10 @@ export const getStaticProps = async ({
 		'ogImage',
 		'coverImage',
 		'articleImage',
-		'excerpt'
+		'excerpt',
+		'dev',
+		'medium',
+		'youtube'
 	]);
 
 	return {

@@ -1,6 +1,6 @@
 import BlogSocial from 'types/social/blog-social';
 
-export default interface Blog {
+export default interface Blog extends BlogSocial {
 	slug: string;
 	title: string;
 	postTitle: string;
@@ -8,7 +8,6 @@ export default interface Blog {
 	coverImage: string;
 	articleImage: string;
 	excerpt: string;
-	social: BlogSocial;
 	ogImage: {
 		url: string;
 	};

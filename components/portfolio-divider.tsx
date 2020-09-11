@@ -1,6 +1,6 @@
 const PortfolioDivider = () => {
 	return (
-		<hr className='border-fiveOBlack w-portfolioDividerWidth max-w-portfolioDividerWidth mx-auto mt-portfolio pb-portfolioDivider' />
+		<hr className='border-fiveOBlack w-portfolioDividerWidth max-w-portfolioDividerWidth mx-auto my-portfolio pb-portfolioDivider' />
 	);
 };
 
