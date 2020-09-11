@@ -13,15 +13,16 @@ import PostHeader from 'components/post-header';
 import LeadPost from 'components/lead-sub';
 import Cards from 'components/cards';
 import Footer from 'components/post-sub-page-footer';
+import PortfolioDivider from 'components/portfolio-divider';
 
 interface PostSlugProps {
 	post: PostType;
-	posts: PostType[];
+	allPosts: PostType[];
 }
 
-const Post = ({ post, posts }: PostSlugProps) => {
-	const morePosts = posts?.slice(1);
+const Post = ({ post, allPosts }: PostSlugProps) => {
 	const router = useRouter();
+	const morePosts = allPosts?.slice(0);
 	if (!router.isFallback && !post?.slug) {
 		return <ErrorPage statusCode={404} />;
 	}
@@ -50,11 +51,11 @@ const Post = ({ post, posts }: PostSlugProps) => {
 							author={post.author}
 						/>
 						<PostBody content={post.content} />
+						<PortfolioDivider />
+						<div className=' max-w-cardGrid grid mx-auto content-center justify-center items-center text-center'>
+							{morePosts?.length > 0 && <Cards posts={morePosts} />}
+						</div>
 					</article>
-					<hr className='border-fiveOBlack w-portfolioDividerWidth max-w-portfolioDividerWidth mx-auto mt-portfolio pb-portfolioDivider' />
-					<div className=' max-w-cardGrid grid mx-auto content-center justify-center items-center text-center'>
-						{morePosts?.length > 0 && <Cards posts={morePosts} />}
-					</div>
 				</>
 			)}
 			<Footer title={post.title} />
@@ -86,13 +87,22 @@ export const getStaticProps = async ({ params }: Params & GetStaticProps) => {
 		'heroku',
 		'vercel'
 	]);
+	const allPosts = getAllPosts([
+		'title',
+		'date',
+		'slug',
+		'coverImage',
+		'excerpt',
+		'postTitle'
+	]);
 	const content = await markdownToHtml(post.content || '');
 
 	return {
 		props: {
+			// allPosts,
+			// make a grid with 3 cols/row showcasing other posts to navigate to in each post subdir
 			post: {
-				...post,
-				content
+				...post
 			}
 		}
 	};
