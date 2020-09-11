@@ -90,7 +90,7 @@ const BlogPostSourceIcons = ({ dev, medium, youtube }: Social) => {
 							aria-label={`${dev}`}
 							target='__blank'
 							href={dev}
-							className='bg-portfolio text-black leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mr-portfolio my-2 pt-threeHalves rounded-full focus:outline-none'
+							className='bg-portfolio text-oneFiveBlack leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mr-portfolio my-2 pt-threeHalves rounded-full focus:outline-none'
 						>
 							<FontAwesomeIcon
 								icon={faDev}
@@ -106,7 +106,7 @@ const BlogPostSourceIcons = ({ dev, medium, youtube }: Social) => {
 							aria-label={`${medium}`}
 							target='__blank'
 							href={medium}
-							className='bg-portfolio text-black leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mr-portfolio my-2 pt-threeHalves rounded-full focus:outline-none'
+							className='bg-portfolio text-oneFiveBlack leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mr-portfolio my-2 pt-threeHalves rounded-full focus:outline-none'
 						>
 							<FontAwesomeIcon
 								icon={faMedium}
@@ -122,7 +122,7 @@ const BlogPostSourceIcons = ({ dev, medium, youtube }: Social) => {
 							aria-label={`${youtube}`}
 							target='__blank'
 							href={youtube}
-							className='bg-portfolio text-black leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mr-portfolio my-2 pt-threeHalves rounded-full focus:outline-none'
+							className='bg-portfolio text-oneFiveBlack leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mr-portfolio my-2 pt-threeHalves rounded-full focus:outline-none'
 						>
 							<FontAwesomeIcon
 								icon={faYoutube}
