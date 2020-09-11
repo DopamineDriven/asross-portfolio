@@ -47,7 +47,7 @@ const IconMapping: BlogPostSourceIconMeta[] = [
 		name: SocialEnum.youtube
 	}
 ];
-const BlogPostSourceIcons = () => {
+const BlogPostSourceIcons = ({ dev, medium, youtube }: Social) => {
 	// const BlogPostSourceIcons: FC<SocialExpList> = props => {
 	// const { social } = props;
 	// const socialExperimentalMapped = social.map(constituent => {
@@ -68,15 +68,11 @@ const BlogPostSourceIcons = () => {
 						href={constituent.social}
 						className='bg-portfolio text-black leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mr-portfolio my-2 pt-threeHalves rounded-full focus:outline-none'
 					>
-						{constituent.social === 'empty' ? (
-							<></>
-						) : (
-							<FontAwesomeIcon
-								icon={constituent.icon}
-								className='flex align-middle text-center font-extrabold hover:text-fiveOBlack pr-half  transition-all transform delay-300 duration-1000 ease-in-out '
-								size='2x'
-							/>
-						)}
+						<FontAwesomeIcon
+							icon={constituent.icon}
+							className='flex align-middle text-center font-extrabold hover:text-fiveOBlack pr-half  transition-all transform delay-300 duration-1000 ease-in-out '
+							size='2x'
+						/>
 					</a>
 				)}{' '}
 			</li>
@@ -84,7 +80,59 @@ const BlogPostSourceIcons = () => {
 	});
 	return (
 		<div className='align-middle justify-right text-right inline-block'>
-			<ul className='align-middle'>{iconsMapped}</ul>
+			<ul className='align-middle'>
+				<li className='align-middle'>
+					{' '}
+					{dev === 'empty' ? (
+						<div className='hidden'></div>
+					) : (
+						<a
+							aria-label={`${dev}`}
+							target='__blank'
+							href={dev}
+							className='bg-portfolio text-black leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mr-portfolio my-2 pt-threeHalves rounded-full focus:outline-none'
+						>
+							<FontAwesomeIcon
+								icon={faDev}
+								className='flex align-middle text-center font-extrabold hover:text-fiveOBlack pr-half  transition-all transform delay-300 duration-1000 ease-in-out '
+								size='2x'
+							/>
+						</a>
+					)}{' '}
+					{medium === 'empty' ? (
+						<div className='hidden'></div>
+					) : (
+						<a
+							aria-label={`${medium}`}
+							target='__blank'
+							href={medium}
+							className='bg-portfolio text-black leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mr-portfolio my-2 pt-threeHalves rounded-full focus:outline-none'
+						>
+							<FontAwesomeIcon
+								icon={faMedium}
+								className='flex align-middle text-center font-extrabold hover:text-fiveOBlack pr-half  transition-all transform delay-300 duration-1000 ease-in-out '
+								size='2x'
+							/>
+						</a>
+					)}{' '}
+					{youtube === 'empty' ? (
+						<div className='hidden'></div>
+					) : (
+						<a
+							aria-label={`${youtube}`}
+							target='__blank'
+							href={youtube}
+							className='bg-portfolio text-black leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mr-portfolio my-2 pt-threeHalves rounded-full focus:outline-none'
+						>
+							<FontAwesomeIcon
+								icon={faYoutube}
+								className='flex align-middle text-center font-extrabold hover:text-fiveOBlack pr-half  transition-all transform delay-300 duration-1000 ease-in-out '
+								size='2x'
+							/>
+						</a>
+					)}{' '}
+				</li>
+			</ul>
 		</div>
 	);
 };
