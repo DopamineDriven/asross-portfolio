@@ -1,5 +1,6 @@
 import BlogPostCoverImage from 'components/blog-post-cover-image';
 import BlogPostTitle from 'components/blog-post-title';
+import BlogPostSourceIcons from 'components/blog-post-source-icons';
 import Date from 'components/date-formatter';
 import { Fragment } from 'react';
 
@@ -7,9 +8,19 @@ interface BlogPostHeaderProps {
 	title: string;
 	src: string;
 	date: string;
+	dev: string;
+	medium: string;
+	youtube: string;
 }
 
-const BlogPostHeader = ({ title, src, date }: BlogPostHeaderProps) => {
+const BlogPostHeader = ({
+	title,
+	src,
+	date,
+	dev,
+	medium,
+	youtube
+}: BlogPostHeaderProps) => {
 	return (
 		<Fragment>
 			<div className='font-head text-customPostBlog bg-portfolio select-none'>
@@ -23,7 +34,7 @@ const BlogPostHeader = ({ title, src, date }: BlogPostHeaderProps) => {
 					<Date dateString={date} />
 				</div>
 				<div className=' text-black font-somaRoman flex mx-auto align-middle justify-center'>
-						
+					<BlogPostSourceIcons dev={dev} medium={medium} youtube={youtube} />
 				</div>
 			</div>
 			<hr className='border-fiveOBlack w-portfolioDividerWidth my-portfolioDivider pb-portfolioDivider mx-auto' />
