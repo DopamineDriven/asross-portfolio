@@ -6,7 +6,6 @@ import { GetStaticProps, GetStaticPaths } from 'next';
 import PostType from 'types/post';
 import { getPostBySlug, getAllPosts } from 'lib/api';
 import { CLIENT_NAME } from 'lib/constants';
-import markdownToHtml from 'lib/markdownToHtml';
 import PostBody from 'components/post-body';
 import PostTitle from 'components/post-title';
 import PostHeader from 'components/post-header';
@@ -95,7 +94,6 @@ export const getStaticProps = async ({ params }: Params & GetStaticProps) => {
 		'excerpt',
 		'postTitle'
 	]);
-	const content = await markdownToHtml(post.content || '');
 
 	return {
 		props: {

@@ -18,8 +18,8 @@ interface BlogProps {
 }
 
 const Blog = ({ blog, blogs }: BlogProps) => {
-	const moreBlogs = blogs?.slice(1);
 	const router = useRouter();
+	const moreBlogs = blogs?.slice(1);
 	if (!router.isFallback && !blog?.slug) {
 		return <ErrorPage statusCode={404} />;
 	}
