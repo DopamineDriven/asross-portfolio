@@ -4,6 +4,7 @@ import Date from 'components/date-formatter';
 import CoverImage from 'components/post-cover-image';
 import PostTitle from 'components/post-title';
 import PostArticleExcerpt from 'components/post-article-excerpt';
+import PortfolioDivider from 'components/portfolio-divider';
 import { Fragment } from 'react';
 import Author from 'types/author';
 
@@ -60,7 +61,7 @@ const PostHeader = ({
 					/>
 				</div> */}
 			</div>
-			<hr className='border-fiveOBlack w-portfolioDividerWidth max-w-portfolioDividerWidth my-portfolioDivider pb-portfolioDivider mx-auto' />
+			<PortfolioDivider />
 		</Fragment>
 	);
 };
