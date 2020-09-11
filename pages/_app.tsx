@@ -4,6 +4,8 @@ import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { AppProps, NextWebVitalsMetric } from 'next/app';
 import { ReactElement } from 'react';
+import { useRouter } from 'next/router';
+
 
 config.autoAddCss = false;
 

@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-import ReactMarkdown from 'react-markdown/with-html';
+// import ReactMarkdown from 'react-markdown/with-html';
 
 export default class MyDocument extends Document {
 	static async getInitialProps(ctx: any) {
@@ -7,15 +7,15 @@ export default class MyDocument extends Document {
 		return { ...initialProps };
 	}
 	render() {
-		const __html: string = `
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+		// 	const __html: string = `
+		// 		window.dataLayer = window.dataLayer || [];
+		// 		function gtag(){dataLayer.push(arguments);}
+		// 		gtag('js', new Date());
 
-			gtag('config', '${process.env.GA_TRACKING_ID}', {
-				page_path: window.location.pathname,
-			});
-	`;
+		// 		gtag('config', '${process.env.GA_TRACKING_ID}', {
+		// 			page_path: window.location.pathname,
+		// 		});
+		// `;
 		return (
 			<Html lang='en-US'>
 				<Head>
