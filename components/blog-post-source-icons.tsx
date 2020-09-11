@@ -1,10 +1,29 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDev, faMedium, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import { FC } from 'react';
+import ReactMarkdown from 'react-markdown/with-html';
 
+enum SocialEnum {
+	dev = '',
+	medium = '',
+	youtube = ''
+}
+
+interface Social {
+	dev: string;
+	medium: string;
+	youtube: string;
+}
+
+interface SocialExpList {
+	social: Array<Social>;
+	id: Array<number>;
+}
 interface BlogPostSourceIconMeta {
 	icon: IconProp;
 	social?: string;
+	name: SocialEnum;
 }
 
 interface BlogSocials {
@@ -14,19 +33,28 @@ interface BlogSocials {
 const IconMapping: BlogPostSourceIconMeta[] = [
 	{
 		icon: faDev,
-		social: 'dev'
+		social: String(),
+		name: SocialEnum.dev
 	},
 	{
 		icon: faMedium,
-		social: 'medium'
+		social: String(),
+		name: SocialEnum.medium
 	},
 	{
 		icon: faYoutube,
-		social: 'youtube'
+		social: String(),
+		name: SocialEnum.youtube
 	}
 ];
-
 const BlogPostSourceIcons = () => {
+	// const BlogPostSourceIcons: FC<SocialExpList> = props => {
+	// const { social } = props;
+	// const socialExperimentalMapped = social.map(constituent => {
+	//   return <ReactMarkdown key={constituent.dev}
+
+	//   />;
+	// });
 	const iconsMapped = IconMapping.map(constituent => {
 		return (
 			<li className='align-middle' key={constituent.social}>
