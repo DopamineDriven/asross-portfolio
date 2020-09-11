@@ -21,7 +21,7 @@ const socialSnippets: SocialContact[] = [
 		id: 0,
 		label: 'Email',
 		target: '__blank',
-		href: 'mailto:andrew@windycitydevs.io'
+		href: 'mailto:andrew.simpson.ross@gmail.com'
 	},
 	{
 		id: 1,
