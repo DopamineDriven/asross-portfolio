@@ -40,7 +40,7 @@ const Post = ({ post, posts }: PostSlugProps) => {
 							<meta property='og:image' content={post.ogImage.url} />
 						</Head>
 						<PostHeader
-							title={post.title}
+							title={post.postTitle}
 							articleExcerpt={post.articleExcerpt}
 							src={post.articleImage}
 							date={post.date}
@@ -51,7 +51,7 @@ const Post = ({ post, posts }: PostSlugProps) => {
 						/>
 						<PostBody content={post.content} />
 					</article>
-					<hr className='border-fiveOBlack w-portfolioDividerWidth mx-auto mt-portfolio pb-portfolioDivider' />
+					<hr className='border-fiveOBlack w-portfolioDividerWidth max-w-portfolioDividerWidth mx-auto mt-portfolio pb-portfolioDivider' />
 					<div className=' max-w-cardGrid grid mx-auto content-center justify-center items-center text-center'>
 						{morePosts?.length > 0 && <Cards posts={morePosts} />}
 					</div>
@@ -73,6 +73,7 @@ interface Params {
 export const getStaticProps = async ({ params }: Params & GetStaticProps) => {
 	const post = getPostBySlug(params.slug, [
 		'title',
+		'postTitle',
 		'date',
 		'slug',
 		'author',
