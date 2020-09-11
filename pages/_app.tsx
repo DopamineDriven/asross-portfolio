@@ -11,17 +11,17 @@ config.autoAddCss = false;
 
 function App({ Component, pageProps }: AppProps): ReactElement {
 	const router = useRouter();
-	const { pageview } = gtag;
+	const { logPageView } = gtag;
 	useEffect(() => {
-		const handleRouteChange = (url: string) => {
-			pageview(url);
+		const handleRouteChange = () => {
+			logPageView();
 		};
 		router.events.on('routeChangeComplete', handleRouteChange);
 		return () => {
 			router.events.off('routeChangeComplete', handleRouteChange);
 		};
 	}, [router.events]);
-	
+
 	return <Component {...pageProps} />;
 }
 
