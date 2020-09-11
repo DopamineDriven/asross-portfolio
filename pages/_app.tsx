@@ -34,3 +34,19 @@ export default App;
 // Configuring Fortawesome with nextjs v9+
 // https://github.com/UnlyEd/next-right-now/blob/master/src/pages/_app.tsx
 // https://stackoverflow.com/questions/44752189/how-to-add-font-awesome-to-next-js-project
+
+/*
+	const router = useRouter();
+	const { pageview } = gtag;
+	useEffect(() => {
+		const handleRouteChange = (url: string) => {
+			pageview(url);
+		};
+		router.events.on('routeChangeComplete', handleRouteChange);
+		return () => {
+			router.events.off('routeChangeComplete', handleRouteChange);
+		};
+	}, []);
+	return <Component {...pageProps} />;
+}
+*/

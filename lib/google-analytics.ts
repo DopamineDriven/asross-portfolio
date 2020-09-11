@@ -12,14 +12,18 @@ export const pageview = (url: string) => {
 };
 
 export const logPageView = () => {
-  ReactGA.set({ page: window.location.pathname })
-  ReactGA.pageview(window.location.pathname)
-}
+	ReactGA.set({ page: window.location.pathname });
+	ReactGA.pageview(window.location.pathname + window.location.search);
+};
 
 export const event = ({ action, category, label, value }: EventArgs) => {
-	ReactGA.ga('event', action, {
-		event_category: category,
-		event_label: label,
+	ReactGA.event({
+		action,
+		category,
+		label,
 		value
 	});
 };
+
+// https://coderrocketfuel.com/article/add-google-analytics-to-a-next-js-and-react-website
+// https://github.com/react-ga/react-ga
