@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDev, faMedium, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faDev, faMedium, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons';
 // import { IconProp } from '@fortawesome/fontawesome-svg-core';
 // import { FC } from 'react';
 // import ReactMarkdown from 'react-markdown/with-html';
@@ -125,7 +125,7 @@ const BlogPostSourceIcons = ({ dev, medium, youtube }: Social) => {
 							className='bg-portfolio text-oneFiveBlack leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mr-portfolio my-2 pt-threeHalves rounded-full focus:outline-none'
 						>
 							<FontAwesomeIcon
-								icon={faYoutube}
+								icon={faYoutubeSquare}
 								className='flex align-middle text-center font-extrabold hover:text-fiveOBlack pr-half  transition-all transform delay-300 duration-1000 ease-in-out '
 								size='2x'
 							/>
