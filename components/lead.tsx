@@ -84,18 +84,6 @@ const spanSnippets: LeadInterface[] = [
 		id: 9,
 		span: 'build. Available for freelance, contract, and full-time roles. '
 	}
-	// {
-	// 	id: 10,
-	// 	span: `What drives this? A desire to build.`
-	// },
-	// {
-	// 	id: 11,
-	// 	span: 'Available for freelance, contract, and '
-	// },
-	// {
-	// 	id: 12,
-	// 	span: 'full-time work.'
-	// }
 ];
 
 const Lead = () => {
@@ -115,7 +103,7 @@ const Lead = () => {
 		return (
 			<div className='mt-socialMargin block' key={constituent.id}>
 				<a
-					className='block transform z-50 animate-hero hover:text-fiveOBlack py-portfolioDivider md:py-0' 
+					className='block transform z-50 animate-hero hover:text-fiveOBlack py-portfolioDivider md:py-0'
 					target={constituent.target}
 					aria-label={constituent.label}
 					href={constituent.href}
@@ -157,18 +145,6 @@ const Lead = () => {
 					}
 				>
 					{spanMap}
-					{/* <span className='font-thin font-somaRoman tracking-tighter last:pl-portfolioS p-lead cursor-default'>
-						<span>
-							<a
-								className='hover:text-fiveOBlack'
-								href='mailto:andrew@windycitydevs.io'
-								aria-label='contact'
-								target='__blank'
-							>
-								Contact
-							</a>
-						</span>
-					</span> */}
 				</p>
 				<div
 					className='md:text-customExcerpt md:leading-headerAbout md:visible invisible'
@@ -188,8 +164,6 @@ const Lead = () => {
 };
 
 export default Lead;
-
-
 
 /*
 const spanSnippets: LeadInterface[] = [
