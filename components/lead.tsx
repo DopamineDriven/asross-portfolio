@@ -147,7 +147,7 @@ const Lead = () => {
 					{spanMap}
 				</p>
 				<div
-					className='md:text-customExcerpt md:leading-headerAbout md:visible invisible'
+					className='md:text-customTitle md:leading-portfolio md:visible invisible'
 					style={{ position: 'absolute', top: '92.78333vw', left: '3.33333vw' }}
 				>
 					{socialMap}
