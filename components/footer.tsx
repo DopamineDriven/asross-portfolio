@@ -1,11 +1,4 @@
 import Link from 'next/link';
-import PortfolioDivider from 'components/portfolio-divider';
-interface FooterProps {
-	id: number;
-	href: string;
-	title: string;
-	target: string;
-}
 
 interface SocialContact {
 	id: number;
