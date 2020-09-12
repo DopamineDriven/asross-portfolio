@@ -5,6 +5,9 @@ excerpt: 'Hacking the Font Awesome Library with React, Nextjs, and TypeScript to
 coverImage: 'https://res.cloudinary.com/asross311/image/upload/v1598874059/portfolio/Rectangle_6036_gmc1ej.jpg'
 articleImage: 'https://dev-to-uploads.s3.amazonaws.com/i/51fagc1ri8auwsxfpkzj.png'
 date: '2020-09-05T08:35:07.322Z'
+dev: 'https://dev.to/asross311/hacking-the-fontawesome-library-for-custom-icon-integration-with-nextjs-and-typescript-1em8'
+medium: 'https://medium.com/@andrew.simpson.ross/hacking-the-fontawesome-library-with-nextjs-typescript-for-custom-icon-support-a9ceac76fb70'
+youtube: 'empty'
 ogImage:
  url: '/assets/next-jamstack.jpg'
 ---
