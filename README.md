@@ -1,5 +1,11 @@
 # asross-portfolio
 
+## Google Analytics Added
+- https://github.com/react-ga/react-ga
+- https://github.com/react-ga/react-ga/blob/master/demo/app/Events.jsx
+- https://coderrocketfuel.com/article/add-google-analytics-to-a-next-js-and-react-website
+- https://analytics.google.com/analytics/web/#/a177780141w246030893p228624158/admin/tracking/tracking-code/
+
 ## GA Events + TS 
 - https://kellenfujimoto.com/posts/strongly-typed-google-analytics-events/
 
