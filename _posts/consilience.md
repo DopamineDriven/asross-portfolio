@@ -1,7 +1,7 @@
 ---
 title: 'consilience'
 postTitle: 'Consilience'
-excerpt: 'Development, UX'
+excerpt: 'Development Lead, UX'
 coverImage: 'https://res.cloudinary.com/asross311/image/upload/v1598839549/portfolio/Rectangle_6037_yckfs9.jpg'
 articleImage: 'https://res.cloudinary.com/asross311/image/upload/v1598377626/portfolio/consilience_s1yr8g.jpg'
 date: "2020-04-12T09:35:07.322Z"
