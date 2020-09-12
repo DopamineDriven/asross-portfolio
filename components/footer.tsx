@@ -1,11 +1,4 @@
 import Link from 'next/link';
-import PortfolioDivider from 'components/portfolio-divider';
-interface FooterProps {
-	id: number;
-	href: string;
-	title: string;
-	target: string;
-}
 
 interface SocialContact {
 	id: number;
@@ -45,11 +38,11 @@ const Footer = () => {
 	const socialMap = socialSnippets.map(constituent => {
 		return (
 			<div
-				className='list-none w-auto min-w-full md:w-full text-right float-right'
+				className='list-none w-auto min-w-full md:w-full text-center md:text-right float-right'
 				key={constituent.id}
 			>
 				<a
-					className='block transition-all duration-3000 delay-300 translate-y-portfolioDivider transform animate-hero w-auto hover:text-fiveOBlack text-right pr-portfolioDivider'
+					className='block transition-all duration-3000 delay-300 translate-y-portfolioDivider transform animate-hero w-auto hover:text-fiveOBlack md:text-right pr-portfolioDivider'
 					target={constituent.target}
 					aria-label={constituent.label}
 					href={constituent.href}
@@ -71,6 +64,20 @@ const Footer = () => {
 			</Link>
 		</div>
 	);
+	const copyRight = (
+		<div className='flex flex-row mx-auto w-full tracking-wide text-center'>
+			<div className='block align-top mx-auto font-somaRoman text-black text-center w-auto'>
+				<a
+					className='block transition-all duration-3000 delay-300 -translate-y-portfolioDivider transform animate-hero justify-center hover:text-fiveOBlack'
+					href='http://duncanross.design/'
+					target='__blank'
+					aria-label='design by duncan ross'
+				>
+					©2020 All Rights Reserved
+				</a>
+			</div>
+		</div>
+	);
 	return (
 		<footer className='select-none bg-portfolio font-somaRoman w-full max-w-full px-portfolioFooter text-customFooterMobile md:text-customFooter pt-portfolioH2F pb-mobileGapY'>
 			<div className='w-full min-w-full'>
@@ -84,18 +91,7 @@ const Footer = () => {
 						{socialMap}
 					</div>
 					<hr className='border-fiveOBlack w-portfolioDividerWidth max-w-portfolioDividerWidth mx-auto mt-portfolioDivider pb-portfolioDivider' />
-					<div className='flex flex-row mx-auto w-full tracking-wide text-center'>
-						<div className='block align-top mx-auto font-somaRoman text-black text-center w-auto'>
-							<a
-								className='block transition-all duration-3000 delay-300 -translate-y-portfolioDivider transform animate-hero justify-center hover:text-fiveOBlack'
-								href='http://duncanross.design/'
-								target='__blank'
-								aria-label='design by duncan ross'
-							>
-								©2020 All Rights Reserved
-							</a>
-						</div>
-					</div>
+					{copyRight}
 				</div>
 			</div>
 		</footer>
