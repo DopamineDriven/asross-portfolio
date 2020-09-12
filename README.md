@@ -1,5 +1,7 @@
 # asross-portfolio
 
+## Google Analytics Added
+
 ## GA Events + TS 
 - https://kellenfujimoto.com/posts/strongly-typed-google-analytics-events/
 
