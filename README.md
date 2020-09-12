@@ -1,5 +1,8 @@
 # asross-portfolio
 
+## Configure method to reveal user ISP
+- https://www.3whitehats.com/knowledge/how-to-get-service-provider-back-in-google-analytics 
+
 ## Google Analytics Added
 - https://github.com/react-ga/react-ga
 - https://github.com/react-ga/react-ga/blob/master/demo/app/Events.jsx
