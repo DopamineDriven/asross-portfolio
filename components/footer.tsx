@@ -7,22 +7,55 @@ interface FooterProps {
 	target: string;
 }
 
-const footerConstitutents: FooterProps[] = [
+interface SocialContact {
+	id: number;
+	label: string;
+	target: string;
+	href: string;
+}
+
+const socialSnippets: SocialContact[] = [
 	{
 		id: 0,
-		href: 'http://duncanross.design/',
-		title: 'Design, Duncan Ross',
-		target: '__blank'
+		label: 'Email',
+		target: '__blank',
+		href: 'mailto:andrew.simpson.ross@gmail.com'
 	},
 	{
 		id: 1,
-		href: 'https://github.com/DopamineDriven/asross-portfolio',
-		title: '©2020 ALL RIGHTS RESERVED',
-		target: '__blank'
+		label: 'LinkedIn',
+		target: '__blank',
+		href: 'https://www.linkedin.com/in/asross/'
+	},
+	{
+		id: 2,
+		label: 'Twitter',
+		target: '__blank',
+		href: 'https://twitter.com/Dopamine_Driven'
+	},
+	{
+		id: 3,
+		label: 'GitHub',
+		target: '__blank',
+		href: 'https://github.com/DopamineDriven'
 	}
 ];
 
 const Footer = () => {
+	const socialMap = socialSnippets.map(constituent => {
+		return (
+			<div className='mt-socialMargin block' key={constituent.id}>
+				<a
+					className='block transform z-50 animate-hero hover:text-fiveOBlack py-portfolioDivider md:py-0'
+					target={constituent.target}
+					aria-label={constituent.label}
+					href={constituent.href}
+				>
+					{constituent.label}
+				</a>
+			</div>
+		);
+	});
 	return (
 		<footer className='select-none bg-portfolio font-somaRoman w-full max-w-full px-portfolioFooter text-customFooterMobile md:text-customFooter pt-portfolioH2F pb-mobileGapY'>
 			<div className='w-full min-w-full'>
