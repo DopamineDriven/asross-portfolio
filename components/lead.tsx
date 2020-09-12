@@ -171,7 +171,7 @@ const Lead = () => {
 					</span> */}
 				</p>
 				<div
-					className='md:text-customExcerpt md:uppercase md:leading-headerAbout md:visible invisible'
+					className='md:text-customExcerpt md:leading-headerAbout md:visible invisible'
 					style={{ position: 'absolute', top: '92.78333vw', left: '3.33333vw' }}
 				>
 					{socialMap}
