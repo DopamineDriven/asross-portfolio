@@ -258,6 +258,7 @@ module.exports = {
 				aboutGapX: '8.9136vw',
 				aboutOffsetPR: '43.79944vw',
 				aboutOffsetPRMobile: '37.79944vw',
+				introToPortfolioMobile: '32.79944vw',
 				aboutHackingFontAwesomePT: '6.6852vw',
 				paddingBlog: '26.25vw',
 				paddingBlogOdd: '17.5vw',

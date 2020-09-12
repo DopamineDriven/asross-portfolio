@@ -46,63 +46,63 @@ const socialSnippets: SocialContact[] = [
 const spanSnippets: LeadInterface[] = [
 	{
 		id: 0,
-		span: 'Andrew Ross is a Chicago Based Full-Stack '
+		span: 'Andrew Ross is a Chicago Based Full-Stack Engineer proficient '
 	},
 	{
 		id: 1,
-		span: 'Engineer specializing in JAMstack, React, '
+		span: 'in JAMstack, React, TypeScript, Next.js, Headless WordPress, '
 	},
 	{
 		id: 2,
-		span: 'TypeScript, Next.js, Node, GraphQL, Apollo, '
+		span: 'Node, GraphQL, Apollo, Tailwind CSS, MongoDB, PostgreSQL, '
 	},
 	{
 		id: 3,
-		span: 'Tailwind CSS, MongoDB, PostgreSQL, JWTs, '
+		span: 'MySQL, Authentication/Authorization, JWTs, Google Analytics, '
 	},
 	{
 		id: 4,
-		span: 'Google Analytics, Static Site Generation, UX, '
+		span: 'Static Site Generation, Server Side Rendering, Incremental Static '
 	},
 	{
 		id: 5,
-		span: 'Headless WordPress, DB Migration, and Vercel. '
+		span: 'Regeneration, DB Migration, UX, and Vercel. Cofounder of Windy '
 	},
 	{
 		id: 6,
-		span: 'Cofounder of Windy City Devs LLC. '
+		span: 'City Devs LLC. Full-Stack development TA at Vanderbilt University. '
 	},
 	{
 		id: 7,
-		span: 'Full-Stack TA at Vanderbilt University. '
+		span: 'Project lead uniting local Chicago Media companies. Collaborates '
 	},
 	{
 		id: 8,
-		span: 'Project lead uniting Chicago Media. '
+		span: 'with techies from around the globe. What drives this? A desire to '
 	},
 	{
 		id: 9,
-		span: 'Works with techies around the globe. '
-	},
-	{
-		id: 10,
-		span: `What drives this? A desire to build.`
-	},
-	{
-		id: 11,
-		span: 'Available for freelance, contract, and '
-	},
-	{
-		id: 12,
-		span: 'full-time work.'
+		span: 'build. Available for freelance, contract, and full-time roles. '
 	}
+	// {
+	// 	id: 10,
+	// 	span: `What drives this? A desire to build.`
+	// },
+	// {
+	// 	id: 11,
+	// 	span: 'Available for freelance, contract, and '
+	// },
+	// {
+	// 	id: 12,
+	// 	span: 'full-time work.'
+	// }
 ];
 
 const Lead = () => {
 	const spanMap = spanSnippets.map(constituent => {
 		return (
 			<span
-				className='font-thin font-somaRoman tracking-tighter last:pl-portfolioS p-lead cursor-default '
+				className='font-thin font-somaRoman tracking-tighter cursor-default '
 				key={constituent.id}
 			>
 				{constituent.span}
@@ -113,9 +113,9 @@ const Lead = () => {
 
 	const socialMap = socialSnippets.map(constituent => {
 		return (
-			<div className='mt-socialMargin overflow-hidden block' key={constituent.id}>
+			<div className='mt-socialMargin block' key={constituent.id}>
 				<a
-					className='block transform animate-hero hover:text-fiveOBlack'
+					className='block transform z-50 animate-hero hover:text-fiveOBlack py-portfolioDivider md:py-0' 
 					target={constituent.target}
 					aria-label={constituent.label}
 					href={constituent.href}
@@ -129,7 +129,7 @@ const Lead = () => {
 		<Fragment>
 			<Meta />
 			<header
-				className='select-none relative z-1 justify-between pt-portfolio navbar-expand-lg flex flex-col min-w-full w-full container overflow-y-hidden overflow-x-hidden transform duration-300'
+				className='select-none relative z-1 justify-between pt-portfolio navbar-expand-lg flex flex-col min-w-full w-full container overflow-y-hidden overflow-x-hidden transform duration-300 pb-introToPortfolioMobile md:pb-portfolioS'
 				style={{ transform: 'translate3d(0px, 0px, 0px)' }}
 			>
 				<div className='relative block justify-between lg:w-auto lg:static lg:block lg:justify-start w-full min-w-full'>
@@ -153,7 +153,7 @@ const Lead = () => {
 				</div>
 				<p
 					className={
-						'text-customPMobile md:text-customP pr-portfolioRS pl-portfolioLS leading-headerP block font-somaRoman tracking-tighter font-thin'
+						'text-customExcerptMobile md:text-customP pr-portfolioRS pl-portfolioLS leading-headerP block font-somaRoman tracking-tighter font-thin'
 					}
 				>
 					{spanMap}
@@ -171,8 +171,14 @@ const Lead = () => {
 					</span> */}
 				</p>
 				<div
-					className='md:text-customSM text-customSM font-somaRoman md:leading-customSLH leading-customSLM tracking-wide block'
-					style={{ position: 'absolute', top: '80.78333vw', left: '3.33333vw' }}
+					className='md:text-customExcerpt md:uppercase md:leading-headerAbout md:visible invisible'
+					style={{ position: 'absolute', top: '92.78333vw', left: '3.33333vw' }}
+				>
+					{socialMap}
+				</div>
+				<div
+					className='text-customTitle font-somaRoman leading-customSLM tracking-wide block uppercase md:hidden'
+					style={{ position: 'absolute', top: '92.78333vw', left: '3.33333vw' }}
 				>
 					{socialMap}
 				</div>
