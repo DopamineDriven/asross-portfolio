@@ -36,6 +36,10 @@ module.exports = {
 			100: 100
 		},
 		extend: {
+			screens: {
+				light: { raw: '(prefers-color-scheme: light)' },
+				dark: { raw: '(prefers-color-scheme: dark)' }
+			},
 			transitionDuration: {
 				0: '0ms',
 				200: '200ms',
@@ -66,7 +70,7 @@ module.exports = {
 				// display: ['Barlow Condensed', 'sans-serif'],
 				// polished: ['brandon-grotesque', 'sans-serif'],
 				somaRoman: ['neue-haas-grotesk-text', 'sans-serif'],
-				somaDisplay: ['neue-haas-grotesk-display', 'sans-serif'],
+				somaDisplay: ['neue-haas-grotesk-display', 'sans-serif']
 				// somaDisplayLight: ['neue-haas-grotesk-display', 'sans-serif']
 				// subpolished: ['Montserrat', 'sans-serif']
 			},
@@ -339,6 +343,20 @@ module.exports = {
 	},
 	plugins: [
 		require('@tailwindcss/typography'),
-		require('tailwindcss-textshadow')
+		require('tailwindcss-textshadow'),
+		function ({ addBase, config }) {
+			addBase({
+				body: {
+					color: config('theme.colors.black'),
+					backgroundColor: config('theme.colors.white')
+				},
+				'@screen dark': {
+					body: {
+						color: config('theme.colors.white'),
+						backgroundColor: config('theme.colors.black')
+					}
+				}
+			});
+		}
 	]
 };
