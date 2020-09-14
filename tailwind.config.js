@@ -101,6 +101,8 @@ module.exports = {
 				oneFiveBlack: '#151515',
 				fiveOBlack: '#505050',
 				portfolio: '#EBE8E0',
+				portfolioComplementary: '#E5E0EB',
+				portfolioDark: '#14171F',
 				everythingIsBlue: '#007acc'
 			},
 			height: {
