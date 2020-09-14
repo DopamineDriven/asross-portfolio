@@ -66,7 +66,7 @@ const Footer = () => {
 	);
 	const copyRight = (
 		<div className='flex flex-row mx-auto w-full tracking-wide text-center'>
-			<div className='block align-top mx-auto font-somaRoman text-black text-center w-auto'>
+			<div className='block align-top mx-auto font-somaRoman text-black dark:text-white text-center w-auto'>
 				<a
 					className='block transition-all duration-3000 delay-300 -translate-y-portfolioDivider transform animate-hero justify-center hover:text-fiveOBlack'
 					href='http://duncanross.design/'
@@ -90,7 +90,7 @@ const Footer = () => {
 						</div>
 						{socialMap}
 					</div>
-					<hr className='border-fiveOBlack w-portfolioDividerWidth max-w-portfolioDividerWidth mx-auto mt-portfolioDivider pb-portfolioDivider' />
+					<hr className='border-fiveOBlack dark:border-eaWhite w-portfolioDividerWidth max-w-portfolioDividerWidth mx-auto mt-portfolioDivider pb-portfolioDivider' />
 					{copyRight}
 				</div>
 			</div>
