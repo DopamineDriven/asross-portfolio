@@ -1,4 +1,4 @@
-export enum getThemeInitProps {
+export enum ThemeInitProps {
 	dark = 'dark',
 	light = 'light'
 }
@@ -8,7 +8,7 @@ export interface ColorTheme {
 }
 
 const getThemeInit = ({ colorTheme= 'color-theme' }: ColorTheme) => {
-	const { dark, light } = getThemeInitProps;
+	const { dark, light } = ThemeInitProps;
 	if (typeof window !== 'undefined' && window.localStorage) {
 		const storedPreferences = window.localStorage.getItem(colorTheme);
 		if (typeof storedPreferences === 'string') return storedPreferences;
@@ -19,7 +19,7 @@ const getThemeInit = ({ colorTheme= 'color-theme' }: ColorTheme) => {
 			return userMedia.matches ? dark : light;
 		}
 	}
-	// light is default
+	// light === default
 	return light;
 };
 

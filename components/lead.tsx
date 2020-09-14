@@ -2,7 +2,6 @@ import { ArIcon } from 'components/svg-icons';
 import Link from 'next/link';
 import { Fragment } from 'react';
 import Meta from 'components/meta';
-import getThemeInit, { getThemeInitProps, ColorTheme } from 'lib/theme';
 // USE
 // https://fossheim.io/writing/posts/react-text-splitting-animations/
 interface LeadInterface {
@@ -116,10 +115,10 @@ const Lead = () => {
 	});
 
 	const arIcon = (
-		<div className='relative block justify-between lg:w-auto lg:static lg:block lg:justify-start w-full min-w-full'>
+		<div className='relative block justify-between lg:w-auto lg:static lg:block lg:justify-start w-full min-w-full '>
 			<Link href='/'>
 				<a
-					className='container block pl-portfolio justify-between mx-auto w-full min-w-full'
+					className='container block pl-portfolio justify-between mx-auto w-full min-w-full '
 					id='top'
 					aria-label='top'
 				>
