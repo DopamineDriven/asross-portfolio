@@ -6,6 +6,7 @@ import { Fragment } from 'react';
 
 interface BlogPostHeaderProps {
 	title: string;
+	postTitle: string;
 	src: string;
 	date: string;
 	dev: string;
@@ -15,6 +16,7 @@ interface BlogPostHeaderProps {
 
 const BlogPostHeader = ({
 	title,
+	postTitle,
 	src,
 	date,
 	dev,
@@ -27,7 +29,7 @@ const BlogPostHeader = ({
 				<div className='block mx-auto md:max-w-aboutImage600 md:w-aboutImage600 max-w-imagePortfolioMobile w-imagePortfolioMobile pt-mobileGapY'>
 					<BlogPostCoverImage title={title} src={src} />
 				</div>
-				<BlogPostTitle>{title}</BlogPostTitle>
+				<BlogPostTitle>{postTitle}</BlogPostTitle>
 			</div>
 			<div className='pt-portfolioDivider max-w-cardGridMobile block mx-auto align-middle justify-center select-none'>
 				<div className='text-customExcerptMobile text-oneFiveBlack font-somaRoman flex mx-auto align-middle justify-center'>

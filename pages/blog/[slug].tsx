@@ -38,7 +38,8 @@ const Blog = ({ blog, blogs }: BlogProps) => {
 							<meta property='og:image' content={blog.ogImage.url} />
 						</Head>
 						<BlogPostHeader
-							title={blog.postTitle}
+							postTitle={blog.postTitle}
+							title={blog.title}
 							src={blog.articleImage}
 							date={blog.date}
 							dev={blog.dev}
