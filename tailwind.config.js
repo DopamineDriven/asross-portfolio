@@ -42,13 +42,13 @@ module.exports = {
 			},
 			transitionDuration: {
 				0: '0ms',
-				200: '200ms',
 				300: '300ms',
 				500: '500ms',
 				700: '700ms',
 				1000: '1000ms',
 				2000: '2000ms',
-				3000: '3000ms'
+				3000: '3000ms',
+				10000: '10000ms'
 			},
 			keyframes: {
 				wiggle: {
