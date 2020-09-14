@@ -83,7 +83,7 @@ const BlogSubFooter = ({ title }: SubFooterProps) => {
 		</div>
 	);
 	return (
-		<footer className='select-none bg-portfolio font-somaRoman w-full max-w-full px-portfolioFooter text-customFooterMobile md:text-customTitle pt-portfolioH2F pb-mobileGapY'>
+		<footer className='select-none font-somaRoman w-full max-w-full px-portfolioFooter text-customFooterMobile md:text-customTitle pt-portfolioH2F pb-mobileGapY'>
 			<div className='w-full min-w-full'>
 				<div className='block min-w-full w-full overflow-hidden'>
 					<div className='grid grid-cols-8 w-full content-end justify-end align-bottom first:col-span-3'>

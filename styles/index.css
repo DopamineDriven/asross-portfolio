@@ -2,8 +2,20 @@
 https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth#:~:text=WebKit%20implements%20a%20similar%20property,%2Dwebkit%2Dfont%2Dsmoothing%20.&text=antialiased%20%2D%20Smooth%20the%20font%20on,backgrounds%20makes%20it%20look%20lighter.
 */
 
+.light {
+	--color-bg-primary: #ebe8e0;
+	--color-text-primary: #000000;
+	--color-text-secondary: #151515;
+}
+
 .dark {
-	
+	--color-bg-primary: #14171f;
+	--color-text-primary: #ffffff;
+	--color-text-secondary: #EAEAEA;
+}
+
+:root {
+	@apply .light;
 }
 
 html {
@@ -12,7 +24,6 @@ html {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: auto;
 	-webkit-tap-highlight-color: transparent;
-	background-color: #ebe8e0;
 	margin: 0;
 	padding: 0;
 	scroll-behavior: smooth;
@@ -234,7 +245,7 @@ body::-webkit-scrollbar {
 	@apply pl-aboutIndentation;
 }
 
-@media (max-width: 639px)  {
+@media (max-width: 639px) {
 	.p-last:nth-child(n + 1):nth-child(-n + 12) {
 		@apply pl-aboutOffsetPRMobile;
 	}
