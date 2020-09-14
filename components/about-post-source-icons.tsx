@@ -5,6 +5,56 @@ import {
 	faTwitter
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import AboutSocial from 'types/social/about-social';
+
+// type AboutPostSourceIcons = 'email' | 'github' | 'linkedin' | 'twitter';
+export enum AboutPostSourceIcon {
+	email = 'email',
+	github = 'github',
+	linkedin = 'linkedin',
+	twitter = 'twitter'
+}
+
+interface AboutIconMapping {
+	social: AboutPostSourceIcon;
+	icon: IconProp;
+	href: string;
+	target: string;
+	id: number;
+}
+
+const { email, github, linkedin, twitter } = AboutPostSourceIcon;
+const socialMapped: AboutIconMapping[] = [
+	{
+		social: email,
+		icon: faEnvelope,
+		href: email,
+		target: '__blank',
+		id: 0
+	},
+	{
+		social: github,
+		icon: faGithub,
+		href: github,
+		target: '__blank',
+		id: 1
+	},
+	{
+		social: linkedin,
+		icon: faLinkedin,
+		href: linkedin,
+		target: '__blank',
+		id: 2
+	},
+	{
+		social: twitter,
+		icon: faTwitter,
+		href: twitter,
+		target: '__blank',
+		id: 3
+	}
+];
 
 interface AboutPostSourceIconProps {
 	email: string;
@@ -19,6 +69,30 @@ const AboutPostSourceIcons = ({
 	linkedin,
 	twitter
 }: AboutPostSourceIconProps) => {
+	const socialIs = socialMapped.map(constituent => {
+		const ref = constituent.href;
+		return (
+			<>
+				{ref === 'empty' ? (
+					<div className='hidden' key={constituent.id}></div>
+				) : (
+					<a
+						key={constituent.id}
+						aria-label={`${constituent.social} landing page - ${constituent.href}`}
+						target={constituent.target}
+						href={constituent.href}
+						className='text-oneFiveBlack dark:text-white leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-mxSocial pt-threeHalves rounded-full focus:outline-none'
+					>
+						<FontAwesomeIcon
+							icon={constituent.icon}
+							className='flex align-middle text-center font-extrabold hover:text-fiveOBlack pr-half dark:hover:text-afWhite transition-all transform delay-300 duration-1000 ease-in-out '
+							size='2x'
+						/>
+					</a>
+				)}
+			</>
+		);
+	});
 	return (
 		<div className='align-middle justify-right text-right inline-block'>
 			<ul className='align-middle'>
@@ -30,11 +104,11 @@ const AboutPostSourceIcons = ({
 							aria-label={`github landing page - ${github}`}
 							target='__blank'
 							href={github}
-							className='bg-portfolio text-oneFiveBlack leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-mxSocial pt-threeHalves rounded-full focus:outline-none'
+							className='leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-mxSocial pt-threeHalves rounded-full focus:outline-none'
 						>
 							<FontAwesomeIcon
 								icon={faGithub}
-								className='flex align-middle text-center font-extrabold hover:text-fiveOBlack pr-half  transition-all transform delay-300 duration-1000 ease-in-out '
+								className='flex align-middle text-center font-extrabold hover:text-fiveOBlack pr-half dark:hover:text-afWhite transition-all transform delay-300 duration-1000 ease-in-out '
 								size='2x'
 							/>
 						</a>
@@ -46,11 +120,11 @@ const AboutPostSourceIcons = ({
 							aria-label={`twitter @Dopamine_Driven - ${twitter}`}
 							target='__blank'
 							href={twitter}
-							className='bg-portfolio text-oneFiveBlack leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-mxSocial md:mr-mxSocial md:ml-0 pt-threeHalves rounded-full focus:outline-none'
+							className='leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-mxSocial md:mr-mxSocial md:ml-0 pt-threeHalves rounded-full focus:outline-none'
 						>
 							<FontAwesomeIcon
 								icon={faTwitter}
-								className='flex align-middle text-center font-extrabold hover:text-fiveOBlack pr-half  transition-all transform delay-300 duration-1000 ease-in-out '
+								className='flex align-middle text-center font-extrabold hover:text-fiveOBlack pr-half dark:hover:text-afWhite transition-all transform delay-300 duration-1000 ease-in-out '
 								size='2x'
 							/>
 						</a>
@@ -62,11 +136,11 @@ const AboutPostSourceIcons = ({
 							aria-label={`linkedin - ${linkedin}`}
 							target='__blank'
 							href={linkedin}
-							className='bg-portfolio text-oneFiveBlack leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 pt-threeHalves mx-mxSocial md:mr-mxSocial md:ml-0 rounded-full focus:outline-none'
+							className='leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 pt-threeHalves mx-mxSocial md:mr-mxSocial md:ml-0 rounded-full focus:outline-none'
 						>
 							<FontAwesomeIcon
 								icon={faLinkedin}
-								className='flex align-middle text-center font-extrabold hover:text-fiveOBlack pr-half  transition-all transform delay-300 duration-1000 ease-in-out '
+								className='flex align-middle text-center font-extrabold hover:text-fiveOBlack pr-half dark:hover:text-afWhite transition-all transform delay-300 duration-1000 ease-in-out '
 								size='2x'
 							/>
 						</a>
@@ -82,7 +156,7 @@ const AboutPostSourceIcons = ({
 						>
 							<FontAwesomeIcon
 								icon={faEnvelope}
-								className='flex align-middle text-center font-extrabold hover:text-fiveOBlack pr-half  transition-all transform delay-300 duration-1000 ease-in-out '
+								className='flex align-middle text-center font-extrabold hover:text-fiveOBlack pr-half dark:hover:text-afWhite transition-all transform delay-300 duration-1000 ease-in-out '
 								size='2x'
 							/>
 						</a>

@@ -21,13 +21,12 @@ export default PostType;
 
 
 
-export enum StaticProps {
+export enum StaticPropsPosts {
 	title = 'title',
 	date = 'date',
 	slug = 'slug',
 	coverImage = 'coverImage',
 	excerpt = 'excerpt',
 	postTitle = 'postTitle',
-	articleImage = 'articleImage',
-	ogImage = 'ogImage'
+	articleImage = 'articleImage'
 }
