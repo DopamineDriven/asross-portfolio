@@ -115,7 +115,7 @@ const Lead = () => {
 	});
 
 	const arIcon = (
-		<div className='relative block justify-between lg:w-auto lg:static lg:block lg:justify-start w-full min-w-full '>
+		<div className='relative block justify-between lg:w-auto lg:static lg:block lg:justify-start w-full min-w-full transition-all duration-2000 delay-300'>
 			<Link href='/'>
 				<a
 					className='container block pl-portfolio justify-between mx-auto w-full min-w-full '
@@ -137,7 +137,7 @@ const Lead = () => {
 				{arIcon}
 				<div>
 					<h1
-						className='font-head text-custom relative flex-grow text-center justify-center tracking-tight leading-headerP font-light cursor-default w-full min-w-full'
+						className='font-head text-custom relative flex-grow text-center justify-center tracking-tight leading-headerP font-light cursor-default w-full min-w-full transform -translate-y-paddingPostTitleTop duration-2000 transition-all delay-300 ease-in-out'
 						style={{ marginBlockStart: '0.67em', marginBlockEnd: '0.67em' }}
 					>
 						<a className='text-custom block'>Andrew</a>
@@ -145,19 +145,19 @@ const Lead = () => {
 				</div>
 				<p
 					className={
-						'text-customExcerptMobile md:text-customP pr-portfolioRS pl-portfolioLS leading-headerP block font-somaRoman tracking-tighter font-thin'
+						'transform -translate-y-landingOverviewTranslation duration-2000 transition-all delay-300 text-customExcerptMobile md:text-customP pr-portfolioRS pl-portfolioLS leading-headerP block font-somaRoman tracking-tighter font-thin ease-in-out'
 					}
 				>
 					{spanMap}
 				</p>
 				<div
-					className='md:text-customTitle md:leading-portfolio md:visible invisible'
-					style={{ position: 'absolute', top: '92.78333vw', left: '3.33333vw' }}
+					className='md:text-customTitle md:leading-portfolio md:visible invisible md:transition-all md:delay-300 md:duration-2000 md:ease-in-out'
+					style={{ position: 'absolute', top: '86.78333vw', left: '3.33333vw' }}
 				>
 					{socialMap}
 				</div>
 				<div
-					className='text-customTitle font-somaRoman leading-customSLM tracking-wide block uppercase md:hidden'
+					className='text-customTitle font-somaRoman leading-customSLM tracking-wide block uppercase md:hidden transition-all duration-2000 delay-300 ease-in-out'
 					style={{ position: 'absolute', top: '92.78333vw', left: '3.33333vw' }}
 				>
 					{socialMap}

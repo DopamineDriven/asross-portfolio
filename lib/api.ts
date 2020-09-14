@@ -8,6 +8,11 @@ export function getPostSlugs() {
 	return fs.readdirSync(postsDirectory);
 }
 
+export type Items = {
+	[key: string]: string;
+};
+
+
 export function getPostBySlug(slug: string, fields: string[] = []) {
 	const realSlug = slug.replace(/\.md$/, '');
 	const fullPath = join(postsDirectory, `${realSlug}.md`);

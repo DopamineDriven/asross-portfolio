@@ -4,7 +4,7 @@ import Cards from 'components/cards';
 import Footer from 'components/footer';
 import Post from 'types/post';
 import { CLIENT_NAME } from 'lib/constants';
-import { getAllPosts } from 'lib/api';
+import { getAllPosts, Items } from 'lib/api';
 import { getAllAbouts } from 'lib/about-api';
 import { getAllBlogs } from 'lib/blog-api';
 import { GetStaticProps } from 'next';
@@ -47,16 +47,28 @@ const Index = ({ allPosts, allAbout, allBlog }: IndexProps) => {
 
 export default Index;
 
-export const getStaticProps: GetStaticProps = async () => {
-	const allPosts = getAllPosts([
-		'title',
-		'date',
-		'slug',
-		'coverImage',
-		'excerpt',
-		'postTitle'
-	]);
+enum StaticPropsPosts {
+	title = 'title',
+	date = 'date',
+	slug = 'slug',
+	coverImage = 'coverImage',
+	excerpt = 'excerpt',
+	postTitle = 'postTitle',
+	articleImage = 'articleImage'
+}
 
+interface GetStaticPropsInterface extends GetStaticProps {
+	Post: StaticPropsPosts;
+	About: AboutType;
+	Blog: BlogType;
+}
+
+export const getStaticProps = async ({
+	Post,
+	About,
+	Blog
+}: GetStaticPropsInterface) => {
+	const allPosts = getAllPosts([Post]);
 	const allAbout = getAllAbouts([
 		'title',
 		'date',
@@ -68,6 +80,17 @@ export const getStaticProps: GetStaticProps = async () => {
 	const allBlog = getAllBlogs(['title', 'slug', 'date', 'postTitle']);
 
 	return {
-		props: { allPosts, allAbout, allBlog }
+		props: { allPosts, allAbout, allBlog, revalidate: 1 }
 	};
 };
+
+/*
+// type PostTypesListed =
+// 	| 'title'
+// 	| 'date'
+// 	| 'slug'
+// 	| 'coverImage'
+// 	| 'excerpt'
+// 	| 'articleImage'
+// 	| 'postTitle';
+*/
