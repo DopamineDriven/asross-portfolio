@@ -84,7 +84,8 @@ export const getStaticProps = async ({
 		props: {
 			blog: {
 				...blog
-			}
+			},
+			revalidate: 1
 		}
 	};
 };
@@ -100,6 +101,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
 				}
 			};
 		}),
-		fallback: false
+		fallback: true
 	};
 };
