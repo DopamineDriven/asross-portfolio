@@ -42,7 +42,7 @@ const Footer = () => {
 				key={constituent.id}
 			>
 				<a
-					className='block transition-all duration-3000 delay-300 translate-y-portfolioDivider transform animate-hero w-auto hover:text-fiveOBlack md:text-right pr-portfolioDivider'
+					className='block transition-all duration-2000 delay-300 translate-y-portfolioDivider transform animate-hero w-auto hover:text-fiveOBlack dark:hover:text-afWhite md:text-center'
 					target={constituent.target}
 					aria-label={constituent.label}
 					href={constituent.href}
@@ -53,10 +53,10 @@ const Footer = () => {
 		);
 	});
 	const backToTop = (
-		<div className='block w-auto align-top font-somaRoman text-black text-center'>
+		<div className='block w-auto align-top font-somaRoman text-black dark:text-white dark:hover:text-eaWhite text-center transition-all duration-1000 '>
 			<Link href='/#top' passHref as='/top'>
 				<a
-					className='block pl-portfolioDivider whitespace-no-wrap duration-1000 transition-all ease-in-out hover:text-fiveOBlack items-left justify-start'
+					className='block pl-portfolioDivider whitespace-no-wrap duration-1000 transition-all ease-in-out hover:text-fiveOBlack dark:hover:text-afWhite items-left justify-start'
 					aria-label='back to top'
 				>
 					Back to Top

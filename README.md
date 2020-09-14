@@ -1,5 +1,8 @@
 # asross-portfolio
 
+## Tailwind Dark Mode
+- https://mayashavin.com/articles/dark-theme-tailwind-nuxt
+
 ## Configure method to reveal user ISP
 - https://www.3whitehats.com/knowledge/how-to-get-service-provider-back-in-google-analytics 
 
