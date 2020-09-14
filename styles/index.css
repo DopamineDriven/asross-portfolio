@@ -2,6 +2,10 @@
 https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth#:~:text=WebKit%20implements%20a%20similar%20property,%2Dwebkit%2Dfont%2Dsmoothing%20.&text=antialiased%20%2D%20Smooth%20the%20font%20on,backgrounds%20makes%20it%20look%20lighter.
 */
 
+.dark {
+	
+}
+
 html {
 	-webkit-text-size-adjust: none;
 	-webkit-font-smoothing: subpixel-antialiased;
