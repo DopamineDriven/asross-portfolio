@@ -47,28 +47,32 @@ const Index = ({ allPosts, allAbout, allBlog }: IndexProps) => {
 
 export default Index;
 
-enum StaticPropsPosts {
-	title = 'title',
-	date = 'date',
-	slug = 'slug',
-	coverImage = 'coverImage',
-	excerpt = 'excerpt',
-	postTitle = 'postTitle',
-	articleImage = 'articleImage'
-}
+// enum StaticPropsPosts {
+// 	title = 'title',
+// 	date = 'date',
+// 	slug = 'slug',
+// 	coverImage = 'coverImage',
+// 	excerpt = 'excerpt',
+// 	postTitle = 'postTitle',
+// 	articleImage = 'articleImage'
+// }
 
-interface GetStaticPropsInterface extends GetStaticProps {
-	Post: StaticPropsPosts;
-	About: AboutType;
-	Blog: BlogType;
-}
+// interface GetStaticPropsInterface extends GetStaticProps {
+// 	Post: StaticPropsPosts;
+// 	About: AboutType;
+// 	Blog: BlogType;
+// }
 
-export const getStaticProps = async ({
-	Post,
-	About,
-	Blog
-}: GetStaticPropsInterface) => {
-	const allPosts = getAllPosts([Post]);
+export const getStaticProps: GetStaticProps = async () => {
+	const allPosts = getAllPosts([
+		'title',
+		'date',
+		'slug',
+		'postTitle',
+		'articleImage',
+		'excerpt',
+		'coverImage'
+	]);
 	const allAbout = getAllAbouts([
 		'title',
 		'date',
