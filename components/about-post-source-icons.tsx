@@ -152,7 +152,7 @@ const AboutPostSourceIcons = ({
 							aria-label={`twitter @Dopamine_Driven - ${email}`}
 							target='__blank'
 							href={email}
-							className='bg-portfolio text-oneFiveBlack leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-mxSocial md:mx-0 pt-threeHalves rounded-full focus:outline-none'
+							className='leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-mxSocial md:mx-0 pt-threeHalves rounded-full focus:outline-none'
 						>
 							<FontAwesomeIcon
 								icon={faEnvelope}
