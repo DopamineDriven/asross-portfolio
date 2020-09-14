@@ -284,6 +284,7 @@ module.exports = {
 				paddingAboutTitleRight: '10.75vw',
 				mxSocial: '1.25vw',
 				mdmxSocial: '0.625vw',
+				landingOverviewTranslation: '7.75vw',
 				7: '1.75rem',
 				14: '3.5rem',
 				18: '4.5rem',
