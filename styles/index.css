@@ -3,12 +3,15 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth#:~:text=WebKit%20im
 */
 
 .light {
-	--background-color: #ebe8e0;
-	--color-text-primary: 
+	--color-bg-primary: #ebe8e0;
+	--color-text-primary: #000000;
+	--color-text-secondary: #151515;
 }
 
 .dark {
- background-color: #14171F;
+	--color-bg-primary: #14171f;
+	--color-text-primary: #ffffff;
+	--color-text-secondary: #EAEAEA;
 }
 
 :root {
@@ -242,7 +245,7 @@ body::-webkit-scrollbar {
 	@apply pl-aboutIndentation;
 }
 
-@media (max-width: 639px)  {
+@media (max-width: 639px) {
 	.p-last:nth-child(n + 1):nth-child(-n + 12) {
 		@apply pl-aboutOffsetPRMobile;
 	}
