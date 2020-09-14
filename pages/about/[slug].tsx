@@ -97,11 +97,11 @@ export const getStaticPaths: GetStaticPaths = async () => {
 		paths: abouts.map(abouts => {
 			return {
 				params: {
-					slug: abouts.slug
-					// key: abouts.slug
+					slug: abouts.slug,
+					key: abouts.slug
 				}
 			};
 		}),
-		fallback: false
+		fallback: true
 	};
 };

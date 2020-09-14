@@ -18,3 +18,16 @@ interface PostType extends Social {
 }
 
 export default PostType;
+
+
+
+export enum StaticProps {
+	title = 'title',
+	date = 'date',
+	slug = 'slug',
+	coverImage = 'coverImage',
+	excerpt = 'excerpt',
+	postTitle = 'postTitle',
+	articleImage = 'articleImage',
+	ogImage = 'ogImage'
+}
