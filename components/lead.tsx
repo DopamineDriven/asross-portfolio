@@ -113,6 +113,20 @@ const Lead = () => {
 			</div>
 		);
 	});
+
+	const arIcon = (
+		<div className='relative block justify-between lg:w-auto lg:static lg:block lg:justify-start w-full min-w-full '>
+			<Link href='/'>
+				<a
+					className='container block pl-portfolio justify-between mx-auto w-full min-w-full '
+					id='top'
+					aria-label='top'
+				>
+					<ArIcon />
+				</a>
+			</Link>
+		</div>
+	);
 	return (
 		<Fragment>
 			<Meta />
@@ -120,17 +134,7 @@ const Lead = () => {
 				className='select-none relative z-1 justify-between pt-portfolio navbar-expand-lg flex flex-col min-w-full w-full container overflow-y-hidden overflow-x-hidden transform duration-300 pb-introToPortfolioMobile md:pb-portfolioS'
 				style={{ transform: 'translate3d(0px, 0px, 0px)' }}
 			>
-				<div className='relative block justify-between lg:w-auto lg:static lg:block lg:justify-start w-full min-w-full'>
-					<Link href='/'>
-						<a
-							className='container block pl-portfolio justify-between mx-auto w-full min-w-full'
-							id='top'
-							aria-label='top'
-						>
-							<ArIcon />
-						</a>
-					</Link>
-				</div>
+				{arIcon}
 				<div>
 					<h1
 						className='font-head text-custom relative flex-grow text-center justify-center tracking-tight leading-headerP font-light cursor-default w-full min-w-full'

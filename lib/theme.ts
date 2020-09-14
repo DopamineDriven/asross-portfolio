@@ -1,17 +1,26 @@
-const getThemeInit = () => {
+export enum ThemeInitProps {
+	dark = 'dark',
+	light = 'light'
+}
+
+export interface ColorTheme {
+	colorTheme: string;
+}
+
+const getThemeInit = ({ colorTheme= 'color-theme' }: ColorTheme) => {
+	const { dark, light } = ThemeInitProps;
 	if (typeof window !== 'undefined' && window.localStorage) {
-		const storedPreferences = window.localStorage.getItem('color-theme');
+		const storedPreferences = window.localStorage.getItem(colorTheme);
 		if (typeof storedPreferences === 'string') return storedPreferences;
 
 		const userMedia = window.matchMedia('(prefers-color-scheme: dark)');
 		const hasMediaQueryPreference = typeof userMedia.matches === 'boolean';
 		if (hasMediaQueryPreference) {
-			return userMedia.matches ? 'dark' : 'light';
+			return userMedia.matches ? dark : light;
 		}
-
 	}
-	// light is default
-	return 'light';
+	// light === default
+	return light;
 };
 
 export default getThemeInit;

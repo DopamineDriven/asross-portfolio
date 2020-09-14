@@ -19,7 +19,7 @@ const CardTitle = ({ title, slug, postTitle }: CardTitleProps) => {
 					<ReactMarkdown
 						escapeHtml={false}
 						source={postTitle}
-						className='text-center hover:text-fiveOBlack uppercase md:text-customTitle'
+						className='text-center hover:text-fiveOBlack dark:hover:text-eaWhite uppercase md:text-customTitle'
 					/>
 				</a>
 			</Link>

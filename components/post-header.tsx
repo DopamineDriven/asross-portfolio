@@ -31,17 +31,17 @@ const PostHeader = ({
 }: PostHeaderProps) => {
 	return (
 		<Fragment>
-			<div className='font-head  text-customSubPostTitle bg-portfolio select-none'>
+			<div className='font-head  text-customSubPostTitle select-none'>
 				<div className='block mx-auto overflow-hidden md:max-w-aboutImage600 md:w-aboutImage600 max-w-imagePortfolioMobile w-imagePortfolioMobile pt-portfolio'>
 					<CoverImage title={title} src={src} />
 				</div>
 				<PostTitle>{title}</PostTitle>
 			</div>
 			<div className='pt-portfolioDivider max-w-cardGridMobile block mx-auto align-middle justify-center select-none'>
-				<div className='text-customTitle text-oneFiveBlack font-somaRoman flex mx-auto align-middle justify-center'>
+				<div className='text-customTitle text-secondary font-somaRoman flex mx-auto align-middle justify-center'>
 					<PostArticleExcerpt articleExcerpt={articleExcerpt} />
 				</div>
-				<div className='text-customExcerpt text-oneFiveBlack font-somaRoman flex mx-auto align-middle justify-center'>
+				<div className='text-customExcerpt text-secondary font-somaRoman flex mx-auto align-middle justify-center'>
 					<Date dateString={date} />
 				</div>
 				<div className=' text-black font-somaRoman flex mx-auto align-middle justify-center'>

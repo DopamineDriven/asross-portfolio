@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import SvgIconConstituentValues from 'types/svg-icons';
+import { ThemeInitProps } from 'lib/theme';
 
 // FC can be parameterized via Abstraction
 
@@ -51,13 +52,15 @@ export const AndrewIcon: SvgIcon = ({
 	);
 };
 
+const { dark } = ThemeInitProps;
+const isTheme = dark ? ' #eaeaea' : ' #151515'
 export const ArIcon: SvgIcon = ({
 	width = '8.0556vw',
 	height = '8.0556vw',
-	strokeColor = '#151515',
+	strokeColor = `${isTheme}`,
 	strokeWidth = '2',
 	fillColor = 'none',
-	fillColor2 = '#151515',
+	fillColor2 = `${isTheme}`,
 	rotateCenter = 0
 }) => {
 	return (
@@ -67,7 +70,7 @@ export const ArIcon: SvgIcon = ({
 			viewBox='0 0 65 65'
 			fill={fillColor}
 			xmlns='http://www.w3.org/2000/svg'
-			className={`stroke-current ${strokeColor} antialiased w-svgIcon max-w-svgIcon `}
+			className={`stroke-current ${strokeColor} antialiased w-svgIcon max-w-svgIcon dark:white`}
 			transform={`rotate(${rotateCenter}, 65, 65)`}
 		>
 			<circle

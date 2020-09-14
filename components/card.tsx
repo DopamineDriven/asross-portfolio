@@ -14,9 +14,9 @@ interface CardProps {
 const Card = ({ date, excerpt, slug, src, title, postTitle }: CardProps) => {
 	return (
 		<div className='block md:odd:pt-offsetY'>
-			<div className='max-w-imagePortfolioMobile md:max-w-imagePortfolio overflow-y-hidden overflow-x-hidden bg-portfolio block'>
+			<div className='max-w-imagePortfolioMobile md:max-w-imagePortfolio overflow-y-hidden overflow-x-hidden block'>
 				<CoverImageCard slug={slug} src={src} title={title} />
-				<div className='flex flex-col text-center justify-center bg-portfolio'>
+				<div className='flex flex-col text-center justify-center'>
 					<CardTitle slug={slug} title={title} postTitle={postTitle} />
 					<CardExcerpt excerpt={excerpt} />
 					<div className='hidden'>{date}</div>
