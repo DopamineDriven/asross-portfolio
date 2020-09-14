@@ -9,12 +9,12 @@ interface AboutTitleProps {
 const AboutTitle = ({ title, slug }: AboutTitleProps) => {
 	return (
 		<h1
-			className='z-1 text-customAboutTitle relative flex-grow text-center justify-center tracking-tight leading-headerAbout font-light cursor-default w-full min-w-full'
+			className='z-1 text-customAboutTitle relative flex-grow text-center justify-center tracking-tight leading-headerAbout font-light cursor-default w-full min-w-full transition-all duration-2000 delay-300 translate-y-portfolio transform animate-hero'
 			style={{ marginBlockStart: '0.67em', marginBlockEnd: '0.67em' }}
 		>
 			<Link as={`/about/${slug}`} href='/about/[slug]' passHref scroll={true}>
 				<a
-					className='font-head hover:text-fiveOBlack'
+					className='font-head text-black hover:text-fiveOBlack dark:hover:text-afWhite dark:text-white duration-2000 delay-300 transition-all'
 					aria-label={`${title}`}
 					id={`home-${title}`}
 				>

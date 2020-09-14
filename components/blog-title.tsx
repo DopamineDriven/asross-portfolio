@@ -10,10 +10,10 @@ interface BlogTitleProps {
 const BlogTitle = ({ title, slug, postTitle }: BlogTitleProps) => {
 	// const titleSansHyphens = title.replace('-', ' ').replace('-', ' ');
 	return (
-		<div className='font-somaRoman text-oneFiveBlack hover:text-fiveOBlack dark:text-eaWhite dark:hover:text-afWhite md:text-customExcerptMobile text-customTitleMobile even:pl-paddingBlog'>
+		<div className='font-somaRoman text-oneFiveBlack hover:text-fiveOBlack dark:text-white dark:hover:text-afWhite md:text-customExcerptMobile text-customTitleMobile even:pl-paddingBlog transition-all duration-1000 translate-y-portfolioDivider transform animate-hero'>
 			<Link as={`/blog/${slug}`} href='/blog/[slug]' passHref scroll={true}>
 				<a
-					className='font-somaRoman hover:text-fiveOBlack'
+					className='font-somaRoman'
 					aria-label={`${title}`}
 					id={`home-${title}`}
 				>
