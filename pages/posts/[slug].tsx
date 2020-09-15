@@ -50,7 +50,7 @@ const Post = ({ post, allPosts }: PostSlugProps) => {
 							author={post.author}
 						/>
 						<PostBody content={post.content} />
-						<PortfolioDivider />
+						{/* <PortfolioDivider /> */}
 						<div className=' max-w-cardGrid grid mx-auto content-center justify-center items-center text-center'>
 							{morePosts?.length > 0 && <Cards posts={morePosts} />}
 						</div>
