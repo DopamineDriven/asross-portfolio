@@ -78,7 +78,7 @@ const AboutPostSourceIcons = ({
 				) : (
 					<a
 						key={constituent.id}
-						aria-label={`${constituent.social} landing page - ${constituent.href}`}
+						aria-label={`${constituent.social} - ${constituent.href}`}
 						target={constituent.target}
 						href={constituent.href}
 						className='text-oneFiveBlack dark:text-white leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-mxSocial pt-threeHalves rounded-full focus:outline-none'

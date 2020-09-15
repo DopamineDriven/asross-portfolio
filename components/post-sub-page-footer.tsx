@@ -46,7 +46,7 @@ const SubFooter = ({ title }: SubFooterProps) => {
 				key={constituent.id}
 			>
 				<a
-					className='block transition-all duration-3000 delay-300 translate-y-portfolioDivider transform animate-hero w-auto hover:text-fiveOBlack md:text-right pr-portfolioDivider'
+					className='block transition-all duration-2000 delay-300 translate-y-portfolioDivider transform animate-hero w-auto hover:text-fiveOBlack dark:hover:text-afWhite md:text-center'
 					target={constituent.target}
 					aria-label={constituent.label}
 					href={constituent.href}
@@ -57,10 +57,10 @@ const SubFooter = ({ title }: SubFooterProps) => {
 		);
 	});
 	const backToTop = (
-		<div className='block w-auto align-top font-somaRoman text-black text-center'>
+		<div className='block w-auto align-top font-somaRoman dark:text-white dark:hover:text-eaWhite text-black text-center transition-all duration-1000 delay-300'>
 			<Link href={`/#home-${title}`} passHref>
 				<a
-					className='block pl-portfolioDivider whitespace-no-wrap duration-1000 transition-all ease-in-out hover:text-fiveOBlack items-left justify-start'
+					className='block pl-portfolioDivider whitespace-no-wrap duration-1000 transition-all ease-in-out hover:text-fiveOBlack dark:hover:text-afWhite items-left justify-start'
 					aria-label='back to top'
 				>
 					Return Home
@@ -70,9 +70,9 @@ const SubFooter = ({ title }: SubFooterProps) => {
 	);
 	const copyRight = (
 		<div className='flex flex-row mx-auto w-full tracking-wide text-center'>
-			<div className='block align-top mx-auto font-somaRoman text-black text-center w-auto'>
+			<div className='block align-top mx-auto font-somaRoman text-black dark:text-white text-center w-auto'>
 				<a
-					className='block transition-all duration-3000 delay-300 -translate-y-portfolioDivider transform animate-hero justify-center hover:text-fiveOBlack'
+					className='block transition-all duration-3000 delay-300 -translate-y-portfolioDivider transform animate-hero justify-center dark:hover:text-afWhite hover:text-fiveOBlack'
 					href='http://duncanross.design/'
 					target='__blank'
 					aria-label='design by duncan ross'
@@ -94,7 +94,7 @@ const SubFooter = ({ title }: SubFooterProps) => {
 						</div>
 						{socialMap}
 					</div>
-					<hr className='border-fiveOBlack w-portfolioDividerWidth max-w-portfolioDividerWidth mx-auto mt-portfolioDivider pb-portfolioDivider' />
+					<hr className='border-fiveOBlack dark:border-eaWhite w-portfolioDividerWidth max-w-portfolioDividerWidth mx-auto mt-portfolioDivider pb-portfolioDivider' />
 					{copyRight}
 				</div>
 			</div>
