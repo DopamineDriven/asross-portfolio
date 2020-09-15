@@ -3,6 +3,7 @@ import BlogPostTitle from 'components/blog-post-title';
 import BlogPostSourceIcons from 'components/blog-post-source-icons';
 import Date from 'components/date-formatter';
 import { Fragment } from 'react';
+import PortfolioDivider from 'components/portfolio-divider';
 
 interface BlogPostHeaderProps {
 	title: string;
@@ -27,7 +28,7 @@ const BlogPostHeader = ({
 }: BlogPostHeaderProps) => {
 	return (
 		<Fragment>
-			<div className='font-head text-customPostBlog bg-portfolio select-none'>
+			<div className='font-head text-customPostBlog select-none'>
 				<div className='block mx-auto md:max-w-aboutImage600 md:w-aboutImage600 max-w-imagePortfolioMobile w-imagePortfolioMobile pt-mobileGapY'>
 					<BlogPostCoverImage title={title} src={src} slug={slug} />
 				</div>
@@ -41,7 +42,7 @@ const BlogPostHeader = ({
 					<BlogPostSourceIcons dev={dev} medium={medium} youtube={youtube} />
 				</div>
 			</div>
-			<hr className='border-fiveOBlack w-portfolioDividerWidth my-portfolioDivider pb-portfolioDivider mx-auto' />
+			<PortfolioDivider />
 		</Fragment>
 	);
 };
