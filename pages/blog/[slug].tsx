@@ -40,6 +40,7 @@ const Blog = ({ blog, blogs }: BlogProps) => {
 						<BlogPostHeader
 							postTitle={blog.postTitle}
 							title={blog.title}
+							slug={blog.slug}
 							src={blog.articleImage}
 							date={blog.date}
 							dev={blog.dev}

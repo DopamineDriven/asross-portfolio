@@ -8,6 +8,7 @@ interface BlogPostHeaderProps {
 	title: string;
 	postTitle: string;
 	src: string;
+	slug: string;
 	date: string;
 	dev: string;
 	medium: string;
@@ -20,6 +21,7 @@ const BlogPostHeader = ({
 	src,
 	date,
 	dev,
+	slug,
 	medium,
 	youtube
 }: BlogPostHeaderProps) => {
@@ -27,7 +29,7 @@ const BlogPostHeader = ({
 		<Fragment>
 			<div className='font-head text-customPostBlog bg-portfolio select-none'>
 				<div className='block mx-auto md:max-w-aboutImage600 md:w-aboutImage600 max-w-imagePortfolioMobile w-imagePortfolioMobile pt-mobileGapY'>
-					<BlogPostCoverImage title={title} src={src} />
+					<BlogPostCoverImage title={title} src={src} slug={slug} />
 				</div>
 				<BlogPostTitle>{postTitle}</BlogPostTitle>
 			</div>
