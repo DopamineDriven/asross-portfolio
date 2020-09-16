@@ -7,7 +7,6 @@ import PortfolioDivider from 'components/portfolio-divider';
 
 interface BlogPostHeaderProps {
 	title: string;
-	postTitle: string;
 	src: string;
 	slug: string;
 	date: string;
