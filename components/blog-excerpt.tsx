@@ -6,21 +6,16 @@ interface BlogExcerptProps {
 	slug?: string;
 }
 
-const BlogExcerpt = ({ excerpt, slug }: BlogExcerptProps) => {
+const BlogExcerpt = ({ excerpt }: BlogExcerptProps) => {
 	return (
-		<div className='text-oneFiveBlack cursor-default hover:text-fiveOBlack'>
-			<Link as={`/blog/${slug}`} href='/blog/[slug]' passHref scroll={true}>
-				<a
-					className='font-somaRoman'
-					aria-label={`${excerpt}`}
-				>
-					<ReactMarkdown
-						escapeHtml={false}
-						source={excerpt}
-						className='text-center block'
-					/>
-				</a>
-			</Link>
+		<div className=' cursor-default'>
+			<a className='font-somaRoman' aria-label={`${excerpt}`}>
+				<ReactMarkdown
+					escapeHtml={false}
+					source={excerpt}
+					className='text-center block'
+				/>
+			</a>
 		</div>
 	);
 };

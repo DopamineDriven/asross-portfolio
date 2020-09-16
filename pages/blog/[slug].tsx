@@ -39,6 +39,7 @@ const Blog = ({ blog, blogs }: BlogProps) => {
 						</Head>
 						<BlogPostHeader
 							title={blog.postTitle}
+							excerpt={blog.excerpt}
 							slug={blog.slug}
 							src={blog.articleImage}
 							date={blog.date}
