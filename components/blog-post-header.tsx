@@ -36,7 +36,7 @@ const BlogPostHeader = ({
 				<div className='text-customExcerptMobile text-oneFiveBlack font-somaRoman flex mx-auto align-middle justify-center'>
 					<Date dateString={date} />
 				</div>
-				<div className=' text-black font-somaRoman flex mx-auto align-middle justify-center'>
+				<div className=' text-black font-somaRoman flex mx-auto align-middle justify-center pb-mdmxSocial'>
 					<BlogPostSourceIcons dev={dev} medium={medium} youtube={youtube} />
 				</div>
 			</div>

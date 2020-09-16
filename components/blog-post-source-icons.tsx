@@ -125,7 +125,7 @@ const BlogPostSourceIcons = ({ dev, medium, youtube }: Social) => {
 						>
 							<FontAwesomeIcon icon={faYoutubeSquare} className={iconClass} />
 						</a>
-					)}{' '}
+					)}
 				</li>
 			</ul>
 		</div>
