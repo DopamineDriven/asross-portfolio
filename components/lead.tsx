@@ -138,12 +138,17 @@ const Lead = () => {
 			</h1>
 		</div>
 	);
-// transition-all duration-2000 delay-300 translate-y-portfolioDivider transform animate-hero
+	// transition-all duration-2000 delay-300 translate-y-portfolioDivider transform animate-hero
 	const socialMapConditional = (
 		<Fragment>
 			<div
-				className='md:text-customTitle md:leading-portfolio md:visible invisible md:transition-all md:delay-300 md:duration-2000 md:-translate-y-portfolioDivider md:transform md:animate-hero md:ease-in-out'
-				style={{ position: 'absolute', top: '86.78333vw', left: '3.33333vw' }}
+				className='md:text-customTitleMobile md:leading-portfolio md:visible invisible md:transition-all md:delay-300 md:duration-2000 md:-translate-y-portfolioDivider md:transform md:animate-hero md:ease-in-out'
+				style={{
+					position: 'absolute',
+					top: '86.78333vw',
+					left: '3.33333vw',
+					fontSize: '2vw'
+				}}
 			>
 				{socialMap}
 			</div>

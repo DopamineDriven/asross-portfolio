@@ -16,7 +16,7 @@
 }
 
 .markdown h2 {
-	@apply text-customExcerptMobile mt-portfolioLS mb-portfolio leading-snug font-somaRoman;
+	@apply text-customExcerptMobile mt-aboutHackingFontAwesomePT mb-portfolio leading-snug font-somaRoman;
 }
 
 .markdown h3 {
@@ -101,13 +101,16 @@
 	.markdown span {
 		@apply text-customExcerptMobile;
 	}
+	/* .markdown span:last-child {
+		@apply text-customExcerpt;
+	} */
 	.markdown h2 {
-		@apply text-customTitleMobile mb-portfolio leading-snug font-somaRoman;
+		@apply text-customTitleMobile mb-portfolio pt-aboutHackingFontAwesomePT leading-snug font-somaRoman;
 	}
 	.markdown h1 {
 		@apply font-somaRoman text-customPostAbout;
 	}
 	.markdown h4 {
-		@apply my-portfolio text-customSMobile;
+		@apply pt-portfolioLSMobile pb-portfolioRS text-customSMobile;
 	}
 }
