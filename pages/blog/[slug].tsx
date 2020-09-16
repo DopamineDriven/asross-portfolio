@@ -25,7 +25,7 @@ const Blog = ({ blog, blogs }: BlogProps) => {
 	}
 	return (
 		<Fragment>
-			<BlogHeader title={blog.postTitle} />
+			<BlogHeader title={blog.title} />
 			{router.isFallback ? (
 				<BlogPostTitle>Loading...</BlogPostTitle>
 			) : (
@@ -38,8 +38,7 @@ const Blog = ({ blog, blogs }: BlogProps) => {
 							<meta property='og:image' content={blog.ogImage.url} />
 						</Head>
 						<BlogPostHeader
-							postTitle={blog.postTitle}
-							title={blog.title}
+							title={blog.postTitle}
 							slug={blog.slug}
 							src={blog.articleImage}
 							date={blog.date}
@@ -58,15 +57,13 @@ const Blog = ({ blog, blogs }: BlogProps) => {
 
 export default Blog;
 
-type BlogParams = {
+interface BlogParams extends GetStaticProps {
 	params: {
 		slug: string;
 	};
-};
+}
 
-export const getStaticProps = async ({
-	params
-}: BlogParams & GetStaticProps) => {
+export const getStaticProps = async ({ params }: BlogParams) => {
 	const blog = getBlogBySlug(params.slug, [
 		'title',
 		'postTitle',
