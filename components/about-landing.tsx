@@ -20,23 +20,23 @@ interface AboutInterface {
 const aboutSnippets: AboutInterface[] = [
 	{
 		id: 0,
-		span: 'Experience spearheading projects for small to'
+		span: 'Experience spearheading projects for small'
 	},
 	{
 		id: 1,
-		span: 'medium sized businesses and start-ups in the '
+		span: 'to medium sized businesses and start-ups in '
 	},
 	{
 		id: 2,
-		span: 'greater Chicago area. Currently wrapping up a '
+		span: 'the Chicago area. Currently wrapping up '
 	},
 	{
 		id: 3,
-		span: 'project aiming to unite 60 to 130 independent '
+		span: 'a job aiming to unite 60 to 130 independent '
 	},
 	{
 		id: 4,
-		span: 'local media companies. Project scope includes'
+		span: 'local media companies. Scope includes'
 	},
 	{
 		id: 5,
