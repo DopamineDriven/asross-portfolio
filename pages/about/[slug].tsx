@@ -51,7 +51,7 @@ const About = ({ about, abouts }: AboutSlugProps) => {
 					</article>
 				</>
 			)}
-			<AboutFooter title={about.urlTitle} />
+			<AboutFooter title={about.title} />
 		</Fragment>
 	);
 };

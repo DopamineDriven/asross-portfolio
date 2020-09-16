@@ -59,7 +59,7 @@ const AboutSubFooter = ({ title }: SubFooterProps) => {
 	});
 	const backToTop = (
 		<div className='block w-auto align-top font-somaRoman text-black dark:text-white text-center'>
-			<Link href={`/#home-${title}`} passHref scroll={true}>
+			<Link href={`/#home-${title}`} passHref>
 				<a
 					className='block pl-portfolioDivider whitespace-no-wrap duration-1000 transition-all ease-in-out hover:text-fiveOBlack dark:hover:text-afWhite items-left justify-start'
 					aria-label='back to top'
