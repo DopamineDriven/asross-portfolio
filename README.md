@@ -1,5 +1,15 @@
 # asross-portfolio
 
+## React-TS Hooks 
+- https://github.com/typescript-cheatsheets/react#context
+- note: consider using amVim extension for VIM in VSCODE
+
+## Framer Motion Page Animations on load
+- https://reacttricks.com/animating-next-page-transitions-with-framer-motion/
+- https://www.framer.com/api/motion/examples/
+- Quality examples (tsx)
+- https://codesandbox.io/s/framer-motion-viewport-scroll-and-svg-path-animation-mwi35?fontsize=14&module=/src/Example.tsx&file=/src/Example.tsx
+
 ## Tailwind Dark Mode
 - https://mayashavin.com/articles/dark-theme-tailwind-nuxt
 
