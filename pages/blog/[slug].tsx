@@ -9,7 +9,7 @@ import BlogPostBody from 'components/blog-post-body';
 import BlogHeader from 'components/lead-sub';
 import BlogPostHeader from 'components/blog-post-header';
 import BlogPostTitle from 'components/blog-post-title';
-import BlogFooter from 'components/blog-post-footer';
+import BlogFooter from 'components/footer-sub';
 import BlogType from 'types/blog';
 
 interface BlogProps {

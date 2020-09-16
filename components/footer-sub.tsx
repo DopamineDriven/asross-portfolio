@@ -39,7 +39,7 @@ interface SubFooterProps {
 	title: string;
 }
 
-const AboutSubFooter = ({ title }: SubFooterProps) => {
+const BlogSubFooter = ({ title }: SubFooterProps) => {
 	const socialMap = socialSnippets.map(constituent => {
 		return (
 			<div
@@ -103,4 +103,4 @@ const AboutSubFooter = ({ title }: SubFooterProps) => {
 	);
 };
 
-export default AboutSubFooter;
+export default BlogSubFooter;

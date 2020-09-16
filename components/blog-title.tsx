@@ -15,7 +15,7 @@ const BlogTitle = ({ title, slug, postTitle }: BlogTitleProps) => {
 				<a
 					className='font-somaRoman'
 					aria-label={`blog item title - ${title}`}
-					id={`blog-${title}`}
+					id={`home-${title}`}
 				>
 					<ReactMarkdown
 						escapeHtml={false}
