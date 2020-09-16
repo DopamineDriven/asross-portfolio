@@ -3,6 +3,7 @@ import AboutSocial from 'types/social/about-social';
 export default interface About extends AboutSocial {
 	slug: string;
 	title: string;
+	urlTitle: string;
 	coverImage: string;
 	articleImage: string;
 	excerpt: string;

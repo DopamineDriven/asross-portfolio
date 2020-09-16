@@ -10,7 +10,7 @@ import AboutHeader from 'components/lead-sub';
 import AboutPostHeader from 'components/about-post-header';
 import AboutPostBody from 'components/about-post-body';
 import AboutPostTitle from 'components/about-post-title';
-import AboutFooter from 'components/about-post-footer';
+import AboutFooter from 'components/footer-sub';
 
 interface AboutSlugProps {
 	about: AboutType;
@@ -78,7 +78,8 @@ export const getStaticProps = async ({
 		'email',
 		'github',
 		'linkedin',
-		'twitter'
+		'twitter',
+		'urlTitle'
 	]);
 
 	return {

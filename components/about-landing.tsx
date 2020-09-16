@@ -10,6 +10,7 @@ interface AboutProps {
 	slug: string;
 	excerpt: string;
 	date: string;
+	urlTitle: string;
 }
 
 interface AboutInterface {
@@ -72,7 +73,7 @@ const aboutSnippets: AboutInterface[] = [
 	// }
 ];
 
-const AboutContent = ({ slug, src, title, date, excerpt }: AboutProps) => {
+const AboutContent = ({ slug, src, title, date, excerpt, urlTitle }: AboutProps) => {
 	const aboutMap = aboutSnippets.map(constituent => {
 		return (
 			<span
@@ -92,7 +93,7 @@ const AboutContent = ({ slug, src, title, date, excerpt }: AboutProps) => {
 				className='relative justify-between leading-leadingAboutMobile pt-portfolio flex flex-col min-w-full w-full container overflow-y-hidden overflow-x-hidden transform duration-300 cursor-default select-none'
 				style={{ transform: 'translate3d(0px, 0px, 0px)' }}
 			>
-				<AboutTitle title={title} slug={slug} />
+				<AboutTitle title={title} slug={slug} urlTitle={urlTitle} />
 				<div
 					className='md:leading-customSLH leading-customSLM block z-1'
 					style={{ position: 'absolute', top: '8.48333vw', left: '3.33333vw' }}

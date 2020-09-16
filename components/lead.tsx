@@ -127,6 +127,45 @@ const Lead = () => {
 			</Link>
 		</div>
 	);
+
+	const andrewTitle = (
+		<div>
+			<h1
+				className='font-head text-custom relative flex-grow text-center justify-center tracking-tight leading-headerP font-light cursor-default w-full min-w-full transform -translate-y-paddingPostTitleTop duration-2000 transition-all delay-300 ease-in-out'
+				style={{ marginBlockStart: '0.67em', marginBlockEnd: '0.67em' }}
+			>
+				<a className='text-custom block'>Andrew</a>
+			</h1>
+		</div>
+	);
+
+	const socialMapConditional = (
+		<Fragment>
+			<div
+				className='md:text-customTitle md:leading-portfolio md:visible invisible md:transition-all md:delay-300 md:duration-2000 md:ease-in-out'
+				style={{ position: 'absolute', top: '86.78333vw', left: '3.33333vw' }}
+			>
+				{socialMap}
+			</div>
+			<div
+				className='text-customTitle font-somaRoman leading-customSLM tracking-wide block uppercase md:hidden transition-all duration-2000 delay-300 ease-in-out'
+				style={{ position: 'absolute', top: '92.78333vw', left: '3.33333vw' }}
+			>
+				{socialMap}
+			</div>
+		</Fragment>
+	);
+
+	const spanMapMapped = (
+		<p
+			className={
+				'transform -translate-y-landingOverviewTranslation duration-2000 transition-all delay-300 text-customExcerptMobile md:text-customP pr-portfolioRS pl-portfolioLS leading-headerP block font-somaRoman tracking-tighter font-thin ease-in-out'
+			}
+		>
+			{spanMap}
+		</p>
+	);
+
 	return (
 		<Fragment>
 			<Meta />
@@ -135,94 +174,12 @@ const Lead = () => {
 				style={{ transform: 'translate3d(0px, 0px, 0px)' }}
 			>
 				{arIcon}
-				<div>
-					<h1
-						className='font-head text-custom relative flex-grow text-center justify-center tracking-tight leading-headerP font-light cursor-default w-full min-w-full transform -translate-y-paddingPostTitleTop duration-2000 transition-all delay-300 ease-in-out'
-						style={{ marginBlockStart: '0.67em', marginBlockEnd: '0.67em' }}
-					>
-						<a className='text-custom block'>Andrew</a>
-					</h1>
-				</div>
-				<p
-					className={
-						'transform -translate-y-landingOverviewTranslation duration-2000 transition-all delay-300 text-customExcerptMobile md:text-customP pr-portfolioRS pl-portfolioLS leading-headerP block font-somaRoman tracking-tighter font-thin ease-in-out'
-					}
-				>
-					{spanMap}
-				</p>
-				<div
-					className='md:text-customTitle md:leading-portfolio md:visible invisible md:transition-all md:delay-300 md:duration-2000 md:ease-in-out'
-					style={{ position: 'absolute', top: '86.78333vw', left: '3.33333vw' }}
-				>
-					{socialMap}
-				</div>
-				<div
-					className='text-customTitle font-somaRoman leading-customSLM tracking-wide block uppercase md:hidden transition-all duration-2000 delay-300 ease-in-out'
-					style={{ position: 'absolute', top: '92.78333vw', left: '3.33333vw' }}
-				>
-					{socialMap}
-				</div>
+				{andrewTitle}
+				{spanMapMapped}
+				{socialMapConditional}
 			</header>
 		</Fragment>
 	);
 };
 
 export default Lead;
-
-/*
-const spanSnippets: LeadInterface[] = [
-	{
-		id: 0,
-		span: 'Andrew Ross is a Chicago Based Full-Stack '
-	},
-	{
-		id: 1,
-		span: 'Engineer specializing in JAMstack, React, '
-	},
-	{
-		id: 2,
-		span: 'TypeScript, Next.js, Node, GraphQL, Apollo, '
-	},
-	{
-		id: 3,
-		span: 'Tailwind CSS, MongoDB, PostgreSQL, JWTs, '
-	},
-	{
-		id: 4,
-		span: 'Google Analytics, Static Site Generation, UX, '
-	},
-	{
-		id: 5,
-		span: 'Headless WordPress, DB Migration, and Vercel. '
-	},
-	{
-		id: 6,
-		span: 'Cofounder of Windy City Devs LLC. '
-	},
-	{
-		id: 7,
-		span: 'Full-Stack TA at Vanderbilt University. '
-	},
-	{
-		id: 8,
-		span: 'Project lead uniting Chicago Media. '
-	},
-	{
-		id: 9,
-		span: 'Works with techies around the globe. '
-	},
-	{
-		id: 10,
-		span: `What drives this? A desire to build.`
-	},
-	{
-		id: 11,
-		span: 'Available for freelance, contract, and '
-	},
-	{
-		id: 12,
-		span: 'full-time work.'
-	}
-];
-
-*/

@@ -14,7 +14,7 @@ const BlogTitle = ({ title, slug, postTitle }: BlogTitleProps) => {
 			<Link as={`/blog/${slug}`} href='/blog/[slug]' passHref scroll={true}>
 				<a
 					className='font-somaRoman'
-					aria-label={`${title}`}
+					aria-label={`blog item title - ${title}`}
 					id={`home-${title}`}
 				>
 					<ReactMarkdown

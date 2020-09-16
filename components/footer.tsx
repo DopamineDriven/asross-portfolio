@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import PortfolioDivider from 'components/portfolio-divider';
 
 interface SocialContact {
 	id: number;
@@ -53,7 +54,7 @@ const Footer = () => {
 		);
 	});
 	const backToTop = (
-		<div className='block w-auto align-top font-somaRoman text-black dark:text-white dark:hover:text-eaWhite text-center transition-all duration-1000 '>
+		<div className='block w-auto align-top font-somaRoman text-black hover:text-fiveOBlack dark:text-white dark:hover:text-afWhite text-center transition-all duration-1000 '>
 			<Link href='/#top' passHref as='/top'>
 				<a
 					className='block pl-portfolioDivider whitespace-no-wrap duration-1000 transition-all ease-in-out hover:text-fiveOBlack dark:hover:text-afWhite items-left justify-start'
@@ -68,7 +69,7 @@ const Footer = () => {
 		<div className='flex flex-row mx-auto w-full tracking-wide text-center'>
 			<div className='block align-top mx-auto font-somaRoman text-black dark:text-white text-center w-auto'>
 				<a
-					className='block transition-all duration-3000 delay-300 -translate-y-portfolioDivider transform animate-hero justify-center hover:text-fiveOBlack'
+					className='block transition-all duration-3000 delay-300 -translate-y-portfolioDivider transform animate-hero justify-center dark:hover:text-afWhite hover:text-fiveOBlack'
 					href='http://duncanross.design/'
 					target='__blank'
 					aria-label='design by duncan ross'
@@ -90,7 +91,7 @@ const Footer = () => {
 						</div>
 						{socialMap}
 					</div>
-					<hr className='border-fiveOBlack dark:border-eaWhite w-portfolioDividerWidth max-w-portfolioDividerWidth mx-auto mt-portfolioDivider pb-portfolioDivider' />
+					<PortfolioDivider />
 					{copyRight}
 				</div>
 			</div>

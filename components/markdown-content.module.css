@@ -98,9 +98,9 @@
 		@apply font-somaRoman;
 	}
 	.markdown h2 {
-		@apply text-customSM mb-4 leading-snug font-head;
+		@apply text-customSM mb-4 leading-snug font-somaRoman;
 	}
 	.markdown h1 {
-		@apply font-head text-customPostAbout;
+		@apply font-somaRoman text-customPostAbout;
 	}
 }
