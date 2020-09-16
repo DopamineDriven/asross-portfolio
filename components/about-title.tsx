@@ -17,12 +17,12 @@ const AboutTitle = ({ title, slug, urlTitle }: AboutTitleProps) => {
 				<a
 					className='font-head text-black hover:text-fiveOBlack dark:hover:text-afWhite dark:text-white duration-2000 delay-300 transition-all'
 					aria-label={`about item - ${urlTitle}`}
-					id={`home-${urlTitle}`}
+					id={`home-${title}`}
 				>
 					<ReactMarkdown
 						escapeHtml={false}
 						source={title}
-						className='text-customAboutTitle text-right block pr-paddingAboutTitleRight'
+						className='text-customAboutTitle text-right block md:pr-paddingAboutTitleRight pr-paddingAboutTitleRightMobile'
 					/>
 				</a>
 			</Link>

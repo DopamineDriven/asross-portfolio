@@ -251,3 +251,7 @@ body::-webkit-scrollbar {
 		@apply pl-aboutOffsetPRMobile;
 	}
 }
+
+.fa-portfolioDivider {
+	@apply text-customTitle; 
+}

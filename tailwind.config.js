@@ -259,6 +259,7 @@ module.exports = {
 				portfolio: '2.25vw',
 				portfolioH2F: '3.25vw',
 				portfolioLS: '3.33vw',
+				portfolioLSMobile: '3.88vw',
 				portfolioRS: '1.33vw',
 				portfolioDivider: '0.875vw',
 				gapX: '2.2284vw',
@@ -282,6 +283,7 @@ module.exports = {
 				paddingPostTitleTop: '5.5vw',
 				paddingPostTitleBottom: '3.75vw',
 				paddingAboutTitleRight: '10.75vw',
+				paddingAboutTitleRightMobile: '14.75vw',
 				mxSocial: '1.25vw',
 				mdmxSocial: '0.625vw',
 				landingOverviewTranslation: '7.75vw',
@@ -353,7 +355,8 @@ module.exports = {
 		}
 	},
 	variants: {
-		padding: ['responsive', 'last', 'first', 'hover', 'focus', 'even', 'odd']
+		padding: ['responsive', 'last', 'first', 'hover', 'focus', 'even', 'odd'],
+		fontSize: ['last']
 	},
 	plugins: [
 		require('@tailwindcss/typography'),

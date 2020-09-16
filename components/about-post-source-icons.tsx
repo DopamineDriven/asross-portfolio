@@ -81,7 +81,7 @@ const AboutPostSourceIcons = ({
 						aria-label={`${constituent.social} - ${constituent.href}`}
 						target={constituent.target}
 						href={constituent.href}
-						className='text-oneFiveBlack dark:text-white leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-mxSocial pt-threeHalves rounded-full focus:outline-none'
+						className='text-oneFiveBlack dark:text-white leading-normal transition-all transform delay-300 duration-1000 ease-in-out inline-block text-center items-center align-middle justify-center mx-mxSocial pt-portfolioDivider pr-portfolioDivider rounded-full focus:outline-none'
 					>
 						<FontAwesomeIcon
 							icon={constituent.icon}
@@ -93,6 +93,9 @@ const AboutPostSourceIcons = ({
 			</>
 		);
 	});
+	const anchorClass: string =' leading-normal px-portfolio transition-all duration-2000 delay-300 translate-y-mdmxSocial transform animate-hero duration-1000 ease-in-out md:text-customTitle text-customTitleMobile inline-block text-center items-center align-middle justify-center rounded-full focus:outline-none';
+	const iconClass: string =
+		' flex align-middle md:text-customTitle text-customTitleMobile text-center font-extrabold hover:text-fiveOBlack dark:hover:text-afWhite transition-all transform delay-300 duration-1000 ease-in-out fa-portfolioDivider';
 	return (
 		<div className='align-middle justify-right text-right inline-block'>
 			<ul className='align-middle'>
@@ -104,12 +107,11 @@ const AboutPostSourceIcons = ({
 							aria-label={`github landing page - ${github}`}
 							target='__blank'
 							href={github}
-							className='leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-mxSocial pt-threeHalves rounded-full focus:outline-none'
+							className={anchorClass}
 						>
 							<FontAwesomeIcon
 								icon={faGithub}
-								className='flex align-middle text-center font-extrabold hover:text-fiveOBlack pr-half dark:hover:text-afWhite transition-all transform delay-300 duration-1000 ease-in-out '
-								size='2x'
+								className={iconClass}
 							/>
 						</a>
 					)}
@@ -120,12 +122,11 @@ const AboutPostSourceIcons = ({
 							aria-label={`twitter @Dopamine_Driven - ${twitter}`}
 							target='__blank'
 							href={twitter}
-							className='leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-mxSocial md:mr-mxSocial md:ml-0 pt-threeHalves rounded-full focus:outline-none'
+							className={anchorClass}
 						>
 							<FontAwesomeIcon
 								icon={faTwitter}
-								className='flex align-middle text-center font-extrabold hover:text-fiveOBlack pr-half dark:hover:text-afWhite transition-all transform delay-300 duration-1000 ease-in-out '
-								size='2x'
+								className={iconClass}
 							/>
 						</a>
 					)}
@@ -136,12 +137,11 @@ const AboutPostSourceIcons = ({
 							aria-label={`linkedin - ${linkedin}`}
 							target='__blank'
 							href={linkedin}
-							className='leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 pt-threeHalves mx-mxSocial md:mr-mxSocial md:ml-0 rounded-full focus:outline-none'
+							className={anchorClass}
 						>
 							<FontAwesomeIcon
 								icon={faLinkedin}
-								className='flex align-middle text-center font-extrabold hover:text-fiveOBlack pr-half dark:hover:text-afWhite transition-all transform delay-300 duration-1000 ease-in-out '
-								size='2x'
+								className={iconClass}
 							/>
 						</a>
 					)}
@@ -152,12 +152,11 @@ const AboutPostSourceIcons = ({
 							aria-label={`twitter @Dopamine_Driven - ${email}`}
 							target='__blank'
 							href={email}
-							className='leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-mxSocial md:mx-0 pt-threeHalves rounded-full focus:outline-none'
+							className={anchorClass}
 						>
 							<FontAwesomeIcon
 								icon={faEnvelope}
-								className='flex align-middle text-center font-extrabold hover:text-fiveOBlack pr-half dark:hover:text-afWhite transition-all transform delay-300 duration-1000 ease-in-out '
-								size='2x'
+								className={iconClass}
 							/>
 						</a>
 					)}

@@ -16,11 +16,11 @@
 }
 
 .markdown h2 {
-	@apply text-customExcerptMobile mt-12 mb-4 leading-snug font-somaRoman;
+	@apply text-customExcerptMobile mt-aboutHackingFontAwesomePT mb-portfolio leading-snug font-somaRoman;
 }
 
 .markdown h3 {
-	@apply text-customSM mt-8 mb-4 leading-snug;
+	@apply text-customSM mt-portfolio mb-portfolioRS leading-snug;
 }
 
 .markdown a {
@@ -62,7 +62,6 @@
 }
 
 .markdown style {
-	@apply bg-black;
 }
 
 .markdown figcaption {
@@ -86,21 +85,32 @@
 }
 
 .markdown img {
-	@apply block mx-auto;
+	@apply block mx-auto py-portfolio;
 }
 
 @media (max-width: 639px)  {
 	.markdown p,
 	.markdown ul,
 	.markdown ol,
-	.markdown blockquote {
-		@apply my-6 text-customExcerptMobile;
+	.markdown blockquote,
+	.markdown code  {
+		@apply my-portfolio text-customExcerptMobile;
 		@apply font-somaRoman;
 	}
+	.markdown pre,
+	.markdown span {
+		@apply text-customExcerptMobile;
+	}
+	/* .markdown span:last-child {
+		@apply text-customExcerpt;
+	} */
 	.markdown h2 {
-		@apply text-customSM mb-4 leading-snug font-somaRoman;
+		@apply text-customTitleMobile mb-portfolio pt-aboutHackingFontAwesomePT leading-snug font-somaRoman;
 	}
 	.markdown h1 {
 		@apply font-somaRoman text-customPostAbout;
+	}
+	.markdown h4 {
+		@apply pt-portfolioLSMobile pb-portfolioRS text-customSMobile;
 	}
 }

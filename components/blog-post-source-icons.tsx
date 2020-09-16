@@ -1,5 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDev, faMedium, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons';
+import {
+	faDev,
+	faMedium,
+	faYoutubeSquare
+} from '@fortawesome/free-brands-svg-icons';
 // import { IconProp } from '@fortawesome/fontawesome-svg-core';
 // import { FC } from 'react';
 // import ReactMarkdown from 'react-markdown/with-html';
@@ -78,11 +82,14 @@ const BlogPostSourceIcons = ({ dev, medium, youtube }: Social) => {
 	// 		</li>
 	// 	);
 	// });
+	const anchorClass: string =
+		' text-black text-customTitle dark:text-white leading-normal px-portfolio transition-all duration-2000 delay-300 translate-y-mdmxSocial transform animate-hero duration-1000 ease-in-out md:text-customTitle text-customTitleMobile inline-block text-center items-center align-middle justify-center rounded-full focus:outline-none';
+	const iconClass: string =
+		' flex align-middle md:text-customTitle text-customTitleMobile text-center font-extrabold hover:text-fiveOBlack dark:hover:text-afWhite transition-all transform delay-300 duration-1000 ease-in-out fa-portfolioDivider';
 	return (
 		<div className='align-middle justify-right text-right inline-block'>
 			<ul className='align-middle'>
 				<li className='align-middle'>
-					{' '}
 					{dev === 'empty' ? (
 						<div className='hidden'></div>
 					) : (
@@ -90,15 +97,11 @@ const BlogPostSourceIcons = ({ dev, medium, youtube }: Social) => {
 							aria-label={`${dev}`}
 							target='__blank'
 							href={dev}
-							className='bg-portfolio text-oneFiveBlack leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mr-portfolio my-2 pt-threeHalves rounded-full focus:outline-none'
+							className={anchorClass}
 						>
-							<FontAwesomeIcon
-								icon={faDev}
-								className='flex align-middle text-center font-extrabold hover:text-fiveOBlack pr-half  transition-all transform delay-300 duration-1000 ease-in-out '
-								size='2x'
-							/>
+							<FontAwesomeIcon icon={faDev} className={iconClass} size='2x' />
 						</a>
-					)}{' '}
+					)}
 					{medium === 'empty' ? (
 						<div className='hidden'></div>
 					) : (
@@ -106,15 +109,11 @@ const BlogPostSourceIcons = ({ dev, medium, youtube }: Social) => {
 							aria-label={`${medium}`}
 							target='__blank'
 							href={medium}
-							className='bg-portfolio text-oneFiveBlack leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mr-portfolio my-2 pt-threeHalves rounded-full focus:outline-none'
+							className={anchorClass}
 						>
-							<FontAwesomeIcon
-								icon={faMedium}
-								className='flex align-middle text-center font-extrabold hover:text-fiveOBlack pr-half  transition-all transform delay-300 duration-1000 ease-in-out '
-								size='2x'
-							/>
+							<FontAwesomeIcon icon={faMedium} className={iconClass} />
 						</a>
-					)}{' '}
+					)}
 					{youtube === 'empty' ? (
 						<div className='hidden'></div>
 					) : (
@@ -122,15 +121,11 @@ const BlogPostSourceIcons = ({ dev, medium, youtube }: Social) => {
 							aria-label={`${youtube}`}
 							target='__blank'
 							href={youtube}
-							className='bg-portfolio text-oneFiveBlack leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mr-portfolio my-2 pt-threeHalves rounded-full focus:outline-none'
+							className={anchorClass}
 						>
-							<FontAwesomeIcon
-								icon={faYoutubeSquare}
-								className='flex align-middle text-center font-extrabold hover:text-fiveOBlack pr-half  transition-all transform delay-300 duration-1000 ease-in-out '
-								size='2x'
-							/>
+							<FontAwesomeIcon icon={faYoutubeSquare} className={iconClass} />
 						</a>
-					)}{' '}
+					)}
 				</li>
 			</ul>
 		</div>
