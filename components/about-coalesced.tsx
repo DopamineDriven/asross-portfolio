@@ -17,6 +17,7 @@ const AboutCoalesced = ({ abouts }: AboutCoalescedProps) => {
 						src={about.coverImage}
 						date={about.date}
 						slug={about.slug}
+						urlTitle={about.urlTitle}
 					/>
 				))}
 			</div>

@@ -3,10 +3,11 @@ import Link from 'next/link';
 
 interface AboutTitleProps {
 	title: string;
+	urlTitle: string;
 	slug?: string;
 }
 
-const AboutTitle = ({ title, slug }: AboutTitleProps) => {
+const AboutTitle = ({ title, slug, urlTitle }: AboutTitleProps) => {
 	return (
 		<h1
 			className='z-1 text-customAboutTitle relative flex-grow text-center justify-center tracking-tight leading-headerAbout font-light cursor-default w-full min-w-full transition-all duration-2000 delay-300 translate-y-portfolio transform animate-hero'
@@ -15,8 +16,8 @@ const AboutTitle = ({ title, slug }: AboutTitleProps) => {
 			<Link as={`/about/${slug}`} href='/about/[slug]' passHref scroll={true}>
 				<a
 					className='font-head text-black hover:text-fiveOBlack dark:hover:text-afWhite dark:text-white duration-2000 delay-300 transition-all'
-					aria-label={`${title}`}
-					id={`home-${title}`}
+					aria-label={`about item - ${urlTitle}`}
+					id={`home-${urlTitle}`}
 				>
 					<ReactMarkdown
 						escapeHtml={false}
