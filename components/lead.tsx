@@ -103,7 +103,7 @@ const Lead = () => {
 		return (
 			<div className='mt-socialMargin block' key={constituent.id}>
 				<a
-					className='block transform z-50 animate-hero hover:text-fiveOBlack py-portfolioDivider md:py-0'
+					className='block transform z-50 animate-hero hover:text-fiveOBlack dark:hover:text-afWhite py-portfolioDivider md:py-0'
 					target={constituent.target}
 					aria-label={constituent.label}
 					href={constituent.href}
