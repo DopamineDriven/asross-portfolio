@@ -36,7 +36,7 @@ const PostSourceIcons = ({ github, heroku, vercel }: PostSourceIconProps) => {
 							aria-label={`deployed site - ${heroku}`}
 							target='__blank'
 							href={heroku}
-							className='bg-portfolio dark:bg-black text-oneFiveBlack dark:text-white leading-normal transition-all transform delay-300 duration-1000 ease-in-out text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-threeHalves rounded-full focus:outline-none'
+							className={anchorClass}
 						>
 							<FontAwesomeIcon icon={faHerokuIcon} className={iconClass} />
 						</a>
