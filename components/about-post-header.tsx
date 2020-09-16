@@ -35,7 +35,7 @@ const AboutPostHeader = ({
 				<div className=' text-customExcerptMobile text-oneFiveBlack dark:text-eaWhite font-somaRoman flex mx-auto align-middle justify-center'>
 					<Date dateString={date} />
 				</div>
-				<div className='text-black dark:text-white font-somaRoman flex mx-auto align-middle justify-center'>
+				<div className='text-black dark:text-white font-somaRoman flex mx-auto align-middle justify-center pb-mdmxSocial'>
 					<AboutPostSourceIcons
 						github={github}
 						email={email}
