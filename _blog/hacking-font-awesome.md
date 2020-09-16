@@ -114,7 +114,7 @@ export type IconName =
 
 Since IconDefinition and IconLookup are of immediate utility for custom icon incorporation let's break each down each individually.
 
-### 4(a). IconLookup
+#### 4(a). IconLookup
 
 This Interface describes two values, `prefix` and `iconName`. The prefix value is a string corresponding to "faX" as defined by the IconPrefix type above (where X=b, d, l, r, or s). The free version of Fontawesome supports "fab" and "fas" prefixes which denote brand and solid icon styles, respectively. Then there's `iconName` which is defined by the IconName type. This type describes an array of strings totaling out to 7,854 icon names in length.
 
@@ -140,7 +140,7 @@ export type IconName =
 	| 'yin-yang';
 ```
 
-### 4(b). IconDefinition
+#### 4(b). IconDefinition
 
 ```typescript
 export interface IconDefinition extends IconLookup {
