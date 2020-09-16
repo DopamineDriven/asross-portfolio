@@ -6,6 +6,12 @@ import { AppProps, NextWebVitalsMetric } from 'next/app';
 import { ReactElement, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import * as gtag from 'lib/google-analytics';
+import ReactGA from 'react-ga';
+
+export const gaInit = () => {
+	ReactGA.initialize(`UA-${process.env.GA_TRACKING_ID}`);
+};
+
 
 config.autoAddCss = false;
 
