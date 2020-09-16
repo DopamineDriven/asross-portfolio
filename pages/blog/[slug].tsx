@@ -83,8 +83,7 @@ export const getStaticProps = async ({ params }: BlogParams) => {
 		props: {
 			blog: {
 				...blog
-			},
-			revalidate: 1
+			}
 		}
 	};
 };
@@ -100,6 +99,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
 				}
 			};
 		}),
-		fallback: true
+		fallback: false
 	};
 };

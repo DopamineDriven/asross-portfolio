@@ -101,8 +101,7 @@ export const getStaticProps = async ({ params }: Params & GetStaticProps) => {
 			// make a grid with 3 cols/row showcasing other posts to navigate to in each post subdir
 			post: {
 				...post
-			},
-			revalidate: 1
+			}
 		}
 	};
 };
@@ -118,6 +117,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
 				}
 			};
 		}),
-		fallback: true
+		fallback: false
 	};
 };

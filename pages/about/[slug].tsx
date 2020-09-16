@@ -85,8 +85,7 @@ export const getStaticProps = async ({
 		props: {
 			about: {
 				...about
-			},
-			revalidate: 1
+			}
 		}
 	};
 };
@@ -103,6 +102,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
 				}
 			};
 		}),
-		fallback: true
+		fallback: false
 	};
 };
