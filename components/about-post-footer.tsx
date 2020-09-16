@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import PortfolioDivider from 'components/portfolio-divider';
 
 interface SocialContact {
 	id: number;
@@ -46,7 +47,7 @@ const AboutSubFooter = ({ title }: SubFooterProps) => {
 				key={constituent.id}
 			>
 				<a
-					className='block transition-all duration-3000 delay-300 translate-y-portfolioDivider transform animate-hero w-auto hover:text-fiveOBlack md:text-right pr-portfolioDivider'
+					className='block transition-all duration-3000 delay-300 translate-y-portfolioDivider transform animate-hero w-auto hover:text-fiveOBlack dark:hover:text-afWhite md:text-center pr-portfolioDivider'
 					target={constituent.target}
 					aria-label={constituent.label}
 					href={constituent.href}
@@ -57,10 +58,10 @@ const AboutSubFooter = ({ title }: SubFooterProps) => {
 		);
 	});
 	const backToTop = (
-		<div className='block w-auto align-top font-somaRoman text-black text-center'>
+		<div className='block w-auto align-top font-somaRoman text-black dark:text-white text-center'>
 			<Link href={`/#home-${title}`} passHref scroll={true}>
 				<a
-					className='block pl-portfolioDivider whitespace-no-wrap duration-1000 transition-all ease-in-out hover:text-fiveOBlack items-left justify-start'
+					className='block pl-portfolioDivider whitespace-no-wrap duration-1000 transition-all ease-in-out hover:text-fiveOBlack dark:hover:text-afWhite items-left justify-start'
 					aria-label='back to top'
 				>
 					Return Home
@@ -70,9 +71,9 @@ const AboutSubFooter = ({ title }: SubFooterProps) => {
 	);
 	const copyRight = (
 		<div className='flex flex-row mx-auto w-full tracking-wide text-center'>
-			<div className='block align-top mx-auto font-somaRoman text-black text-center w-auto'>
+			<div className='block align-top mx-auto font-somaRoman text-black dark:text-white text-center w-auto'>
 				<a
-					className='block transition-all duration-3000 delay-300 -translate-y-portfolioDivider transform animate-hero justify-center hover:text-fiveOBlack'
+					className='block transition-all duration-3000 delay-300 -translate-y-portfolioDivider transform animate-hero justify-center dark:hover:text-afWhite hover:text-fiveOBlack'
 					href='http://duncanross.design/'
 					target='__blank'
 					aria-label='design by duncan ross'
@@ -94,7 +95,7 @@ const AboutSubFooter = ({ title }: SubFooterProps) => {
 						</div>
 						{socialMap}
 					</div>
-					<hr className='border-fiveOBlack w-portfolioDividerWidth max-w-portfolioDividerWidth mx-auto mt-portfolioDivider pb-portfolioDivider' />
+					<PortfolioDivider />
 					{copyRight}
 				</div>
 			</div>

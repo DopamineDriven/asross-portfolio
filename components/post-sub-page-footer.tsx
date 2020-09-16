@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import PortfolioDivider from 'components/portfolio-divider';
 
 interface SocialContact {
 	id: number;
@@ -46,7 +47,7 @@ const SubFooter = ({ title }: SubFooterProps) => {
 				key={constituent.id}
 			>
 				<a
-					className='block transition-all duration-2000 delay-300 translate-y-portfolioDivider transform animate-hero w-auto hover:text-fiveOBlack dark:hover:text-afWhite md:text-center'
+					className='block transition-all duration-3000 delay-300 translate-y-portfolioDivider transform animate-hero w-auto hover:text-fiveOBlack dark:hover:text-afWhite md:text-center pr-portfolioDivider'
 					target={constituent.target}
 					aria-label={constituent.label}
 					href={constituent.href}
@@ -57,7 +58,7 @@ const SubFooter = ({ title }: SubFooterProps) => {
 		);
 	});
 	const backToTop = (
-		<div className='block w-auto align-top font-somaRoman dark:text-white dark:hover:text-eaWhite text-black text-center transition-all duration-1000 delay-300'>
+		<div className='block w-auto align-top font-somaRoman text-black dark:text-white text-center'>
 			<Link href={`/#home-${title}`} passHref>
 				<a
 					className='block pl-portfolioDivider whitespace-no-wrap duration-1000 transition-all ease-in-out hover:text-fiveOBlack dark:hover:text-afWhite items-left justify-start'
@@ -94,7 +95,7 @@ const SubFooter = ({ title }: SubFooterProps) => {
 						</div>
 						{socialMap}
 					</div>
-					<hr className='border-fiveOBlack dark:border-eaWhite w-portfolioDividerWidth max-w-portfolioDividerWidth mx-auto mt-portfolioDivider pb-portfolioDivider' />
+					<PortfolioDivider />
 					{copyRight}
 				</div>
 			</div>
