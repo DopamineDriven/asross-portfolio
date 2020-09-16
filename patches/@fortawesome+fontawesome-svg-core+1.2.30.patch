@@ -13,7 +13,7 @@ index 04f99e0..1cc9273 100644
  export type RotateProp = 90 | 180 | 270;
  export type FaSymbol = string | boolean;
 diff --git a/node_modules/@fortawesome/fontawesome-svg-core/styles.css b/node_modules/@fortawesome/fontawesome-svg-core/styles.css
-index b991207..6a5365d 100644
+index b991207..126325a 100644
 --- a/node_modules/@fortawesome/fontawesome-svg-core/styles.css
 +++ b/node_modules/@fortawesome/fontawesome-svg-core/styles.css
 @@ -162,10 +162,10 @@ svg:not(:root).svg-inline--fa {
@@ -21,11 +21,11 @@ index b991207..6a5365d 100644
  
  .fa-1x {
 -  font-size: 1em; }
-+  font-size: 1.5; }
++  font-size: 1.5vw; }
  
  .fa-2x {
 -  font-size: 2em; }
-+  font-size: 1vw; }
++  font-size: 3vw; }
  
  .fa-3x {
    font-size: 3em; }

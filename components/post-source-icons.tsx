@@ -10,9 +10,9 @@ interface PostSourceIconProps {
 
 const PostSourceIcons = ({ github, heroku, vercel }: PostSourceIconProps) => {
 	const anchorClass: string =
-		' text-black dark:text-white leading-normal pr-portfolioDivider transition-all duration-2000 delay-300 translate-y-mdmxSocial transform animate-hero duration-1000 ease-in-out md:text-customTitle text-customTitleMobile inline-block text-center items-center align-middle justify-center mx-mxSocial rounded-full focus:outline-none';
+		' text-black dark:text-white text-customTitle leading-normal pr-portfolioDivider transition-all duration-2000 delay-300 translate-y-mdmxSocial transform animate-hero duration-1000 ease-in-out md:text-customTitle inline-block text-center items-center align-middle justify-center mx-mxSocial rounded-full focus:outline-none';
 	const iconClass: string =
-		' flex align-middle text-center font-extrabold hover:text-fiveOBlack dark:hover:text-afWhite transition-all transform delay-300 duration-1000 ease-in-out fa-portfolioDivider';
+		' flex align-middle md:text-customTitle text-customTitleMobile text-center font-extrabold hover:text-fiveOBlack dark:hover:text-afWhite transition-all transform delay-300 duration-1000 ease-in-out fa-portfolioDivider';
 	return (
 		<div className='align-middle justify-right text-right inline-block'>
 			<ul className='align-middle'>
@@ -26,7 +26,7 @@ const PostSourceIcons = ({ github, heroku, vercel }: PostSourceIconProps) => {
 							href={github}
 							className={anchorClass}
 						>
-							<FontAwesomeIcon icon={faGithub} className={iconClass} />
+							<FontAwesomeIcon icon={faGithub} className={iconClass} size='3x' />
 						</a>
 					)}
 					{heroku === 'empty' ? (
@@ -38,7 +38,7 @@ const PostSourceIcons = ({ github, heroku, vercel }: PostSourceIconProps) => {
 							href={heroku}
 							className={anchorClass}
 						>
-							<FontAwesomeIcon icon={faHerokuIcon} className={iconClass} />
+							<FontAwesomeIcon icon={faHerokuIcon} className={iconClass} size='1x' />
 						</a>
 					)}
 					{vercel === 'empty' ? (

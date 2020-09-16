@@ -253,5 +253,5 @@ body::-webkit-scrollbar {
 }
 
 .fa-portfolioDivider {
-	@apply text-customFooterMobile; 
+	@apply text-customTitle; 
 }
