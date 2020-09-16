@@ -259,6 +259,7 @@ module.exports = {
 				portfolio: '2.25vw',
 				portfolioH2F: '3.25vw',
 				portfolioLS: '3.33vw',
+				portfolioLSMobile: '3.88vw',
 				portfolioRS: '1.33vw',
 				portfolioDivider: '0.875vw',
 				gapX: '2.2284vw',

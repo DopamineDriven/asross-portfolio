@@ -103,7 +103,7 @@ const Lead = () => {
 		return (
 			<div className='mt-socialMargin block' key={constituent.id}>
 				<a
-					className='block transform z-50 animate-hero hover:text-fiveOBlack dark:hover:text-afWhite py-portfolioDivider md:py-0'
+					className='block z-50 hover:text-fiveOBlack dark:hover:text-afWhite py-portfolioDivider md:py-0 transition-all duration-2000 delay-300 translate-y-mdmxSocial transform ease-in-out animate-hero'
 					target={constituent.target}
 					aria-label={constituent.label}
 					href={constituent.href}
@@ -138,17 +138,17 @@ const Lead = () => {
 			</h1>
 		</div>
 	);
-
+// transition-all duration-2000 delay-300 translate-y-portfolioDivider transform animate-hero
 	const socialMapConditional = (
 		<Fragment>
 			<div
-				className='md:text-customTitle md:leading-portfolio md:visible invisible md:transition-all md:delay-300 md:duration-2000 md:ease-in-out'
+				className='md:text-customTitle md:leading-portfolio md:visible invisible md:transition-all md:delay-300 md:duration-2000 md:-translate-y-portfolioDivider md:transform md:animate-hero md:ease-in-out'
 				style={{ position: 'absolute', top: '86.78333vw', left: '3.33333vw' }}
 			>
 				{socialMap}
 			</div>
 			<div
-				className='text-customTitle font-somaRoman leading-customSLM tracking-wide block uppercase md:hidden transition-all duration-2000 delay-300 ease-in-out'
+				className='text-customTitle font-somaRoman leading-customSLM tracking-wide block uppercase md:hidden transition-all duration-2000 delay-300 -translate-y-portfolioLS transform animate-hero ease-in-out'
 				style={{ position: 'absolute', top: '92.78333vw', left: '3.33333vw' }}
 			>
 				{socialMap}
@@ -159,7 +159,7 @@ const Lead = () => {
 	const spanMapMapped = (
 		<p
 			className={
-				'transform -translate-y-landingOverviewTranslation duration-2000 transition-all delay-300 text-customExcerptMobile md:text-customP pr-portfolioRS pl-portfolioLS leading-headerP block font-somaRoman tracking-tighter font-thin ease-in-out'
+				'transform -translate-y-landingOverviewTranslation duration-2000 transition-all delay-300 text-customExcerptMobile md:text-customP pr-portfolioRS md:pl-portfolioLS pl-portfolioLSMobile leading-headerP block font-somaRoman tracking-tighter font-thin ease-in-out'
 			}
 		>
 			{spanMap}
