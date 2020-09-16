@@ -51,7 +51,7 @@ const About = ({ about, abouts }: AboutSlugProps) => {
 					</article>
 				</>
 			)}
-			<AboutFooter title={about.title} />
+			<AboutFooter title={about.urlTitle} />
 		</Fragment>
 	);
 };
@@ -78,7 +78,8 @@ export const getStaticProps = async ({
 		'email',
 		'github',
 		'linkedin',
-		'twitter'
+		'twitter',
+		'urlTitle'
 	]);
 
 	return {
