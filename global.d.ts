@@ -1,5 +1,3 @@
-declare module '@tailwindcss/typography';
-
 declare module 'fs';
 
 declare module 'to-vfile';

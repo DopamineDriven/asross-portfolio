@@ -17,9 +17,11 @@
 	},
 	"exclude": ["node_modules"],
 	"include": [
+		"global.d.ts",
 		"next-env.d.ts",
-		"**/*.ts",
-		"**/*.tsx",
-		"lib/fas-custom-integration.ts"
+		"pages/**/*",
+		"components/**/*",
+		"lib/**/*",
+		"types/**/*"
 	]
 }
