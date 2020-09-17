@@ -4,7 +4,7 @@ import { Media } from 'components/window-width';
 import { Fragment } from 'react';
 
 const ArIconConditional = () => {
-	const arIconXs = (
+	const arIconXs: JSX.Element = (
 		<Media at='xs'>
 			<Link href='/'>
 				<a
@@ -18,7 +18,7 @@ const ArIconConditional = () => {
 		</Media>
 	);
 
-	const arIconSm = (
+	const arIconSm: JSX.Element = (
 		<Media at='sm'>
 			<Link href='/'>
 				<a
@@ -32,7 +32,7 @@ const ArIconConditional = () => {
 		</Media>
 	);
 
-	const arIconMd = (
+	const arIconMd: JSX.Element = (
 		<Media at='md'>
 			<Link href='/'>
 				<a
@@ -46,7 +46,7 @@ const ArIconConditional = () => {
 		</Media>
 	);
 
-	const arIconDesktop = (
+	const arIconDesktop: JSX.Element = (
 		<Media greaterThan='md'>
 			<Link href='/'>
 				<a
