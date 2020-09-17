@@ -103,7 +103,7 @@ const Lead = () => {
 		return (
 			<div className='mt-socialMargin block' key={constituent.id}>
 				<a
-					className='block z-50 hover:text-fiveOBlack dark:hover:text-afWhite py-portfolioDivider md:py-0 transition-all duration-2000 delay-300 translate-y-mdmxSocial transform ease-in-out animate-hero'
+					className='block z-50 text-black dark:text-white hover:text-fiveOBlack dark:hover:text-afWhite py-portfolioDivider md:py-0 transition-all duration-2000 delay-300 translate-y-mdmxSocial tracking-wide transform ease-in-out animate-hero'
 					target={constituent.target}
 					aria-label={constituent.label}
 					href={constituent.href}
@@ -146,8 +146,7 @@ const Lead = () => {
 				style={{
 					position: 'absolute',
 					top: '86.78333vw',
-					left: '3.33333vw',
-					fontSize: '2vw'
+					left: '3.33333vw'
 				}}
 			>
 				{socialMap}
