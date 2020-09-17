@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Fragment } from 'react';
 import Meta from 'components/meta';
 import { Media } from 'components/window-width';
+import ArIconConditional from 'components/lead-arIcon';
 // USE
 // https://fossheim.io/writing/posts/react-text-splitting-animations/
 interface LeadInterface {
@@ -115,73 +116,6 @@ const Lead = () => {
 		);
 	});
 
-	const arIconXs = (
-		<Media at='xs'>
-			<Link href='/'>
-				<a
-					className='container block pl-portfolio pt-portfolio justify-between mx-auto w-full min-w-full '
-					id='top'
-					aria-label='top'
-				>
-					<ArIcon width='18vw' height='18vw' />
-				</a>
-			</Link>
-		</Media>
-	);
-
-	const arIconSm = (
-		<Media at='sm'>
-			<Link href='/'>
-				<a
-					className='container block pl-portfolio pt-portfolio justify-between mx-auto w-full min-w-full '
-					id='top'
-					aria-label='top'
-				>
-					<ArIcon width='15vw' height='15vw' />
-				</a>
-			</Link>
-		</Media>
-	);
-
-	const arIconMd = (
-		<Media at='md'>
-			<Link href='/'>
-				<a
-					className='container block pl-portfolio pt-portfolio justify-between mx-auto w-full min-w-full '
-					id='top'
-					aria-label='top'
-				>
-					<ArIcon width='12.5vw' height='12.5vw' />
-				</a>
-			</Link>
-		</Media>
-	);
-
-	const arIconDesktop = (
-		<Media greaterThan='md'>
-			<Link href='/'>
-				<a
-					className='container block pl-portfolio pt-portfolio justify-between mx-auto w-full min-w-full '
-					id='top'
-					aria-label='top'
-				>
-					<ArIcon width='10vw' height='10vw' />
-				</a>
-			</Link>
-		</Media>
-	);
-
-	const arIconConditional = (
-		<Fragment>
-			<div className='relative block justify-between lg:w-auto lg:static lg:block lg:justify-start w-full min-w-full transition-all duration-2000 delay-300'>
-				{arIconXs}
-				{arIconSm}
-				{arIconMd}
-				{arIconDesktop}
-			</div>
-		</Fragment>
-	);
-
 	const andrewTitle = (
 		<div>
 			<h1
@@ -231,7 +165,7 @@ const Lead = () => {
 				className='select-none relative z-1 justify-between pt-portfolio navbar-expand-lg flex flex-col min-w-full w-full container overflow-y-hidden overflow-x-hidden transform pb-introToPortfolioMobile md:pb-portfolioS'
 				style={{ transform: 'translate3d(0px, 0px, 0px)' }}
 			>
-				{arIconConditional}
+				<ArIconConditional />
 				{andrewTitle}
 				{spanMapMapped}
 				{socialMapConditional}
