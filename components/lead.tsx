@@ -145,15 +145,15 @@ const Lead = () => {
 				className='md:text-customExcerptMobile md:leading-portfolio md:visible invisible md:transition-all md:delay-300 md:duration-3000 md:-translate-y-portfolioDivider md:transform md:animate-hero md:ease-in-out'
 				style={{
 					position: 'absolute',
-					top: '86.78333vw',
+					top: '96.78333vw',
 					left: '3.33333vw'
 				}}
 			>
 				{socialMap}
 			</div>
 			<div
-				className='text-customTitle font-somaRoman leading-customSLM tracking-wide block uppercase md:hidden transition-all duration-3000 delay-300 -translate-y-portfolioLS transform animate-hero ease-in-out'
-				style={{ position: 'absolute', top: '92.78333vw', left: '3.33333vw' }}
+				className='text-customTitle font-somaRoman leading-customSLM tracking-wide block uppercase md:hidden transition-all duration-3000 delay-300 translate-y-portfolioLS transform animate-hero ease-in-out'
+				style={{ position: 'absolute', top: '94.78333vw', left: '3.33333vw' }}
 			>
 				{socialMap}
 			</div>
