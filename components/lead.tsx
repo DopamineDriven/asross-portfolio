@@ -142,7 +142,7 @@ const Lead = () => {
 	const socialMapConditional = (
 		<Fragment>
 			<div
-				className='md:text-customTitleMobile md:leading-portfolio md:visible invisible md:transition-all md:delay-300 md:duration-2000 md:-translate-y-portfolioDivider md:transform md:animate-hero md:ease-in-out'
+				className='md:text-customExcerptMobile md:leading-portfolio md:visible invisible md:transition-all md:delay-300 md:duration-3000 md:-translate-y-portfolioDivider md:transform md:animate-hero md:ease-in-out'
 				style={{
 					position: 'absolute',
 					top: '86.78333vw',
@@ -153,7 +153,7 @@ const Lead = () => {
 				{socialMap}
 			</div>
 			<div
-				className='text-customTitle font-somaRoman leading-customSLM tracking-wide block uppercase md:hidden transition-all duration-2000 delay-300 -translate-y-portfolioLS transform animate-hero ease-in-out'
+				className='text-customTitle font-somaRoman leading-customSLM tracking-wide block uppercase md:hidden transition-all duration-3000 delay-300 -translate-y-portfolioLS transform animate-hero ease-in-out'
 				style={{ position: 'absolute', top: '92.78333vw', left: '3.33333vw' }}
 			>
 				{socialMap}
