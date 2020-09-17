@@ -59,21 +59,16 @@ const aboutSnippets: AboutInterface[] = [
 		id: 9,
 		span: `couple brilliantly with Headless WordPress. `
 	}
-	// {
-	// 	id: 10,
-	// 	span: `client. WP-GQL plugins couple `
-	// },
-	// {
-	// 	id: 11,
-	// 	span: 'brilliantly with HWP. '
-	// }
-	// {
-	// 	id: 13,
-	// 	span: ''
-	// }
 ];
 
-const AboutContent = ({ slug, src, title, date, excerpt, urlTitle }: AboutProps) => {
+const AboutContent = ({
+	slug,
+	src,
+	title,
+	date,
+	excerpt,
+	urlTitle
+}: AboutProps) => {
 	const aboutMap = aboutSnippets.map(constituent => {
 		return (
 			<span
@@ -86,6 +81,35 @@ const AboutContent = ({ slug, src, title, date, excerpt, urlTitle }: AboutProps)
 			</span>
 		);
 	});
+
+	const imageExcerptConditional = (
+		<Fragment>
+			<div
+				className=' md:leading-customSLH md:block md:z-1 md:visible invisible md:transition-all delay-300 duration-3000 ease-in-out transform hover:-translate-y-1 hover:scale-90'
+				style={{ position: 'absolute', top: '12.48333vw', left: '3.33333vw' }}
+			>
+				<AboutImage src={src} title={title} slug={slug} />
+				<AboutExcerpt excerpt={excerpt} slug={slug} />
+			</div>
+			<div
+				className=' leading-customSLH md:hidden z-1 transition-all delay-300 duration-3000 ease-in-out transform hover:-translate-y-1 hover:scale-90'
+				style={{ position: 'absolute', top: '16.48333vw', left: '3.33333vw' }}
+			>
+				<AboutImage src={src} title={title} slug={slug} />
+				<AboutExcerpt excerpt={excerpt} slug={slug} />
+			</div>
+		</Fragment>
+	);
+
+	const aboutMapMapped = (
+		<p className='md:text-customTitle text-customP  pr-portfolioDivider pl-portfolioLS block font-somaRoman tracking-tighter font-thin z-0'>
+			<div className='mx-auto block'>
+				{aboutMap}
+				<div className='hidden'>{date}</div>
+			</div>
+		</p>
+	);
+
 	return (
 		<Fragment>
 			<AboutSurpriseQuote />
@@ -94,19 +118,8 @@ const AboutContent = ({ slug, src, title, date, excerpt, urlTitle }: AboutProps)
 				style={{ transform: 'translate3d(0px, 0px, 0px)' }}
 			>
 				<AboutTitle title={title} slug={slug} urlTitle={urlTitle} />
-				<div
-					className='md:leading-customSLH leading-customSLM block z-1'
-					style={{ position: 'absolute', top: '8.48333vw', left: '3.33333vw' }}
-				>
-					<AboutImage src={src} title={title} slug={slug} />
-					<AboutExcerpt excerpt={excerpt} slug={slug} />
-				</div>
-				<p className='md:text-customTitle text-customP  pr-portfolioDivider pl-portfolioLS block font-somaRoman tracking-tighter font-thin z-0'>
-					<div className='mx-auto block'>
-						{aboutMap}
-						<div className='hidden'>{date}</div>
-					</div>
-				</p>
+				{imageExcerptConditional}
+				{aboutMapMapped}
 			</div>
 		</Fragment>
 	);
