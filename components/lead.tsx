@@ -95,7 +95,7 @@ const Lead = () => {
 				key={constituent.id}
 			>
 				{constituent.span}
-			<br />
+				<br />
 			</span>
 		);
 	});
@@ -116,8 +116,8 @@ const Lead = () => {
 	});
 
 	const arIconXs = (
-		<Link href='/'>
-			<Media at='xs'>
+		<Media at='xs'>
+			<Link href='/'>
 				<a
 					className='container block pl-portfolio pt-portfolio justify-between mx-auto w-full min-w-full '
 					id='top'
@@ -125,13 +125,13 @@ const Lead = () => {
 				>
 					<ArIcon width='18vw' height='18vw' />
 				</a>
-			</Media>
-		</Link>
+			</Link>
+		</Media>
 	);
 
 	const arIconSm = (
-		<Link href='/'>
-			<Media at='sm'>
+		<Media at='sm'>
+			<Link href='/'>
 				<a
 					className='container block pl-portfolio pt-portfolio justify-between mx-auto w-full min-w-full '
 					id='top'
@@ -139,13 +139,13 @@ const Lead = () => {
 				>
 					<ArIcon width='15vw' height='15vw' />
 				</a>
-			</Media>
-		</Link>
+			</Link>
+		</Media>
 	);
 
 	const arIconMd = (
-		<Link href='/'>
-			<Media at='md'>
+		<Media at='md'>
+			<Link href='/'>
 				<a
 					className='container block pl-portfolio pt-portfolio justify-between mx-auto w-full min-w-full '
 					id='top'
@@ -153,13 +153,13 @@ const Lead = () => {
 				>
 					<ArIcon width='12.5vw' height='12.5vw' />
 				</a>
-			</Media>
-		</Link>
+			</Link>
+		</Media>
 	);
 
 	const arIconDesktop = (
-		<Link href='/'>
-			<Media greaterThan='md'>
+		<Media greaterThan='md'>
+			<Link href='/'>
 				<a
 					className='container block pl-portfolio pt-portfolio justify-between mx-auto w-full min-w-full '
 					id='top'
@@ -167,8 +167,8 @@ const Lead = () => {
 				>
 					<ArIcon width='10vw' height='10vw' />
 				</a>
-			</Media>
-		</Link>
+			</Link>
+		</Media>
 	);
 
 	const arIconConditional = (
