@@ -118,7 +118,7 @@ const Lead = () => {
 		<div className='relative block justify-between lg:w-auto lg:static lg:block lg:justify-start w-full min-w-full transition-all duration-2000 delay-300'>
 			<Link href='/'>
 				<a
-					className='container block pl-portfolio justify-between mx-auto w-full min-w-full '
+					className='container block pl-portfolio pt-portfolio justify-between mx-auto w-full min-w-full '
 					id='top'
 					aria-label='top'
 				>
