@@ -3,14 +3,13 @@ import Link from 'next/link';
 import { Media } from 'components/window-width';
 import { Fragment } from 'react';
 
-const ArIconConditional = () => {
+const SubArIconConditional = () => {
 	const arIconXs: JSX.Element = (
 		<Media at='xs'>
 			<Link href='/'>
 				<a
 					className='container block pl-portfolio pt-portfolio justify-between mx-auto w-full min-w-full '
-					id='top'
-					aria-label='top'
+					aria-label='sub-icon'
 				>
 					<ArIcon width='18vw' height='18vw' />
 				</a>
@@ -23,8 +22,7 @@ const ArIconConditional = () => {
 			<Link href='/'>
 				<a
 					className='container block pl-portfolio pt-portfolio justify-between mx-auto w-full min-w-full '
-					id='top'
-					aria-label='top'
+					aria-label='sub-icon'
 				>
 					<ArIcon width='15vw' height='15vw' />
 				</a>
@@ -37,8 +35,7 @@ const ArIconConditional = () => {
 			<Link href='/'>
 				<a
 					className='container block pl-portfolio pt-portfolio justify-between mx-auto w-full min-w-full '
-					id='top'
-					aria-label='top'
+					aria-label='sub-icon'
 				>
 					<ArIcon width='12.5vw' height='12.5vw' />
 				</a>
@@ -51,8 +48,7 @@ const ArIconConditional = () => {
 			<Link href='/'>
 				<a
 					className='container block pl-portfolio pt-portfolio justify-between mx-auto w-full min-w-full '
-					id='top'
-					aria-label='top'
+					aria-label='sub-icon'
 				>
 					<ArIcon width='10vw' height='10vw' />
 				</a>
@@ -71,4 +67,4 @@ const ArIconConditional = () => {
 	);
 };
 
-export default ArIconConditional;
+export default SubArIconConditional;
