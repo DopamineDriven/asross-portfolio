@@ -1,3 +1,5 @@
+import { Fragment } from 'react';
+
 interface SocialContact {
 	id: number;
 	label: string;
@@ -33,7 +35,40 @@ const socialSnippets: SocialContact[] = [
 ];
 
 const LeadSocial = () => {
-  
-}
+	const socialMap: JSX.Element[] = socialSnippets.map(constituent => {
+		return (
+			<div className='mt-socialMargin block' key={constituent.id}>
+				<a
+					className='block z-50 text-black dark:text-white hover:text-fiveOBlack dark:hover:text-afWhite py-portfolioDivider md:py-0 transition-all translate-y-mdmxSocial tracking-wide transform ease-in-out animate-hero'
+					target={constituent.target}
+					aria-label={constituent.label}
+					href={constituent.href}
+				>
+					{constituent.label}
+				</a>
+			</div>
+		);
+	});
+	return (
+		<Fragment>
+			<div
+				className='md:text-customExcerptMobile md:leading-portfolio md:visible invisible md:transition-all md:-translate-y-portfolioDivider md:transform md:animate-hero md:ease-in-out'
+				style={{
+					position: 'absolute',
+					top: '90.78333vw',
+					left: '3.33333vw'
+				}}
+			>
+				{socialMap}
+			</div>
+			<div
+				className='text-customTitle font-somaRoman leading-customSLM tracking-wide block uppercase md:hidden transition-all translate-y-portfolioLS transform animate-hero ease-in-out'
+				style={{ position: 'absolute', top: '94.78333vw', left: '3.33333vw' }}
+			>
+				{socialMap}
+			</div>
+		</Fragment>
+	);
+};
 
 export default LeadSocial;
