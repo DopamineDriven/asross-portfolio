@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import { mediaStyles } from 'components/window-width';
 
 export default class MyDocument extends Document {
 	static async getInitialProps(ctx: any) {
@@ -10,8 +11,9 @@ export default class MyDocument extends Document {
 			<Html lang='en-US'>
 				<Head>
 					<meta charSet='utf-8' />
-					<link rel='preconnect' href='https://use.typekit.net/cub6off.css' />
+					{/* <link rel='preconnect' href='https://use.typekit.net/cub6off.css' /> */}
 					<link rel='stylesheet' href='https://use.typekit.net/cub6off.css' />
+					<style type='text/css' dangerouslySetInnerHTML={{ __html: mediaStyles }} />
 					{/* Global Site Tag (gtag.js) - Google Analytics */}
 					<script
 						async
