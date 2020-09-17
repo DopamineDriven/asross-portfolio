@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import PortfolioDivider from 'components/portfolio-divider';
+import BackToTop from 'components/footer-back-to-top';
+import { Fragment } from 'react';
 
 interface SocialContact {
 	id: number;
@@ -80,22 +82,20 @@ const Footer = () => {
 		</div>
 	);
 	return (
-		<footer className='select-none font-somaRoman w-full max-w-full px-portfolioFooter text-customFooterMobile md:text-customTitle pt-portfolioH2F pb-mobileGapY'>
-			<div className='w-full min-w-full'>
-				<div className='block min-w-full w-full overflow-hidden'>
-					<div className='grid grid-cols-8 w-full content-end justify-end align-bottom first:col-span-3'>
-						<div className='col-span-4 text-left float-left block'>
-							<a className='float-left block transition-all duration-3000 delay-300 translate-y-portfolioDivider transform animate-hero'>
-								{backToTop}
-							</a>
+		<Fragment>
+			<footer className='select-none font-somaRoman w-full max-w-full px-portfolioFooter text-customFooterMobile md:text-customTitle pt-portfolioH2F pb-mobileGapY'>
+				<div className='w-full min-w-full'>
+					<div className='block min-w-full w-full overflow-hidden'>
+						<div className='grid grid-cols-8 w-full content-end justify-end align-bottom first:col-span-3'>
+							<BackToTop />
+							{socialMap}
 						</div>
-						{socialMap}
+						<PortfolioDivider />
+						{copyRight}
 					</div>
-					<PortfolioDivider />
-					{copyRight}
 				</div>
-			</div>
-		</footer>
+			</footer>
+		</Fragment>
 	);
 };
 

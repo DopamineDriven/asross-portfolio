@@ -3,7 +3,7 @@ title: 'About'
 urlTitle: 'andrew-ross'
 excerpt: 'Read More >>>'
 coverImage: 'https://res.cloudinary.com/asross311/image/upload/v1598947180/portfolio/IMG_3824_1_8_egnkfs.jpg'
-articleImage: 'https://dev-to-uploads.s3.amazonaws.com/i/23i9acwg697ztp3gt48a.gif'
+articleImage: 'https://res.cloudinary.com/asross311/image/upload/v1600351981/portfolio/IMG_0032_seapn2.jpg'
 date: "2020-09-05T08:35:07.322Z"
 email: 'mailto:andrew.simpson.ross@gmail.com'
 github: 'https://github.com/DopamineDriven'
