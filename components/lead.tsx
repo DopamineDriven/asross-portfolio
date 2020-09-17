@@ -2,6 +2,7 @@ import { ArIcon } from 'components/svg-icons';
 import Link from 'next/link';
 import { Fragment } from 'react';
 import Meta from 'components/meta';
+import { Media } from 'components/window-width';
 // USE
 // https://fossheim.io/writing/posts/react-text-splitting-animations/
 interface LeadInterface {
@@ -90,11 +91,11 @@ const Lead = () => {
 	const spanMap = spanSnippets.map(constituent => {
 		return (
 			<span
-				className='font-thin font-somaRoman tracking-tighter cursor-default '
+				className='font-thin font-somaRoman tracking-tighter cursor-default md:text-justify'
 				key={constituent.id}
 			>
 				{constituent.span}
-				<br />
+			<br />
 			</span>
 		);
 	});
@@ -103,7 +104,7 @@ const Lead = () => {
 		return (
 			<div className='mt-socialMargin block' key={constituent.id}>
 				<a
-					className='block z-50 text-black dark:text-white hover:text-fiveOBlack dark:hover:text-afWhite py-portfolioDivider md:py-0 transition-all duration-2000 delay-300 translate-y-mdmxSocial tracking-wide transform ease-in-out animate-hero'
+					className='block z-50 text-black dark:text-white hover:text-fiveOBlack dark:hover:text-afWhite py-portfolioDivider md:py-0 transition-all translate-y-mdmxSocial tracking-wide transform ease-in-out animate-hero'
 					target={constituent.target}
 					aria-label={constituent.label}
 					href={constituent.href}
@@ -114,24 +115,77 @@ const Lead = () => {
 		);
 	});
 
-	const arIcon = (
-		<div className='relative block justify-between lg:w-auto lg:static lg:block lg:justify-start w-full min-w-full transition-all duration-2000 delay-300'>
-			<Link href='/'>
+	const arIconXs = (
+		<Link href='/'>
+			<Media at='xs'>
 				<a
 					className='container block pl-portfolio pt-portfolio justify-between mx-auto w-full min-w-full '
 					id='top'
 					aria-label='top'
 				>
-					<ArIcon />
+					<ArIcon width='18vw' height='18vw' />
 				</a>
-			</Link>
-		</div>
+			</Media>
+		</Link>
+	);
+
+	const arIconSm = (
+		<Link href='/'>
+			<Media at='sm'>
+				<a
+					className='container block pl-portfolio pt-portfolio justify-between mx-auto w-full min-w-full '
+					id='top'
+					aria-label='top'
+				>
+					<ArIcon width='15vw' height='15vw' />
+				</a>
+			</Media>
+		</Link>
+	);
+
+	const arIconMd = (
+		<Link href='/'>
+			<Media at='md'>
+				<a
+					className='container block pl-portfolio pt-portfolio justify-between mx-auto w-full min-w-full '
+					id='top'
+					aria-label='top'
+				>
+					<ArIcon width='12.5vw' height='12.5vw' />
+				</a>
+			</Media>
+		</Link>
+	);
+
+	const arIconDesktop = (
+		<Link href='/'>
+			<Media greaterThan='md'>
+				<a
+					className='container block pl-portfolio pt-portfolio justify-between mx-auto w-full min-w-full '
+					id='top'
+					aria-label='top'
+				>
+					<ArIcon width='10vw' height='10vw' />
+				</a>
+			</Media>
+		</Link>
+	);
+
+	const arIconConditional = (
+		<Fragment>
+			<div className='relative block justify-between lg:w-auto lg:static lg:block lg:justify-start w-full min-w-full transition-all duration-2000 delay-300'>
+				{arIconXs}
+				{arIconSm}
+				{arIconMd}
+				{arIconDesktop}
+			</div>
+		</Fragment>
 	);
 
 	const andrewTitle = (
 		<div>
 			<h1
-				className='font-head text-custom relative flex-grow text-center justify-center tracking-tight leading-headerP font-light cursor-default w-full min-w-full transform -translate-y-paddingPostTitleTop duration-2000 transition-all delay-300 ease-in-out'
+				className='font-head text-custom relative flex-grow text-center justify-center tracking-tight leading-headerP font-light cursor-default w-full min-w-full transform -translate-y-paddingPostTitleTop transition-all ease-in-out'
 				style={{ marginBlockStart: '0.67em', marginBlockEnd: '0.67em' }}
 			>
 				<a className='text-custom block'>Andrew</a>
@@ -142,17 +196,17 @@ const Lead = () => {
 	const socialMapConditional = (
 		<Fragment>
 			<div
-				className='md:text-customExcerptMobile md:leading-portfolio md:visible invisible md:transition-all md:delay-300 md:duration-3000 md:-translate-y-portfolioDivider md:transform md:animate-hero md:ease-in-out'
+				className='md:text-customExcerptMobile md:leading-portfolio md:visible invisible md:transition-all md:-translate-y-portfolioDivider md:transform md:animate-hero md:ease-in-out'
 				style={{
 					position: 'absolute',
-					top: '96.78333vw',
+					top: '90.78333vw',
 					left: '3.33333vw'
 				}}
 			>
 				{socialMap}
 			</div>
 			<div
-				className='text-customTitle font-somaRoman leading-customSLM tracking-wide block uppercase md:hidden transition-all duration-3000 delay-300 translate-y-portfolioLS transform animate-hero ease-in-out'
+				className='text-customTitle font-somaRoman leading-customSLM tracking-wide block uppercase md:hidden transition-all translate-y-portfolioLS transform animate-hero ease-in-out'
 				style={{ position: 'absolute', top: '94.78333vw', left: '3.33333vw' }}
 			>
 				{socialMap}
@@ -163,7 +217,7 @@ const Lead = () => {
 	const spanMapMapped = (
 		<p
 			className={
-				'transform -translate-y-landingOverviewTranslation duration-2000 transition-all delay-300 text-customExcerptMobile md:text-customP pr-portfolioRS md:pl-portfolioLS pl-portfolioLSMobile leading-headerP block font-somaRoman tracking-tighter font-thin ease-in-out'
+				'transform -translate-y-landingOverviewTranslation transition-all text-customExcerptMobile md:text-customP pr-portfolioRS md:pl-portfolioLS pl-portfolioLSMobile leading-headerP block font-somaRoman tracking-tighter font-thin ease-in-out'
 			}
 		>
 			{spanMap}
@@ -174,10 +228,10 @@ const Lead = () => {
 		<Fragment>
 			<Meta />
 			<header
-				className='select-none relative z-1 justify-between pt-portfolio navbar-expand-lg flex flex-col min-w-full w-full container overflow-y-hidden overflow-x-hidden transform duration-300 pb-introToPortfolioMobile md:pb-portfolioS'
+				className='select-none relative z-1 justify-between pt-portfolio navbar-expand-lg flex flex-col min-w-full w-full container overflow-y-hidden overflow-x-hidden transform pb-introToPortfolioMobile md:pb-portfolioS'
 				style={{ transform: 'translate3d(0px, 0px, 0px)' }}
 			>
-				{arIcon}
+				{arIconConditional}
 				{andrewTitle}
 				{spanMapMapped}
 				{socialMapConditional}
