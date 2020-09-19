@@ -1,11 +1,11 @@
 import { ChangeEvent } from 'react';
 
-interface ToggleProps {
+export interface ToggleProps {
 	checked?: boolean;
 	onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
 }
 
-const LeadToggle = ({ checked, onChange }: ToggleProps & JSX.Element) => {
+const LeadToggle = ({ checked, onChange }: ToggleProps) => {
 	return (
 		<span>
 			<input type='checkbox' checked={checked} onChange={onChange} className='' />
