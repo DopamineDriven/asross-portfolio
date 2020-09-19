@@ -1,21 +1,19 @@
-import useDarkMode, { DarkMode } from 'use-dark-mode';
+import { ChangeEvent } from 'react';
 
-const LeadDarkModeToggle = () => {
-	const darkMode: DarkMode = useDarkMode(false);
+interface ToggleProps {
+	checked?: boolean;
+	onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
+}
 
+const LeadToggle = ({ checked, onChange }: ToggleProps & JSX.Element) => {
 	return (
-		<div className=''>
-			<button
-				type='button'
-				onClick={darkMode.disable}
-				className='text-black dark:text-white'
-			>
-				☀
-			</button>
-		</div>
+		<span>
+			<input type='checkbox' checked={checked} onChange={onChange} className='' />
+			<label htmlFor='dark-mode-check' />
+		</span>
 	);
 };
 
-export default LeadDarkModeToggle;
+export default LeadToggle;
 
-// https://github.com/donavon/use-dark-mode/blob/develop/types/index.d.ts
+// https://blaipratdesaba.com/react-typescript-cheatsheet-form-elements-and-onchange-event-types-8c2baf03230c
