@@ -361,6 +361,7 @@ module.exports = {
 	plugins: [
 		require('@tailwindcss/typography'),
 		require('tailwindcss-textshadow'),
+		require('tailwindcss-dark-mode'),
 		function ({ addBase, config }) {
 			addBase({
 				body: {

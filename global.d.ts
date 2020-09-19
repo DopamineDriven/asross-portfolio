@@ -1,5 +1,5 @@
 declare module 'fs';
-
+declare module 'tailwindcss-dark-mode';
 declare module 'to-vfile';
 declare module 'remark-images';
 
