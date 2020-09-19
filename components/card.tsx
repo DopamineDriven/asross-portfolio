@@ -11,7 +11,14 @@ interface CardProps {
 	postTitle: string;
 }
 
-const Card = ({ date, excerpt, slug, src, title, postTitle }: CardProps) => {
+const Card = ({
+	date,
+	excerpt,
+	slug,
+	src,
+	title,
+	postTitle
+}: CardProps): JSX.Element => {
 	return (
 		<div className='block md:odd:pt-offsetY'>
 			<div className='max-w-imagePortfolioMobile md:max-w-imagePortfolio md:overflow-hidden overflow-y-visible overflow-x-visible block transition-all duration-3000 delay-500 ease-in-out transform'>

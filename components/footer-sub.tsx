@@ -39,7 +39,7 @@ interface SubFooterProps {
 	title: string;
 }
 
-const BlogSubFooter = ({ title }: SubFooterProps) => {
+const BlogSubFooter = ({ title }: SubFooterProps): JSX.Element => {
 	const socialMap = socialSnippets.map(constituent => {
 		return (
 			<div

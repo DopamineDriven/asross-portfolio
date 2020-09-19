@@ -4,7 +4,7 @@ interface SubLeadInterface {
 	title: String;
 }
 
-const LeadSubReturnHome = ({ title }: SubLeadInterface) => {
+const LeadSubReturnHome = ({ title }: SubLeadInterface): JSX.Element => {
 	return (
 		<div className='block justify-between lg:justify-start w-full min-w-full z-2 md:text-customExcerpt text-customExcerptMobile tracking-tighter translate-y-portfolioLS transform'>
 			<Link href={`/#home-${title}`} passHref>

@@ -34,7 +34,7 @@ const socialSnippets: SocialContact[] = [
 	}
 ];
 
-const LeadSocial = () => {
+const LeadSocial = (): JSX.Element => {
 	const socialMap: JSX.Element[] = socialSnippets.map(constituent => {
 		return (
 			<div className='mt-socialMargin block' key={constituent.id}>

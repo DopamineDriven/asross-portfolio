@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Media } from 'components/window-width';
 import { Fragment } from 'react';
 
-const SubArIconConditional = () => {
+const SubArIconConditional = (): JSX.Element => {
 	const arIconXs: JSX.Element = (
 		<Media at='xs'>
 			<Link href='/'>

@@ -7,7 +7,7 @@ interface LeadSubProps {
 	title: string;
 }
 
-const LeadSub = ({ title }: LeadSubProps) => {
+const LeadSub = ({ title }: LeadSubProps): JSX.Element => {
 	return (
 		<Fragment>
 			<Meta />
