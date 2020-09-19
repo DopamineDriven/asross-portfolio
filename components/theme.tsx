@@ -1,4 +1,11 @@
-import { createContext, ReactNode, useState, useEffect } from 'react';
+import {
+	createContext,
+	ReactNode,
+	useState,
+	useEffect,
+	Dispatch,
+	SetStateAction
+} from 'react';
 
 export enum ThemeInitProps {
 	dark = 'dark',
@@ -22,13 +29,18 @@ const getThemeInit = (): string => {
 };
 
 export interface ThemeProviderProps {
-	children: ReactNode;
+	children?: ReactNode;
 	initialTheme: string;
 }
 
-export const ThemeContext = createContext({});
+interface ContextProps {
+	theme: string;
+	setTheme: Dispatch<SetStateAction<string>>;
+}
 
-const ThemeProvider = ({ children, initialTheme }: ThemeProviderProps) => {
+export const ThemeContext = createContext({} as ContextProps);
+
+const ThemeProvider = (initialTheme: string, children: ReactNode) => {
 	const { dark, light } = ThemeInitProps;
 	const [theme, setTheme] = useState(getThemeInit);
 	const rawSetTheme = (theme: string) => {

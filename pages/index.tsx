@@ -13,7 +13,8 @@ import AboutCoalesced from 'components/about-coalesced';
 import BlogCoalesced from 'components/blog-coalesced';
 import AboutType from 'types/about';
 import BlogType from 'types/blog';
-import { Media, MediaContextProvider } from 'components/window-width';
+import { MediaContextProvider } from 'components/window-width';
+import ThemeProvider from 'components/theme';
 
 interface IndexProps {
 	allPosts: Post[];
@@ -21,29 +22,34 @@ interface IndexProps {
 	allBlog: BlogType[];
 }
 
-const Index = ({ allPosts, allAbout, allBlog }: IndexProps) => {
+const Index = (
+	{ allPosts, allAbout, allBlog }: IndexProps,
+	initialTheme: string
+) => {
 	const morePosts = allPosts.slice(0);
 	const moreAbout = allAbout.slice(0);
 	const moreBlog = allBlog.slice(0);
 	return (
 		<Fragment>
-			<MediaContextProvider>
-				<Lead />
-				<Head>
-					<title>{`${CLIENT_NAME} landing page`}</title>
-				</Head>
-				<div className='max-w-cardGridMobile md:max-w-cardGrid my-portfolioH2F grid mx-auto content-center justify-center items-center text-center'>
-					{morePosts.length > 0 && <Cards posts={morePosts} />}
-					{/* {<BlogTitle title={faBlog.title} slug={faBlog.slug} />} */}
-				</div>
-				<div className='max-w-full my-portfolioH2F block mx-auto content-center justify-center items-center text-left'>
-					{moreAbout.length > 0 && <AboutCoalesced abouts={allAbout} />}
-				</div>
-				<div className='max-w-full my-portfolioH2F block mx-auto content-center justify-center items-center text-left'>
-					{moreBlog.length > 0 && <BlogCoalesced blogs={allBlog} />}
-				</div>
-				<Footer />
-			</MediaContextProvider>
+			<ThemeProvider {...initialTheme}>
+				<MediaContextProvider>
+					<Lead />
+					<Head>
+						<title>{`${CLIENT_NAME} landing page`}</title>
+					</Head>
+					<div className='max-w-cardGridMobile md:max-w-cardGrid my-portfolioH2F grid mx-auto content-center justify-center items-center text-center'>
+						{morePosts.length > 0 && <Cards posts={morePosts} />}
+						{/* {<BlogTitle title={faBlog.title} slug={faBlog.slug} />} */}
+					</div>
+					<div className='max-w-full my-portfolioH2F block mx-auto content-center justify-center items-center text-left'>
+						{moreAbout.length > 0 && <AboutCoalesced abouts={allAbout} />}
+					</div>
+					<div className='max-w-full my-portfolioH2F block mx-auto content-center justify-center items-center text-left'>
+						{moreBlog.length > 0 && <BlogCoalesced blogs={allBlog} />}
+					</div>
+					<Footer />
+				</MediaContextProvider>
+			</ThemeProvider>
 		</Fragment>
 	);
 };
