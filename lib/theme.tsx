@@ -27,18 +27,23 @@ const getThemeInit = ({ colorTheme = 'color-theme' }: ColorTheme) => {
 
 export default getThemeInit;
 
-export interface ThemeProviderProps {
-	children: ReactNode;
-	getThemeInit(): ColorTheme;
-}
+// export interface ThemeProviderProps {
+// 	children?: ReactNode;
+// 	getThemeInit: ColorTheme;
+// }
 
-export const ThemeContext = createContext(getThemeInit);
-export const ThemeProvider = ({
-	getThemeInit,
-	children
-}: ThemeProviderProps) => {
-	
-};
+// export const ThemeContext = createContext(getThemeInit);
+// export const ThemeProvider = ({
+// 	getThemeInit,
+// 	children
+// }: ThemeProviderProps) => {
+// 	const { dark, light } = ThemeInitProps;
+// 	const [theme, setTheme] = useState(getThemeInit);
+// 	const rawSetTheme = () => {
+// 		const root = window.document.documentElement;
+		
+// 	}
+// };
 
 // https://jeffjadulco.com/blog/dark-mode-react-tailwind/
 // https://github.com/jeffjadulco/dark-mode-react-tailwind/blob/master/src/css/index.css
