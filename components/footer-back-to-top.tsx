@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const FooterBackToTop = () => {
+const FooterBackToTop = (): JSX.Element => {
 	return (
 		<div className='col-span-4 text-left float-left block'>
 			<a className='float-left block transition-all duration-3000 delay-300 translate-y-portfolioDivider transform animate-hero'>

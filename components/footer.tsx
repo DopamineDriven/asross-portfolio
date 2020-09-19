@@ -37,7 +37,7 @@ const socialSnippets: SocialContact[] = [
 	}
 ];
 
-const Footer = () => {
+const Footer = (): JSX.Element => {
 	const socialMap = socialSnippets.map(constituent => {
 		return (
 			<div

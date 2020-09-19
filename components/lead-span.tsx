@@ -46,7 +46,7 @@ const spanSnippets: LeadSpanInterface[] = [
 	}
 ];
 
-const LeadSpan = () => {
+const LeadSpan = (): JSX.Element => {
 	const spanMap: JSX.Element[] = spanSnippets.map(constituent => {
 		return (
 			<span

@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import SvgIconConstituentValues from 'types/svg-icons';
-import { ThemeInitProps } from 'lib/theme';
+import { ThemeInitProps } from 'components/theme';
 
 // FC can be parameterized via Abstraction
 

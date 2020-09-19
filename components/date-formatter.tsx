@@ -4,7 +4,7 @@ interface DateProps {
 	dateString: string;
 }
 
-const DateFormater = ({ dateString }: DateProps) => {
+const DateFormater = ({ dateString }: DateProps): JSX.Element => {
 	const date = parseISO(dateString);
 	return <time dateTime={dateString}>{format(date, 'LLLL	d, yyyy')}</time>;
 };

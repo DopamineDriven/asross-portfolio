@@ -13,7 +13,8 @@ import AboutCoalesced from 'components/about-coalesced';
 import BlogCoalesced from 'components/blog-coalesced';
 import AboutType from 'types/about';
 import BlogType from 'types/blog';
-import { Media, MediaContextProvider } from 'components/window-width';
+import { MediaContextProvider } from 'components/window-width';
+// import ThemeProvider from 'components/theme';
 
 interface IndexProps {
 	allPosts: Post[];
@@ -25,6 +26,17 @@ const Index = ({ allPosts, allAbout, allBlog }: IndexProps) => {
 	const morePosts = allPosts.slice(0);
 	const moreAbout = allAbout.slice(0);
 	const moreBlog = allBlog.slice(0);
+	// if (typeof window.document.documentElement === 'undefined') {
+	// 	return window.document.documentElement as any;
+	// }
+	// let { document } = window;
+	// if (typeof document === 'undefined') {
+	// 	document = {} as any;
+	// }
+	// let { documentElement } = document;
+	// if (typeof documentElement === 'undefined') {
+	// 	return documentElement as any;
+	// }
 	return (
 		<Fragment>
 			<MediaContextProvider>

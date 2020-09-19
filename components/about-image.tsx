@@ -1,6 +1,6 @@
 import cn from 'classnames';
 import Link from 'next/link';
-import { ThemeInitProps } from 'lib/theme';
+import { ThemeInitProps } from 'components/theme';
 
 interface AboutImageProps {
 	title: string;

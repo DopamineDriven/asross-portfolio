@@ -1,4 +1,4 @@
-const LeadTitle = () => {
+const LeadTitle = (): JSX.Element => {
 	return (
 		<div>
 			<h1

@@ -1,5 +1,30 @@
 # asross-portfolio
 
+## Sitemap generation
+- https://github.com/jplhomer/site/blob/master/scripts/generate-sitemap.js
+- next.config.js
+```js
+const withMDX = require('@next/mdx')({
+	extension: /\.mdx?$/,
+	options: {
+		remarkPlugins: [require('remark-slug')]
+	}
+});
+const withSvgr = require('next-svgr');
+const withPlugins = require('next-compose-plugins')
+module.exports = withPlugins(
+	withMDX({
+		webpack: (config, { isServer }) => {
+			if (isServer) {
+				require('./scripts/generate-sitemap');
+			}
+
+			return config;
+		}
+	})
+);
+```
+
 ## React-TS Hooks 
 - https://github.com/typescript-cheatsheets/react#context
 - note: consider using amVim extension for VIM in VSCODE

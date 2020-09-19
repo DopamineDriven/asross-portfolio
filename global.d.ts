@@ -1,7 +1,9 @@
 declare module 'fs';
-
+declare module 'tailwindcss-dark-mode';
 declare module 'to-vfile';
 declare module 'remark-images';
+import DomUtils from 'node_modules/domutils/index';
+declare const DomUtils;
 
 import {
 	IconDefinition,

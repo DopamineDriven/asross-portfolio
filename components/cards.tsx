@@ -5,7 +5,7 @@ interface CardsProps {
 	posts: Post[];
 }
 
-const Cards = ({ posts }: CardsProps) => {
+const Cards = ({ posts }: CardsProps): JSX.Element => {
 	return (
 		<section>
 			<div className='select-none grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-x-gapX gap-y-mobileGapY md:gap-y-mobileGapY md:gap-x-gapX align-middle text-center'>
