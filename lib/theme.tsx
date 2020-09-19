@@ -1,4 +1,4 @@
-import { useContext, createContext } from 'react';
+import { useContext, createContext, ReactNode, useState } from 'react';
 
 export enum ThemeInitProps {
 	dark = 'dark',
@@ -26,6 +26,19 @@ const getThemeInit = ({ colorTheme = 'color-theme' }: ColorTheme) => {
 };
 
 export default getThemeInit;
+
+export interface ThemeProviderProps {
+	children: ReactNode;
+	getThemeInit(): ColorTheme;
+}
+
+export const ThemeContext = createContext(getThemeInit);
+export const ThemeProvider = ({
+	getThemeInit,
+	children
+}: ThemeProviderProps) => {
+	
+};
 
 // https://jeffjadulco.com/blog/dark-mode-react-tailwind/
 // https://github.com/jeffjadulco/dark-mode-react-tailwind/blob/master/src/css/index.css
