@@ -16,7 +16,6 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth#:~:text=WebKit%20im
 
 :root {
 	@apply .light;
-	@apply .dark;
 }
 
 html {

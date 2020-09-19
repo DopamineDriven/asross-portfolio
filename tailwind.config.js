@@ -3,7 +3,12 @@ module.exports = {
 	future: {
 		removeDeprecatedGapUtilities: true
 	},
-	purge: ['./components/**/*.tsx', './pages/**/*.tsx'],
+	purge: {
+		content: ['./components/**/*.tsx', './pages/**/*.tsx'],
+		options: {
+			whiteList: ['dark-mode']
+		}
+	},
 	theme: {
 		letterSpacing: {
 			tightest: '-.075em',
@@ -352,7 +357,8 @@ module.exports = {
 				small: '0 5px 10px rgba(0, 0, 0, 0.12)',
 				medium: '0 8px 30px rgba(0, 0, 0, 0.12)'
 			}
-		}
+		},
+		darkSelector: '.dark'
 	},
 	variants: {
 		padding: ['responsive', 'last', 'first', 'hover', 'focus', 'even', 'odd'],
@@ -361,7 +367,7 @@ module.exports = {
 	plugins: [
 		require('@tailwindcss/typography'),
 		require('tailwindcss-textshadow'),
-		require('tailwindcss-dark-mode'),
+		require('tailwindcss-dark-mode')(),
 		function ({ addBase, config }) {
 			addBase({
 				body: {
