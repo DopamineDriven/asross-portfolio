@@ -1,3 +1,5 @@
+import { useContext, createContext } from 'react';
+
 export enum ThemeInitProps {
 	dark = 'dark',
 	light = 'light'
@@ -7,7 +9,7 @@ export interface ColorTheme {
 	colorTheme: string;
 }
 
-const getThemeInit = ({ colorTheme= 'color-theme' }: ColorTheme) => {
+const getThemeInit = ({ colorTheme = 'color-theme' }: ColorTheme) => {
 	const { dark, light } = ThemeInitProps;
 	if (typeof window !== 'undefined' && window.localStorage) {
 		const storedPreferences = window.localStorage.getItem(colorTheme);
@@ -20,7 +22,7 @@ const getThemeInit = ({ colorTheme= 'color-theme' }: ColorTheme) => {
 		}
 	}
 	// light === default
-	return light;
+	return dark;
 };
 
 export default getThemeInit;
