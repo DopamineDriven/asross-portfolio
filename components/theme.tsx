@@ -61,8 +61,9 @@ const ThemeProvider = (initialTheme: string, children: ReactNode) => {
 		rawSetTheme(theme);
 	}, [theme]);
 
+	const value = { theme, setTheme };
 	return (
-		<ThemeContext.Provider value={{ theme, setTheme }}>
+		<ThemeContext.Provider value={value}>
 			{children}
 		</ThemeContext.Provider>
 	);
