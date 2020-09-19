@@ -4,10 +4,8 @@ import LeadIcon from 'components/lead-arIcon';
 import LeadSpan from 'components/lead-span';
 import LeadSocial from 'components/lead-social';
 import LeadTitle from 'components/lead-title';
-// USE
-// https://fossheim.io/writing/posts/react-text-splitting-animations/
 
-const Lead = () => {
+const Lead = (): JSX.Element => {
 	return (
 		<Fragment>
 			<Meta />
@@ -25,3 +23,6 @@ const Lead = () => {
 };
 
 export default Lead;
+
+// USE
+// https://fossheim.io/writing/posts/react-text-splitting-animations/
