@@ -5,6 +5,7 @@ import LeadSpan from 'components/lead-span';
 import LeadSocial from 'components/lead-social';
 import LeadTitle from 'components/lead-title';
 import LeadDarkModeToggle from 'components/lead-dark-mode';
+// import { Toggle } from 'components/lead-toggle';
 
 const Lead = (): JSX.Element => {
 	return (

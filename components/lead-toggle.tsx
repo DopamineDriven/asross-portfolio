@@ -1,5 +1,5 @@
 import { ChangeEvent, useContext } from 'react';
-import ThemeProvider, { ThemeContext } from './theme';
+import ThemeProvider, { ThemeContext, ThemeInitProps } from './theme';
 
 export interface ToggleProps {
 	checked?: boolean;
@@ -17,9 +17,25 @@ const LeadToggle = ({ checked, onChange }: ToggleProps): JSX.Element => {
 
 export default LeadToggle;
 
-export const Toggle = () => {
-  const { theme, setTheme } = useContext(ThemeContext)
-}
+// export const Toggle = () => {
+// 	const { dark, light } = ThemeInitProps;
+// 	const { theme, setTheme } = useContext(ThemeContext);
+
+// 	const isDark = () => {
+// 		return theme === dark;
+// 	};
+
+// 	return (
+// 		<label>
+// 			<input
+// 				type='checkbox'
+// 				checked={isDark()}
+// 				onChange={e => setTheme(e.target.checked ? dark : light)}
+// 			/>
+// 			Dark Mode
+// 		</label>
+// 	);
+// };
 
 // https://blaipratdesaba.com/react-typescript-cheatsheet-form-elements-and-onchange-event-types-8c2baf03230c
 

@@ -39,7 +39,7 @@ export default class MyDocument extends Document {
 					/>
 				</Head>
 				<body className='block'>
-					<script src='/noflash.js' />
+					<script src='./noflash.js' />
 					<Main />
 					<NextScript />
 				</body>

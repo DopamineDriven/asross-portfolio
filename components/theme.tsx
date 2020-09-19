@@ -40,22 +40,25 @@ interface ContextProps {
 
 export const ThemeContext = createContext({} as ContextProps);
 
-const ThemeProvider = (initialTheme: string, children: ReactNode) => {
+const ThemeProvider = (initialTheme: string, children?: ReactNode) => {
 	const { dark, light } = ThemeInitProps;
 	const [theme, setTheme] = useState(getThemeInit);
-	const rawSetTheme = (theme: string) => {
-		const root = window.document.documentElement;
-		const isDark = theme === dark;
+	const rawSetTheme = (initialTheme: string) => {
+		useEffect(() => {
+			// if (typeof window !== undefined) return;
+			const root: HTMLElement = window.document.documentElement;
+			const isDark = theme === dark;
 
-		root.classList.remove(isDark ? light : dark);
-		root.classList.add(theme);
+			root.classList.remove(isDark ? light : dark);
+			root.classList.add(theme);
 
-		localStorage.setItem('color-theme', theme);
+			localStorage.setItem('color-theme', theme);
+			if (initialTheme) {
+				rawSetTheme(initialTheme);
+			}
+			rawSetTheme(theme);
+		}, [theme]);
 	};
-
-	if (initialTheme) {
-		rawSetTheme(initialTheme);
-	}
 
 	useEffect(() => {
 		rawSetTheme(theme);
@@ -75,3 +78,38 @@ export default ThemeProvider;
 // https://github.com/jeffjadulco/dark-mode-react-tailwind/blob/master/src/css/index.css
 // https://joshwcomeau.com/gatsby/dark-mode/
 // https://github.com/donavon/use-dark-mode
+
+
+/*
+const ThemeProvider = (initialTheme: string, children?: ReactNode) => {
+	const { dark, light } = ThemeInitProps;
+	const [theme, setTheme] = useState(getThemeInit);
+	const rawSetTheme = (initialTheme: string) => {
+		useEffect(() => {
+			// if (typeof window !== undefined) return;
+			const root: HTMLElement = window.document.documentElement;
+			const isDark = theme === dark;
+
+			root.classList.remove(isDark ? light : dark);
+			root.classList.add(theme);
+
+			localStorage.setItem('color-theme', theme);
+			if (initialTheme) {
+				rawSetTheme(initialTheme);
+			}
+			rawSetTheme(theme);
+		}, [theme]);
+	};
+
+	useEffect(() => {
+		rawSetTheme(theme);
+	}, [theme]);
+
+	const value = { theme, setTheme };
+	return (
+		<ThemeContext.Provider value={value}>
+			{children}
+		</ThemeContext.Provider>
+	);
+};
+*/
