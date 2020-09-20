@@ -83,12 +83,12 @@ module.exports = {
 			},
 			backgroundColor: {
 				primary: 'var(--color-bg-primary)',
-				secondary: 'var(--color-bg-secondary)'
+				auxiliary: 'var(--color-bg-auxiliary)'
 			},
 			textColor: {
 				accent: 'var(--color-text-accent)',
 				primary: 'var(--color-text-primary)',
-				auxiliary: 'var(--color-text-secondary)',
+				auxiliary: 'var(--color-text-auxiliary)',
 				tertiary: 'var(--color-text-tertiary)'
 			},
 			colors: {
