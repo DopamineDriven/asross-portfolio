@@ -8,7 +8,7 @@ const LeadDarkModeToggle = (): JSX.Element => {
 
 	const Conditional = () => {
 		return isClient ? (
-			<div className='block mx-auto transition-all transform'>
+			<div className='block transition-all transform container pr-portfolio justify-between mx-auto w-full min-w-full translate-y-portfolioLS text-center'>
 				<button
 					type='button'
 					onClick={darkMode.disable}

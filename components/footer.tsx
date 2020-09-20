@@ -38,7 +38,7 @@ const socialSnippets: SocialContact[] = [
 ];
 
 const Footer = (): JSX.Element => {
-	const socialMap = socialSnippets.map(constituent => {
+	const socialMap =  socialSnippets.map(constituent => {
 		return (
 			<div
 				className='list-none w-auto min-w-full md:w-full text-center md:text-right float-right'
@@ -69,7 +69,7 @@ const Footer = (): JSX.Element => {
 	);
 	const copyRight = (
 		<div className='flex flex-row mx-auto w-full tracking-wide text-center'>
-			<div className='block align-top mx-auto font-somaRoman text-black dark:text-white text-center w-auto'>
+			<div className='block align-top mx-auto font-somaRoman  text-center w-auto'>
 				<a
 					className='block transition-all duration-3000 delay-300 -translate-y-portfolioDivider transform animate-hero justify-center dark:hover:text-afWhite hover:text-fiveOBlack'
 					href='http://duncanross.design/'

@@ -9,7 +9,7 @@ export interface ToggleProps {
 const LeadToggle = ({ checked, onChange }: ToggleProps): JSX.Element => {
 	return (
 		<span>
-			<input type='checkbox' checked={checked} onChange={onChange} className='light-mode dark:dark-mode' />
+			<input type='button' checked={checked} onChange={onChange} className='dark:focus:text-black' />
 			<label htmlFor='dark-mode-check' />
 		</span>
 	);

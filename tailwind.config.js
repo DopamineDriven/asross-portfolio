@@ -6,7 +6,7 @@ module.exports = {
 	purge: {
 		content: ['./components/**/*.tsx', './pages/**/*.tsx'],
 		options: {
-			whiteList: ['dark-mode']
+			whiteList: ['dark-mode', 'light-mode']
 		}
 	},
 	theme: {
@@ -358,7 +358,8 @@ module.exports = {
 				medium: '0 8px 30px rgba(0, 0, 0, 0.12)'
 			}
 		},
-		darkSelector: '.dark'
+		darkSelector: '.dark',
+		lightSelector: '.light'
 	},
 	variants: {
 		padding: ['responsive', 'last', 'first', 'hover', 'focus', 'even', 'odd'],

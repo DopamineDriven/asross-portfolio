@@ -8,7 +8,7 @@ interface AboutExcerptProps {
 
 const AboutExcerpt = ({ excerpt, slug }: AboutExcerptProps) => {
 	return (
-		<div className='text-oneFiveBlack dark:text-white cursor-default hover:text-fiveOBlack dark:hover:text-eaWhite transition-all transform duration-10000 translate-y-portfolioDivider animate-pulse'>
+		<div className=' cursor-default hover:text-fiveOBlack dark:hover:text-eaWhite transition-all transform duration-10000 translate-y-portfolioDivider animate-pulse'>
 			<Link as={`/about/${slug}`} href='/about/[slug]' passHref scroll={true}>
 				<a
 					className='font-somaRoman md:text-customTitle text-customSM tracking-tight'
