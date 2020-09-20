@@ -89,7 +89,11 @@ module.exports = {
 				accent: 'var(--color-text-accent)',
 				primary: 'var(--color-text-primary)',
 				auxiliary: 'var(--color-text-auxiliary)',
-				tertiary: 'var(--color-text-tertiary)'
+				tertiary: 'var(--color-text-tertiary)',
+				quaternary: 'var(--color-text-quaternary)'
+			},
+			borderColor: {
+				primary: 'var(--color-border-primary)'
 			},
 			colors: {
 				'accent-1': '#FAFAFA',

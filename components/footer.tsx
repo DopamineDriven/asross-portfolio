@@ -45,7 +45,7 @@ const Footer = (): JSX.Element => {
 				key={constituent.id}
 			>
 				<a
-					className='block transition-all duration-2000 delay-300 translate-y-portfolioDivider transform animate-hero w-auto hover:text-fiveOBlack dark:hover:text-afWhite md:text-center'
+					className='block transition-all duration-2000 delay-300 translate-y-portfolioDivider transform animate-hero w-auto hover:text-tertiary md:text-center'
 					target={constituent.target}
 					aria-label={constituent.label}
 					href={constituent.href}
@@ -56,10 +56,10 @@ const Footer = (): JSX.Element => {
 		);
 	});
 	const backToTop = (
-		<div className='block w-auto align-top font-somaRoman text-primary hover:text-tertiary dark:hover:text-afWhite text-center transition-all duration-1000 '>
+		<div className='block w-auto align-top font-somaRoman text-primary hover:text-tertiary text-center transition-all duration-1000 '>
 			<Link href='/#top' passHref as='/top'>
 				<a
-					className='block pl-portfolioDivider whitespace-no-wrap duration-1000 transition-all ease-in-out hover:text-fiveOBlack dark:hover:text-afWhite items-left justify-start'
+					className='block pl-portfolioDivider whitespace-no-wrap duration-1000 transition-all ease-in-out hover:text-tertiary items-left justify-start'
 					aria-label='back to top'
 				>
 					Back to Top
@@ -71,7 +71,7 @@ const Footer = (): JSX.Element => {
 		<div className='flex flex-row mx-auto w-full tracking-wide text-center'>
 			<div className='block align-top mx-auto font-somaRoman  text-center w-auto'>
 				<a
-					className='block transition-all duration-3000 delay-300 -translate-y-portfolioDivider transform animate-hero justify-center dark:hover:text-afWhite hover:text-fiveOBlack'
+					className='block transition-all duration-3000 delay-300 -translate-y-portfolioDivider transform animate-hero justify-center hover:text-tertiary'
 					href='https://github.com/DopamineDriven/asross-portfolio'
 					target='__blank'
 					aria-label='repo'
