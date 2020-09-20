@@ -6,7 +6,7 @@ interface CardExcerptProps {
 
 const CardExcerpt = ({ excerpt }: CardExcerptProps) => {
 	return (
-		<div className='font-somaRoman text-fiveOBlack dark:text-afWhite uppercase cursor-default'>
+		<div className='font-somaRoman text-tertiary uppercase cursor-default'>
 			<ReactMarkdown
 				escapeHtml={false}
 				source={excerpt}

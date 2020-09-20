@@ -125,7 +125,7 @@ const PostIcons = ({
 							aria-label={antdesign}
 							target='__blank'
 							href='https://ant.design/'
-							className='bg-primary text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-threeHalves rounded-full focus:outline-none'
+							className='bg-primary text-primary hover:text-auxiliary hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-threeHalves rounded-full focus:outline-none'
 						>
 							{antdesign === '' ? (
 								<></>

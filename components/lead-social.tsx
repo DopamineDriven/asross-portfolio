@@ -39,7 +39,7 @@ const LeadSocial = (): JSX.Element => {
 		return (
 			<div className='mt-socialMargin block' key={constituent.id}>
 				<a
-					className='block z-50 hover:text-fiveOBlack dark:hover:text-afWhite py-portfolioDivider md:py-0 transition-all translate-y-mdmxSocial tracking-wide transform ease-in-out animate-hero'
+					className='block z-50 hover:text-tertiary py-portfolioDivider md:py-0 transition-all translate-y-mdmxSocial tracking-wide transform ease-in-out animate-hero'
 					target={constituent.target}
 					aria-label={constituent.label}
 					href={constituent.href}

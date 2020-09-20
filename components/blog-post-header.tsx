@@ -36,10 +36,10 @@ const BlogPostHeader = ({
 				<BlogPostTitle>{title}</BlogPostTitle>
 			</div>
 			<div className='pt-portfolioDivider max-w-cardGridMobile block mx-auto align-middle justify-center select-none'>
-				<div className='text-customTitle text-oneFiveBlack dark:text-white font-somaRoman flex mx-auto align-middle justify-center'>
+				<div className='text-customTitle text-auxiliary font-somaRoman flex mx-auto align-middle justify-center'>
 					<BlogPostExcerpt excerpt={excerpt} />
 			</div>
-				<div className='text-customTitle pt-portfolio text-oneFiveBlack dark:text-white font-somaRoman flex mx-auto align-middle justify-center'>
+				<div className='text-customTitle pt-portfolio text-auxiliary font-somaRoman flex mx-auto align-middle justify-center'>
 					<Date dateString={date} />
 				</div>
 				<div className=' text-black font-somaRoman flex mx-auto align-middle justify-center pb-mdmxSocial'>

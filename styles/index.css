@@ -9,6 +9,8 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth#:~:text=WebKit%20im
 	--color-text-primary: #000000;
 	--color-text-auxiliary: #151515;
 	--color-text-tertiary: #505050;
+	--color-text-quaternary: #ebe8e0;
+	--color-border-primary: #151515;
 }
 
 .dark-mode {
@@ -18,6 +20,8 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth#:~:text=WebKit%20im
 	--color-text-primary: #ffffff;
 	--color-text-auxiliary: #eaeaea;
 	--color-text-tertiary: #afafaf;
+	--color-text-quaternary: #000000;
+	--color-border-primary: #ffffff;
 }
 
 :root {

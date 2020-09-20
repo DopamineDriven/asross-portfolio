@@ -10,9 +10,9 @@ interface PostSourceIconProps {
 
 const PostSourceIcons = ({ github, heroku, vercel }: PostSourceIconProps) => {
 	const anchorClass: string =
-		' text-primary text-primary text-customTitle leading-normal px-portfolio transition-all duration-2000 delay-300 translate-y-mdmxSocial transform animate-hero duration-1000 ease-in-out md:text-customTitle inline-block text-center items-center align-middle justify-center mx-auto rounded-full focus:outline-none';
+		' text-primary text-customTitle leading-normal px-portfolio transition-all duration-2000 delay-300 translate-y-mdmxSocial transform animate-hero duration-1000 ease-in-out md:text-customTitle inline-block text-center items-center align-middle justify-center mx-auto rounded-full focus:outline-none';
 	const iconClass: string =
-		' flex align-middle md:text-customTitle text-customTitleMobile text-center font-extrabold hover:text-fiveOBlack dark:hover:text-afWhite transition-all transform delay-300 duration-1000 ease-in-out fa-portfolioDivider';
+		' flex align-middle md:text-customTitle text-customTitleMobile text-center font-extrabold hover:text-tertiary transition-all transform delay-300 duration-1000 ease-in-out fa-portfolioDivider';
 	return (
 		<div className='align-middle justify-right text-right inline-block'>
 			<ul className='align-middle'>
