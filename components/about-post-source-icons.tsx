@@ -81,11 +81,11 @@ const AboutPostSourceIcons = ({
 						aria-label={`${constituent.social} - ${constituent.href}`}
 						target={constituent.target}
 						href={constituent.href}
-						className='text-oneFiveBlack dark:text-white leading-normal transition-all transform delay-300 duration-1000 ease-in-out inline-block text-center items-center align-middle justify-center mx-mxSocial pt-portfolioDivider pr-portfolioDivider rounded-full focus:outline-none'
+						className='text-primary leading-normal transition-all transform delay-300 duration-1000 ease-in-out inline-block text-center items-center align-middle justify-center mx-mxSocial pt-portfolioDivider pr-portfolioDivider rounded-full focus:outline-none'
 					>
 						<FontAwesomeIcon
 							icon={constituent.icon}
-							className='flex align-middle text-center font-extrabold hover:text-fiveOBlack pr-half dark:hover:text-afWhite transition-all transform delay-300 duration-1000 ease-in-out '
+							className='flex align-middle text-center font-extrabold hover:text-tertiary pr-half transition-all transform delay-300 duration-1000 ease-in-out '
 							size='2x'
 						/>
 					</a>
@@ -95,7 +95,7 @@ const AboutPostSourceIcons = ({
 	});
 	const anchorClass: string =' leading-normal px-portfolio transition-all duration-2000 delay-300 translate-y-mdmxSocial transform animate-hero duration-1000 ease-in-out md:text-customTitle text-customTitleMobile inline-block text-center items-center align-middle justify-center rounded-full focus:outline-none';
 	const iconClass: string =
-		' flex align-middle md:text-customTitle text-customTitleMobile text-center font-extrabold hover:text-fiveOBlack dark:hover:text-afWhite transition-all transform delay-300 duration-1000 ease-in-out fa-portfolioDivider';
+		' flex align-middle md:text-customTitle text-customTitleMobile text-center font-extrabold hover:text-tertiary transition-all transform delay-300 duration-1000 ease-in-out fa-portfolioDivider';
 	return (
 		<div className='align-middle justify-right text-right inline-block'>
 			<ul className='align-middle'>

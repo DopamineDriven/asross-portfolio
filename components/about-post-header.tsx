@@ -32,10 +32,10 @@ const AboutPostHeader = ({
 				<AboutPostTitle>{title}</AboutPostTitle>
 			</div>
 			<div className=' max-w-cardGridMobile block mx-auto align-middle justify-center select-none'>
-				<div className=' text-customExcerptMobile text-oneFiveBlack dark:text-eaWhite font-somaRoman flex mx-auto align-middle justify-center'>
+				<div className=' text-customExcerptMobile text-auxiliary font-somaRoman flex mx-auto align-middle justify-center'>
 					<Date dateString={date} />
 				</div>
-				<div className='text-black dark:text-white font-somaRoman flex mx-auto align-middle justify-center pb-mdmxSocial'>
+				<div className='text-primary font-somaRoman flex mx-auto align-middle justify-center pb-mdmxSocial'>
 					<AboutPostSourceIcons
 						github={github}
 						email={email}
