@@ -6,7 +6,7 @@ const LeadDarkModeToggle = (): JSX.Element => {
 	const darkMode: DarkMode = useDarkMode();
 	const isClient = useClient();
 
-	const Conditional = () => {
+	const Conditional = (): JSX.Element => {
 		return isClient ? (
 			<div className='block transition-all transform container pr-portfolio justify-between mx-auto w-full min-w-full translate-y-portfolioLS text-center'>
 				<button
