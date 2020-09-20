@@ -1,8 +1,32 @@
 # asross-portfolio
 
+## TS Operators
+
+- https://github.com/typescript-cheatsheets/react#troubleshooting-handbook-operators
+
+```txt
+typeof and instanceof: type query used for refinement
+keyof: get keys of an object
+O[K]: property lookup
+[K in O]: mapped types
++ or - or readonly or ?: addition and subtraction and readonly and optional modifiers
+x ? Y : Z: Conditional types for generic types, type aliases, function parameter types
+!: Nonnull assertion for nullable types
+=: Generic type parameter default for generic types
+as: type assertion
+is: type guard for function return types
+Conditional Types are a difficult topic to get around so here are some extra resources:
+
+fully walked through explanation https://artsy.github.io/blog/2018/11/21/conditional-types-in-typescript/
+Bailing out and other advanced topics https://github.com/sw-yx/ts-spec/blob/master/conditional-types.md
+Basarat's video https://www.youtube.com/watch?v=SbVgPQDealg&list=PLYvdvJlnTOjF6aJsWWAt7kZRJvzw-en8B&index=2&t=0s
+```
+
 ## Sitemap generation
+
 - https://github.com/jplhomer/site/blob/master/scripts/generate-sitemap.js
 - next.config.js
+
 ```js
 const withMDX = require('@next/mdx')({
 	extension: /\.mdx?$/,
@@ -11,7 +35,7 @@ const withMDX = require('@next/mdx')({
 	}
 });
 const withSvgr = require('next-svgr');
-const withPlugins = require('next-compose-plugins')
+const withPlugins = require('next-compose-plugins');
 module.exports = withPlugins(
 	withMDX({
 		webpack: (config, { isServer }) => {
@@ -25,49 +49,61 @@ module.exports = withPlugins(
 );
 ```
 
-## React-TS Hooks 
+## React-TS Hooks
+
 - https://github.com/typescript-cheatsheets/react#context
 - note: consider using amVim extension for VIM in VSCODE
 
 ## Framer Motion Page Animations on load
+
 - https://reacttricks.com/animating-next-page-transitions-with-framer-motion/
 - https://www.framer.com/api/motion/examples/
 - Quality examples (tsx)
 - https://codesandbox.io/s/framer-motion-viewport-scroll-and-svg-path-animation-mwi35?fontsize=14&module=/src/Example.tsx&file=/src/Example.tsx
 
 ## Tailwind Dark Mode
+
 - https://mayashavin.com/articles/dark-theme-tailwind-nuxt
 
 ## Configure method to reveal user ISP
-- https://www.3whitehats.com/knowledge/how-to-get-service-provider-back-in-google-analytics 
+
+- https://www.3whitehats.com/knowledge/how-to-get-service-provider-back-in-google-analytics
 
 ## Google Analytics Added
+
 - https://github.com/react-ga/react-ga
 - https://github.com/react-ga/react-ga/blob/master/demo/app/Events.jsx
 - https://coderrocketfuel.com/article/add-google-analytics-to-a-next-js-and-react-website
 - https://analytics.google.com/analytics/web/#/a177780141w246030893p228624158/admin/tracking/tracking-code/
 
-## GA Events + TS 
+## GA Events + TS
+
 - https://kellenfujimoto.com/posts/strongly-typed-google-analytics-events/
 
-## Social Extended Types Mapping 
+## Social Extended Types Mapping
+
 - https://stackoverflow.com/questions/60284442/react-ts-how-to-map-through-fontawesome-icons-and-display-them
 
 ## React Animations
+
 - https://dev.to/joserfelix/getting-started-with-react-animations-308a
 
 ## Dark Mode React App Aug 5, 2020
+
 - https://www.carlrippon.com/implementing-dark-mode-in-a-react-app-with-css-properties/
 
 ## Smooth Scrolling React Library (alternative to global html css call scroll-behavior: smooth)
+
 - https://www.digitalocean.com/community/tutorials/how-to-implement-smooth-scrolling-in-react
 
 ## Mobile-Detect and React-Sizes
+
 - https://stackoverflow.com/questions/55394365/conditional-rendering-on-server-side
 - https://www.npmjs.com/package/mobile-detect
 - https://www.npmjs.com/package/react-sizes
 
 ## Conditionally render by device type
+
 - https://stackoverflow.com/questions/55394365/conditional-rendering-on-server-side
 - https://medium.com/applike/https-medium-com-applike-react-responsive-conditional-rendering-of-component-c97ab247097d
 - https://github.com/applike/react-responsive
@@ -75,9 +111,12 @@ module.exports = withPlugins(
 - https://www.npmjs.com/package/typed-responsive-react
 
 ### TS interfaces vs Types
+
 - https://stackoverflow.com/questions/37233735/typescript-interfaces-vs-types
-- 
+-
+
 ### TS Classes vs interfaces
+
 - https://passionfordev.com/typescript-classes-vs-interfaces/
 - https://stackoverflow.com/questions/40973074/difference-between-interfaces-and-classes-in-typescript
 - https://stackoverflow.com/questions/12764247/typescript-interface-vs-class-vs-modules-vs-program-vs-function
@@ -220,6 +259,7 @@ npx patch-package @fortawesome/fontawesome-common-types
 
 - 09/05/20
 - https://github.com/vercel/next.js/discussions/14810
+
 ```tsx
 import { useState, useCallback, useEffect } from 'react';
 

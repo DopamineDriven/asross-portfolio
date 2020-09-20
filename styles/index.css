@@ -252,10 +252,22 @@ body::-webkit-scrollbar {
 }
 
 
-.block.light-mode {
+/* .block.light-mode {
 	@apply bg-portfolio text-black border-fiveOBlack; 
 }
 
 .block.dark-mode {
 	@apply bg-black;
+} 
+
+.light-mode {
+	--color-bg-primary: #ebe8e0;
+	--color-text-primary: #000000;
+	--color-text-secondary: #151515;
 }
+
+.dark-mode {
+	--color-bg-primary: #14171f;
+	--color-text-primary: #ffffff;
+	--color-text-secondary: #EAEAEA;
+}*/
