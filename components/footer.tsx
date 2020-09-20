@@ -38,7 +38,7 @@ const socialSnippets: SocialContact[] = [
 ];
 
 const Footer = (): JSX.Element => {
-	const socialMap =  socialSnippets.map(constituent => {
+	const socialMap = socialSnippets.map(constituent => {
 		return (
 			<div
 				className='list-none w-auto min-w-full md:w-full text-center md:text-right float-right'
@@ -56,7 +56,7 @@ const Footer = (): JSX.Element => {
 		);
 	});
 	const backToTop = (
-		<div className='block w-auto align-top font-somaRoman text-black hover:text-fiveOBlack dark:text-white dark:hover:text-afWhite text-center transition-all duration-1000 '>
+		<div className='block w-auto align-top font-somaRoman text-primary hover:text-tertiary dark:hover:text-afWhite text-center transition-all duration-1000 '>
 			<Link href='/#top' passHref as='/top'>
 				<a
 					className='block pl-portfolioDivider whitespace-no-wrap duration-1000 transition-all ease-in-out hover:text-fiveOBlack dark:hover:text-afWhite items-left justify-start'
@@ -72,9 +72,9 @@ const Footer = (): JSX.Element => {
 			<div className='block align-top mx-auto font-somaRoman  text-center w-auto'>
 				<a
 					className='block transition-all duration-3000 delay-300 -translate-y-portfolioDivider transform animate-hero justify-center dark:hover:text-afWhite hover:text-fiveOBlack'
-					href='http://duncanross.design/'
+					href='https://github.com/DopamineDriven/asross-portfolio'
 					target='__blank'
-					aria-label='design by duncan ross'
+					aria-label='repo'
 				>
 					©2020 All Rights Reserved
 				</a>
@@ -103,7 +103,7 @@ export default Footer;
 
 /*
 	<div className='grid grid-cols-3 w-full tracking-wide'>
-		<div className='block align-top font-somaRoman text-black text-center hover:text-fiveOBlack'>
+		<div className='block align-top font-somaRoman text-primary text-center hover:text-fiveOBlack'>
 			<a
 				className='flex flex-row-reverse w-full uppercase text-center justify-center'
 				target='__blank'
@@ -113,7 +113,7 @@ export default Footer;
 				UI, Duncan Ross
 			</a>
 		</div>
-		<div className='block align-top font-somaRoman text-black text-right hover:text-everythingIsBlue transition-colors duration-300 cursor-pointer'>
+		<div className='block align-top font-somaRoman text-primary text-right hover:text-everythingIsBlue transition-colors duration-300 cursor-pointer'>
 			<a
 				className='block w-full uppercase text-right justify-end items-end float-right'
 				aria-label='everything is blue'

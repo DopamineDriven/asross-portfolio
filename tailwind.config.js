@@ -1,3 +1,5 @@
+// const plugin = require('tailwindcss/plugin')
+
 module.exports = {
 	important: true,
 	future: {
@@ -79,15 +81,16 @@ module.exports = {
 				// somaDisplayLight: ['neue-haas-grotesk-display', 'sans-serif']
 				// subpolished: ['Montserrat', 'sans-serif']
 			},
-			// backgroundColor: {
-			// 	primary: 'var(--color-bg-primary)',
-			// 	secondary: 'var(--color-bg-secondary)'
-			// },
-			// textColor: {
-			// 	accent: 'var(--color-text-accent)',
-			// 	primary: 'var(--color-text-primary)',
-			// 	secondary: 'var(--color-text-secondary)'
-			// },
+			backgroundColor: {
+				primary: 'var(--color-bg-primary)',
+				secondary: 'var(--color-bg-secondary)'
+			},
+			textColor: {
+				accent: 'var(--color-text-accent)',
+				primary: 'var(--color-text-primary)',
+				auxiliary: 'var(--color-text-secondary)',
+				tertiary: 'var(--color-text-tertiary)'
+			},
 			colors: {
 				'accent-1': '#FAFAFA',
 				'accent-2': '#EAEAEA',

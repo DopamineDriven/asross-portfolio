@@ -1,6 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
-import { faGithub, faReact, faWordpress } from '@fortawesome/free-brands-svg-icons';
+import {
+	faGithub,
+	faReact,
+	faWordpress
+} from '@fortawesome/free-brands-svg-icons';
 import {
 	faAntDesignIcon,
 	faApolloIcon,
@@ -82,7 +86,7 @@ type CardIconProps = {
 // 				aria-label='apollo'
 // 				target='__blank'
 // 				href={link.href}
-// 				className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-threeHalves rounded-full focus:outline-none'
+// 				className='bg-primary text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-threeHalves rounded-full focus:outline-none'
 // 			>
 // 				{link.name === '' ? (
 // 					<></>
@@ -121,7 +125,7 @@ const PostIcons = ({
 							aria-label={antdesign}
 							target='__blank'
 							href='https://ant.design/'
-							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-threeHalves rounded-full focus:outline-none'
+							className='bg-primary text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-threeHalves rounded-full focus:outline-none'
 						>
 							{antdesign === '' ? (
 								<></>
@@ -141,7 +145,7 @@ const PostIcons = ({
 							aria-label='apollo'
 							target='__blank'
 							href='https://www.apollographql.com/docs/'
-							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-threeHalves rounded-full focus:outline-none'
+							className='bg-primary text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-threeHalves rounded-full focus:outline-none'
 						>
 							{apollo === '' ? (
 								<></>
@@ -161,7 +165,7 @@ const PostIcons = ({
 							aria-label='auth0'
 							target='__blank'
 							href='https://auth0.com/'
-							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
+							className='bg-primary text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
 						>
 							{auth0 === '' ? (
 								<></>
@@ -181,7 +185,7 @@ const PostIcons = ({
 							aria-label='graphql'
 							target='__blank'
 							href='https://www.graphql.com/'
-							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-threeHalves rounded-full focus:outline-none'
+							className='bg-primary text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-threeHalves rounded-full focus:outline-none'
 						>
 							{graphql === '' ? (
 								<></>
@@ -201,7 +205,7 @@ const PostIcons = ({
 							aria-label='next'
 							target='__blank'
 							href='https://nextjs.org/'
-							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
+							className='bg-primary text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
 						>
 							{next === '' ? (
 								<></>
@@ -220,7 +224,7 @@ const PostIcons = ({
 							aria-label='react'
 							target='__blank'
 							href='https://reactjs.org/'
-							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
+							className='bg-primary text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
 						>
 							{react === '' ? (
 								<></>
@@ -240,7 +244,7 @@ const PostIcons = ({
 							aria-label='tailwindcss'
 							target='__blank'
 							href='https://tailwindcss.com/'
-							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
+							className='bg-primary text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
 						>
 							{tailwindcss === '' ? (
 								<></>
@@ -259,7 +263,7 @@ const PostIcons = ({
 							aria-label='typescript'
 							target='__blank'
 							href='https://www.typescriptlang.org/'
-							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
+							className='bg-primary text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
 						>
 							{typescript === '' ? (
 								<></>
@@ -279,7 +283,7 @@ const PostIcons = ({
 							aria-label='wordpress'
 							target='__blank'
 							href='https://wpengine.com/resources/headless-cms-and-wordpress/'
-							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
+							className='bg-primary text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
 						>
 							{wordpress === '' ? (
 								<></>
@@ -335,7 +339,7 @@ export default PostIcons;
 							aria-label='react'
 							target='__blank'
 							href=''
-							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
+							className='bg-primary text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
 						>
 							{apollo === '' ? (
 								<></>

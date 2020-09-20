@@ -47,7 +47,7 @@ const BlogSubFooter = ({ title }: SubFooterProps): JSX.Element => {
 				key={constituent.id}
 			>
 				<a
-					className='block transition-all duration-3000 delay-300 translate-y-portfolioDivider transform animate-hero w-auto hover:text-fiveOBlack dark:hover:text-afWhite md:text-center pr-portfolioDivider'
+					className='block transition-all duration-3000 delay-300 translate-y-portfolioDivider transform animate-hero w-auto hover:text-tertiary dark:hover:text-afWhite md:text-center pr-portfolioDivider'
 					target={constituent.target}
 					aria-label={constituent.label}
 					href={constituent.href}
@@ -58,10 +58,10 @@ const BlogSubFooter = ({ title }: SubFooterProps): JSX.Element => {
 		);
 	});
 	const backToTop = (
-		<div className='block w-auto align-top font-somaRoman text-black dark:text-white text-center'>
+		<div className='block w-auto align-top font-somaRoman text-primary text-center'>
 			<Link href={`/#home-${title}`} passHref>
 				<a
-					className='block pl-portfolioDivider whitespace-no-wrap duration-1000 transition-all ease-in-out hover:text-fiveOBlack dark:hover:text-afWhite items-left justify-start'
+					className='block pl-portfolioDivider whitespace-no-wrap duration-1000 transition-all ease-in-out hover:text-tertiary items-left justify-start'
 					aria-label='back to top'
 				>
 					Return Home
@@ -71,10 +71,10 @@ const BlogSubFooter = ({ title }: SubFooterProps): JSX.Element => {
 	);
 	const copyRight = (
 		<div className='flex flex-row mx-auto w-full tracking-wide text-center'>
-			<div className='block align-top mx-auto font-somaRoman text-black dark:text-white text-center w-auto'>
+			<div className='block align-top mx-auto font-somaRoman text-primary text-center w-auto'>
 				<a
-					className='block transition-all duration-3000 delay-300 -translate-y-portfolioDivider transform animate-hero justify-center dark:hover:text-afWhite hover:text-fiveOBlack'
-					href='http://duncanross.design/'
+					className='block transition-all duration-3000 delay-300 -translate-y-portfolioDivider transform animate-hero justify-center dark:hover:text-tertiary hover:text-tertiary'
+					href='https://github.com/DopamineDriven/asross-portfolio'
 					target='__blank'
 					aria-label='design by duncan ross'
 				>

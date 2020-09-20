@@ -3,11 +3,21 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth#:~:text=WebKit%20im
 */
 
 .light-mode {
-@apply bg-portfolio text-black border-black; 
+	@apply bg-portfolio text-black border-black;
+	--color-bg-primary: #ebe8e0;
+	--color-bg-auxiliary: #ebf0e0;
+	--color-text-primary: #000000;
+	--color-text-auxiliary: #151515;
+	--color-text-tertiary: #505050;
 }
 
 .dark-mode {
-@apply bg-black text-white border-white;
+	@apply bg-black text-white border-white;
+	--color-bg-primary: #000000;
+	--color-bg-auxiliary: #151515;
+	--color-text-primary: #ffffff;
+	--color-text-auxiliary: #eaeaea;
+	--color-text-tertiary: #afafaf;
 }
 
 :root {
@@ -249,9 +259,8 @@ body::-webkit-scrollbar {
 }
 
 .fa-portfolioDivider {
-	@apply text-customTitle; 
+	@apply text-customTitle;
 }
-
 
 /* .block.light-mode {
 	@apply bg-portfolio text-black border-fiveOBlack; 
@@ -263,12 +272,16 @@ body::-webkit-scrollbar {
 
 .light-mode {
 	--color-bg-primary: #ebe8e0;
+	--color-bg-auxiliary: #ebf0e0
 	--color-text-primary: #000000;
-	--color-text-secondary: #151515;
+	--color-text-auxiliary: #151515;
+	--color-text-tertiary: #505050
 }
 
 .dark-mode {
-	--color-bg-primary: #14171f;
+	--color-bg-primary: #000000;
+	--color-bg-auxiliary: #151515;
 	--color-text-primary: #ffffff;
-	--color-text-secondary: #EAEAEA;
+	--color-text-auxiliary: #eaeaea;
+	--color-text-tertiary: #afafaf
 }*/
