@@ -7,7 +7,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth#:~:text=WebKit%20im
 }
 
 .dark-mode {
-@apply bg-black text-white;
+@apply bg-black text-white border-white;
 }
 
 :root {
