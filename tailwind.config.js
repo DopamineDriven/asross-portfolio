@@ -1,3 +1,5 @@
+// const plugin = require('tailwindcss/plugin')
+
 module.exports = {
 	important: true,
 	future: {
@@ -6,7 +8,7 @@ module.exports = {
 	purge: {
 		content: ['./components/**/*.tsx', './pages/**/*.tsx'],
 		options: {
-			whiteList: ['dark-mode']
+			whiteList: ['dark-mode', 'light-mode']
 		}
 	},
 	theme: {
@@ -79,15 +81,16 @@ module.exports = {
 				// somaDisplayLight: ['neue-haas-grotesk-display', 'sans-serif']
 				// subpolished: ['Montserrat', 'sans-serif']
 			},
-			// backgroundColor: {
-			// 	primary: 'var(--color-bg-primary)',
-			// 	secondary: 'var(--color-bg-secondary)'
-			// },
-			// textColor: {
-			// 	accent: 'var(--color-text-accent)',
-			// 	primary: 'var(--color-text-primary)',
-			// 	secondary: 'var(--color-text-secondary)'
-			// },
+			backgroundColor: {
+				primary: 'var(--color-bg-primary)',
+				auxiliary: 'var(--color-bg-auxiliary)'
+			},
+			textColor: {
+				accent: 'var(--color-text-accent)',
+				primary: 'var(--color-text-primary)',
+				auxiliary: 'var(--color-text-auxiliary)',
+				tertiary: 'var(--color-text-tertiary)'
+			},
 			colors: {
 				'accent-1': '#FAFAFA',
 				'accent-2': '#EAEAEA',
@@ -358,7 +361,8 @@ module.exports = {
 				medium: '0 8px 30px rgba(0, 0, 0, 0.12)'
 			}
 		},
-		darkSelector: '.dark'
+		darkSelector: '.dark',
+		lightSelector: '.light'
 	},
 	variants: {
 		padding: ['responsive', 'last', 'first', 'hover', 'focus', 'even', 'odd'],

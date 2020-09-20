@@ -6,13 +6,13 @@ const LeadDarkModeToggle = (): JSX.Element => {
 	const darkMode: DarkMode = useDarkMode();
 	const isClient = useClient();
 
-	const Conditional = () => {
+	const Conditional = (): JSX.Element => {
 		return isClient ? (
-			<div className=''>
+			<div className='block transition-all transform container pr-portfolio justify-between mx-auto w-full min-w-full translate-y-portfolioLS text-center'>
 				<button
 					type='button'
 					onClick={darkMode.disable}
-					className='text-black dark:text-white bg-portfolio dark:bg-black'
+					className=''
 				>
 					☀
 				</button>
@@ -20,7 +20,7 @@ const LeadDarkModeToggle = (): JSX.Element => {
 				<button
 					type='button'
 					onClick={darkMode.enable}
-					className='text-black dark:text-white bg-portfolio dark:bg-black'
+					className=''
 				>
 					☾
 				</button>

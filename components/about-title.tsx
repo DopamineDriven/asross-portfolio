@@ -15,7 +15,7 @@ const AboutTitle = ({ title, slug, urlTitle }: AboutTitleProps) => {
 		>
 			<Link as={`/about/${slug}`} href='/about/[slug]' passHref scroll={true}>
 				<a
-					className='font-head text-black hover:text-fiveOBlack dark:hover:text-afWhite dark:text-white duration-2000 delay-300 transition-all'
+					className='font-head hover:text-tertiary duration-2000 delay-300 transition-all'
 					aria-label={`about item - ${urlTitle}`}
 					id={`home-${title}`}
 				>

@@ -52,8 +52,8 @@ export const AndrewIcon: SvgIcon = ({
 	);
 };
 
-const { dark } = ThemeInitProps;
-const isTheme = dark ? ' #eaeaea' : ' #151515'
+const { dark, light } = ThemeInitProps;
+const isTheme = dark ? ' #eaeaea' : light ? ' #151515' : ' #afafaf';
 export const ArIcon: SvgIcon = ({
 	width = '8.0556vw',
 	height = '8.0556vw',

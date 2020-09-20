@@ -38,13 +38,13 @@ const PostHeader = ({
 				<PostTitle>{title}</PostTitle>
 			</div>
 			<div className='pt-portfolioDivider max-w-cardGridMobile block mx-auto align-middle justify-center select-none'>
-				<div className='text-customTitle text-oneFiveBlack dark:text-white font-somaRoman flex mx-auto align-middle justify-center'>
+				<div className='text-customTitle text-oneFiveBlack text-primary font-somaRoman flex mx-auto align-middle justify-center'>
 					<PostArticleExcerpt articleExcerpt={articleExcerpt} />
 				</div>
 				<div className='text-customTitle text-oneFiveBlack dark:text-eaWhite light:text-primary font-somaRoman flex mx-auto align-middle justify-center'>
 					<Date dateString={date} />
 				</div>
-				<div className=' text-black font-somaRoman flex mx-auto align-middle justify-center pb-mdmxSocial'>
+				<div className=' text-primary font-somaRoman flex mx-auto align-middle justify-center pb-mdmxSocial'>
 					<PostSourceIcons github={github} heroku={heroku} vercel={vercel} />
 				</div>
 				{/* <div className='text-customExcerptMobile text-oneFiveBlack font-somaRoman flex mx-auto align-middle justify-center'>
