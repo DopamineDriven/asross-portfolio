@@ -52,11 +52,19 @@ const ArIconConditional = (): JSX.Element => {
 		<Media greaterThan='md'>
 			<Link href='/'>
 				<a
-					className='container block pl-portfolio pt-portfolio justify-between mx-auto w-full min-w-full '
+					className='container block pl-portfolio pt-portfolio justify-between mx-auto w-full min-w-full'
 					id='top'
 					aria-label='top'
 				>
-					<ArIcon width='10vw' height='10vw' className2='  transform transition-all animate-pulse duration-10000 stroke-current'  />
+					<ArIcon
+						width='10vw'
+						height='10vw'
+						classNames={[
+							` antialised w-svgIcon max-w-svgIcon transform transition-all`,
+							'  stroke-current',
+							` fill-primary`
+						]}
+					/>
 				</a>
 			</Link>
 		</Media>
