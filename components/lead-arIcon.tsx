@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Media } from 'components/window-width';
 import { Fragment } from 'react';
 import DarkMode from 'components/lead-dark-mode';
+import { SvgIcon } from './svg-icons';
 
 const ArIconConditional = (): JSX.Element => {
 	const arIconXs: JSX.Element = (
@@ -55,7 +56,7 @@ const ArIconConditional = (): JSX.Element => {
 					id='top'
 					aria-label='top'
 				>
-					<ArIcon width='10vw' height='10vw' />
+					<ArIcon width='10vw' height='10vw' className2='  transform transition-all animate-pulse duration-10000 stroke-current'  />
 				</a>
 			</Link>
 		</Media>

@@ -20,7 +20,27 @@ interface SvgIconConstituentValues {
 	className2?: string;
 	className3?: string;
 	className4?: string;
-	className5?: string;
+	className5?: string
 }
 
 export default SvgIconConstituentValues;
+
+/*
+interface SvgIconConstituentValues {
+	strokeColor?: string[];
+	strokeWidth?: string[];
+	strokeFill?: string[];
+	fillColor?: string[];
+	imageWidth?: string;
+	imageHeight?: string;
+	width?: string;
+	height?: string;
+	rotateCenter?: number;
+	className?: string[];
+}
+
+export default SvgIconConstituentValues;
+
+// Variadic Tuple Types
+// https://devblogs.microsoft.com/typescript/announcing-typescript-4-0/
+*/
