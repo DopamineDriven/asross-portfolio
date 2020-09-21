@@ -363,6 +363,7 @@ module.exports = {
 				customPostAbout: '7.5666vw',
 				customPostBlog: '7.7666vw',
 				customSubPostTitle: '11.9276vw',
+				customSubPostTitleModified: '8.9276vw',
 				customAboutSubMobile: '2.63333vw',
 				customBlogSupraTitle: '8.9276vw'
 			},

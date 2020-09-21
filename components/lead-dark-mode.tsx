@@ -9,15 +9,16 @@ const LeadDarkModeToggle = (): JSX.Element => {
 
 	const Conditional = (): JSX.Element => {
 		return isClient ? (
-			<div className='block transition-all transform container pr-portfolio justify-between mx-auto w-full min-w-full translate-y-portfolioLS text-center'>
+			<div className='block transition-all transform container pr-portfolio justify-between mx-auto w-full min-w-full translate-y-portfolioLS'>
 				<button
 					type='button'
 					onClick={darkMode.disable}
-					className=''
+					className=' fill-primary text-primary stroke-current'
 				>
 					☀
 				</button>
 				<Toggle checked={darkMode.value} onChange={darkMode.toggle} />
+				|&nbsp;
 				<button
 					type='button'
 					onClick={darkMode.enable}

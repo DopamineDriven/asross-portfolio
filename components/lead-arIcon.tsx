@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { Media } from 'components/window-width';
 import { Fragment } from 'react';
 import DarkMode from 'components/lead-dark-mode';
-import { SvgIcon } from './svg-icons';
 
 const ArIconConditional = (): JSX.Element => {
 	const arIconXs: JSX.Element = (
@@ -70,9 +69,15 @@ const ArIconConditional = (): JSX.Element => {
 		</Media>
 	);
 
+	const DarkModeToggler = (): JSX.Element => (
+		<div className='pt-portfolio text-customTitle transition-all transform -translate-y-mdmxSocial col-span-4 text-right -translate-x-portfolioPadding'>
+			<DarkMode />
+		</div>
+	);
+
 	const ArIconsCoalesced = (): JSX.Element => (
 		<Fragment>
-			<div className='relative block justify-between lg:w-auto lg:static lg:block lg:justify-start transition-all w-full min-w-full col-span-5'>
+			<div className='relative block justify-between lg:w-auto lg:static lg:block lg:justify-start transition-all w-full min-w-full col-span-2'>
 				{arIconXs}
 				{arIconSm}
 				{arIconMd}
@@ -84,9 +89,7 @@ const ArIconConditional = (): JSX.Element => {
 		<Fragment>
 			<div className='select-none relative z-1 justify-between pt-portfolioDivider navbar-expand-lg grid grid-cols-6 min-w-full w-full container overflow-y-hidden overflow-x-hidden transform'>
 				<ArIconsCoalesced />
-				<div className='pt-portfolio'>
-					<DarkMode />
-				</div>
+				<DarkModeToggler />
 			</div>
 		</Fragment>
 	);

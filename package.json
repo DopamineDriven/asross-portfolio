@@ -9,6 +9,7 @@
 		"dev": "next",
 		"build": "next build",
 		"start": "next start",
+		"analyze": "ANALYZE=true yarn build",
 		"postinstall": "npx patch-package"
 	},
 	"dependencies": {
@@ -21,6 +22,7 @@
 		"@mdx-js/loader": "^1.6.18",
 		"@mdx-js/mdx": "^1.6.18",
 		"@mdx-js/react": "^1.6.18",
+		"@next/bundle-analyzer": "^9.5.3",
 		"@next/mdx": "^9.5.3",
 		"@tailwindcss/typography": "^0.2.0",
 		"@types/google.analytics": "^0.0.40",
