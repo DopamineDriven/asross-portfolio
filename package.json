@@ -9,7 +9,7 @@
 		"dev": "next",
 		"build": "next build",
 		"start": "next start",
-		"analyze": "cross-env ANALYZE=true yarn run build",
+		"analyze": "ANALYZE=true yarn build",
 		"postinstall": "npx patch-package"
 	},
 	"dependencies": {
@@ -54,7 +54,6 @@
 		"@types/react-dom": "^16.9.8",
 		"@types/react-syntax-highlighter": "^11.0.4",
 		"autoprefixer": "^9.8.6",
-		"cross-env": "^7.0.2",
 		"file-loader": "^6.0.0",
 		"husky": "^4.2.5",
 		"next-compose-plugins": "^2.2.0",
