@@ -32,6 +32,7 @@ interface SvgIconConstituentValues {
 	width?: string;
 	height?: string;
 	rotateCenter?: number;
+	className?: string;
 }
 
 export default SvgIconConstituentValues;

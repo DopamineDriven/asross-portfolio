@@ -12,6 +12,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth#:~:text=WebKit%20im
 	--color-text-quaternary: #ebe8e0;
 	--color-border-primary: #151515;
 	--color-fill-primary: #000000;
+	--color-stroke-primary: #000000;
 }
 
 .dark-mode {
@@ -23,7 +24,8 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth#:~:text=WebKit%20im
 	--color-text-tertiary: #afafaf;
 	--color-text-quaternary: #000000;
 	--color-border-primary: #ffffff;
-	--color-fill-primary: #000000;
+	--color-fill-primary: #ffffff;
+	--color-stroke-primary: #ffffff;
 }
 
 :root {
