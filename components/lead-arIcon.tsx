@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Media } from 'components/window-width';
 import { Fragment } from 'react';
 import DarkMode from 'components/lead-dark-mode';
+import { SvgIcon } from './svg-icons';
 
 const ArIconConditional = (): JSX.Element => {
 	const arIconXs: JSX.Element = (
@@ -51,11 +52,19 @@ const ArIconConditional = (): JSX.Element => {
 		<Media greaterThan='md'>
 			<Link href='/'>
 				<a
-					className='container block pl-portfolio pt-portfolio justify-between mx-auto w-full min-w-full '
+					className='container block pl-portfolio pt-portfolio justify-between mx-auto w-full min-w-full'
 					id='top'
 					aria-label='top'
 				>
-					<ArIcon width='10vw' height='10vw' />
+					<ArIcon
+						width='10vw'
+						height='10vw'
+						classNames={[
+							` antialised w-svgIcon max-w-svgIcon transform transition-all`,
+							'  stroke-current',
+							` fill-primary`
+						]}
+					/>
 				</a>
 			</Link>
 		</Media>
