@@ -1,5 +1,6 @@
 import SvgDarkModeShape from 'types/dark-toggle';
 import { MouseEvent, FC } from 'react';
+// import { strokeLinecapEnum } from '../types/dark-toggle';
 
 interface SvgDarkModeDefined extends SvgDarkModeShape {
 	onClick?:
@@ -15,28 +16,35 @@ const sunIcon: FC<SvgDarkModeDefined> = (props): JSX.Element => {
 		fillColor = [],
 		strokeColor = [],
 		classNames = [],
-		styles = []
+		strokeWidths = [],
+		styles = [],
+		strokeLinecaps = [],
+		strokeLinejoins = []
 	} = props;
 	const [fillColor1 = 'none', fillColor2 = '#000'] = fillColor;
-	const [strokeColor1 = ''] = strokeColor;
+	const [strokeColor1 = 'currentColor'] = strokeColor;
 	const [
 		className1 = ` stroke-current ${strokeColor} antialiased fill-current`,
 		className2 = ` stroke-current`,
 		className3 = ` `
 	] = classNames;
 	const [] = styles;
+  const [strokeWidth1 = '2.0'] = strokeWidths;
+  // const { round, butt, square, inherit } = strokeLinecapEnum;
+	// const [strokeLinecap1 = round || butt || square || inherit || undefined] = strokeLinecaps;
+	// const [strokeLinejoin1 = 'round'] = strokeLinejoins;
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
-			width='24'
-			height='24'
+			width={width}
+			height={height}
 			viewBox='0 0 24 24'
-			fill='none'
-			stroke='currentColor'
-			strokeWidth='2'
+			fill={fillColor1}
+			stroke={strokeColor1}
+			strokeWidth={strokeWidth1}
 			strokeLinecap='round'
 			strokeLinejoin='round'
-			className='feather feather-sun'
+			className={className1}
 		>
 			<circle cx='12' cy='12' r='5' />
 			<line x1='12' y1='1' x2='12' y2='3' />

@@ -1,6 +1,14 @@
+export type strokeLinecapTypes= 'round' | 'inhert' | 'butt' | 'square';
+
+export enum strokeLinecapEnum {
+  round = 'round',
+  butt = 'butt',
+  square = 'square',
+  inherit = 'inherit'
+}
 export default interface SvgDarkModeShape {
 	strokeColor?: string[];
-	strokeWidth?: string[];
+	strokeWidths?: string[];
 	strokeFill?: string[];
 	fillColor?: string[];
 	imageWidth?: string;
@@ -9,5 +17,10 @@ export default interface SvgDarkModeShape {
 	height?: string;
 	rotateCenter?: number;
 	classNames?: string[];
-	styles?: string[];
+  styles?: string[];
+  strokeLinecaps?: strokeLinecapTypes[];
+  strokeLinejoins?: string[];
+  cx?: string;
+  cy?: string;
+  r?: string;
 }
