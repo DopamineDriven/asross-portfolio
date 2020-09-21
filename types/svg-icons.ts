@@ -1,3 +1,19 @@
+// import { ReactNode, Key, LegacyRef } from "react";
+import { DOMAttributes, SVGAttributes } from 'react';
+
+// interface Props<T> {
+// 	children?: ReactNode;
+// 	key?: Key;
+// 	ref?: LegacyRef<T>;
+// }
+// interface ClassProps {
+
+// } {} 
+
+// DOMAttributes<T> extends Props<T> {}
+
+
+
 interface SvgIconConstituentValues {
 	strokeColor?: string;
 	strokeWidth?: string;

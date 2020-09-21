@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import SvgIconConstituentValues from 'types/svg-icons';
 import { ThemeInitProps } from 'components/theme';
+import { svgPathData } from '../global';
 
 // FC can be parameterized via Abstraction
 
@@ -72,6 +73,7 @@ export const ArIcon: SvgIcon = ({
 			xmlns='http://www.w3.org/2000/svg'
 			className={`stroke-current ${strokeColor} antialiased w-svgIcon max-w-svgIcon`}
 			transform={`rotate(${rotateCenter}, 65, 65)`}
+			id='arSvg'
 		>
 			<circle
 				cx='32.5'
@@ -87,3 +89,7 @@ export const ArIcon: SvgIcon = ({
 		</svg>
 	);
 };
+
+
+// SVGSVGElement
+// https://developer.aliyun.com/mirror/npm/package/next-plugin-svgr
