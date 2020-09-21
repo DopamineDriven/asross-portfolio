@@ -11,6 +11,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth#:~:text=WebKit%20im
 	--color-text-tertiary: #505050;
 	--color-text-quaternary: #ebe8e0;
 	--color-border-primary: #151515;
+	--color-fill-primary: #000000;
 }
 
 .dark-mode {
@@ -22,6 +23,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth#:~:text=WebKit%20im
 	--color-text-tertiary: #afafaf;
 	--color-text-quaternary: #000000;
 	--color-border-primary: #ffffff;
+	--color-fill-primary: #000000;
 }
 
 :root {
@@ -266,26 +268,3 @@ body::-webkit-scrollbar {
 	@apply text-customTitle;
 }
 
-/* .block.light-mode {
-	@apply bg-portfolio text-black border-fiveOBlack; 
-}
-
-.block.dark-mode {
-	@apply bg-black;
-} 
-
-.light-mode {
-	--color-bg-primary: #ebe8e0;
-	--color-bg-auxiliary: #ebf0e0
-	--color-text-primary: #000000;
-	--color-text-auxiliary: #151515;
-	--color-text-tertiary: #505050
-}
-
-.dark-mode {
-	--color-bg-primary: #000000;
-	--color-bg-auxiliary: #151515;
-	--color-text-primary: #ffffff;
-	--color-text-auxiliary: #eaeaea;
-	--color-text-tertiary: #afafaf
-}*/
