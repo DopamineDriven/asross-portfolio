@@ -1,7 +1,7 @@
 import useDarkMode, { DarkMode } from 'use-dark-mode';
 import Toggle from 'components/lead-toggle';
 import useClient from 'lib/isClient';
-
+import { SunIcon } from 'components/lead-dark-icons';
 
 const LeadDarkModeToggle = (): JSX.Element => {
 	const darkMode: DarkMode = useDarkMode();
@@ -15,15 +15,11 @@ const LeadDarkModeToggle = (): JSX.Element => {
 					onClick={darkMode.disable}
 					className=' fill-primary text-primary stroke-current'
 				>
-					☀
+					<SunIcon />
 				</button>
 				<Toggle checked={darkMode.value} onChange={darkMode.toggle} />
-				|&nbsp;
-				<button
-					type='button'
-					onClick={darkMode.enable}
-					className=''
-				>
+				&nbsp;
+				<button type='button' onClick={darkMode.enable} className=''>
 					☾
 				</button>
 			</div>
