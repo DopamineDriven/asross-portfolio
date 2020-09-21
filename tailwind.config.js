@@ -95,6 +95,12 @@ module.exports = {
 			borderColor: {
 				primary: 'var(--color-border-primary)'
 			},
+			fillColor: {
+				primary: 'var(--color-fill-primary)'
+			},
+			strokeColor: {
+				primary: 'var(--color-stroke-primary)'
+			},
 			colors: {
 				'accent-1': '#FAFAFA',
 				'accent-2': '#EAEAEA',
