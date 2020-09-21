@@ -9,7 +9,7 @@ dev: 'https://dev.to/asross311/hacking-the-fontawesome-library-for-custom-icon-i
 medium: 'https://medium.com/@andrew.simpson.ross/hacking-the-fontawesome-library-with-nextjs-typescript-for-custom-icon-support-a9ceac76fb70'
 youtube: 'empty'
 ogImage:
- url: '/assets/next-jamstack.jpg'
+ url: 'https://dev-to-uploads.s3.amazonaws.com/i/nygowammvhd2877ru9hw.jpg'
 ---
 
 # Overview
