@@ -1,30 +1,13 @@
 export default interface SvgDarkModeShape {
-	strokeColor?: string;
-	strokeWidth?: string;
-	strokeWidth2?: string;
-	strokeWidth3?: string;
-	strokeFill?: string;
-	fillColor?: string;
-	fillColor2?: string;
-	fillColor3?: string;
-	fillColor4?: string;
-	fillColor5?: string;
-	fillColor6?: string;
-	fillColor7?: string;
+	strokeColor?: string[];
+	strokeWidth?: string[];
+	strokeFill?: string[];
+	fillColor?: string[];
 	imageWidth?: string;
 	imageHeight?: string;
 	width?: string;
 	height?: string;
-	transformLight?: string;
-	transformDark?: string;
 	rotateCenter?: number;
-	className?: string;
-	className2?: string;
-	className3?: string;
-	className4?: string;
-	className5?: string;
-	style1?: string;
-	style2?: string;
-	style3?: string;
-	style4?: string;
+	classNames?: string[];
+	styles?: string[];
 }
