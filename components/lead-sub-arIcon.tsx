@@ -2,6 +2,7 @@ import { ArIcon } from 'components/svg-icons';
 import Link from 'next/link';
 import { Media } from 'components/window-width';
 import { Fragment } from 'react';
+import DarkMode from 'components/lead-dark-mode';
 
 const SubArIconConditional = (): JSX.Element => {
 	const arIconXs: JSX.Element = (
@@ -55,13 +56,21 @@ const SubArIconConditional = (): JSX.Element => {
 			</Link>
 		</Media>
 	);
-	return (
+
+	const ArIconsCoalesced = (): JSX.Element => (
 		<Fragment>
-			<div className='relative block justify-between lg:w-auto lg:static lg:block lg:justify-start w-full min-w-full transition-all'>
+			<div className='relative block justify-between lg:w-auto lg:static lg:block lg:justify-start transition-all w-full min-w-full col-span-5'>
 				{arIconXs}
 				{arIconSm}
 				{arIconMd}
 				{arIconDesktop}
+			</div>
+		</Fragment>
+	);
+	return (
+		<Fragment>
+			<div className='relative block justify-between lg:w-auto lg:static lg:block lg:justify-start w-full min-w-full transition-all'>
+				<ArIconsCoalesced />
 			</div>
 		</Fragment>
 	);
