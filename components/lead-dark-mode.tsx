@@ -2,6 +2,7 @@ import useDarkMode, { DarkMode } from 'use-dark-mode';
 import Toggle from 'components/lead-toggle';
 import useClient from 'lib/isClient';
 
+
 const LeadDarkModeToggle = (): JSX.Element => {
 	const darkMode: DarkMode = useDarkMode();
 	const isClient = useClient();

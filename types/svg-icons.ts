@@ -17,6 +17,7 @@ interface SvgIconConstituentValues {
 	height?: string;
 	rotateCenter?: number;
 	className?: string;
+	className2?: string;
 }
 
 export default SvgIconConstituentValues;
