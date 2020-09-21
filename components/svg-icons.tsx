@@ -1,8 +1,5 @@
 import { FC } from 'react';
 import SvgIconConstituentValues from 'types/svg-icons';
-import { ThemeInitProps } from 'components/theme';
-import { svgPathData } from '../global';
-
 
 // FC can be parameterized via Abstraction
 
@@ -54,8 +51,6 @@ export const AndrewIcon: SvgIcon = ({
 	);
 };
 
-const { dark, light } = ThemeInitProps;
-const isTheme = dark ? ' #eaeaea' : light ? ' #151515' : ' #afafaf';
 export const ArIcon: SvgIcon = ({
 	width = '8.0556vw',
 	height = '8.0556vw',
@@ -73,7 +68,7 @@ export const ArIcon: SvgIcon = ({
 			viewBox='0 0 65 65'
 			fill={fillColor}
 			xmlns='http://www.w3.org/2000/svg'
-			className={className + ' text-primary'}
+			className={className}
 			transform={`rotate(${rotateCenter}, 65, 65)`}
 			id='arSvg'
 		>
@@ -92,7 +87,6 @@ export const ArIcon: SvgIcon = ({
 		</svg>
 	);
 };
-
 
 // SVGSVGElement
 // https://developer.aliyun.com/mirror/npm/package/next-plugin-svgr
