@@ -5,17 +5,7 @@ import SvgIconConstituentValues from 'types/svg-icons';
 
 export interface SvgIcon extends FC<SvgIconConstituentValues> {}
 
-/*
-{
-	width = '1209',
-	height = '271',
-	strokeColor = '',
-	fillColor = 'none'
-	rotateCenter = 0
-}
-*/
-
-export const AndrewIcon: SvgIcon = props => {
+export const AndrewIcon: SvgIcon = (props): JSX.Element => {
 	const {
 		height = '1209',
 		width = '271',
@@ -39,6 +29,7 @@ export const AndrewIcon: SvgIcon = props => {
 		<svg
 			width={width}
 			height={height}
+			stroke={strokeColor1}
 			viewBox='0 0 1209 271'
 			fill={fillColor1}
 			xmlns='http://www.w3.org/2000/svg'
@@ -95,7 +86,7 @@ export const ArIcon: SvgIcon = (props): JSX.Element => {
 		className2 = ` stroke-current`,
 		className3 = ` fill-primary`
 	] = classNames;
-	const [fillColor1 = 'none', fillColor2 = ' fill-primary'] = fillColor;
+	const [fillColor1 = 'none', fillColor2 = ' '] = fillColor;
 	const [strokeWidth1 = '2.0'] = strokeWidth;
 	return (
 		<svg
