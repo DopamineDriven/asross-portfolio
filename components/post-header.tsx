@@ -31,7 +31,7 @@ const PostHeader = ({
 }: PostHeaderProps) => {
 	return (
 		<Fragment>
-			<div className='font-head  text-customSubPostTitle select-none'>
+			<div className='font-head  text-customSubPostTitleModified select-none'>
 				<div className='block mx-auto overflow-hidden md:max-w-aboutImage600 md:w-aboutImage600 max-w-imagePortfolioMobile w-imagePortfolioMobile pt-portfolio'>
 					<CoverImage title={title} src={src} />
 				</div>

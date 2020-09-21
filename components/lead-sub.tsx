@@ -10,7 +10,7 @@ interface LeadSubProps {
 
 const LeadSub = ({ title }: LeadSubProps): JSX.Element => {
 	const DarkModeToggle = (): JSX.Element => (
-		<div className=' pt-portfolioLS text-right text-customFooter block w-full min-w-full transition-all transform translate-x-portfolioPadding'>
+		<div className=' pt-portfolioLS text-center text-customFooter block w-full min-w-full transition-all transform translate-x-portfolioPadding'>
 			<DarkMode />
 		</div>
 	)
