@@ -3,7 +3,8 @@
 module.exports = {
 	important: true,
 	future: {
-		removeDeprecatedGapUtilities: true
+		removeDeprecatedGapUtilities: true,
+		purgeLayersByDefault: true
 	},
 	purge: {
 		content: ['./components/**/*.tsx', './pages/**/*.tsx'],
