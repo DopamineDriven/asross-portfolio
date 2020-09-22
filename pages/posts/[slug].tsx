@@ -27,7 +27,7 @@ const Post = ({ post, allPosts }: PostSlugProps) => {
 	}
 	return (
 		<Fragment>
-			<LeadPost title={post.title} />
+			<div className='stroke-current fill-current'><LeadPost title={post.title} /></div>
 			{router.isFallback ? (
 				<PostTitle>Loading…</PostTitle>
 			) : (

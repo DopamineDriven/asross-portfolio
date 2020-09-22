@@ -1,6 +1,6 @@
 
 .markdown {
-	@apply text-customSM px-portfolioPadding;
+	@apply text-customSM px-portfolioPadding text-primary bg-primary stroke-current fill-current;
 }
 
 .markdown p,

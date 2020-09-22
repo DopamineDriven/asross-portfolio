@@ -56,6 +56,11 @@ const SubArIconConditional = (): JSX.Element => {
 			</Link>
 		</Media>
 	);
+	const DarkModeToggler = (): JSX.Element => (
+		<div className='md:pt-portfolio md:text-customTitle transition-all transform md:-translate-y-mdmxSocial translate-y-portfolioLSMobile col-span-4 text-right -translate-x-portfolioPadding'>
+			<DarkMode />
+		</div>
+	);
 
 	const ArIconsCoalesced = (): JSX.Element => (
 		<Fragment>
