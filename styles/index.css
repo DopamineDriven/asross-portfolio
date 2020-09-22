@@ -5,7 +5,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth#:~:text=WebKit%20im
 .light-mode {
 	@apply bg-portfolio text-black border-black;
 	--color-bg-primary: #ebe8e0;
-	--color-bg-auxiliary: #ebf0e0;
+	--color-bg-auxiliary: #eaeaea;
 	--color-text-primary: #000000;
 	--color-text-auxiliary: #151515;
 	--color-text-tertiary: #505050;
