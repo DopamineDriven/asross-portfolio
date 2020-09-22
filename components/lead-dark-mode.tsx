@@ -55,8 +55,8 @@ const LeadDarkModeToggle = (): JSX.Element => {
 					onChange={toggleDarkMode}
 					checked={false}
 					className='fill-current text-primary text-customTitle stroke-current transition-colors transform outline-none rotate-855'
-					width='6.5vw'
-					height='6.5vw'
+					width='6vw'
+					height='6vw'
 				/>
 			</Media>
 		);

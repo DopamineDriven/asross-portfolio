@@ -38,7 +38,7 @@ export default class MyDocument extends Document {
 						}}
 					/>
 				</Head>
-				<body className='root transition-colors duration-500 transform ease-in-out'>
+				<body className='root transition-colors duration-1000 transform ease-in-out'>
 					<script src='public/noflash.js' />
 					<Main />
 					<NextScript />
