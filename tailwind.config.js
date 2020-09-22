@@ -22,9 +22,12 @@ module.exports = {
 		},
 		rotate: {
 			0: '0deg',
+			40: '40deg',
 			45: '45deg',
+			125: '125deg',
 			180: '180deg',
-			855: '855deg'
+			290: '310deg',
+			855: '845deg'
 		},
 		opacity: {
 			10: '10',
@@ -96,7 +99,8 @@ module.exports = {
 				primary: 'var(--color-border-primary)'
 			},
 			fill: {
-				primary: 'var(--color-fill-primary)'
+				primary: 'var(--color-fill-primary)',
+				auxiliary: 'var(--color-fill-auxiliary)'
 			},
 			strokeColor: {
 				primary: 'var(--color-stroke-primary)'
