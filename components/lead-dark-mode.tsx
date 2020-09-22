@@ -1,27 +1,48 @@
 import useDarkMode, { DarkMode } from 'use-dark-mode';
 import Toggle from 'components/lead-toggle';
 import useClient from 'lib/isClient';
-// import DarkModeSwitch from 'components/lead-dark-icons';
+import DarkModeSwitch from 'components/lead-dark-icons';
+import { useState, Fragment } from 'react';
 
 const LeadDarkModeToggle = (): JSX.Element => {
 	const darkMode: DarkMode = useDarkMode();
 	const isClient = useClient();
+	const [isDarkMode, setDarkMode] = useState(false);
+
+	const toggleDarkMode = (checked: boolean) => {
+		setDarkMode(checked);
+	};
+
+	const Dark = () => {
+		return darkMode.value === true ? (
+			<DarkModeSwitch
+				onChange={toggleDarkMode}
+				checked={true}
+				className='fill-primary text-primary stroke-current outline-none'
+			/>
+		) : (
+			<DarkModeSwitch
+				onChange={toggleDarkMode}
+				checked={false}
+					className='fill-current text-primary duration-1000 text-customTitle stroke-current -translate-y-portfolioDivider pt-mdmxSocial transition-all transform outline-none'
+				sunColor=''
+			/>
+		);
+	};
 
 	const Conditional = (): JSX.Element => {
 		return isClient ? (
-			<div className='block transition-all transform container pr-portfolio justify-between mx-auto w-full min-w-full duration-1000 translate-y-portfolioLS'>
+			<div className='block outline-none transition-all transform container pr-portfolio justify-between mx-auto w-full min-w-full duration-1000 translate-y-portfolioLS'>
 				<button
 					type='button'
 					onClick={darkMode.value === true ? darkMode.disable : darkMode.enable}
-					className=' fill-primary text-primary stroke-current'
-					style={{ transition: '0.2s background' }}
+					className=' fill-primary text-primary stroke-current outline-none'
 				>
-					☾
-					{/* <Fragment>
+					<Fragment>
 						<Toggle checked={darkMode.value} onChange={darkMode.toggle} />
-						<DarkModeSwitch style1={{ marginBottom: '2rem' }} />
-						<DarkModeSwitch />
-					</Fragment> */}
+
+						<Dark />
+					</Fragment>
 					<Toggle checked={darkMode.value} onChange={darkMode.toggle} />
 				</button>
 			</div>

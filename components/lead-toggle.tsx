@@ -13,7 +13,7 @@ const LeadToggle = ({ checked, onChange }: ToggleProps): JSX.Element => {
 				type='button'
 				checked={checked}
 				onChange={onChange}
-				className='focus:text-primary'
+				className='outline-none'
 			/>
 			<label htmlFor='dark-mode-check' />
 		</span>
