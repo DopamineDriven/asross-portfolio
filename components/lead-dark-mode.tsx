@@ -3,6 +3,7 @@ import Toggle from 'components/lead-toggle';
 import useClient from 'lib/isClient';
 import DarkModeSwitch from 'components/lead-dark-icons';
 import { useState, Fragment } from 'react';
+import { Media } from 'components/window-width';
 
 const LeadDarkModeToggle = (): JSX.Element => {
 	const darkMode: DarkMode = useDarkMode();
@@ -13,26 +14,57 @@ const LeadDarkModeToggle = (): JSX.Element => {
 		setDarkMode(checked);
 	};
 
-	const Dark = () => {
+	const DarkMobile = () => {
 		return darkMode.value === true ? (
-			<DarkModeSwitch
-				onChange={toggleDarkMode}
-				checked={true}
-				className='fill-primary text-primary stroke-current outline-none duration-1000 transition-all transform rotate-290'
-			/>
+			<Media lessThan='md'>
+				<DarkModeSwitch
+					onChange={toggleDarkMode}
+					checked={true}
+					className='fill-primary text-primary stroke-current outline-none transform transition-colors rotate-290'
+					width='9vw'
+					height='9vw'
+				/>
+			</Media>
 		) : (
-			<DarkModeSwitch
-				onChange={toggleDarkMode}
-				checked={false}
-				className='fill-current text-primary duration-1000 text-customTitle stroke-current -translate-y-portfolioDivider pt-mdmxSocial transition-all transform outline-none rotate-855'
-				sunColor=''
-			/>
+			<Media lessThan='md'>
+				<DarkModeSwitch
+					onChange={toggleDarkMode}
+					checked={false}
+					className='fill-current text-primary text-customTitle stroke-current transition-colors transform outline-none rotate-855'
+					width='9vw'
+					height='9vw'
+				/>
+			</Media>
+		);
+	};
+
+	const DarkDesktop = () => {
+		return darkMode.value === true ? (
+			<Media greaterThanOrEqual='md'>
+				<DarkModeSwitch
+					onChange={toggleDarkMode}
+					checked={true}
+					className='fill-primary text-primary stroke-current outline-none transform transition-colors rotate-290'
+					width='6.5vw'
+					height='6.5vw'
+				/>
+			</Media>
+		) : (
+			<Media greaterThanOrEqual='md'>
+				<DarkModeSwitch
+					onChange={toggleDarkMode}
+					checked={false}
+					className='fill-current text-primary text-customTitle stroke-current transition-colors transform outline-none rotate-855'
+					width='6.5vw'
+					height='6.5vw'
+				/>
+			</Media>
 		);
 	};
 
 	const Conditional = (): JSX.Element => {
 		return isClient ? (
-			<div className='block outline-none transition-all transform container pr-portfolio justify-between mx-auto w-full min-w-full duration-1000 translate-y-portfolioLS'>
+			<div className='block outline-none transition-all transform container pr-portfolio justify-between mx-auto w-full min-w-full translate-y-portfolioLS'>
 				<button
 					type='button'
 					onClick={darkMode.value === true ? darkMode.disable : darkMode.enable}
@@ -40,12 +72,11 @@ const LeadDarkModeToggle = (): JSX.Element => {
 				>
 					<Fragment>
 						<Toggle checked={darkMode.value} onChange={darkMode.toggle} />
-						<div className='transition-all transform -translate-y-portfolio'>
-							
-							<Dark />
+						<div className='align-top inline-block'>
+							<DarkMobile />
+							<DarkDesktop />
 						</div>
 					</Fragment>
-					<Toggle checked={darkMode.value} onChange={darkMode.toggle} />
 				</button>
 			</div>
 		) : (
