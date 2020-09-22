@@ -1,6 +1,7 @@
 import SvgDarkModeShape from 'types/dark-toggle';
 import { MouseEvent, FC } from 'react';
 // import { strokeLinecapEnum } from '../types/dark-toggle';
+import { useSpring, animated } from 'react-spring';
 
 interface SvgDarkModeDefined extends SvgDarkModeShape {
 	onClick?:
@@ -23,8 +24,8 @@ export const SunIcon: FC<SvgDarkModeDefined> = (props): JSX.Element => {
 	} = props;
 	const [fillColor1 = 'none', fillColor2 = ' white'] = fillColor;
 	const [strokeColor1 = 'currentColor'] = strokeColor;
-  const [
-    className0 = ' transform transition rotate-40 cursor-pointer',
+	const [
+		className0 = ' transform transition rotate-40 cursor-pointer',
 		className1 = ` stroke-current ${strokeColor} antialiased fill-current`,
 		className2 = ` stroke-current fill-current text-primary`,
 		className3 = ` fill-current text-quaternary stroke-current`
@@ -41,18 +42,12 @@ export const SunIcon: FC<SvgDarkModeDefined> = (props): JSX.Element => {
 			stroke={strokeColor1}
 			strokeWidth={strokeWidth1}
 			strokeLinecap='round'
-      strokeLinejoin='round'
-      style={{ transform: "rotate(40deg)" }}
+			strokeLinejoin='round'
+			style={{ transform: 'rotate(40deg)' }}
 			className={className0}
 		>
 			<mask id='mask'>
-				<rect
-					x='0'
-					y='0'
-					width='100%'
-					height='100%'
-					fill='white'
-				/>
+				<rect x='0' y='0' width='100%' height='100%' fill='white' />
 				<circle fill='black' cx='12' cy='4' r='9' />
 			</mask>
 			<circle
