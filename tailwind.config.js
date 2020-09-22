@@ -70,8 +70,9 @@ module.exports = {
 				}
 			},
 			animation: {
-				wiggle: 'wiggle 1s ease-in-out infinite',
-				hero: 'hero 1s ease-in-out infinite'
+				wiggle: 'wiggle 10s ease-in-out infinite',
+				hero: 'hero 1s ease-in-out infinite',
+				slowPing: 'pulse 10s cubic-bezier(0, 0, 0.2, 1) infinite'
 			},
 			fontFamily: {
 				head: ['goudy-bookletter-1911', 'serif'],

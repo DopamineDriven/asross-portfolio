@@ -1,6 +1,5 @@
 import cn from 'classnames';
 import Link from 'next/link';
-import { ThemeInitProps } from 'components/theme';
 
 interface AboutImageProps {
 	title: string;
@@ -9,7 +8,6 @@ interface AboutImageProps {
 }
 
 const AboutImage = ({ src, title, slug }: AboutImageProps) => {
-	const { dark } = ThemeInitProps;
 	const image = (
 		<img
 			src={src}

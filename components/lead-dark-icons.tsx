@@ -57,7 +57,7 @@ const DarkModeSwitch: FC<Props> = ({
 	width = '4vw',
 	height = '4vw',
   animationProperties = defaultProperties,
-  moonColor = '',
+  moonColor = 'white',
   sunColor = '',
 	style,
 	r1='0',
@@ -123,7 +123,8 @@ const DarkModeSwitch: FC<Props> = ({
           // @ts-ignore
           style={maskedCircleProps}
           r={checked ? r2 : r1}
-          fill="black"
+					fill="black"
+					className=''
         />
       </mask>
 
@@ -135,7 +136,7 @@ const DarkModeSwitch: FC<Props> = ({
         style={centerCircleProps}
         mask="url(#myMask2)"
       />
-      <animated.g stroke="currentColor" style={linesProps}>
+      <animated.g stroke="currentColor" style={linesProps} className=''>
         <line x1="12" y1="1" x2="12" y2="3" />
         <line x1="12" y1="21" x2="12" y2="23" />
         <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
