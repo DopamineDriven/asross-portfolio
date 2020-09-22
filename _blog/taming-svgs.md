@@ -1,6 +1,6 @@
 ---
 title: 'taming-svgs'
-postTitle: 'Taming Custom SVGs'
+postTitle: 'Taming Custom SVG Props'
 excerpt: 'Taming SVGs with React and TypeScript for enhanced granular control'
 coverImage: 'https://dev-to-uploads.s3.amazonaws.com/i/nygowammvhd2877ru9hw.jpg'
 articleImage: 'https://dev-to-uploads.s3.amazonaws.com/i/a7ucumqfkxa1sqm2u67d.jpg'

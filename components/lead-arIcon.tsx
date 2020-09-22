@@ -9,7 +9,7 @@ const ArIconConditional = (): JSX.Element => {
 		<Media at='xs'>
 			<Link href='/'>
 				<a
-					className='container block pl-portfolio pt-portfolio justify-between mx-auto w-full min-w-full '
+					className='container block transform transition-transform translate-x-aboutHackingFontAwesomePT py-portfolio justify-center mx-auto w-full min-w-full'
 					id='top'
 					aria-label='top'
 				>
@@ -70,7 +70,7 @@ const ArIconConditional = (): JSX.Element => {
 	);
 
 	const DarkModeToggler = (): JSX.Element => (
-		<div className='pt-portfolio text-customTitle transition-all transform -translate-y-mdmxSocial col-span-4 text-right -translate-x-portfolioPadding'>
+		<div className='md:pt-portfolio md:text-customTitle transition-all transform md:-translate-y-mdmxSocial translate-y-portfolioLSMobile col-span-4 text-right -translate-x-portfolioPadding'>
 			<DarkMode />
 		</div>
 	);

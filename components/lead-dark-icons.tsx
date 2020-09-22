@@ -39,22 +39,29 @@ interface Props {
   onChange: (checked: boolean) => void;
   checked: boolean;
   style?: CSSProperties;
-  size?: number;
+	width?: string;
+	height?: string;
   animationProperties?: typeof defaultProperties;
   moonColor?: string;
 	sunColor?: string;
 	className?: string;
+	r1?: string;
+	r2?: string;
+	
 }
 
 const DarkModeSwitch: FC<Props> = ({
   onChange,
   children,
   checked = false,
-  size = '4vw',
+	width = '4vw',
+	height = '4vw',
   animationProperties = defaultProperties,
   moonColor = '',
   sunColor = '',
 	style,
+	r1='0',
+	r2='11',
 	className = ' text-primary fill-primary stroke-current outline-none transform transition-all rotate-855',
   ...rest
 }) => {
@@ -92,8 +99,8 @@ const DarkModeSwitch: FC<Props> = ({
   return (
     <animated.svg
       xmlns="http://www.w3.org/2000/svg"
-      width={size}
-      height={size}
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       color={checked ? moonColor : sunColor}
       fill="none"
@@ -115,7 +122,7 @@ const DarkModeSwitch: FC<Props> = ({
         <animated.circle
           // @ts-ignore
           style={maskedCircleProps}
-          r='11'
+          r={checked ? r2 : r1}
           fill="black"
         />
       </mask>
