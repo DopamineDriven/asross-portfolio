@@ -97,7 +97,8 @@ module.exports = {
 				primary: 'var(--color-border-primary)'
 			},
 			fill: {
-				primary: 'var(--color-fill-primary)'
+				primary: 'var(--color-fill-primary)',
+				auxiliary: 'var(--color-fill-auxiliary)'
 			},
 			strokeColor: {
 				primary: 'var(--color-stroke-primary)'

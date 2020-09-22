@@ -10,8 +10,9 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth#:~:text=WebKit%20im
 	--color-text-auxiliary: #151515;
 	--color-text-tertiary: #505050;
 	--color-text-quaternary: #ebe8e0;
-	--color-border-primary: #151515;
+	--color-border-primary: #000000;
 	--color-fill-primary: #000000;
+	--color-fill-auxiliary: #151515;
 	--color-stroke-primary: #000000;
 }
 
@@ -25,6 +26,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth#:~:text=WebKit%20im
 	--color-text-quaternary: #000000;
 	--color-border-primary: #ffffff;
 	--color-fill-primary: #ffffff;
+	--color-fill-auxiliary: #eaeaea;
 	--color-stroke-primary: #ffffff;
 }
 
@@ -269,4 +271,3 @@ body::-webkit-scrollbar {
 .fa-portfolioDivider {
 	@apply text-customTitle;
 }
-
