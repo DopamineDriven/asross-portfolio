@@ -14,7 +14,7 @@ const LeadDarkModeToggle = (): JSX.Element => {
 		setDarkMode(checked);
 	};
 
-	const DarkMobile = () => {
+	const DarkMobile = (): JSX.Element => {
 		return darkMode.value === true ? (
 			<Media lessThan='md'>
 				<DarkModeSwitch
@@ -38,7 +38,7 @@ const LeadDarkModeToggle = (): JSX.Element => {
 		);
 	};
 
-	const DarkDesktop = () => {
+	const DarkDesktop = (): JSX.Element => {
 		return darkMode.value === true ? (
 			<Media greaterThanOrEqual='md'>
 				<DarkModeSwitch
@@ -72,7 +72,7 @@ const LeadDarkModeToggle = (): JSX.Element => {
 				>
 					<Fragment>
 						<Toggle checked={darkMode.value} onChange={darkMode.toggle} />
-						<div className='align-top inline-block'>
+						<div className='align-top inline-block md:transform md:-translate-y-portfolioDivider'>
 							<DarkMobile />
 							<DarkDesktop />
 						</div>
