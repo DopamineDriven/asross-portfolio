@@ -11,7 +11,7 @@ export const defaultProperties = {
       cy: '23%',
     },
     svg: {
-      transform: 'rotate(40deg)',
+      transform: 'rotate(deg)',
     },
     lines: {
       opacity: 0,
@@ -50,12 +50,12 @@ const DarkModeSwitch: FC<Props> = ({
   onChange,
   children,
   checked = false,
-  size = '2vw',
+  size = '4vw',
   animationProperties = defaultProperties,
   moonColor = '',
   sunColor = '',
 	style,
-	className = ' text-primary fill-primary stroke-current outline-none',
+	className = ' text-primary fill-primary stroke-current outline-none transform transition-all rotate-855',
   ...rest
 }) => {
   const properties = useMemo(() => {
@@ -115,7 +115,7 @@ const DarkModeSwitch: FC<Props> = ({
         <animated.circle
           // @ts-ignore
           style={maskedCircleProps}
-          r="9"
+          r='11'
           fill="black"
         />
       </mask>

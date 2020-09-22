@@ -18,13 +18,13 @@ const LeadDarkModeToggle = (): JSX.Element => {
 			<DarkModeSwitch
 				onChange={toggleDarkMode}
 				checked={true}
-				className='fill-primary text-primary stroke-current outline-none'
+				className='fill-primary text-primary stroke-current outline-none duration-1000 transition-all transform rotate-290'
 			/>
 		) : (
 			<DarkModeSwitch
 				onChange={toggleDarkMode}
 				checked={false}
-					className='fill-current text-primary duration-1000 text-customTitle stroke-current -translate-y-portfolioDivider pt-mdmxSocial transition-all transform outline-none'
+				className='fill-current text-primary duration-1000 text-customTitle stroke-current -translate-y-portfolioDivider pt-mdmxSocial transition-all transform outline-none rotate-855'
 				sunColor=''
 			/>
 		);
@@ -40,8 +40,10 @@ const LeadDarkModeToggle = (): JSX.Element => {
 				>
 					<Fragment>
 						<Toggle checked={darkMode.value} onChange={darkMode.toggle} />
-
-						<Dark />
+						<div className='transition-all transform -translate-y-portfolio'>
+							
+							<Dark />
+						</div>
 					</Fragment>
 					<Toggle checked={darkMode.value} onChange={darkMode.toggle} />
 				</button>
