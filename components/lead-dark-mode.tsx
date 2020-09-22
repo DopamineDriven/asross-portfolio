@@ -1,7 +1,7 @@
 import useDarkMode, { DarkMode } from 'use-dark-mode';
 import Toggle from 'components/lead-toggle';
 import useClient from 'lib/isClient';
-import { SunIcon } from 'components/lead-dark-icons';
+// import DarkModeSwitch from 'components/lead-dark-icons';
 
 const LeadDarkModeToggle = (): JSX.Element => {
 	const darkMode: DarkMode = useDarkMode();
@@ -9,18 +9,20 @@ const LeadDarkModeToggle = (): JSX.Element => {
 
 	const Conditional = (): JSX.Element => {
 		return isClient ? (
-			<div className='block transition-all transform container pr-portfolio justify-between mx-auto w-full min-w-full translate-y-portfolioLS'>
+			<div className='block transition-all transform container pr-portfolio justify-between mx-auto w-full min-w-full duration-1000 translate-y-portfolioLS'>
 				<button
 					type='button'
-					onClick={darkMode.disable}
+					onClick={darkMode.value === true ? darkMode.disable : darkMode.enable}
 					className=' fill-primary text-primary stroke-current'
+					style={{ transition: '0.2s background' }}
 				>
-					<SunIcon />
-				</button>
-				<Toggle checked={darkMode.value} onChange={darkMode.toggle} />
-				&nbsp;
-				<button type='button' onClick={darkMode.enable} className=''>
 					☾
+					{/* <Fragment>
+						<Toggle checked={darkMode.value} onChange={darkMode.toggle} />
+						<DarkModeSwitch style1={{ marginBottom: '2rem' }} />
+						<DarkModeSwitch />
+					</Fragment> */}
+					<Toggle checked={darkMode.value} onChange={darkMode.toggle} />
 				</button>
 			</div>
 		) : (
