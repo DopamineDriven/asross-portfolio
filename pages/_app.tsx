@@ -12,13 +12,13 @@ export const gaInit = () => {
 	ReactGA.initialize(`UA-${process.env.GA_TRACKING_ID}`);
 };
 
-
 config.autoAddCss = false;
 
 function App({ Component, pageProps }: AppProps): ReactElement {
 	const router = useRouter();
-	const { logPageView } = gtag;
+	const { logPageView, gaInit } = gtag;
 	useEffect(() => {
+		gaInit();
 		const handleRouteChange = () => {
 			logPageView();
 		};
