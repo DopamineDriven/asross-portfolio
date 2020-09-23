@@ -47,7 +47,6 @@ interface Props {
 	className?: string;
 	r1?: string;
 	r2?: string;
-	
 }
 
 const DarkModeSwitch: FC<Props> = ({

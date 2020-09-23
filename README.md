@@ -1,4 +1,7 @@
 # asross-portfolio
+- https://andrewross.dev
+- https://andrewross.tech
+- https://andrewross.engineer
 
 ## Feather - Simply Beautiful Open Source Icons
 - https://feathericons.com/
