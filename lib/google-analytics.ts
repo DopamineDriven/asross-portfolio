@@ -1,17 +1,17 @@
 import ReactGA, { EventArgs } from 'react-ga';
 
-export const gaInit = () => {
+export const gaInit: () => void = () => {
 	ReactGA.initialize(`UA-${process.env.GA_TRACKING_ID}`);
 };
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/pages#top_of_page
-export const pageview = (url: string) => {
+export const pageview: (url: string) => void = url => {
 	ReactGA.ga('config', process.env.GA_TRACKING_ID, {
 		page_path: url
 	});
 };
 
-export const logPageView = () => {
+export const logPageView: () => void = () => {
 	ReactGA.set({ page: window.location.pathname });
 	ReactGA.pageview(window.location.pathname + window.location.search);
 };
