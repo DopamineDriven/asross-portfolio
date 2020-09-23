@@ -425,3 +425,6 @@ module.exports = {
 		preflight: false
 	}
 };
+
+
+// https://tailwindcss.com/docs/configuration#core-plugins
