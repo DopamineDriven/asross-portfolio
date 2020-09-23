@@ -30,6 +30,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth#:~:text=WebKit%20im
 	--color-stroke-primary: #ffffff;
 }
 
+
 :root {
 	@apply .light-mode;
 	@apply .dark-mode;
@@ -69,7 +70,6 @@ body {
 	scrollbar-width: none; /* Firefox */
 	margin: 0;
 	padding: 0;
-	@apply debug-screen;
 }
 
 body::-webkit-scrollbar {

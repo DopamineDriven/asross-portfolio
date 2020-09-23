@@ -2,6 +2,7 @@
 - https://andrewross.dev
 - https://andrewross.tech
 - https://andrewross.engineer
+- favicon generator: https://favicon.io/favicon-converter/
 
 ## Feather - Simply Beautiful Open Source Icons
 - https://feathericons.com/
