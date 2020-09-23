@@ -27,7 +27,7 @@ const MetaData = (): JSX.Element => {
 				<link rel='manifest' href='/fav/manifest.json' />
 				<link rel='mask-icon' href='/fav/safari-pinned-tab.svg' color='#000000' />
 				<link rel='shortcut icon' href='/fav/favicon.ico' />
-				<link rel='canonical' href='https://asross-portfolio.vercel.app/' />
+				<link rel='canonical' href='https://andrewross.dev' />
 				<meta name='robots' content='all' />
 				<meta
 					name='viewport'
@@ -59,7 +59,7 @@ const MetaData = (): JSX.Element => {
 				<meta name='twitter:image' content={HOME_OG_IMAGE_URL} />
 				<meta name='twitter:creator' content='@Dopamine_Driven' />
 				<meta property='og:type' content='website' />
-				<meta property='og:url' content='https://asross-portfolio.vercel.app/' />
+				<meta property='og:url' content='https://andrewross.dev' />
 				<meta property='og:title' content='Andrew Ross — Full-Stack Engineer' />
 				<meta
 					property='og:description'
