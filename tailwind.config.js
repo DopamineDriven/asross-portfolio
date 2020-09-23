@@ -13,6 +13,9 @@ module.exports = {
 		}
 	},
 	theme: {
+		debugScreens: {
+			position: ['bottom', 'left']
+		},
 		letterSpacing: {
 			tightest: '-.075em',
 			tighter: '-.024em',
@@ -45,6 +48,10 @@ module.exports = {
 			50: 50,
 			75: 75,
 			100: 100
+		},
+		scrollBehavior: {
+			immediately: 'auto',
+			smoothly: 'smooth'
 		},
 		extend: {
 			screens: {
@@ -383,11 +390,20 @@ module.exports = {
 	},
 	variants: {
 		padding: ['responsive', 'last', 'first', 'hover', 'focus', 'even', 'odd'],
-		fontSize: ['responsive', 'last', 'first', 'hover', 'focus', 'even', 'odd']
+		fontSize: ['responsive', 'last', 'first', 'hover', 'focus', 'even', 'odd'],
+		animation: ['responsive', 'hover', 'focus', 'motion-safe', 'motion-reduce'],
+		transitionProperty: [
+			'responsive',
+			'hover',
+			'focus',
+			'motion-safe',
+			'motion-reduce'
+		]
 	},
 	plugins: [
 		require('@tailwindcss/typography'),
 		require('tailwindcss-textshadow'),
+		require('tailwindcss-debug-screens'),
 		require('tailwindcss-dark-mode')(),
 		function ({ addBase, config }) {
 			addBase({

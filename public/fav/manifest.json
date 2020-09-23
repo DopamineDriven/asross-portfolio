@@ -1,7 +1,12 @@
 {
 	"name": "Next Portfolio",
 	"short_name": "Portfolio",
-	"start_url": "https://asross-portfolio.vercel.app/",
+	"start_url": [
+		"https://asross-portfolio.vercel.app",
+		"https://andrewross.dev",
+		"https://andrewross.tech",
+		"https://andrewross.engineer"
+	],
 	"icons": [
 		{
 			"src": "/fav/android-chrome-192x192.png",
