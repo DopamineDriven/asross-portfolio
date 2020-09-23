@@ -14,7 +14,8 @@ module.exports = {
 	},
 	theme: {
 		debugScreens: {
-			position: ['bottom', 'left']
+			position: ['bottom', 'left'],
+			ignore: ['dark']
 		},
 		letterSpacing: {
 			tightest: '-.075em',
