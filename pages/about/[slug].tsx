@@ -11,6 +11,7 @@ import AboutPostHeader from 'components/about-post-header';
 import AboutPostBody from 'components/about-post-body';
 import AboutPostTitle from 'components/about-post-title';
 import AboutFooter from 'components/footer-sub';
+import { MediaContextProvider } from 'components/window-width';
 
 interface AboutSlugProps {
 	about: AboutType;
@@ -26,32 +27,34 @@ const About = ({ about, abouts }: AboutSlugProps) => {
 	}
 	return (
 		<Fragment>
-			<AboutHeader title={about.title} />
-			{router.isFallback ? (
-				<AboutPostTitle>Loading...</AboutPostTitle>
-			) : (
-				<>
-					<article>
-						<Head>
-							<title>
-								{about.title} | Next.js About, {CLIENT_NAME}
-							</title>
-							<meta property='og:image' content={about.ogImage.url} />
-						</Head>
-						<AboutPostHeader
-							title={about.title}
-							src={about.articleImage}
-							date={about.date}
-							email={about.email}
-							github={about.github}
-							linkedin={about.linkedin}
-							twitter={about.twitter}
-						/>
-						<AboutPostBody content={about.content} />
-					</article>
-				</>
-			)}
-			<AboutFooter title={about.title} />
+			<MediaContextProvider>
+				<AboutHeader title={about.title} />
+				{router.isFallback ? (
+					<AboutPostTitle>Loading...</AboutPostTitle>
+				) : (
+					<>
+						<article>
+							<Head>
+								<title>
+									{about.title} | Next.js About, {CLIENT_NAME}
+								</title>
+								<meta property='og:image' content={about.ogImage.url} />
+							</Head>
+							<AboutPostHeader
+								title={about.title}
+								src={about.articleImage}
+								date={about.date}
+								email={about.email}
+								github={about.github}
+								linkedin={about.linkedin}
+								twitter={about.twitter}
+							/>
+							<AboutPostBody content={about.content} />
+						</article>
+					</>
+				)}
+				<AboutFooter title={about.title} />
+			</MediaContextProvider>
 		</Fragment>
 	);
 };

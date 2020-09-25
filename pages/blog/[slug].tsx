@@ -11,6 +11,7 @@ import BlogPostHeader from 'components/blog-post-header';
 import BlogPostTitle from 'components/blog-post-title';
 import BlogFooter from 'components/footer-sub';
 import BlogType from 'types/blog';
+import { MediaContextProvider } from 'components/window-width';
 
 interface BlogProps {
 	blog: BlogType;
@@ -25,33 +26,35 @@ const Blog = ({ blog, blogs }: BlogProps) => {
 	}
 	return (
 		<Fragment>
-			<BlogHeader title={blog.title} />
-			{router.isFallback ? (
-				<BlogPostTitle>Loading...</BlogPostTitle>
-			) : (
-				<>
-					<article>
-						<Head>
-							<title>
-								{blog.title} | Next.js Blog, {CLIENT_NAME}
-							</title>
-							<meta property='og:image' content={blog.ogImage.url} />
-						</Head>
-						<BlogPostHeader
-							title={blog.postTitle}
-							excerpt={blog.excerpt}
-							slug={blog.slug}
-							src={blog.articleImage}
-							date={blog.date}
-							dev={blog.dev}
-							medium={blog.medium}
-							youtube={blog.youtube}
-						/>
-						<BlogPostBody content={blog.content} />
-					</article>
-				</>
-			)}
-			<BlogFooter title={blog.title} />
+			<MediaContextProvider>
+				<BlogHeader title={blog.title} />
+				{router.isFallback ? (
+					<BlogPostTitle>Loading...</BlogPostTitle>
+				) : (
+					<>
+						<article>
+							<Head>
+								<title>
+									{blog.title} | Next.js Blog, {CLIENT_NAME}
+								</title>
+								<meta property='og:image' content={blog.ogImage.url} />
+							</Head>
+							<BlogPostHeader
+								title={blog.postTitle}
+								excerpt={blog.excerpt}
+								slug={blog.slug}
+								src={blog.articleImage}
+								date={blog.date}
+								dev={blog.dev}
+								medium={blog.medium}
+								youtube={blog.youtube}
+							/>
+							<BlogPostBody content={blog.content} />
+						</article>
+					</>
+				)}
+				<BlogFooter title={blog.title} />
+			</MediaContextProvider>
 		</Fragment>
 	);
 };
