@@ -20,7 +20,7 @@ interface PostSlugProps {
 	allPosts: PostType[];
 }
 
-const Post = ({ post, allPosts }: PostSlugProps) => {
+const Post = ({ post, allPosts }: PostSlugProps): JSX.Element => {
 	const router = useRouter();
 	const morePosts = allPosts?.slice(0);
 	if (!router.isFallback && !post?.slug) {
