@@ -1,9 +1,17 @@
 # asross-portfolio
+
 - https://andrewross.dev
 
 ## Other Domains Linked to this Repository
+
+- https://www.andrewross.dev
+- https://andrewross.wtf
+- https://www.andrewross.wtf
 - https://andrewross.tech
+- https://www.andrewross.tech
+- https://www.andrewross.engineer
 - https://andrewross.engineer
+- https://www.asross311.com
 - https://asross311.com
 - https://asross-portfolio.vercel.app
 
