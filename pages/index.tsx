@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Lead from 'components/lead';
-import Cards from 'components/cards';
+import Cards from 'components/cards-coalesced';
 import Footer from 'components/footer';
 import Post from 'types/post';
 import { CLIENT_NAME } from 'lib/constants';
