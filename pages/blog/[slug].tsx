@@ -11,7 +11,7 @@ import BlogPostHeader from 'components/blog-post-header';
 import BlogPostTitle from 'components/blog-post-title';
 import BlogFooter from 'components/footer-sub';
 import BlogType from 'types/blog';
-import { MediaContextProvider } from 'components/window-width';
+import { MediaContextProvider } from 'lib/window-width';
 
 interface BlogProps {
 	blog: BlogType;

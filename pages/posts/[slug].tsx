@@ -13,7 +13,7 @@ import LeadPost from 'components/lead-sub';
 import Cards from 'components/cards';
 import Footer from 'components/footer-sub';
 import PortfolioDivider from 'components/portfolio-divider';
-import { MediaContextProvider } from 'components/window-width';
+import { MediaContextProvider } from 'lib/window-width';
 
 interface PostSlugProps {
 	post: PostType;

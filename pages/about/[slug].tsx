@@ -11,7 +11,7 @@ import AboutPostHeader from 'components/about-post-header';
 import AboutPostBody from 'components/about-post-body';
 import AboutPostTitle from 'components/about-post-title';
 import AboutFooter from 'components/footer-sub';
-import { MediaContextProvider } from 'components/window-width';
+import { MediaContextProvider } from 'lib/window-width';
 
 interface AboutSlugProps {
 	about: AboutType;
