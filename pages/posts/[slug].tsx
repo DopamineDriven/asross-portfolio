@@ -10,7 +10,7 @@ import PostBody from 'components/post-body';
 import PostTitle from 'components/post-title';
 import PostHeader from 'components/post-header';
 import LeadPost from 'components/lead-sub';
-import Cards from 'components/cards';
+import Cards from 'components/cards-coalesced';
 import Footer from 'components/footer-sub';
 import PortfolioDivider from 'components/portfolio-divider';
 import { MediaContextProvider } from 'lib/window-width';
