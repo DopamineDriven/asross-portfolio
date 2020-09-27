@@ -15,6 +15,51 @@
 - https://asross311.com
 - https://asross-portfolio.vercel.app
 
+## Prettier Locally Targeted
+
+```git
+yarn add -D prettier --save-exact
+yarn add -D pretty-quick
+```
+
+```.prettierignore
+# Ignore Artifacts
+node_modules
+.next
+.vercel
+.vscode
+yarn-error.log
+yarn.lock
+patches
+public
+.VSCodeCounter
+_about
+_blog
+_posts
+
+```
+
+- create a .prettierignore file
+
+- Scripts and Husky in package.json should resemble the following
+
+```json
+	"scripts": {
+		"dev": "next",
+		"build": "next build",
+		"start": "next start",
+		"analyze": "ANALYZE=true yarn build",
+		"postinstall": "npx patch-package",
+		"prettier-check": "prettier --config .prettierrc --check .",
+		"prettier-write": "prettier --config .prettierrc --write ."
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "pretty-quick --staged"
+		}
+	},
+```
+
 ## Favicon generator
 
 - favicon generator: https://favicon.io/favicon-converter/
