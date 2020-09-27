@@ -13,7 +13,7 @@ import AboutCoalesced from 'components/about-coalesced';
 import BlogCoalesced from 'components/blog-coalesced';
 import AboutType from 'types/about';
 import BlogType from 'types/blog';
-import { MediaContextProvider } from 'components/window-width';
+import { MediaContextProvider } from 'lib/window-width';
 // import ThemeProvider from 'components/theme';
 
 interface IndexProps {
@@ -44,14 +44,14 @@ const Index = ({ allPosts, allAbout, allBlog }: IndexProps) => {
 				<Head>
 					<title>{`${CLIENT_NAME} landing page`}</title>
 				</Head>
-				<div className='max-w-cardGridMobile md:max-w-cardGrid my-portfolioH2F grid mx-auto content-center justify-center items-center text-center'>
+				<div className='grid items-center content-center justify-center mx-auto text-center max-w-cardGridMobile md:max-w-cardGrid my-portfolioH2F'>
 					{morePosts.length > 0 && <Cards posts={morePosts} />}
 					{/* {<BlogTitle title={faBlog.title} slug={faBlog.slug} />} */}
 				</div>
-				<div className='max-w-full my-portfolioH2F block mx-auto content-center justify-center items-center text-left'>
+				<div className='items-center content-center justify-center block max-w-full mx-auto text-left my-portfolioH2F'>
 					{moreAbout.length > 0 && <AboutCoalesced abouts={allAbout} />}
 				</div>
-				<div className='max-w-full my-portfolioH2F block mx-auto content-center justify-center items-center text-left'>
+				<div className='items-center content-center justify-center block max-w-full mx-auto text-left my-portfolioH2F'>
 					{moreBlog.length > 0 && <BlogCoalesced blogs={allBlog} />}
 				</div>
 				<Footer />

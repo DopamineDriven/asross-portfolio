@@ -13,13 +13,14 @@ import LeadPost from 'components/lead-sub';
 import Cards from 'components/cards';
 import Footer from 'components/footer-sub';
 import PortfolioDivider from 'components/portfolio-divider';
+import { MediaContextProvider } from 'lib/window-width';
 
 interface PostSlugProps {
 	post: PostType;
 	allPosts: PostType[];
 }
 
-const Post = ({ post, allPosts }: PostSlugProps) => {
+const Post = ({ post, allPosts }: PostSlugProps): JSX.Element => {
 	const router = useRouter();
 	const morePosts = allPosts?.slice(0);
 	if (!router.isFallback && !post?.slug) {
@@ -27,37 +28,41 @@ const Post = ({ post, allPosts }: PostSlugProps) => {
 	}
 	return (
 		<Fragment>
-			<div className='stroke-current fill-current'><LeadPost title={post.title} /></div>
-			{router.isFallback ? (
-				<PostTitle>Loading…</PostTitle>
-			) : (
-				<>
-					<article className='mb-portfolioPadding'>
-						<Head>
-							<title>
-								{post.title} | Next.js Portfolio, {CLIENT_NAME}
-							</title>
-							<meta property='og:image' content={post.ogImage.url} />
-						</Head>
-						<PostHeader
-							title={post.postTitle}
-							articleExcerpt={post.articleExcerpt}
-							src={post.articleImage}
-							date={post.date}
-							github={post.github}
-							heroku={post.heroku}
-							vercel={post.vercel}
-							author={post.author}
-						/>
-						<PostBody content={post.content} />
-						{/* <PortfolioDivider /> */}
-						<div className=' max-w-cardGrid grid mx-auto content-center justify-center items-center text-center'>
-							{morePosts?.length > 0 && <Cards posts={morePosts} />}
-						</div>
-					</article>
-				</>
-			)}
-			<Footer title={post.title} />
+			<MediaContextProvider>
+				<div className='fill-current stroke-current'>
+					<LeadPost title={post.title} />
+				</div>
+				{router.isFallback ? (
+					<PostTitle>Loading…</PostTitle>
+				) : (
+					<>
+						<article className='mb-portfolioPadding'>
+							<Head>
+								<title>
+									{post.title} | Next.js Portfolio, {CLIENT_NAME}
+								</title>
+								<meta property='og:image' content={post.ogImage.url} />
+							</Head>
+							<PostHeader
+								title={post.postTitle}
+								articleExcerpt={post.articleExcerpt}
+								src={post.articleImage}
+								date={post.date}
+								github={post.github}
+								heroku={post.heroku}
+								vercel={post.vercel}
+								author={post.author}
+							/>
+							<PostBody content={post.content} />
+							{/* <PortfolioDivider /> */}
+							<div className='grid items-center content-center justify-center mx-auto text-center max-w-cardGrid'>
+								{morePosts?.length > 0 && <Cards posts={morePosts} />}
+							</div>
+						</article>
+					</>
+				)}
+				<Footer title={post.title} />
+			</MediaContextProvider>
 		</Fragment>
 	);
 };

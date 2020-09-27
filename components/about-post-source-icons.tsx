@@ -81,11 +81,11 @@ const AboutPostSourceIcons = ({
 						aria-label={`${constituent.social} - ${constituent.href}`}
 						target={constituent.target}
 						href={constituent.href}
-						className='text-primary leading-normal transition-all transform delay-300 duration-1000 ease-in-out inline-block text-center items-center align-middle justify-center mx-mxSocial pt-portfolioDivider pr-portfolioDivider rounded-full focus:outline-none'
+						className='items-center justify-center inline-block leading-normal text-center align-middle transition-all duration-1000 ease-in-out delay-300 transform rounded-full text-primary mx-mxSocial pt-portfolioDivider pr-portfolioDivider focus:outline-none'
 					>
 						<FontAwesomeIcon
 							icon={constituent.icon}
-							className='flex align-middle text-center font-extrabold hover:text-tertiary pr-half transition-all transform delay-300 duration-1000 ease-in-out '
+							className='flex font-extrabold text-center align-middle transition-all duration-1000 ease-in-out delay-300 transform hover:text-tertiary pr-half '
 							size='2x'
 						/>
 					</a>
@@ -97,7 +97,7 @@ const AboutPostSourceIcons = ({
 	const iconClass: string =
 		' flex align-middle md:text-customTitle text-customTitleMobile text-center font-extrabold hover:text-tertiary transition-all transform delay-300 duration-1000 ease-in-out fa-portfolioDivider';
 	return (
-		<div className='align-middle justify-right text-right inline-block'>
+		<div className='inline-block text-right align-middle justify-right'>
 			<ul className='align-middle'>
 				<li className='align-middle'>
 					{github === 'empty' ? (
