@@ -1,5 +1,7 @@
 # asross-portfolio
 
+## COnfigured prettier pre-commit husky hook
+
 - https://andrewross.dev
 
 ## Other Domains Linked to this Repository
