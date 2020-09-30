@@ -39,6 +39,19 @@ _posts
 
 ```
 
+```json
+{
+	"python.pythonPath": "/usr/local/bin/python3",
+	"workbench.sideBar.location": "left",
+	"open-in-browser.default": "Google Chrome",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"files.autoSave": "afterDelay"
+}
+```
+
 - create a .prettierignore file
 
 - Scripts and Husky in package.json should resemble the following

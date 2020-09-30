@@ -62,35 +62,6 @@ const Index = ({ allPosts, allAbout, allBlog }: IndexProps) => {
 
 export default Index;
 
-// https://github.com/artsy/fresnel/blob/master/examples/nextjs/src/pages/index.tsx
-
-// import { Media, MediaContextProvider } from "../media"
-
-// export default function HomePage() {
-//   return (
-//     <MediaContextProvider>
-//       <Media at="xs">Hello mobile!</Media>
-//       <Media greaterThan="xs">Hello desktop!</Media>
-//     </MediaContextProvider>
-//   )
-// }
-
-// enum StaticPropsPosts {
-// 	title = 'title',
-// 	date = 'date',
-// 	slug = 'slug',
-// 	coverImage = 'coverImage',
-// 	excerpt = 'excerpt',
-// 	postTitle = 'postTitle',
-// 	articleImage = 'articleImage'
-// }
-
-// interface GetStaticPropsInterface extends GetStaticProps {
-// 	Post: StaticPropsPosts;
-// 	About: AboutType;
-// 	Blog: BlogType;
-// }
-
 export const getStaticProps: GetStaticProps = async () => {
 	const allPosts = getAllPosts([
 		'title',
@@ -127,3 +98,32 @@ export const getStaticProps: GetStaticProps = async () => {
 // 	| 'articleImage'
 // 	| 'postTitle';
 */
+
+// https://github.com/artsy/fresnel/blob/master/examples/nextjs/src/pages/index.tsx
+
+// import { Media, MediaContextProvider } from "../media"
+
+// export default function HomePage() {
+//   return (
+//     <MediaContextProvider>
+//       <Media at="xs">Hello mobile!</Media>
+//       <Media greaterThan="xs">Hello desktop!</Media>
+//     </MediaContextProvider>
+//   )
+// }
+
+// enum StaticPropsPosts {
+// 	title = 'title',
+// 	date = 'date',
+// 	slug = 'slug',
+// 	coverImage = 'coverImage',
+// 	excerpt = 'excerpt',
+// 	postTitle = 'postTitle',
+// 	articleImage = 'articleImage'
+// }
+
+// interface GetStaticPropsInterface extends GetStaticProps {
+// 	Post: StaticPropsPosts;
+// 	About: AboutType;
+// 	Blog: BlogType;
+// }

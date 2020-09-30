@@ -5,15 +5,15 @@ import LeadDarkModeConditional from 'components/lead-dark-mode-conditional';
 
 const LeadDarkModeToggle = (): JSX.Element => {
 	const darkMode: DarkMode = useDarkMode();
-	const isClient = useClient();
+	const isClient: boolean = useClient();
 
 	const Conditional = (): JSX.Element => {
 		return isClient ? (
-			<div className='block outline-none transition-all transform container pr-portfolio justify-between mx-auto w-full min-w-full translate-y-portfolioLS'>
+			<div className='container justify-between block w-full min-w-full mx-auto transition-all transform outline-none pr-portfolio translate-y-portfolioLS'>
 				<button
 					type='button'
 					onClick={darkMode.value === true ? darkMode.disable : darkMode.enable}
-					className=' fill-primary text-primary stroke-current outline-none'
+					className='outline-none stroke-current  fill-primary text-primary'
 				>
 					<Fragment>
 						{/* <Toggle checked={darkMode.value} onChange={darkMode.toggle} /> */}
