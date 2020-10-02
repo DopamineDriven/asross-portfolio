@@ -5,10 +5,10 @@ interface AboutCoalescedProps {
 	abouts: About[];
 }
 
-const AboutCoalesced = ({ abouts }: AboutCoalescedProps) => {
+const AboutCoalesced = ({ abouts }: AboutCoalescedProps): JSX.Element => {
 	return (
 		<section>
-			<div className='select-none grid grid-cols-1'>
+			<div className='grid grid-cols-1 select-none'>
 				{abouts.map(about => (
 					<AboutContent
 						key={about.slug}
