@@ -8,17 +8,17 @@ interface AboutExcerptProps {
 
 const AboutExcerpt = ({ excerpt, slug }: AboutExcerptProps) => {
 	return (
-		<div className=' cursor-default hover:text-tertiary transition-all transform duration-10000 translate-y-portfolioDivider animate-pulse'>
+		<div className='transition-all transform cursor-default hover:text-tertiary duration-10000 translate-y-portfolioDivider animate-pulse'>
 			<Link as={`/about/${slug}`} href='/about/[slug]' passHref scroll={true}>
 				<a
-					className='font-somaRoman md:text-customTitle text-customSM tracking-tight'
-					aria-label={`${excerpt}`}
+					className='tracking-tight font-somaRoman md:text-customTitle text-customSM'
+					aria-label={`read more about andrew ross`}
 					id={`home-${excerpt}`}
 				>
 					<ReactMarkdown
 						escapeHtml={false}
 						source={excerpt}
-						className='text-left block'
+						className='block text-left'
 					/>
 				</a>
 			</Link>
