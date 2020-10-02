@@ -12,6 +12,7 @@ const LeadDarkModeToggle = (): JSX.Element => {
 			<div className='container justify-between block w-full min-w-full mx-auto transition-all transform outline-none pr-portfolio translate-y-portfolioLS'>
 				<button
 					name='light mode vs dark mode'
+					aria-label='light mode vs dark mode'
 					type='button'
 					onClick={darkMode.value === true ? darkMode.disable : darkMode.enable}
 					className='outline-none stroke-current fill-primary text-primary'
