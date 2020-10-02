@@ -17,6 +17,10 @@
 - https://asross311.com
 - https://asross-portfolio.vercel.app
 
+## Headless CMS
+
+- https://medium.com/@dcorreab/a-brief-introduction-to-a-headless-cms-app-next-js-apollo-and-contentful-with-graphql-7ed5a8168e29
+
 ## Prettier Locally Targeted
 
 ```git
