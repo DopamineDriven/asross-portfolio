@@ -90,7 +90,8 @@ export const getStaticProps = async ({
 			about: {
 				...about
 			}
-		}
+		},
+		revalidate: 1
 	};
 };
 

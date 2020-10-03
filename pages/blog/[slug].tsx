@@ -88,7 +88,8 @@ export const getStaticProps = async ({ params }: BlogParams) => {
 			blog: {
 				...blog
 			}
-		}
+		},
+		revalidate: 1
 	};
 };
 
