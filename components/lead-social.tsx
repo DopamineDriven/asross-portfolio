@@ -9,12 +9,6 @@ interface SocialContact {
 
 const socialSnippets: SocialContact[] = [
 	{
-		id: 0,
-		label: 'Email',
-		target: '__blank',
-		href: 'mailto:andrew.simpson.ross@gmail.com'
-	},
-	{
 		id: 1,
 		label: 'LinkedIn',
 		target: '__blank',
@@ -31,6 +25,12 @@ const socialSnippets: SocialContact[] = [
 		label: 'GitHub',
 		target: '__blank',
 		href: 'https://github.com/DopamineDriven'
+	},
+	{
+		id: 0,
+		label: 'Email',
+		target: '__blank',
+		href: 'mailto:andrew.simpson.ross@gmail.com'
 	}
 ];
 
@@ -39,7 +39,7 @@ const LeadSocial = (): JSX.Element => {
 		return (
 			<div className='block mt-socialMargin' key={constituent.id}>
 				<a
-					className='z-50 block tracking-wide transition-all ease-in-out transform hover:text-tertiary py-portfolioDivider md:py-0 translate-y-mdmxSocial animate-hero'
+					className='z-50 block tracking-wide transition-all ease-in-out transform hover:text-tertiary py-portfolioDivider md:py-0 translate-y-mdmxSocial animate-hero '
 					target={constituent.target}
 					aria-label={constituent.label}
 					href={constituent.href}
@@ -52,7 +52,7 @@ const LeadSocial = (): JSX.Element => {
 	return (
 		<Fragment>
 			<div
-				className='invisible md:text-customExcerptMobile md:leading-portfolio md:visible md:transition-all md:-translate-y-portfolioDivider md:transform md:animate-hero md:ease-in-out'
+				className='invisible w-full md:grid md:grid-cols-4 md:pl-portfolio md:text-customExcerptMobile md:leading-portfolio md:visible md:transition-all md:-translate-y-portfolioDivider md:transform md:animate-hero md:ease-in-out'
 				style={{
 					position: 'absolute',
 					top: '80.78333vw',
@@ -62,8 +62,8 @@ const LeadSocial = (): JSX.Element => {
 				{socialMap}
 			</div>
 			<div
-				className='block tracking-wide uppercase transition-all ease-in-out transform text-customExcerptMobile font-somaRoman leading-customSLM md:hidden translate-y-portfolioLS animate-hero'
-				style={{ position: 'absolute', top: '80.78333vw', left: '4.33333vw' }}
+				className='grid w-full grid-cols-4 tracking-wide uppercase transition-all ease-in-out transform text-customExcerptMobile font-somaRoman leading-customSLM md:hidden translate-y-portfolioLS animate-hero'
+				style={{ position: 'absolute', top: '84.78333vw', left: '4.33333vw' }}
 			>
 				{socialMap}
 			</div>

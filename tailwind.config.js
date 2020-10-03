@@ -399,6 +399,17 @@ module.exports = {
 			'focus',
 			'motion-safe',
 			'motion-reduce'
+		],
+		translate: [
+			'responsive',
+			'hover',
+			'focus',
+			'active',
+			'group-hover',
+			'first',
+			'last',
+			'even',
+			'odd'
 		]
 	},
 	plugins: [
@@ -422,6 +433,5 @@ module.exports = {
 		}
 	]
 };
-
 
 // https://tailwindcss.com/docs/configuration#core-plugins
