@@ -9,12 +9,6 @@ interface SocialContact {
 
 const socialSnippets: SocialContact[] = [
 	{
-		id: 0,
-		label: 'Email',
-		target: '__blank',
-		href: 'mailto:andrew.simpson.ross@gmail.com'
-	},
-	{
 		id: 1,
 		label: 'LinkedIn',
 		target: '__blank',
@@ -31,6 +25,12 @@ const socialSnippets: SocialContact[] = [
 		label: 'GitHub',
 		target: '__blank',
 		href: 'https://github.com/DopamineDriven'
+	},
+	{
+		id: 0,
+		label: 'Email',
+		target: '__blank',
+		href: 'mailto:andrew.simpson.ross@gmail.com'
 	}
 ];
 
@@ -39,7 +39,7 @@ const LeadSocial = (): JSX.Element => {
 		return (
 			<div className='block mt-socialMargin' key={constituent.id}>
 				<a
-					className='z-50 block tracking-wide transition-all ease-in-out transform hover:text-tertiary py-portfolioDivider md:py-0 translate-y-mdmxSocial animate-hero'
+					className='z-50 block tracking-wide transition-all ease-in-out transform hover:text-tertiary py-portfolioDivider md:py-0 translate-y-mdmxSocial animate-hero '
 					target={constituent.target}
 					aria-label={constituent.label}
 					href={constituent.href}
