@@ -17,7 +17,7 @@ interface AboutInterface {
 	id: number;
 	span: string;
 }
-
+// fix
 const aboutSnippets: AboutInterface[] = [
 	{
 		id: 0,
@@ -72,7 +72,7 @@ const AboutContent = ({
 	const aboutMap = aboutSnippets.map(constituent => {
 		return (
 			<span
-				className='font-thin font-somaRoman tracking-tighter p-last p-indent p-indents z-0 text-customAboutSubMobile md:text-customTitle'
+				className='z-0 font-thin tracking-tighter font-somaRoman p-last p-indent p-indents text-customAboutSubMobile md:text-customTitle'
 				key={constituent.id}
 				style={{}}
 			>
@@ -85,14 +85,14 @@ const AboutContent = ({
 	const imageExcerptConditional = (
 		<Fragment>
 			<div
-				className=' md:leading-customSLH md:block md:z-1 md:visible invisible md:transition-all delay-300 duration-3000 ease-in-out transform hover:-translate-y-1 hover:scale-90'
+				className='invisible ease-in-out delay-300 transform  md:leading-customSLH md:block md:z-1 md:visible md:transition-all duration-3000 hover:-translate-y-1 hover:scale-90'
 				style={{ position: 'absolute', top: '12.48333vw', left: '3.33333vw' }}
 			>
 				<AboutImage src={src} title={title} slug={slug} />
 				<AboutExcerpt excerpt={excerpt} slug={slug} />
 			</div>
 			<div
-				className=' leading-customSLH md:hidden z-1 transition-all delay-300 duration-3000 ease-in-out transform hover:-translate-y-1 hover:scale-90'
+				className='transition-all ease-in-out delay-300 transform  leading-customSLH md:hidden z-1 duration-3000 hover:-translate-y-1 hover:scale-90'
 				style={{ position: 'absolute', top: '16.48333vw', left: '3.33333vw' }}
 			>
 				<AboutImage src={src} title={title} slug={slug} />
@@ -102,8 +102,8 @@ const AboutContent = ({
 	);
 
 	const aboutMapMapped = (
-		<p className='md:text-customTitle text-customP  pr-portfolioDivider pl-portfolioLS block font-somaRoman tracking-tighter font-thin z-0'>
-			<div className='mx-auto block'>
+		<p className='z-0 block font-thin tracking-tighter md:text-customTitle text-customP pr-portfolioDivider pl-portfolioLS font-somaRoman'>
+			<div className='block mx-auto'>
 				{aboutMap}
 				<div className='hidden'>{date}</div>
 			</div>
@@ -114,7 +114,7 @@ const AboutContent = ({
 		<Fragment>
 			<AboutSurpriseQuote />
 			<div
-				className='relative justify-between leading-leadingAboutMobile pt-portfolio flex flex-col min-w-full w-full container overflow-y-hidden overflow-x-hidden transform duration-300 cursor-default select-none'
+				className='container relative flex flex-col justify-between w-full min-w-full overflow-x-hidden overflow-y-hidden duration-300 transform cursor-default select-none leading-leadingAboutMobile pt-portfolio'
 				style={{ transform: 'translate3d(0px, 0px, 0px)' }}
 			>
 				<AboutTitle title={title} slug={slug} urlTitle={urlTitle} />
