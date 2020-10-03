@@ -8,7 +8,7 @@ async function textFetcher(path: any) {
 }
 
 export default function useLiveReload() {
-	const [needToReload, setNeedToReload] = useState(false);
+	// const [needToReload, setNeedToReload] = useState(false);
 	const router = useRouter();
 	const [prevData, setPrevData] = useState(null || String);
 	const { data } = useSWR(router.asPath, textFetcher, {
@@ -16,23 +16,26 @@ export default function useLiveReload() {
 	});
 
 	useEffect(() => {
-		if (needToReload || !data || location.hostname === 'localhost') {
+		// needToReload removed
+		// || location.hostname === 'localhost' removed
+		if (!data) {
 			return;
 		}
 
 		if (prevData && prevData !== data) {
-			setNeedToReload(true);
+			// setNeedToReload(true);
+			location.reload();
 			return;
 		}
 
 		setPrevData(data);
 	});
 
-	return {
-		needToReload
-	};
+	return;
 }
 
+// https://github.com/evgeny-t/test-get-static-props/blob/master/pages/index.tsx
+// https://getstarted.sh/with/live-reloading-for-production-nextjs-app/5
 /*
 import useSWR from 'swr';
 import { useRouter } from 'next/router';

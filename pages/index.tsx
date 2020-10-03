@@ -14,7 +14,9 @@ import BlogCoalesced from 'components/blog-coalesced';
 import AboutType from 'types/about';
 import BlogType from 'types/blog';
 import { MediaContextProvider } from 'lib/window-width';
-// import ThemeProvider from 'components/theme';
+import { promises as fsPromises } from 'fs';
+import path from 'path';
+import useLiveReload from 'lib/use-live-reload';
 
 interface IndexProps {
 	allPosts: Post[];
@@ -23,6 +25,7 @@ interface IndexProps {
 }
 
 const Index = ({ allPosts, allAbout, allBlog }: IndexProps) => {
+	// useLiveReload();
 	const morePosts = allPosts.slice(0);
 	const moreAbout = allAbout.slice(0);
 	const moreBlog = allBlog.slice(0);
@@ -63,6 +66,25 @@ const Index = ({ allPosts, allAbout, allBlog }: IndexProps) => {
 export default Index;
 
 export const getStaticProps: GetStaticProps = async () => {
+	// const contentPath: string[] = path.resolve[
+	// 	'.',
+	// 	'_about/andrew-ross.md',
+	// }
+	// 	'.',
+	// 	'_about/andrew-ross.md',
+	// 	'_blog/**/*.md',
+	// 	// 'google-maps-migration.md',
+	// 	// 'hacking-font-awesome.md',
+	// 	// 'taming-svgs.md',
+	// 	'_posts/**/*.md',
+	// 	// 'cima.md',
+	// 	// 'consilience.md',
+	// 	// 'google-books-search.md',
+	// 	// 'homesharing-hub.md',
+	// 	'_purgatory/google-maps-migration.md'
+	// 	// 'google-maps-migration.md'
+	// )];
+	// const content = await fsPromises.readFile(contentPath, 'utf8');
 	const allPosts = getAllPosts([
 		'title',
 		'date',
