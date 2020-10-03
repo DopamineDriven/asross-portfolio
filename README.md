@@ -1,5 +1,10 @@
 # asross-portfolio
 
+## crawlers
+
+- https://github.com/arunoda/bulletproof-next-app/tree/sitemaps-and-robots-5/lib
+- https://getstarted.sh/bulletproof-next/sitemaps-and-robots/1
+
 ## COnfigured prettier pre-commit husky hook
 
 - https://andrewross.dev
