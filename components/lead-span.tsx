@@ -61,7 +61,7 @@ const LeadSpan = (): JSX.Element => {
 	// });
 	return (
 		<p className='block font-thin tracking-tighter transition-all ease-in-out transform -translate-y-landingOverviewTranslation text-customExcerptMobile md:text-customP pr-portfolioRS md:pl-portfolioLS pl-portfolioLSMobile leading-headerP font-somaRoman'>
-			<span className='font-thin tracking-tight text-justify cursor-default font-somaRoman md:text-justify'>
+			<span className='font-thin text-justify cursor-default font-somaRoman md:text-justify'>
 				Andrew Ross is a Chicago Based Full-Stack Engineer proficient in JAMstack,
 				React, TypeScript, Next.js, Headless WordPress, Node, GraphQL, Apollo,
 				MongoDB, PostgreSQL, Tailwind CSS, and more. Cofounder of Windy City LLC.
