@@ -1,6 +1,17 @@
-const PortfolioDivider = () => {
+import { FC } from 'react';
+
+interface PortfolioDividerProps {
+	classNameAdditions?: string;
+}
+
+interface PortfolioDividerAbstracted extends FC<PortfolioDividerProps> {}
+
+const PortfolioDivider: PortfolioDividerAbstracted = props => {
+	const { classNameAdditions = ' ' } = props;
 	return (
-		<hr className='border-primary w-portfolioDividerWidth max-w-portfolioDividerWidth mx-auto mt-portfolioDivider pb-portfolioDivider' />
+		<hr
+			className={`mx-auto border-primary w-portfolioDividerWidth max-w-portfolioDividerWidth mt-portfolioDivider pb-portfolioDivider ${classNameAdditions}`}
+		/>
 	);
 };
 
