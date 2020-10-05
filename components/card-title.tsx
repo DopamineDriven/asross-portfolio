@@ -3,11 +3,11 @@ import ReactMarkdown from 'react-markdown/with-html';
 
 interface CardTitleProps {
 	title: string;
-  slug?: string;
-  postTitle: string;
+	slug?: string;
+	postTitle: string;
 }
 
-const CardTitle = ({ title, slug, postTitle }: CardTitleProps) => {
+const CardTitle = ({ title, slug, postTitle }: CardTitleProps): JSX.Element => {
 	return (
 		<div className='font-bold font-somaRoman leading-tight pt-portfolio'>
 			<Link as={`/posts/${slug}`} href='/posts/[slug]' passHref scroll={true}>
