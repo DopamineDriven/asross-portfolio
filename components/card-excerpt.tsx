@@ -4,7 +4,7 @@ interface CardExcerptProps {
 	excerpt: string;
 }
 
-const CardExcerpt = ({ excerpt }: CardExcerptProps) => {
+const CardExcerpt = ({ excerpt }: CardExcerptProps): JSX.Element => {
 	return (
 		<div className='font-somaRoman text-tertiary uppercase cursor-default'>
 			<ReactMarkdown
