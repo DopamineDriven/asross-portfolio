@@ -1,8 +1,9 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { useRouter } from 'next/router';
+import { NextRouter, useRouter } from 'next/router';
+import { ParsedUrlQuery } from 'querystring';
 
 const DynamicPage = () => {
-	const { query } = useRouter();
+	const { query }: NextRouter = useRouter();
 
 	return (
 		<div>
@@ -12,7 +13,12 @@ const DynamicPage = () => {
 	);
 };
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps<
+	{
+		[key: string]: any;
+	},
+	ParsedUrlQuery
+> = async () => {
 	return {
 		props: {
 			dynamic: 'hello'
@@ -20,7 +26,7 @@ export const getStaticProps: GetStaticProps = async () => {
 	};
 };
 
-export const getStaticPaths: GetStaticPaths = async () => {
+export const getStaticPaths: GetStaticPaths<ParsedUrlQuery> = async () => {
 	return {
 		paths: [...Array(10000)].map((_, index) => ({
 			params: {

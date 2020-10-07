@@ -1,9 +1,5 @@
-const isDev =
-	process.env.NODE_ENV === 'development'
-		? 'http://localhost:3004'
-		: 'https://andrewross.dev';
 module.exports = {
-	siteUrl: isDev,
+	siteUrl: 'https://andrewross.dev',
 	generateRobotsTxt: true,
 	// optional
 	robotsTxtOptions: {
