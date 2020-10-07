@@ -1,9 +1,17 @@
 # asross-portfolio
 
+## Sourcemaps - WithSentry
+
+- https://github.com/vercel/next.js/issues/11642
+- https://github.com/vercel/next.js/tree/canary/examples/with-sentry
+
 ## Sitemaps
 
 - Successfully generated 10-7-20
 - Revisit generating static slugs associated with dynamic routes
+- https://github.com/vercel/next.js/issues/9051
+- https://leerob.io/blog/nextjs-sitemap-robots
+- https://github.com/BrunoBernardino/nextjs-boilerplate-faunadb-elasticsearch/blob/dd723c8d1066401a6a28989fffade0b25b0b509e/vercel.json#L33-L43
 - https://github.com/vercel/next.js/discussions/12403
 - https://github.com/vercel/next.js/issues/9051
 - https://github.com/iamvishnusankar/next-sitemap
