@@ -8,10 +8,9 @@ export function getPostSlugs() {
 	return fs.readdirSync(postsDirectory);
 }
 
-export type Items = {
+export interface Items {
 	[key: string]: string;
-};
-
+}
 
 export function getPostBySlug(slug: string, fields: string[] = []) {
 	const realSlug = slug.replace(/\.md$/, '');
