@@ -2,6 +2,9 @@
 
 ## Sitemaps
 
+- Successfully generated 10-7-20
+- Revisit generating static slugs associated with dynamic routes
+- https://github.com/vercel/next.js/discussions/12403
 - https://github.com/vercel/next.js/issues/9051
 - https://github.com/iamvishnusankar/next-sitemap
 - https://github.com/vercel/next.js/tree/canary/examples/with-next-sitemap
