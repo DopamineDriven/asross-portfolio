@@ -1,5 +1,11 @@
 # asross-portfolio
 
+## Sitemaps
+
+- https://github.com/vercel/next.js/issues/9051
+- https://github.com/iamvishnusankar/next-sitemap
+- https://github.com/vercel/next.js/tree/canary/examples/with-next-sitemap
+
 ## crawlers
 
 - https://github.com/arunoda/bulletproof-next-app/tree/sitemaps-and-robots-5/lib

@@ -1,0 +1,22 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+	<loc>http://localhost:3004</loc>
+	<priority>0.5</priority>
+    <changefreq>hourly</changefreq>
+  </url>
+  <url>
+	<loc>http://localhost:3004/about/[slug]</loc>
+	<priority>0.5</priority>
+    <changefreq>hourly</changefreq>
+  </url>
+  <url>
+	<loc>http://localhost:3004/blog/[slug]</loc>
+	<priority>0.5</priority>
+    <changefreq>hourly</changefreq>
+  </url>
+  <url>
+	<loc>http://localhost:3004/posts/[slug]</loc>
+	<priority>0.5</priority>
+    <changefreq>hourly</changefreq>
+  </url>
+</urlset>
