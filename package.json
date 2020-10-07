@@ -8,6 +8,7 @@
 	"scripts": {
 		"dev": "next -p 3004",
 		"build": "next build",
+		"postbuild": "next-sitemap",
 		"start": "next start -p 3005",
 		"analyze": "ANALYZE=true yarn build",
 		"postinstall": "npx patch-package",
