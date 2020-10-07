@@ -6,8 +6,30 @@ import { AppProps, NextWebVitalsMetric } from 'next/app';
 import { ReactElement, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { gaInit, logPageView } from 'lib/google-analytics';
+import * as Sentry from '@sentry/node';
+import { RewriteFrames } from '@sentry/integrations';
+import getConfig from 'next/config';
 
 config.autoAddCss = false;
+
+if (process.env.NEXT_PUBLIC_SENTRY_DSN) {
+	const config = getConfig();
+	const distDir = `${config.serverRuntimeConfig.rootDir}/.next`;
+	Sentry.init({
+		enabled: process.env.NODE_ENV === 'production',
+		integrations: [
+			new RewriteFrames({
+				iteratee: frame => {
+					frame.filename
+						? (frame.filename = frame.filename.replace(distDir, 'app:///_next'))
+						: undefined;
+					return frame;
+				}
+			})
+		],
+		dsn: process.env.NEXT_PUBLIC_SENTRY_DSN
+	});
+}
 
 function App({ Component, pageProps }: AppProps): ReactElement {
 	const router = useRouter();
