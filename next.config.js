@@ -6,24 +6,13 @@ const {
 	SENTRY_PROJECT,
 	SENTRY_AUTH_TOKEN,
 	NODE_ENV,
-	VERCEL_GITHUB_COMMIT_SHA,
-	VERCEL_GITLAB_COMMIT_SHA,
-	VERCEL_BITBUCKET_COMMIT_SHA
+	VERCEL_GITHUB_COMMIT_SHA
 } = process.env;
 
 const COMMIT_SHA = VERCEL_GITHUB_COMMIT_SHA;
 
 process.env.SENTRY_DSN = SENTRY_DSN;
 const basePath = '';
-const withSiteMap = {
-	webpack: (config, { isServer }) => {
-		if (isServer) {
-			require('./scripts/generate-sitemap.js');
-		}
-
-		return config;
-	}
-};
 
 const sourceMaps = withSourceMaps({
 	serverRuntimeConfig: {
@@ -76,12 +65,18 @@ const sourceMaps = withSourceMaps({
 	basePath
 });
 
+const siteMap = {
+	webpack: (config, { isServer }) => {
+		if (isServer) {
+			require('./scripts/generate-sitemap.js');
+		}
+
+		return config;
+	}
+};
+
 const withPlugins = require('next-compose-plugins');
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
 	enabled: process.env.ANALYZE === 'true'
 });
-module.exports = withPlugins([
-	[withBundleAnalyzer({})],
-	withSiteMap,
-	sourceMaps
-]);
+module.exports = withPlugins([[withBundleAnalyzer({})], siteMap, sourceMaps]);
