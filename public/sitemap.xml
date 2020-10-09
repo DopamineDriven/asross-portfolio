@@ -1,21 +1,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-	<loc>undefined</loc>
+	<loc>/</loc>
 	<priority>0.5</priority>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-	<loc>undefined/about/[slug]</loc>
+	<loc>/about/andrew-ross</loc>
 	<priority>0.5</priority>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-	<loc>undefined/blog/[slug]</loc>
+	<loc>/blog/hacking-font-awesome</loc>
+	<priority>0.5</priority>
+    <changefreq>hourly</changefreq>
+  </url>
+    <url>
+	<loc>/blog/taming-svgs</loc>
 	<priority>0.5</priority>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-	<loc>undefined/posts/[slug]</loc>
+	<loc>/posts/cima</loc>
+	<priority>0.5</priority>
+    <changefreq>hourly</changefreq>
+  </url>
+    <url>
+	<loc>/posts/consilience</loc>
+	<priority>0.5</priority>
+    <changefreq>hourly</changefreq>
+  </url>
+    <url>
+	<loc>/posts/google-books-search</loc>
+	<priority>0.5</priority>
+    <changefreq>hourly</changefreq>
+  </url>
+    <url>
+	<loc>/posts/homesharing-hub</loc>
 	<priority>0.5</priority>
     <changefreq>hourly</changefreq>
   </url>
