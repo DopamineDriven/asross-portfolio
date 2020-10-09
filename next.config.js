@@ -70,7 +70,6 @@ const siteMap = {
 		if (isServer) {
 			require('./scripts/generate-sitemap.js');
 		}
-
 		return config;
 	}
 };
