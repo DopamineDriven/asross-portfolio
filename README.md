@@ -7,6 +7,7 @@
 
 ## Sitemaps
 
+- with TS https://www.pkj.no/p/nextjs-generating-a-sitemap-from-dynamic-content
 - Successfully generated 10-7-20
 - Revisit generating static slugs associated with dynamic routes
 - https://github.com/vercel/next.js/issues/9051
