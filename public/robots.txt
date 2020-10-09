@@ -1,2 +1,3 @@
 User-agent: *
-Sitemap: https://andrewross.dev/sitemap.xml
+	Sitemap: https://andrewross.dev/sitemap.xml
+	Disallow:
