@@ -8,7 +8,6 @@
 	"scripts": {
 		"dev": "next -p 3004",
 		"build": "next build",
-		"post-build": "yarn run build && node scripts/generate-sitemap.js",
 		"start": "next start -p 3005",
 		"analyze": "ANALYZE=true yarn build",
 		"postinstall": "npx patch-package",
