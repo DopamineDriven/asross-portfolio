@@ -1,5 +1,9 @@
 # asross-portfolio
 
+## Next Framer Page Transitions
+
+- https://dev.to/joserfelix/page-transitions-in-react-1c8g
+
 ## Sourcemaps - WithSentry
 
 - https://github.com/vercel/next.js/issues/11642
