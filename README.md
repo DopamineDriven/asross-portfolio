@@ -1,5 +1,22 @@
 # asross-portfolio
 
+## Check this
+
+- https://www.robertcooper.me/
+- . directory 👀
+- src/components/animatedgridlines.tsx and src/utils/context
+- animated-grid-lines
+
+## Detect Outdated Browser (IE11) via CDN injection
+
+- https://github.com/UnlyEd/next-right-now/tree/v2-mst-aptd-gcms-lcz-sty/public/static/CDN
+- https://unlyed.github.io/next-right-now/
+
+## Next Framer Page Transitions
+
+- https://github.com/JoseRFelix/page-transition-tutorial/tree/master/nextjs
+- https://dev.to/joserfelix/page-transitions-in-react-1c8g
+
 ## Sourcemaps - WithSentry
 
 - https://github.com/vercel/next.js/issues/11642
