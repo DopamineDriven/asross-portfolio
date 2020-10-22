@@ -4,6 +4,8 @@
 
 - https://www.robertcooper.me/
 - . directory 👀
+- src/components/animatedgridlines.tsx and src/utils/context
+- animated-grid-lines
 
 ## Detect Outdated Browser (IE11) via CDN injection
 
