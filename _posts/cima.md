@@ -7,6 +7,7 @@ articleImage: 'https://res.cloudinary.com/asross311/image/upload/v1598374421/por
 date: "2020-08-19T08:35:07.322Z"
 articleExcerpt: 'A future-proof directory uniting independent media companies in the Chicago area'
 github: 'https://github.com/DopamineDriven/headless-wp-next-directory'
+gitlab: ''
 heroku: 'empty'
 vercel: 'https://headless-wp-next-directory.vercel.app/'
 author:

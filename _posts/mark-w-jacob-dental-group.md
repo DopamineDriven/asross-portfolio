@@ -1,19 +1,21 @@
 ---
-title: 'google-books-search'
-postTitle: 'Google Books Search'
-excerpt: 'Development, UX'
+title: 'mark-w-jacob-dental-group'
+postTitle: 'MWJ Dental Group'
+excerpt: 'Team Lead, UX'
 coverImage: 'https://res.cloudinary.com/asross311/image/upload/v1598839550/portfolio/Rectangle_6037_2_y9xmog.jpg'
-articleImage: 'https://res.cloudinary.com/asross311/image/upload/v1598376790/portfolio/wcd-logo_1_iuuuob.jpg'
-date: "2020-03-28T09:35:07.322Z"
+articleImage: 'https://dev-to-uploads.s3.amazonaws.com/i/dv1qbydqx6s6dutu65nu.jpg'
+date: "2020-10-28T09:35:07.322Z"
 articleExcerpt: ''
-github: 'https://github.com/DopamineDriven/Consilience'
-heroku: 'https://classroom-consilience.herokuapp.com/'
-vercel: 'empty'
+github: ''
+gitlab: 'https://gitlab.com/DopamineDriven'
+heroku: ''
+vercel: 'https://deerfield-smiles.com'
 author:
   name: Andrew Ross
   avatar: 'https://res.cloudinary.com/asross311/image/upload/v1597678722/portfolio/doge_ropqvx.jpg'
-  github: 'https://github.com/DopamineDriven/windycitydevs'
-  vercel: 'https://windycitydevs.vercel.app/'
+  github: ''
+  gitlab: 'https://gitlab.com/DopamineDriven'
+  vercel: 'https://deerfield-smiles.com'
   heroku: ''
   antdesign: ''
   apollo: 'apollo'
@@ -29,3 +31,4 @@ ogImage:
 ---
 
  ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/k9lv12xtp4lkavj6ip0c.png)
+ 

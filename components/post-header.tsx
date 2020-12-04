@@ -17,6 +17,7 @@ interface PostHeaderProps {
 	github: string;
 	heroku: string;
 	vercel: string;
+	gitlab: string;
 }
 
 const PostHeader = ({
@@ -26,6 +27,7 @@ const PostHeader = ({
 	title,
 	articleExcerpt,
 	github,
+	gitlab,
 	heroku,
 	vercel
 }: PostHeaderProps) => {
@@ -45,7 +47,12 @@ const PostHeader = ({
 					<Date dateString={date} />
 				</div>
 				<div className=' text-primary font-somaRoman flex mx-auto align-middle justify-center pb-mdmxSocial'>
-					<PostSourceIcons github={github} heroku={heroku} vercel={vercel} />
+					<PostSourceIcons
+						github={github}
+						heroku={heroku}
+						vercel={vercel}
+						gitlab={gitlab}
+					/>
 				</div>
 				{/* <div className='text-customExcerptMobile text-oneFiveBlack font-somaRoman flex mx-auto align-middle justify-center'>
 					<PostIcons

@@ -8,6 +8,7 @@ lerna-debug.log*
 .VSCodeCounter
 .env.local
 out
+github.md
 
 notes.md
 # Diagnostic reports (https://nodejs.org/api/report.html)
