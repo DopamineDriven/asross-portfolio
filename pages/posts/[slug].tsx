@@ -52,6 +52,7 @@ const Post = ({ post, allPosts }: PostSlugProps): JSX.Element => {
 								heroku={post.heroku}
 								vercel={post.vercel}
 								author={post.author}
+								gitlab={post.gitlab}
 							/>
 							<PostBody content={post.content} />
 							{/* <PortfolioDivider /> */}
@@ -87,6 +88,7 @@ export const getStaticProps = async ({ params }: Params & GetStaticProps) => {
 		'coverImage',
 		'articleImage',
 		'articleExcerpt',
+		'gitlab',
 		'github',
 		'heroku',
 		'vercel'

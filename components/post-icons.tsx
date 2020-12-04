@@ -3,7 +3,8 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import {
 	faGithub,
 	faReact,
-	faWordpress
+	faWordpress,
+	faGitlab
 } from '@fortawesome/free-brands-svg-icons';
 import {
 	faAntDesignIcon,

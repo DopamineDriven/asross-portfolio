@@ -7,6 +7,7 @@ articleImage: 'https://res.cloudinary.com/asross311/image/upload/v1598374915/por
 date: "2020-07-25T09:35:07.322Z"
 articleExcerpt: ''
 github: 'https://github.com/DopamineDriven/Consilience'
+gitlab: ''
 heroku: 'https://classroom-consilience.herokuapp.com/'
 vercel: 'empty'
 author:
