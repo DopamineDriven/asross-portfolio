@@ -16,6 +16,7 @@ export function getAboutBySlug(slug: string, fields: string[] = []) {
 	const fileContents = fs.readFileSync(fullPath, 'utf8');
 	const { data, content } = matter(fileContents);
 
+	// iterate
 	type Items = {
 		[key: string]: string;
 	};
