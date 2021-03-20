@@ -64,8 +64,9 @@ const LeadSpan = (): JSX.Element => {
 			<span className='font-thin text-justify cursor-default font-somaRoman md:text-justify'>
 				Chicago Based Full-Stack Engineer proficient in the JAMstack, React,
 				TypeScript, Node, Next.js, Tailwind CSS, and more. Cofounder of Windy City
-				Devs LLC. Full-Stack development TA at Vanderbilt University. Freelance
-				experience. Available for full-time/contract roles.
+				Devs LLC. Full-Stack development TA at Vanderbilt University. JAMstack
+				Course author via Newline.co. Freelance experience. Available for
+				full-time/contract roles.
 			</span>
 		</p>
 	);
