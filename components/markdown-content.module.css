@@ -7,11 +7,15 @@
 }
 
 .markdown h2 {
-	@apply text-customExcerptMobile mt-aboutHackingFontAwesomePT mb-portfolio leading-snug font-somaRoman;
+	@apply text-5xl my-portfolio leading-snug font-somaRoman;
 }
 
 .markdown h3 {
 	@apply text-customSM mt-portfolio mb-portfolioRS leading-snug;
+}
+
+.markdown h6 {
+	@apply text-xl mt-4;
 }
 
 .markdown a {
@@ -57,10 +61,7 @@
 }
 
 .markdown blockquote {
-	@apply border-l-4 border-teal-900 bg-current ml-0 py-4 px-6;
-	@screen sm {
-		@apply text-justify;
-	}
+	@apply border-l-4 text-justify border-gray-500 bg-black text-gray-100 ml-0 py-4 px-6 text-lg;
 }
 
 .markdown blockquote p {
