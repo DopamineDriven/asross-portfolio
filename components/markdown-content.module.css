@@ -1,13 +1,5 @@
-.markdown {
-	@apply text-customSM px-portfolioPadding text-primary bg-primary stroke-current fill-current;
-}
-
-.markdown p,
-.markdown ul,
-.markdown ol,
-.markdown blockquote {
-	@apply my-6 text-customExcerpt;
-	@apply font-somaRoman;
+.markdown p blockquote ul ol {
+	@apply my-6 text-customExcerpt font-somaRoman;
 }
 
 .markdown h1 {
@@ -24,14 +16,12 @@
 
 .markdown a {
 	@apply font-somaRoman;
+	&:hover {
+		@apply text-herokuStroke;
+	}
 }
 
-.markdown a:hover {
-	@apply text-herokuStroke;
-}
-
-.markdown ul,
-.markdown ol {
+.markdown ul ol {
 	@apply pl-4;
 }
 
@@ -43,13 +33,11 @@
 	@apply list-decimal;
 }
 
-.markdown ul > li > ul,
 .markdown ol > li > ol {
-	@apply my-0 ml-4;
+	@apply my-0 ml-4 list-none;
 }
-
 .markdown ul > li > ul {
-	list-style: none;
+	@apply my-0 ml-4 list-none;
 }
 
 .markdown pre {
@@ -68,7 +56,10 @@
 }
 
 .markdown blockquote {
-	@apply border-l-4 border-gray-500 bg-gray-200 italic ml-0 py-4 px-6;
+	@apply border-l-4 border-teal-900 bg-current ml-0 py-4 px-6;
+	@screen sm {
+		@apply text-justify;
+	}
 }
 
 .markdown blockquote p {
@@ -88,28 +79,27 @@
 }
 
 @media (max-width: 639px) {
-	.markdown p,
-	.markdown ul,
-	.markdown ol,
-	.markdown blockquote,
-	.markdown code {
+	&.markdown p ul ol blockquote code {
 		@apply my-portfolio text-customExcerptMobile;
 		@apply font-somaRoman;
 	}
-	.markdown pre,
-	.markdown span {
+	&.markdown pre span {
 		@apply text-customExcerptMobile;
 	}
 	/* .markdown span:last-child {
 		@apply text-customExcerpt;
 	} */
-	.markdown h2 {
+	&.markdown h2 {
 		@apply text-customTitleMobile mb-portfolio pt-aboutHackingFontAwesomePT leading-snug font-somaRoman;
 	}
-	.markdown h1 {
+	&.markdown h1 {
 		@apply font-somaRoman text-customPostAbout;
 	}
-	.markdown h4 {
+	&.markdown h4 {
 		@apply pt-portfolioLSMobile pb-portfolioRS text-customSMobile;
 	}
+}
+
+.markdown {
+	@apply text-customSM px-portfolioPadding text-primary bg-primary stroke-current fill-current;
 }
