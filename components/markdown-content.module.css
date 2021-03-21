@@ -16,9 +16,10 @@
 
 .markdown a {
 	@apply font-somaRoman;
-	&:hover {
-		@apply text-herokuStroke;
-	}
+}
+
+.markdown a:hover {
+	@apply text-herokuStroke;
 }
 
 .markdown ul ol {
@@ -79,23 +80,23 @@
 }
 
 @media (max-width: 639px) {
-	&.markdown p ul ol blockquote code {
+	.markdown p ul ol blockquote code {
 		@apply my-portfolio text-customExcerptMobile;
 		@apply font-somaRoman;
 	}
-	&.markdown pre span {
+	.markdown pre span {
 		@apply text-customExcerptMobile;
 	}
 	/* .markdown span:last-child {
 		@apply text-customExcerpt;
 	} */
-	&.markdown h2 {
+	.markdown h2 {
 		@apply text-customTitleMobile mb-portfolio pt-aboutHackingFontAwesomePT leading-snug font-somaRoman;
 	}
-	&.markdown h1 {
+	.markdown h1 {
 		@apply font-somaRoman text-customPostAbout;
 	}
-	&.markdown h4 {
+	.markdown h4 {
 		@apply pt-portfolioLSMobile pb-portfolioRS text-customSMobile;
 	}
 }
