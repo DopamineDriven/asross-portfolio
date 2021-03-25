@@ -1,11 +1,11 @@
 ---
 title: 'subreddit-search'
-postTitle: 'Subreddit Search, UI/UX'
-excerpt: 'Sole Developer'
+postTitle: 'Subreddit Search'
+excerpt: 'Sole Developer, UI/UX'
 coverImage: 'https://res.cloudinary.com/asross311/image/upload/v1598839549/portfolio/Rectangle_6040_i6zz7q.jpg'
 articleImage: 'https://og-image.now.sh/%2Fr%2F%3Fq%3Dreq.query.q.png?theme=dark&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-white-logo.svg&images=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fremojansen%2Flogo.ts%40master%2Fts.svg&images=https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F9rqndpi9iisgalx7bp0z.png'
-date: "2020-08-19T08:35:07.322Z"
-articleExcerpt: 'A future-proof directory uniting independent media companies in the Chicago area'
+date: "2021-03-09T08:35:07.322Z"
+articleExcerpt: 'Subreddit Search App Powered by Nextjs and TypeScript'
 github: 'https://github.com/DopamineDriven/r'
 gitlab: ''
 heroku: 'empty'

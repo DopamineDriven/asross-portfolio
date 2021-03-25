@@ -4,7 +4,7 @@ postTitle: 'The Fade Room'
 excerpt: 'Sole Developer, UI/UX'
 coverImage: 'https://res.cloudinary.com/asross311/image/upload/v1598839550/portfolio/Rectangle_6037_2_y9xmog.jpg'
 articleImage: 'https://og-image.now.sh/**The%20%20Fade%20%20Room**.png?theme=dark&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-white-logo.svg&images=https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2F95crgaor710ea5kzlppi.png&widths=auto&widths=auto&heights=350&heights=auto'
-date: "2020-10-28T09:35:07.322Z"
+date: "2021-04-01T09:35:07.322Z"
 articleExcerpt: ''
 github: ''
 gitlab: 'https://gitlab.com/DopamineDriven'
