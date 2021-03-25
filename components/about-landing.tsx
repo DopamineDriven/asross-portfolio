@@ -29,35 +29,15 @@ const aboutSnippets: AboutInterface[] = [
 	},
 	{
 		id: 2,
-		span: 'the Chicago area. Currently wrapping up '
+		span: 'Chicago and beyond. TypeScript, Next.js, '
 	},
 	{
 		id: 3,
-		span: 'a job aiming to unite 60 to 130 independent '
+		span: 'React, Node, GraphQL, Apollo, and '
 	},
 	{
 		id: 4,
-		span: 'local media companies. Scope includes'
-	},
-	{
-		id: 5,
-		span: "building a future-proof directory via React's "
-	},
-	{
-		id: 6,
-		span: 'Next.js framework, WordPress Engine as the '
-	},
-	{
-		id: 7,
-		span: "headless CMS, and Vercel's edge network to "
-	},
-	{
-		id: 8,
-		span: 'host the client. WordPress-GraphQL plugins '
-	},
-	{
-		id: 9,
-		span: `couple brilliantly with Headless WordPress. `
+		span: 'Tailwindcss comprise my core stack.'
 	}
 ];
 
