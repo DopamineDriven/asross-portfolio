@@ -1,5 +1,5 @@
 .markdown p blockquote ul ol {
-	@apply my-6 text-customExcerpt font-somaRoman;
+	@apply my-6 text-lg font-somaRoman;
 }
 
 .markdown h1 {
@@ -50,7 +50,7 @@
 }
 
 .markdown code {
-	@apply text-customExcerpt;
+	@apply text-lg;
 }
 
 .markdown style {
@@ -82,11 +82,11 @@
 
 @media (max-width: 639px) {
 	.markdown p ul ol blockquote code {
-		@apply my-portfolio text-customExcerptMobile;
+		@apply my-portfolio text-lg;
 		@apply font-somaRoman;
 	}
 	.markdown pre span {
-		@apply text-customExcerptMobile;
+		@apply text-lg;
 	}
 	/* .markdown span:last-child {
 		@apply text-customExcerpt;
@@ -103,5 +103,5 @@
 }
 
 .markdown {
-	@apply text-customSM px-portfolioPadding text-primary bg-primary stroke-current fill-current;
+	@apply text-lg px-portfolioPadding text-primary bg-primary stroke-current fill-current;
 }
