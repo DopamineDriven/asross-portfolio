@@ -34,11 +34,79 @@ ogImage:
 
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/k9lv12xtp4lkavj6ip0c.png)
  
- Custom Headless WordPress build for a Barbershop located in Highland Park, IL.
+ Custom Headless WordPress build for a business located in Highland Park, IL.
 ### Technical Details
 **Private Repository, Contact me for Details**
 
-GraphQL Codegen was utilized in this project to generated tyeps from `.graphql` files. Initializing apollo and wrapping getStaticProps with an addApolloState provider implicitly passes returned props into its global state/cache. This allows for types to be 100% inferred on the client via this server-to-client shuttle. 
+`@graphql-codegen/*` was utilized in this project to generate types from `.graphql` files by configuring a `.codegen.yml` file. Initializing apollo and wrapping getStaticProps with an addApolloState provider implicitly passes `GetStaticPropsResult` props into its global state/cache. This allows for types to be 100% inferred on the client function using `InferGetStaticPropsType` via this server-to-client shuttle. 
+
+```yml
+# .codegen.yml
+overwrite: true
+schema:
+  ${WORDPRESS_API_URL_YML}:
+    headers:
+      Authorization: Bearer ${WORDPRESS_AUTH_REFRESH_TOKEN_YML}
+documents: 'graphql/**/*.graphql'
+generates:
+  graphql/generated/graphql.tsx:
+    plugins:
+      - typescript:
+          constEnums: false
+          enumsAsTypes: false          
+          numericEnums: false
+          futureProofEnums: false
+          enumsAsConst: false
+          onlyOperationTypes: false
+          maybeValue: T | null | undefined
+          noExport: false
+          enumPrefix: true
+          fieldWrapperValue: T
+          wrapFieldDefinitions: true
+          skipTypename: false
+          nonOptionalTypename: false
+          useTypeImports: false
+          avoidOptionals: true
+          declarationKind: 
+            input: interface
+            type: interface    
+      - typescript-operations:
+          declarationKind:
+            input: interface
+            type: interface
+          avoidOptionals: true
+          exportFragmentSpreadSubTypes: true
+      - typescript-react-apollo:
+          addDocBlocks: true
+          reactApolloVersion: 3
+          documentMode: documentNodeImportFragments
+    config:
+      maybeValue: T | null | undefined
+      declarationKind:
+        input: interface
+        type: interface
+      documentNodeImportFragments: true
+      reactApolloVersion: 3
+      withHooks: true
+      withHOC: false
+      avoidOptionals: true
+      withComponent: false
+      exportFragmentSpreadSubTypes: true
+      addDocBlocks: true
+  graphql/graphql.schema.graphql:
+    plugins:
+      - schema-ast
+    config:
+      commentDescriptions: true
+  graphql/graphql.schema.json:
+    plugins:
+      - introspection
+    config:
+      commentDescriptions: true
+hooks:
+  afterAllFileWrite: 
+    - prettier --write
+```
 
 ```tsx
 // pages/index.tsx
