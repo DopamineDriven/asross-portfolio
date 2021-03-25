@@ -4,7 +4,7 @@ postTitle: 'Drisdell Consulting'
 excerpt: 'Sole Developer, UI/UX'
 coverImage: 'https://res.cloudinary.com/asross311/image/upload/v1598839549/portfolio/Rectangle_6037_yckfs9.jpg'
 articleImage: 'https://og-image.now.sh/**Drisdell%20Consulting%20Services**.png?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg&images=https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2Fss8q9p3mq3mu4d3kvjpw.png&widths=350&widths=350&heights=350&heights=350'
-date: "2020-11-12T09:35:07.322Z"
+date: "2021-02-20T09:35:07.322Z"
 articleExcerpt: ''
 github: 'https://github.com/DopamineDriven/drisdell-consulting-services'
 vercel: 'https://drisdell.com'
